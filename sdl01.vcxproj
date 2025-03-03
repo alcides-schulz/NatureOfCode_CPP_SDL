@@ -20,11 +20,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="ParticleSimulation\SDL_ParticleSimulation.cpp" />
-    <ClCompile Include="RayCastingWalls\SDL_RayCastingWalls.cpp" />
-    <ClCompile Include="Sand\SDL_Sand.cpp" />
     <ClCompile Include="SDL_Framework.cpp" />
-    <ClCompile Include="SnowfallSimulation\SDL_Snowfall.cpp" />
     <ClCompile Include="TheNatureOfCode\Chapter01\Chapter01MoverV1.cpp" />
     <ClCompile Include="TheNatureOfCode\Chapter01\Example_1_1.cpp" />
     <ClCompile Include="TheNatureOfCode\Chapter01\Example_1_10.cpp" />
@@ -52,15 +48,9 @@
     <ClCompile Include="TheNatureOfCode\Chapter02\Example_2_9.cpp" />
     <ClCompile Include="TheNatureOfCode\Chapter02\Liquid.cpp" />
     <ClCompile Include="TheNatureOfCode\Common\PVector.cpp" />
-    <ClCompile Include="UniverseProceduralGeneration\SDL_UniverseProceduralGeneration.cpp" />
-    <ClCompile Include="WaveFunctionCollapse\SDL_WaveFunctionCollapse.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="ParticleSimulation\SDL_ParticleSimulation.h" />
-    <ClInclude Include="RayCastingWalls\SDL_RayCastingWalls.h" />
-    <ClInclude Include="Sand\SDL_Sand.h" />
     <ClInclude Include="SDL_Framework.h" />
-    <ClInclude Include="SnowfallSimulation\SDL_Snowfall.h" />
     <ClInclude Include="TheNatureOfCode\Chapter01\Chapter01MoverV1.h" />
     <ClInclude Include="TheNatureOfCode\Chapter01\Example_1_1.h" />
     <ClInclude Include="TheNatureOfCode\Chapter01\Example_1_10.h" />
@@ -88,23 +78,6 @@
     <ClInclude Include="TheNatureOfCode\Chapter02\Example_2_9.h" />
     <ClInclude Include="TheNatureOfCode\Chapter02\Liquid.h" />
     <ClInclude Include="TheNatureOfCode\Common\PVector.h" />
-    <ClInclude Include="UniverseProceduralGeneration\SDL_UniverseProceduralGeneration.h" />
-    <ClInclude Include="WaveFunctionCollapse\SDL_WaveFunctionCollapse.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <Image Include="ParticleSimulation\ParticleSimulation.gif" />
-    <Image Include="Sand\Sand.gif" />
-    <Image Include="SnowfallSimulation\Snowfall.png" />
-    <Image Include="UniverseProceduralGeneration\UniverseProceduralGeneration.gif" />
-    <Image Include="WaveFunctionCollapse\WaveFunctionCollapse.gif" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="ParticleSimulation\Readme.md" />
-    <None Include="RayCastingWalls\Readme.md" />
-    <None Include="Sand\Readme.md" />
-    <None Include="SnowfallSimulation\Readme.md" />
-    <None Include="UniverseProceduralGeneration\Readme.md" />
-    <None Include="WaveFunctionCollapse\Readme.md" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>

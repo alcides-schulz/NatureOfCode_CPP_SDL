@@ -11,27 +11,6 @@
     <Filter Include="TheNatureOfCode\Common">
       <UniqueIdentifier>{e56b193f-e294-4222-b7b1-7c29bee1c4b5}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Misc">
-      <UniqueIdentifier>{60e76b18-69a6-405c-9f15-95a5f2cab53d}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Misc\UniverseProceduralGeneration">
-      <UniqueIdentifier>{c71da53d-d53d-401f-ad2d-22aace3e47e9}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Misc\SnowfallSimulation">
-      <UniqueIdentifier>{7d22c94a-606e-4eb0-9a4e-1d4c1e7fa1cc}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Misc\ParticleSimulation">
-      <UniqueIdentifier>{91753889-8eaa-4d99-aa8f-a5e83d0341af}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Misc\WaveFunctionCollapse">
-      <UniqueIdentifier>{cbd2a8ed-39e9-4295-910b-83be0687b556}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Misc\Sand">
-      <UniqueIdentifier>{d99daec5-4552-4a1b-8bb3-98684c9e207d}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Misc\RayCastingWalls">
-      <UniqueIdentifier>{9068f344-959a-47c9-b20a-ae664d2dbb43}</UniqueIdentifier>
-    </Filter>
     <Filter Include="TheNatureOfCode\Chapter01">
       <UniqueIdentifier>{5fa5431d-2481-4a06-bdfe-c4e39b745fcb}</UniqueIdentifier>
     </Filter>
@@ -45,24 +24,6 @@
     </ClInclude>
     <ClInclude Include="TheNatureOfCode\Common\PVector.h">
       <Filter>TheNatureOfCode\Common</Filter>
-    </ClInclude>
-    <ClInclude Include="UniverseProceduralGeneration\SDL_UniverseProceduralGeneration.h">
-      <Filter>Misc\UniverseProceduralGeneration</Filter>
-    </ClInclude>
-    <ClInclude Include="SnowfallSimulation\SDL_Snowfall.h">
-      <Filter>Misc\SnowfallSimulation</Filter>
-    </ClInclude>
-    <ClInclude Include="ParticleSimulation\SDL_ParticleSimulation.h">
-      <Filter>Misc\ParticleSimulation</Filter>
-    </ClInclude>
-    <ClInclude Include="WaveFunctionCollapse\SDL_WaveFunctionCollapse.h">
-      <Filter>Misc\WaveFunctionCollapse</Filter>
-    </ClInclude>
-    <ClInclude Include="Sand\SDL_Sand.h">
-      <Filter>Misc\Sand</Filter>
-    </ClInclude>
-    <ClInclude Include="RayCastingWalls\SDL_RayCastingWalls.h">
-      <Filter>Misc\RayCastingWalls</Filter>
     </ClInclude>
     <ClInclude Include="TheNatureOfCode\Chapter02\Example_2_1.h">
       <Filter>TheNatureOfCode\Chapter02</Filter>
@@ -147,9 +108,6 @@
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="UniverseProceduralGeneration\SDL_UniverseProceduralGeneration.cpp">
-      <Filter>Misc\UniverseProceduralGeneration</Filter>
-    </ClCompile>
     <ClCompile Include="TheNatureOfCode\Chapter01\Example_1_1.cpp">
       <Filter>TheNatureOfCode\Chapter01</Filter>
     </ClCompile>
@@ -180,26 +138,11 @@
     <ClCompile Include="TheNatureOfCode\Chapter01\Example_1_9.cpp">
       <Filter>TheNatureOfCode\Chapter01</Filter>
     </ClCompile>
-    <ClCompile Include="SnowfallSimulation\SDL_Snowfall.cpp">
-      <Filter>Misc\SnowfallSimulation</Filter>
-    </ClCompile>
-    <ClCompile Include="WaveFunctionCollapse\SDL_WaveFunctionCollapse.cpp">
-      <Filter>Misc\WaveFunctionCollapse</Filter>
-    </ClCompile>
     <ClCompile Include="SDL_Framework.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="ParticleSimulation\SDL_ParticleSimulation.cpp">
-      <Filter>Misc\ParticleSimulation</Filter>
-    </ClCompile>
     <ClCompile Include="TheNatureOfCode\Chapter01\Example_1_10.cpp">
       <Filter>TheNatureOfCode\Chapter01</Filter>
-    </ClCompile>
-    <ClCompile Include="Sand\SDL_Sand.cpp">
-      <Filter>Misc\Sand</Filter>
-    </ClCompile>
-    <ClCompile Include="RayCastingWalls\SDL_RayCastingWalls.cpp">
-      <Filter>Misc\RayCastingWalls</Filter>
     </ClCompile>
     <ClCompile Include="TheNatureOfCode\Chapter02\Example_2_1.cpp">
       <Filter>TheNatureOfCode\Chapter02</Filter>
@@ -249,42 +192,5 @@
     <ClCompile Include="TheNatureOfCode\Chapter02\Example_2_9.cpp">
       <Filter>TheNatureOfCode\Chapter02</Filter>
     </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <Image Include="ParticleSimulation\ParticleSimulation.gif">
-      <Filter>Misc\ParticleSimulation</Filter>
-    </Image>
-    <Image Include="SnowfallSimulation\Snowfall.png">
-      <Filter>Misc\SnowfallSimulation</Filter>
-    </Image>
-    <Image Include="UniverseProceduralGeneration\UniverseProceduralGeneration.gif">
-      <Filter>Misc\UniverseProceduralGeneration</Filter>
-    </Image>
-    <Image Include="WaveFunctionCollapse\WaveFunctionCollapse.gif">
-      <Filter>Misc\WaveFunctionCollapse</Filter>
-    </Image>
-    <Image Include="Sand\Sand.gif">
-      <Filter>Misc\Sand</Filter>
-    </Image>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="ParticleSimulation\Readme.md">
-      <Filter>Misc\ParticleSimulation</Filter>
-    </None>
-    <None Include="SnowfallSimulation\Readme.md">
-      <Filter>Misc\SnowfallSimulation</Filter>
-    </None>
-    <None Include="UniverseProceduralGeneration\Readme.md">
-      <Filter>Misc\UniverseProceduralGeneration</Filter>
-    </None>
-    <None Include="WaveFunctionCollapse\Readme.md">
-      <Filter>Misc\WaveFunctionCollapse</Filter>
-    </None>
-    <None Include="Sand\Readme.md">
-      <Filter>Misc\Sand</Filter>
-    </None>
-    <None Include="RayCastingWalls\Readme.md">
-      <Filter>Misc\RayCastingWalls</Filter>
-    </None>
   </ItemGroup>
 </Project>

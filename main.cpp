@@ -3,12 +3,6 @@
 //-------------------------------------------------------------------------------------------------
 
 #include "SDL_Framework.h"
-#include "UniverseProceduralGeneration/SDL_UniverseProceduralGeneration.h"
-#include "SnowfallSimulation/SDL_Snowfall.h"
-#include "ParticleSimulation/SDL_ParticleSimulation.h"
-#include "WaveFunctionCollapse/SDL_WaveFunctionCollapse.h"
-#include "Sand/SDL_Sand.h"
-#include "RayCastingWalls/SDL_RayCastingWalls.h"
 
 #include "TheNatureOfCode/Chapter01/Example_1_1.h"
 #include "TheNatureOfCode/Chapter01/Example_1_2.h"
@@ -33,10 +27,6 @@
 
 using namespace std;
 
-// Miscellaneous
-vector<SDL_Framework *> misc_menu;
-
-// The nature of code book
 vector<SDL_Framework *> noc_chapter01_menu;
 vector<SDL_Framework *> noc_chapter02_menu;
 
@@ -65,17 +55,6 @@ void InitNatureOfCodeMenus()
     noc_chapter02_menu.push_back(new Example_2_9());
 }
 
-void InitMiscMenu()
-{
-    misc_menu.clear();
-    misc_menu.push_back(new SDL_UniverseProceduralGeneration());
-    misc_menu.push_back(new SDL_Snowfall());
-    misc_menu.push_back(new SDL_ParticleSimulation());
-    misc_menu.push_back(new SDL_WaveFunctionCollapse("Images\\Circuit"));
-    misc_menu.push_back(new SDL_Sand());
-    misc_menu.push_back(new SDL_RayCastingWalls());
-}
-
 void NatureOfCodeChapterMenu(vector<SDL_Framework *> chapter_menu)
 {
     while (true) {
@@ -101,8 +80,9 @@ void NatureOfCodeChapterMenu(vector<SDL_Framework *> chapter_menu)
     }
 }
 
-void NatureOfCodeMenu(void)
+int main(int argc, char* argv[])
 {
+    InitNatureOfCodeMenus();
     while (true) {
         cout << "Nature of Code Menu" << endl;
         cout << endl << "\t a. Chapter 1 - Vectors";
@@ -122,38 +102,6 @@ void NatureOfCodeMenu(void)
             continue;
         }
     }
-}
 
-int main(int argc, char* argv[])
-{
-    InitMiscMenu();
-    InitNatureOfCodeMenus();
-
-    while (true) {
-        cout << "Menu" << endl << endl;
-        cout << "\t 0. The Nature of Code - book by Daniel Shiffman" << endl << endl;
-        for (int i = 0; i < misc_menu.size(); i++) {
-            cout << "\t " << (char)('a' + i) << ". " << misc_menu[i]->WindowTitle() << endl;
-        }
-        cout << endl << "\t x. Exit" << endl << endl << "--> ";
-        string response;
-        getline(cin, response);
-        if (response.compare("x") == 0) {
-            break;
-        }
-        if (response.compare("0") == 0) {
-            NatureOfCodeMenu();
-            continue;
-        }
-        for (int i = 0; i < misc_menu.size(); i++) {
-            string selection(1, ('a' + i));
-            if (response.compare(selection) == 0) {
-                if (misc_menu[i]->Init()) {
-                    misc_menu[i]->Run();
-                }
-                break;
-            }
-        }
-    }
     return 0;
 }
