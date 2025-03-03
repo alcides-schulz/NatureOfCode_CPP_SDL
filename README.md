@@ -1,9 +1,3 @@
-# SDL_Programming
+[The Nature of Code by Daniel Shiffman](https://natureofcode.com/book/)
 
-SDL Programming
-
-This is a project I'm using to learn windows graphics programming using C++ and the SDL library (https://www.libsdl.org/).
-
-My goal is to code some algorithms using SDL.
-
-I created a header file (SDL_Framework.h) so I can reuse in those projects. This framework is based on javidx9 "One lone coder" youtube channel (https://www.youtube.com/channel/UC-yuWVUplUJZvieEligKBkA).
+This project several concepts by recreating the code using SDL.

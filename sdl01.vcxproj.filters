@@ -5,192 +5,189 @@
       <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
       <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
-    <Filter Include="TheNatureOfCode">
-      <UniqueIdentifier>{021e68eb-4632-45d0-9a3d-a1bb57a4d18d}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="TheNatureOfCode\Common">
-      <UniqueIdentifier>{e56b193f-e294-4222-b7b1-7c29bee1c4b5}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="TheNatureOfCode\Chapter01">
+    <Filter Include="Source Files\Chapter01">
       <UniqueIdentifier>{5fa5431d-2481-4a06-bdfe-c4e39b745fcb}</UniqueIdentifier>
     </Filter>
-    <Filter Include="TheNatureOfCode\Chapter02">
+    <Filter Include="Source Files\Chapter02">
       <UniqueIdentifier>{58b341f4-ed07-4dc1-b08c-f38dfbefb999}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Common">
+      <UniqueIdentifier>{e56b193f-e294-4222-b7b1-7c29bee1c4b5}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="SDL_Framework.h">
-      <Filter>Source Files</Filter>
+    <ClInclude Include="Common\PVector.h">
+      <Filter>Source Files\Common</Filter>
     </ClInclude>
-    <ClInclude Include="TheNatureOfCode\Common\PVector.h">
-      <Filter>TheNatureOfCode\Common</Filter>
+    <ClInclude Include="Chapter01\Chapter01MoverV1.h">
+      <Filter>Source Files\Chapter01</Filter>
     </ClInclude>
-    <ClInclude Include="TheNatureOfCode\Chapter02\Example_2_1.h">
-      <Filter>TheNatureOfCode\Chapter02</Filter>
+    <ClInclude Include="Chapter01\Example_1_1.h">
+      <Filter>Source Files\Chapter01</Filter>
     </ClInclude>
-    <ClInclude Include="TheNatureOfCode\Chapter02\Example_2_2.h">
-      <Filter>TheNatureOfCode\Chapter02</Filter>
+    <ClInclude Include="Chapter01\Example_1_2.h">
+      <Filter>Source Files\Chapter01</Filter>
     </ClInclude>
-    <ClInclude Include="TheNatureOfCode\Chapter02\Example_2_3.h">
-      <Filter>TheNatureOfCode\Chapter02</Filter>
+    <ClInclude Include="Chapter01\Example_1_3.h">
+      <Filter>Source Files\Chapter01</Filter>
     </ClInclude>
-    <ClInclude Include="TheNatureOfCode\Chapter02\Example_2_4.h">
-      <Filter>TheNatureOfCode\Chapter02</Filter>
+    <ClInclude Include="Chapter01\Example_1_4.h">
+      <Filter>Source Files\Chapter01</Filter>
     </ClInclude>
-    <ClInclude Include="TheNatureOfCode\Chapter01\Example_1_1.h">
-      <Filter>TheNatureOfCode\Chapter01</Filter>
+    <ClInclude Include="Chapter01\Example_1_5.h">
+      <Filter>Source Files\Chapter01</Filter>
     </ClInclude>
-    <ClInclude Include="TheNatureOfCode\Chapter01\Example_1_2.h">
-      <Filter>TheNatureOfCode\Chapter01</Filter>
+    <ClInclude Include="Chapter01\Example_1_6.h">
+      <Filter>Source Files\Chapter01</Filter>
     </ClInclude>
-    <ClInclude Include="TheNatureOfCode\Chapter01\Example_1_3.h">
-      <Filter>TheNatureOfCode\Chapter01</Filter>
+    <ClInclude Include="Chapter01\Example_1_7.h">
+      <Filter>Source Files\Chapter01</Filter>
     </ClInclude>
-    <ClInclude Include="TheNatureOfCode\Chapter01\Example_1_4.h">
-      <Filter>TheNatureOfCode\Chapter01</Filter>
+    <ClInclude Include="Chapter01\Example_1_8.h">
+      <Filter>Source Files\Chapter01</Filter>
     </ClInclude>
-    <ClInclude Include="TheNatureOfCode\Chapter01\Example_1_5.h">
-      <Filter>TheNatureOfCode\Chapter01</Filter>
+    <ClInclude Include="Chapter01\Example_1_9.h">
+      <Filter>Source Files\Chapter01</Filter>
     </ClInclude>
-    <ClInclude Include="TheNatureOfCode\Chapter01\Example_1_6.h">
-      <Filter>TheNatureOfCode\Chapter01</Filter>
+    <ClInclude Include="Chapter01\Example_1_10.h">
+      <Filter>Source Files\Chapter01</Filter>
     </ClInclude>
-    <ClInclude Include="TheNatureOfCode\Chapter01\Example_1_7.h">
-      <Filter>TheNatureOfCode\Chapter01</Filter>
+    <ClInclude Include="Chapter02\Attractor.h">
+      <Filter>Source Files\Chapter02</Filter>
     </ClInclude>
-    <ClInclude Include="TheNatureOfCode\Chapter01\Example_1_8.h">
-      <Filter>TheNatureOfCode\Chapter01</Filter>
+    <ClInclude Include="Chapter02\Body.h">
+      <Filter>Source Files\Chapter02</Filter>
     </ClInclude>
-    <ClInclude Include="TheNatureOfCode\Chapter01\Example_1_9.h">
-      <Filter>TheNatureOfCode\Chapter01</Filter>
+    <ClInclude Include="Chapter02\Chapter02MoverV1.h">
+      <Filter>Source Files\Chapter02</Filter>
     </ClInclude>
-    <ClInclude Include="TheNatureOfCode\Chapter01\Example_1_10.h">
-      <Filter>TheNatureOfCode\Chapter01</Filter>
+    <ClInclude Include="Chapter02\Chapter02MoverV2.h">
+      <Filter>Source Files\Chapter02</Filter>
     </ClInclude>
-    <ClInclude Include="TheNatureOfCode\Chapter02\Liquid.h">
-      <Filter>TheNatureOfCode\Chapter02</Filter>
+    <ClInclude Include="Chapter02\Chapter02MoverV3.h">
+      <Filter>Source Files\Chapter02</Filter>
     </ClInclude>
-    <ClInclude Include="TheNatureOfCode\Chapter02\Example_2_5.h">
-      <Filter>TheNatureOfCode\Chapter02</Filter>
+    <ClInclude Include="Chapter02\Example_2_1.h">
+      <Filter>Source Files\Chapter02</Filter>
     </ClInclude>
-    <ClInclude Include="TheNatureOfCode\Chapter02\Chapter02MoverV1.h">
-      <Filter>TheNatureOfCode\Chapter02</Filter>
+    <ClInclude Include="Chapter02\Example_2_2.h">
+      <Filter>Source Files\Chapter02</Filter>
     </ClInclude>
-    <ClInclude Include="TheNatureOfCode\Chapter02\Chapter02MoverV2.h">
-      <Filter>TheNatureOfCode\Chapter02</Filter>
+    <ClInclude Include="Chapter02\Example_2_3.h">
+      <Filter>Source Files\Chapter02</Filter>
     </ClInclude>
-    <ClInclude Include="TheNatureOfCode\Chapter01\Chapter01MoverV1.h">
-      <Filter>TheNatureOfCode\Chapter01</Filter>
+    <ClInclude Include="Chapter02\Example_2_4.h">
+      <Filter>Source Files\Chapter02</Filter>
     </ClInclude>
-    <ClInclude Include="TheNatureOfCode\Chapter02\Chapter02MoverV3.h">
-      <Filter>TheNatureOfCode\Chapter02</Filter>
+    <ClInclude Include="Chapter02\Example_2_5.h">
+      <Filter>Source Files\Chapter02</Filter>
     </ClInclude>
-    <ClInclude Include="TheNatureOfCode\Chapter02\Attractor.h">
-      <Filter>TheNatureOfCode\Chapter02</Filter>
+    <ClInclude Include="Chapter02\Example_2_6.h">
+      <Filter>Source Files\Chapter02</Filter>
     </ClInclude>
-    <ClInclude Include="TheNatureOfCode\Chapter02\Example_2_6.h">
-      <Filter>TheNatureOfCode\Chapter02</Filter>
+    <ClInclude Include="Chapter02\Example_2_7.h">
+      <Filter>Source Files\Chapter02</Filter>
     </ClInclude>
-    <ClInclude Include="TheNatureOfCode\Chapter02\Example_2_7.h">
-      <Filter>TheNatureOfCode\Chapter02</Filter>
+    <ClInclude Include="Chapter02\Example_2_8.h">
+      <Filter>Source Files\Chapter02</Filter>
     </ClInclude>
-    <ClInclude Include="TheNatureOfCode\Chapter02\Body.h">
-      <Filter>TheNatureOfCode\Chapter02</Filter>
+    <ClInclude Include="Chapter02\Example_2_9.h">
+      <Filter>Source Files\Chapter02</Filter>
     </ClInclude>
-    <ClInclude Include="TheNatureOfCode\Chapter02\Example_2_8.h">
-      <Filter>TheNatureOfCode\Chapter02</Filter>
+    <ClInclude Include="Chapter02\Liquid.h">
+      <Filter>Source Files\Chapter02</Filter>
     </ClInclude>
-    <ClInclude Include="TheNatureOfCode\Chapter02\Example_2_9.h">
-      <Filter>TheNatureOfCode\Chapter02</Filter>
+    <ClInclude Include="Common\SDL_Framework.h">
+      <Filter>Source Files\Common</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="TheNatureOfCode\Chapter01\Example_1_1.cpp">
-      <Filter>TheNatureOfCode\Chapter01</Filter>
+    <ClCompile Include="Common\PVector.cpp">
+      <Filter>Source Files\Common</Filter>
     </ClCompile>
-    <ClCompile Include="TheNatureOfCode\Common\PVector.cpp">
-      <Filter>TheNatureOfCode\Common</Filter>
+    <ClCompile Include="Chapter01\Chapter01MoverV1.cpp">
+      <Filter>Source Files\Chapter01</Filter>
     </ClCompile>
-    <ClCompile Include="TheNatureOfCode\Chapter01\Example_1_2.cpp">
-      <Filter>TheNatureOfCode\Chapter01</Filter>
+    <ClCompile Include="Chapter01\Example_1_1.cpp">
+      <Filter>Source Files\Chapter01</Filter>
     </ClCompile>
-    <ClCompile Include="TheNatureOfCode\Chapter01\Example_1_3.cpp">
-      <Filter>TheNatureOfCode\Chapter01</Filter>
+    <ClCompile Include="Chapter01\Example_1_2.cpp">
+      <Filter>Source Files\Chapter01</Filter>
     </ClCompile>
-    <ClCompile Include="TheNatureOfCode\Chapter01\Example_1_4.cpp">
-      <Filter>TheNatureOfCode\Chapter01</Filter>
+    <ClCompile Include="Chapter01\Example_1_3.cpp">
+      <Filter>Source Files\Chapter01</Filter>
     </ClCompile>
-    <ClCompile Include="TheNatureOfCode\Chapter01\Example_1_5.cpp">
-      <Filter>TheNatureOfCode\Chapter01</Filter>
+    <ClCompile Include="Chapter01\Example_1_4.cpp">
+      <Filter>Source Files\Chapter01</Filter>
     </ClCompile>
-    <ClCompile Include="TheNatureOfCode\Chapter01\Example_1_6.cpp">
-      <Filter>TheNatureOfCode\Chapter01</Filter>
+    <ClCompile Include="Chapter01\Example_1_5.cpp">
+      <Filter>Source Files\Chapter01</Filter>
     </ClCompile>
-    <ClCompile Include="TheNatureOfCode\Chapter01\Example_1_7.cpp">
-      <Filter>TheNatureOfCode\Chapter01</Filter>
+    <ClCompile Include="Chapter01\Example_1_6.cpp">
+      <Filter>Source Files\Chapter01</Filter>
     </ClCompile>
-    <ClCompile Include="TheNatureOfCode\Chapter01\Example_1_8.cpp">
-      <Filter>TheNatureOfCode\Chapter01</Filter>
+    <ClCompile Include="Chapter01\Example_1_7.cpp">
+      <Filter>Source Files\Chapter01</Filter>
     </ClCompile>
-    <ClCompile Include="TheNatureOfCode\Chapter01\Example_1_9.cpp">
-      <Filter>TheNatureOfCode\Chapter01</Filter>
+    <ClCompile Include="Chapter01\Example_1_8.cpp">
+      <Filter>Source Files\Chapter01</Filter>
     </ClCompile>
-    <ClCompile Include="SDL_Framework.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="Chapter01\Example_1_9.cpp">
+      <Filter>Source Files\Chapter01</Filter>
     </ClCompile>
-    <ClCompile Include="TheNatureOfCode\Chapter01\Example_1_10.cpp">
-      <Filter>TheNatureOfCode\Chapter01</Filter>
+    <ClCompile Include="Chapter01\Example_1_10.cpp">
+      <Filter>Source Files\Chapter01</Filter>
     </ClCompile>
-    <ClCompile Include="TheNatureOfCode\Chapter02\Example_2_1.cpp">
-      <Filter>TheNatureOfCode\Chapter02</Filter>
+    <ClCompile Include="Chapter02\Attractor.cpp">
+      <Filter>Source Files\Chapter02</Filter>
     </ClCompile>
-    <ClCompile Include="TheNatureOfCode\Chapter02\Example_2_2.cpp">
-      <Filter>TheNatureOfCode\Chapter02</Filter>
+    <ClCompile Include="Chapter02\Body.cpp">
+      <Filter>Source Files\Chapter02</Filter>
     </ClCompile>
-    <ClCompile Include="TheNatureOfCode\Chapter02\Example_2_3.cpp">
-      <Filter>TheNatureOfCode\Chapter02</Filter>
+    <ClCompile Include="Chapter02\Chapter02MoverV1.cpp">
+      <Filter>Source Files\Chapter02</Filter>
     </ClCompile>
-    <ClCompile Include="TheNatureOfCode\Chapter02\Example_2_4.cpp">
-      <Filter>TheNatureOfCode\Chapter02</Filter>
+    <ClCompile Include="Chapter02\Chapter02MoverV2.cpp">
+      <Filter>Source Files\Chapter02</Filter>
     </ClCompile>
-    <ClCompile Include="TheNatureOfCode\Chapter02\Liquid.cpp">
-      <Filter>TheNatureOfCode\Chapter02</Filter>
+    <ClCompile Include="Chapter02\Chapter02MoverV3.cpp">
+      <Filter>Source Files\Chapter02</Filter>
     </ClCompile>
-    <ClCompile Include="TheNatureOfCode\Chapter02\Example_2_5.cpp">
-      <Filter>TheNatureOfCode\Chapter02</Filter>
+    <ClCompile Include="Chapter02\Example_2_1.cpp">
+      <Filter>Source Files\Chapter02</Filter>
     </ClCompile>
-    <ClCompile Include="TheNatureOfCode\Chapter02\Chapter02MoverV1.cpp">
-      <Filter>TheNatureOfCode\Chapter02</Filter>
+    <ClCompile Include="Chapter02\Example_2_2.cpp">
+      <Filter>Source Files\Chapter02</Filter>
     </ClCompile>
-    <ClCompile Include="TheNatureOfCode\Chapter02\Chapter02MoverV2.cpp">
-      <Filter>TheNatureOfCode\Chapter02</Filter>
+    <ClCompile Include="Chapter02\Example_2_3.cpp">
+      <Filter>Source Files\Chapter02</Filter>
     </ClCompile>
-    <ClCompile Include="TheNatureOfCode\Chapter01\Chapter01MoverV1.cpp">
-      <Filter>TheNatureOfCode\Chapter01</Filter>
+    <ClCompile Include="Chapter02\Example_2_4.cpp">
+      <Filter>Source Files\Chapter02</Filter>
     </ClCompile>
-    <ClCompile Include="TheNatureOfCode\Chapter02\Chapter02MoverV3.cpp">
-      <Filter>TheNatureOfCode\Chapter02</Filter>
+    <ClCompile Include="Chapter02\Example_2_5.cpp">
+      <Filter>Source Files\Chapter02</Filter>
     </ClCompile>
-    <ClCompile Include="TheNatureOfCode\Chapter02\Attractor.cpp">
-      <Filter>TheNatureOfCode\Chapter02</Filter>
+    <ClCompile Include="Chapter02\Example_2_6.cpp">
+      <Filter>Source Files\Chapter02</Filter>
     </ClCompile>
-    <ClCompile Include="TheNatureOfCode\Chapter02\Example_2_6.cpp">
-      <Filter>TheNatureOfCode\Chapter02</Filter>
+    <ClCompile Include="Chapter02\Example_2_7.cpp">
+      <Filter>Source Files\Chapter02</Filter>
     </ClCompile>
-    <ClCompile Include="TheNatureOfCode\Chapter02\Example_2_7.cpp">
-      <Filter>TheNatureOfCode\Chapter02</Filter>
+    <ClCompile Include="Chapter02\Example_2_8.cpp">
+      <Filter>Source Files\Chapter02</Filter>
     </ClCompile>
-    <ClCompile Include="TheNatureOfCode\Chapter02\Body.cpp">
-      <Filter>TheNatureOfCode\Chapter02</Filter>
+    <ClCompile Include="Chapter02\Example_2_9.cpp">
+      <Filter>Source Files\Chapter02</Filter>
     </ClCompile>
-    <ClCompile Include="TheNatureOfCode\Chapter02\Example_2_8.cpp">
-      <Filter>TheNatureOfCode\Chapter02</Filter>
+    <ClCompile Include="Chapter02\Liquid.cpp">
+      <Filter>Source Files\Chapter02</Filter>
     </ClCompile>
-    <ClCompile Include="TheNatureOfCode\Chapter02\Example_2_9.cpp">
-      <Filter>TheNatureOfCode\Chapter02</Filter>
+    <ClCompile Include="Common\SDL_Framework.cpp">
+      <Filter>Source Files\Common</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
