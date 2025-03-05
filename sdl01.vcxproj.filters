@@ -199,4 +199,7 @@
       <Filter>Source Files\Chapter03</Filter>
     </ClCompile>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Readme.md" />
+  </ItemGroup>
 </Project>

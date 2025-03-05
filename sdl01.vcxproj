@@ -81,6 +81,9 @@
     <ClInclude Include="Common\PVector.h" />
     <ClInclude Include="Common\SDL_Framework.h" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Readme.md" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
     <ProjectGuid>{B692E7B2-D4DC-47F9-8301-19BE70AA3D43}</ProjectGuid>

@@ -29,7 +29,7 @@
 
 using namespace std;
 
-vector<SDL_Framework *> noc_chapter01_menu = {
+vector<SDL_Framework *> chapter01_menu = {
     new Example_1_1(),
     new Example_1_2(),
     new Example_1_3(),
@@ -41,7 +41,7 @@ vector<SDL_Framework *> noc_chapter01_menu = {
     new Example_1_9(),
     new Example_1_10(),
 };
-vector<SDL_Framework *> noc_chapter02_menu = {
+vector<SDL_Framework *> chapter02_menu = {
     new Example_2_1(),
     new Example_2_2(),
     new Example_2_3(),
@@ -52,7 +52,7 @@ vector<SDL_Framework *> noc_chapter02_menu = {
     new Example_2_8(),
     new Example_2_9(),
 };
-vector<SDL_Framework *> noc_chapter03_menu = {
+vector<SDL_Framework *> chapter03_menu = {
     new Example_3_1(),
 };
 
@@ -83,30 +83,29 @@ void NatureOfCodeChapterMenu(vector<SDL_Framework *> chapter_menu)
 
 int main(int argc, char* argv[])
 {
+    string response;
     while (true) {
         cout << "Nature of Code Menu" << endl;
         cout << endl << "\t a. Chapter 1 - Vectors";
         cout << endl << "\t b. Chapter 2 - Forces";
         cout << endl << "\t c. Chapter 3 - Oscillation";
         cout << endl << "\t x. Exit" << endl << endl << "--> ";
-        string response;
         getline(cin, response);
         if (response.compare("x") == 0) {
             break;
         }
         if (response.compare("a") == 0) {
-            NatureOfCodeChapterMenu(noc_chapter01_menu);
+            NatureOfCodeChapterMenu(chapter01_menu);
             continue;
         }
         if (response.compare("b") == 0) {
-            NatureOfCodeChapterMenu(noc_chapter02_menu);
+            NatureOfCodeChapterMenu(chapter02_menu);
             continue;
         }
         if (response.compare("c") == 0) {
-            NatureOfCodeChapterMenu(noc_chapter03_menu);
+            NatureOfCodeChapterMenu(chapter03_menu);
             continue;
         }
     }
-
     return 0;
 }
