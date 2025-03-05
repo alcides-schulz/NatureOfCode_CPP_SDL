@@ -14,6 +14,9 @@
     <Filter Include="Source Files\Common">
       <UniqueIdentifier>{e56b193f-e294-4222-b7b1-7c29bee1c4b5}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Chapter03">
+      <UniqueIdentifier>{eb91655a-aa63-4e9a-b160-47029037cc55}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Common\PVector.h">
@@ -99,6 +102,9 @@
     </ClInclude>
     <ClInclude Include="Common\SDL_Framework.h">
       <Filter>Source Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter03\Example_3_1.h">
+      <Filter>Source Files\Chapter03</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -188,6 +194,9 @@
     </ClCompile>
     <ClCompile Include="Common\SDL_Framework.cpp">
       <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter03\Example_3_1.cpp">
+      <Filter>Source Files\Chapter03</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

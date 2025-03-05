@@ -45,6 +45,7 @@
     <ClCompile Include="Chapter02\Example_2_8.cpp" />
     <ClCompile Include="Chapter02\Example_2_9.cpp" />
     <ClCompile Include="Chapter02\Liquid.cpp" />
+    <ClCompile Include="Chapter03\Example_3_1.cpp" />
     <ClCompile Include="Common\PVector.cpp" />
     <ClCompile Include="Common\SDL_Framework.cpp" />
     <ClCompile Include="main.cpp" />
@@ -76,6 +77,7 @@
     <ClInclude Include="Chapter02\Example_2_8.h" />
     <ClInclude Include="Chapter02\Example_2_9.h" />
     <ClInclude Include="Chapter02\Liquid.h" />
+    <ClInclude Include="Chapter03\Example_3_1.h" />
     <ClInclude Include="Common\PVector.h" />
     <ClInclude Include="Common\SDL_Framework.h" />
   </ItemGroup>
