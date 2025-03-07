@@ -2,7 +2,7 @@
 #define EXAMPLE_2_8_H
 
 #include "../Common/SDL_Framework.h"
-#include "Body.h"
+#include "../Common/Body.h"
 
 class Example_2_8 : public SDL_Framework
 {

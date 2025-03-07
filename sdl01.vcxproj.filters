@@ -55,12 +55,6 @@
     <ClInclude Include="Chapter01\Example_1_10.h">
       <Filter>Source Files\Chapter01</Filter>
     </ClInclude>
-    <ClInclude Include="Chapter02\Attractor.h">
-      <Filter>Source Files\Chapter02</Filter>
-    </ClInclude>
-    <ClInclude Include="Chapter02\Body.h">
-      <Filter>Source Files\Chapter02</Filter>
-    </ClInclude>
     <ClInclude Include="Chapter02\Chapter02MoverV1.h">
       <Filter>Source Files\Chapter02</Filter>
     </ClInclude>
@@ -106,6 +100,21 @@
     <ClInclude Include="Chapter03\Example_3_1.h">
       <Filter>Source Files\Chapter03</Filter>
     </ClInclude>
+    <ClInclude Include="Common\Attractor.h">
+      <Filter>Source Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\Body.h">
+      <Filter>Source Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter03\Example_3_2.h">
+      <Filter>Source Files\Chapter03</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter03\Attractor_3_2.h">
+      <Filter>Source Files\Chapter03</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter03\Mover_3_2.h">
+      <Filter>Source Files\Chapter03</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -146,12 +155,6 @@
     </ClCompile>
     <ClCompile Include="Chapter01\Example_1_10.cpp">
       <Filter>Source Files\Chapter01</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter02\Attractor.cpp">
-      <Filter>Source Files\Chapter02</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter02\Body.cpp">
-      <Filter>Source Files\Chapter02</Filter>
     </ClCompile>
     <ClCompile Include="Chapter02\Chapter02MoverV1.cpp">
       <Filter>Source Files\Chapter02</Filter>
@@ -196,6 +199,21 @@
       <Filter>Source Files\Common</Filter>
     </ClCompile>
     <ClCompile Include="Chapter03\Example_3_1.cpp">
+      <Filter>Source Files\Chapter03</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\Attractor.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\Body.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter03\Example_3_2.cpp">
+      <Filter>Source Files\Chapter03</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter03\Attractor_3_2.cpp">
+      <Filter>Source Files\Chapter03</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter03\Mover_3_2.cpp">
       <Filter>Source Files\Chapter03</Filter>
     </ClCompile>
   </ItemGroup>

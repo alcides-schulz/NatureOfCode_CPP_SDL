@@ -3,7 +3,7 @@
 
 #include "../Common/SDL_Framework.h"
 #include "../Common/PVector.h"
-#include "Chapter02MoverV1.h"
+#include "../Chapter02/Chapter02MoverV1.h"
 
 class Attractor
 {

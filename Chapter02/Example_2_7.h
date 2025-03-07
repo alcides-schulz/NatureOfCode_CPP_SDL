@@ -3,7 +3,7 @@
 
 #include "../Common/SDL_Framework.h"
 #include "Chapter02MoverV1.h"
-#include "Attractor.h"
+#include "../Common/Attractor.h"
 
 class Example_2_7 : public SDL_Framework
 {

@@ -30,8 +30,6 @@
     <ClCompile Include="Chapter01\Example_1_7.cpp" />
     <ClCompile Include="Chapter01\Example_1_8.cpp" />
     <ClCompile Include="Chapter01\Example_1_9.cpp" />
-    <ClCompile Include="Chapter02\Attractor.cpp" />
-    <ClCompile Include="Chapter02\Body.cpp" />
     <ClCompile Include="Chapter02\Chapter02MoverV1.cpp" />
     <ClCompile Include="Chapter02\Chapter02MoverV2.cpp" />
     <ClCompile Include="Chapter02\Chapter02MoverV3.cpp" />
@@ -45,7 +43,12 @@
     <ClCompile Include="Chapter02\Example_2_8.cpp" />
     <ClCompile Include="Chapter02\Example_2_9.cpp" />
     <ClCompile Include="Chapter02\Liquid.cpp" />
+    <ClCompile Include="Chapter03\Attractor_3_2.cpp" />
+    <ClCompile Include="Chapter03\Mover_3_2.cpp" />
     <ClCompile Include="Chapter03\Example_3_1.cpp" />
+    <ClCompile Include="Chapter03\Example_3_2.cpp" />
+    <ClCompile Include="Common\Attractor.cpp" />
+    <ClCompile Include="Common\Body.cpp" />
     <ClCompile Include="Common\PVector.cpp" />
     <ClCompile Include="Common\SDL_Framework.cpp" />
     <ClCompile Include="main.cpp" />
@@ -62,8 +65,6 @@
     <ClInclude Include="Chapter01\Example_1_7.h" />
     <ClInclude Include="Chapter01\Example_1_8.h" />
     <ClInclude Include="Chapter01\Example_1_9.h" />
-    <ClInclude Include="Chapter02\Attractor.h" />
-    <ClInclude Include="Chapter02\Body.h" />
     <ClInclude Include="Chapter02\Chapter02MoverV1.h" />
     <ClInclude Include="Chapter02\Chapter02MoverV2.h" />
     <ClInclude Include="Chapter02\Chapter02MoverV3.h" />
@@ -77,7 +78,12 @@
     <ClInclude Include="Chapter02\Example_2_8.h" />
     <ClInclude Include="Chapter02\Example_2_9.h" />
     <ClInclude Include="Chapter02\Liquid.h" />
+    <ClInclude Include="Chapter03\Attractor_3_2.h" />
+    <ClInclude Include="Chapter03\Mover_3_2.h" />
     <ClInclude Include="Chapter03\Example_3_1.h" />
+    <ClInclude Include="Chapter03\Example_3_2.h" />
+    <ClInclude Include="Common\Attractor.h" />
+    <ClInclude Include="Common\Body.h" />
     <ClInclude Include="Common\PVector.h" />
     <ClInclude Include="Common\SDL_Framework.h" />
   </ItemGroup>

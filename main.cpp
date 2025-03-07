@@ -1,5 +1,5 @@
 //-------------------------------------------------------------------------------------------------
-//  SDL Programming menu
+//  Nature of Code menu
 //-------------------------------------------------------------------------------------------------
 
 #include "Common/SDL_Framework.h"
@@ -26,6 +26,7 @@
 #include "Chapter02/Example_2_9.h"
 
 #include "Chapter03/Example_3_1.h"
+#include "Chapter03/Example_3_2.h"
 
 using namespace std;
 
@@ -54,6 +55,7 @@ vector<SDL_Framework *> chapter02_menu = {
 };
 vector<SDL_Framework *> chapter03_menu = {
     new Example_3_1(),
+    new Example_3_2(),
 };
 
 void NatureOfCodeChapterMenu(vector<SDL_Framework *> chapter_menu)
