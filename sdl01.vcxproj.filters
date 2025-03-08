@@ -22,9 +22,6 @@
     <ClInclude Include="Common\PVector.h">
       <Filter>Source Files\Common</Filter>
     </ClInclude>
-    <ClInclude Include="Chapter01\Chapter01MoverV1.h">
-      <Filter>Source Files\Chapter01</Filter>
-    </ClInclude>
     <ClInclude Include="Chapter01\Example_1_1.h">
       <Filter>Source Files\Chapter01</Filter>
     </ClInclude>
@@ -115,6 +112,18 @@
     <ClInclude Include="Chapter03\Mover_3_2.h">
       <Filter>Source Files\Chapter03</Filter>
     </ClInclude>
+    <ClInclude Include="Chapter01\Mover_1_7.h">
+      <Filter>Source Files\Chapter01</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter01\Mover_1_8.h">
+      <Filter>Source Files\Chapter01</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter01\Mover_1_9.h">
+      <Filter>Source Files\Chapter01</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter01\Mover_1_10.h">
+      <Filter>Source Files\Chapter01</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -122,9 +131,6 @@
     </ClCompile>
     <ClCompile Include="Common\PVector.cpp">
       <Filter>Source Files\Common</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter01\Chapter01MoverV1.cpp">
-      <Filter>Source Files\Chapter01</Filter>
     </ClCompile>
     <ClCompile Include="Chapter01\Example_1_1.cpp">
       <Filter>Source Files\Chapter01</Filter>
@@ -215,6 +221,18 @@
     </ClCompile>
     <ClCompile Include="Chapter03\Mover_3_2.cpp">
       <Filter>Source Files\Chapter03</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter01\Mover_1_7.cpp">
+      <Filter>Source Files\Chapter01</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter01\Mover_1_8.cpp">
+      <Filter>Source Files\Chapter01</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter01\Mover_1_9.cpp">
+      <Filter>Source Files\Chapter01</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter01\Mover_1_10.cpp">
+      <Filter>Source Files\Chapter01</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

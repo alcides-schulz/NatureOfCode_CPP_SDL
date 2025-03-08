@@ -2,39 +2,6 @@
 
 using namespace std;
 
-bool SDL_Framework::Init(const char* title, int x, int y, int width, int height, int flags)
-{
-    int result = SDL_Init(SDL_INIT_EVERYTHING);
-    if (result != 0)
-    {
-        std::cout << "SDL_Init failed, result: " << result << ".\n";
-        std::getchar();
-        return false;
-    }
-
-    window_title_ = title;
-
-    window_ = SDL_CreateWindow(title, x, y, width, height, flags);
-    if (window_ == 0) {
-        std::cout << "SDL_CreateWindow failed.\n";
-        std::getchar();
-        return false;
-    }
-
-    SDL_GetWindowSize(window_, &window_width_, &window_height_);
-
-    renderer_ = SDL_CreateRenderer(window_, -1, 0);
-    if (renderer_ == 0) {
-        std::cout << "SDL_CreateRenderer failed.\n";
-        std::getchar();
-        return false;
-    }
-
-    is_running_ = UserInit();
-
-    return is_running_;
-}
-
 bool SDL_Framework::Init()
 {
     int result = SDL_Init(SDL_INIT_EVERYTHING);
@@ -42,6 +9,14 @@ bool SDL_Framework::Init()
         std::cout << "SDL_Init failed, result: " << result << ".\n";
         std::getchar();
         return false;
+    }
+    if (window_x_ == -1 || window_y_ == -1) {
+        SDL_DisplayMode display_mode;
+        SDL_GetCurrentDisplayMode(0, &display_mode);
+        if (window_x_ == -1)
+            window_x_ = (display_mode.w - window_width_) / 2;
+        if (window_y_ == -1)
+            window_y_ = (display_mode.h - window_height_) / 2;
     }
     window_ = SDL_CreateWindow(window_title_, window_x_, window_y_, window_width_, window_height_, window_flags_);
     if (window_ == 0) {

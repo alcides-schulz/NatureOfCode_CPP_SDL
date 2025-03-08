@@ -1,13 +1,13 @@
-#ifndef CHAPTER01MOVERV1_H
-#define CHAPTER01MOVERV1_H
+#ifndef MOVER_1_8_H
+#define MOVER_1_8_H
 
 #include "../Common/PVector.h"
 #include "../Common/SDL_Framework.h"
 
-class Chapter01MoverV1 
+class Mover_1_8 
 {
 public:
-    Chapter01MoverV1(PVector location, PVector velocity) : location_(location), velocity_(velocity)
+    Mover_1_8(PVector location, PVector velocity) : location_(location), velocity_(velocity)
     {
         radius_ = 16; 
         acceleration_ = PVector(0, 0);

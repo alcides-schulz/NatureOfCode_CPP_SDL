@@ -59,11 +59,8 @@ void PVector::Limit(float max)
 
 PVector PVector::Random2D()
 {
-    float min = -1;
-    float max = +1;
-    float r = (min + 1) + (((float)rand()) / (float)RAND_MAX) * (max - (min + 1));
-    float angle = (float)(r * PI_VALUE * 2);
-    return PVector(cos(angle), sin(angle));
+    float angle = (static_cast<float>(rand()) / RAND_MAX) * 2.0f * static_cast<float>(PI_VALUE);
+    return PVector(std::cos(angle), std::sin(angle));
 }
 
 float PVector::Distance(PVector vector1, PVector vector2)

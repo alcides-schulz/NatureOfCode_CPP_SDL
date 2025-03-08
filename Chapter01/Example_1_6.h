@@ -7,7 +7,7 @@
 class Example_1_6 : public SDL_Framework
 {
 public:
-    Example_1_6() : SDL_Framework("Example 1.6: Normalizing a vector", 400, 100, 1200, 800, 0) {}
+    Example_1_6() : SDL_Framework("Example 1.6: Normalizing a vector", -1, -1, 640, 240, 0) {}
     bool UserRender(int elapsed_time) override;
 };
 

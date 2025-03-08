@@ -2,13 +2,6 @@
 
 bool Example_3_2::UserInit()
 {
-    SDL_DisplayMode DM;
-    SDL_GetCurrentDisplayMode(0, &DM);
-    auto Width = DM.w;
-    auto Height = DM.h;
-
-    cout << Width << " " << Height << endl;
-
     for (int i = 0; i < std::size(mover_); i++) {
         auto x = (float)(std::rand() % WindowWidth());
         auto y = (float)(std::rand() % WindowHeight());

@@ -3,16 +3,16 @@
 
 #include "../Common/SDL_Framework.h"
 #include "../Common/PVector.h"
-#include "../Chapter01/Chapter01MoverV1.h"
+#include "Mover_1_8.h"
 
 class Example_1_8 : public SDL_Framework
 {
 public:
-    Example_1_8() : SDL_Framework("Example 1.8: Motion 101 (velocity and constant acceleration)", 400, 100, 1200, 800, 0) {}
+    Example_1_8() : SDL_Framework("Example 1.8: Motion 101 (velocity and constant acceleration)", -1, -1, 640, 240, 0) {}
     bool UserInit() override;
     bool UserRender(int elapsed_time) override;
 private:
-    Chapter01MoverV1 *mover_;
+    Mover_1_8   *mover_;
 };
 
 #endif

@@ -12,6 +12,7 @@
 #include <random>
 #include <cstdlib>
 #include <list>
+#include <time.h>
 
 using namespace std;
 
@@ -19,69 +20,12 @@ constexpr int kMouseLeftButton = 0;
 constexpr int kMouseMiddleButton = 1;
 constexpr int kMouseRightButton = 2;
 
-class Vector2D
-{
-public:
-    float x;
-    float y;
-    Vector2D() : x(0), y(0) {}
-    Vector2D(float x, float y) : x(x), y(y) {}
-    Vector2D(double x, double y) : x((float)x), y((float)y) {}
-    Vector2D(int x, int y) : x((float)x), y((float)y) {}
-    int IntX() { return (int)x; }
-    int IntY() { return (int)y; }
-
-    void Add(Vector2D v2)
-    {
-        x += v2.x;
-        y += v2.y;
-    }
-
-    void Subtract(Vector2D v2)
-    {
-        x -= v2.x;
-        y -= v2.y;
-    }
-
-    void Multiply(float value)
-    {
-        x *= value;
-        y *= value;
-    }
-
-    void Divide(float value)
-    {
-        x /= value;
-        y /= value;
-    }
-
-    float Magnitude()
-    {
-        return sqrtf(x * x + y * y);
-    }
-
-    void Normalize()
-    {
-        float magnitude = Magnitude();
-        if (magnitude != 0) {
-            Divide(magnitude);
-        }
-    }
-
-    void SetMag(float magnitude)
-    {
-        Normalize();
-        Multiply(magnitude);
-    }
- 
-    void Limit(float max)
-    {
-        if (Magnitude() > max * max) {
-            Normalize();
-            Multiply(max);
-        }
-    }
-};
+constexpr SDL_Color kColorWhite = { 255, 255, 255, 255 };
+constexpr SDL_Color kColorBlack = { 0, 0, 0, 255 };
+constexpr SDL_Color kColorRed = { 255, 0, 0, 255 };
+constexpr SDL_Color kColorGreen = { 0, 255, 0, 255 };
+constexpr SDL_Color kColorBlue = { 0, 0, 255, 255 };
+constexpr SDL_Color kColorGray = { 128, 128, 128, 255 };
 
 class SDL_Framework
 {
@@ -99,7 +43,6 @@ public:
     SDL_Window* Window() { return window_; }
     SDL_Point MousePosition() { return mouse_position_; }
     bool IsMouseButtonPressed(int mouse_button) { return mouse_button_states_[mouse_button]; }
-    bool Init(const char* title, int x, int y, int width, int height, int flags);
     bool Init();
     void Run();
     void DrawCircle(SDL_Point center, int radius, SDL_Color color, bool fill);

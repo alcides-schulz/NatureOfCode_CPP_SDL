@@ -19,7 +19,6 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Chapter01\Chapter01MoverV1.cpp" />
     <ClCompile Include="Chapter01\Example_1_1.cpp" />
     <ClCompile Include="Chapter01\Example_1_10.cpp" />
     <ClCompile Include="Chapter01\Example_1_2.cpp" />
@@ -30,6 +29,10 @@
     <ClCompile Include="Chapter01\Example_1_7.cpp" />
     <ClCompile Include="Chapter01\Example_1_8.cpp" />
     <ClCompile Include="Chapter01\Example_1_9.cpp" />
+    <ClCompile Include="Chapter01\Mover_1_10.cpp" />
+    <ClCompile Include="Chapter01\Mover_1_7.cpp" />
+    <ClCompile Include="Chapter01\Mover_1_8.cpp" />
+    <ClCompile Include="Chapter01\Mover_1_9.cpp" />
     <ClCompile Include="Chapter02\Chapter02MoverV1.cpp" />
     <ClCompile Include="Chapter02\Chapter02MoverV2.cpp" />
     <ClCompile Include="Chapter02\Chapter02MoverV3.cpp" />
@@ -54,7 +57,6 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Chapter01\Chapter01MoverV1.h" />
     <ClInclude Include="Chapter01\Example_1_1.h" />
     <ClInclude Include="Chapter01\Example_1_10.h" />
     <ClInclude Include="Chapter01\Example_1_2.h" />
@@ -65,6 +67,10 @@
     <ClInclude Include="Chapter01\Example_1_7.h" />
     <ClInclude Include="Chapter01\Example_1_8.h" />
     <ClInclude Include="Chapter01\Example_1_9.h" />
+    <ClInclude Include="Chapter01\Mover_1_10.h" />
+    <ClInclude Include="Chapter01\Mover_1_7.h" />
+    <ClInclude Include="Chapter01\Mover_1_8.h" />
+    <ClInclude Include="Chapter01\Mover_1_9.h" />
     <ClInclude Include="Chapter02\Chapter02MoverV1.h" />
     <ClInclude Include="Chapter02\Chapter02MoverV2.h" />
     <ClInclude Include="Chapter02\Chapter02MoverV3.h" />

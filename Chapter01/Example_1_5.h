@@ -7,7 +7,7 @@
 class Example_1_5 : public SDL_Framework
 {
 public:
-    Example_1_5() : SDL_Framework("Example 1.5: Vector Magnitude", 400, 100, 1200, 800, 0) {}
+    Example_1_5() : SDL_Framework("Example 1.5: Vector Magnitude", -1, -1, 640, 240, 0) {}
     bool UserRender(int elapsed_time) override;
 };
 
