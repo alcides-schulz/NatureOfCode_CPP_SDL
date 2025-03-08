@@ -1,11 +1,5 @@
 #include "PVector.h"
 
-PVector::PVector(float x, float y)
-{
-    this->x = x;
-    this->y = y;
-}
-
 void PVector::Add(PVector other)
 {
     this->x += other.x;
@@ -55,6 +49,11 @@ void PVector::Limit(float max)
         Normalize();
         Mult(max);
     }
+}
+
+PVector PVector::Clone(void)
+{
+    return PVector(x, y);
 }
 
 PVector PVector::Random2D()

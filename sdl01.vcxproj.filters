@@ -124,6 +124,18 @@
     <ClInclude Include="Chapter01\Mover_1_10.h">
       <Filter>Source Files\Chapter01</Filter>
     </ClInclude>
+    <ClInclude Include="Chapter02\Mover_2_1.h">
+      <Filter>Source Files\Chapter02</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter02\Mover_2_2.h">
+      <Filter>Source Files\Chapter02</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter02\Mover_2_3.h">
+      <Filter>Source Files\Chapter02</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter02\Mover_2_4.h">
+      <Filter>Source Files\Chapter02</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -233,6 +245,18 @@
     </ClCompile>
     <ClCompile Include="Chapter01\Mover_1_10.cpp">
       <Filter>Source Files\Chapter01</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter02\Mover_2_1.cpp">
+      <Filter>Source Files\Chapter02</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter02\Mover_2_2.cpp">
+      <Filter>Source Files\Chapter02</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter02\Mover_2_3.cpp">
+      <Filter>Source Files\Chapter02</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter02\Mover_2_4.cpp">
+      <Filter>Source Files\Chapter02</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
