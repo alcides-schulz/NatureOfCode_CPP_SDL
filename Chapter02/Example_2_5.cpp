@@ -2,7 +2,7 @@
 
 bool Example_2_5::UserInit()
 {
-    liquid_ = new Liquid(0, WindowHeight() / 2, WindowWidth(), WindowHeight() / 2, 0.1f);
+    liquid_ = new Liquid_2_5(0, WindowHeight() / 2, WindowWidth(), WindowHeight() / 2, 0.1f);
     for (int i = 0; i < std::size(mover_); i++) {
         mover_[i] = nullptr;
     }
@@ -12,8 +12,9 @@ bool Example_2_5::UserInit()
 
 bool Example_2_5::UserRender(int elapsed_time)
 {
-    SDL_SetRenderDrawColor(Renderer(), 255, 255, 255, 255);
+    SDL_SetRenderDrawColor(Renderer(), kColorWhite.r, kColorWhite.g, kColorWhite.b, 255);
     SDL_RenderClear(Renderer());
+
     if (IsMouseButtonPressed(kMouseLeftButton)) {
         Reset();
     }
@@ -26,10 +27,11 @@ bool Example_2_5::UserRender(int elapsed_time)
         PVector gravity(0, 0.1f);
         gravity.Mult((float)mover_[i]->GetMass());
         mover_[i]->ApplyForce(gravity);
-        mover_[i]->CheckEdges(this);
         mover_[i]->Update();
+        mover_[i]->CheckEdges(this);
         mover_[i]->Display(this);
     }
+
     return true;
 }
 
@@ -39,8 +41,7 @@ void Example_2_5::Reset(void)
         if (mover_[i] != nullptr) {
             delete mover_[i];
         }
-        PVector position((float)(WindowWidth() / std::size(mover_) * i + WindowWidth() / 10), 0);
-        mover_[i] = new Chapter02MoverV3(position, std::rand() % 10 + 1);
+        mover_[i] = new Mover_2_5(PVector((float)(30 + WindowWidth() / 10 * i), 0), (int)((rand() % 3) + 1.0f));
     }
 }
 

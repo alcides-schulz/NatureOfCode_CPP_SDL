@@ -39,7 +39,6 @@ void Mover_2_4::CheckEdges(SDL_Framework *framework)
     }
 }
 
-
 bool Mover_2_4::ContactEdge(SDL_Framework *framework)
 {
     return position_.y > framework->WindowWidth() - radius_ - 1;

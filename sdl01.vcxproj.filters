@@ -136,6 +136,12 @@
     <ClInclude Include="Chapter02\Mover_2_4.h">
       <Filter>Source Files\Chapter02</Filter>
     </ClInclude>
+    <ClInclude Include="Chapter02\Mover_2_5.h">
+      <Filter>Source Files\Chapter02</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter02\Liquid_2_5.h">
+      <Filter>Source Files\Chapter02</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -256,6 +262,12 @@
       <Filter>Source Files\Chapter02</Filter>
     </ClCompile>
     <ClCompile Include="Chapter02\Mover_2_4.cpp">
+      <Filter>Source Files\Chapter02</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter02\Mover_2_5.cpp">
+      <Filter>Source Files\Chapter02</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter02\Liquid_2_5.cpp">
       <Filter>Source Files\Chapter02</Filter>
     </ClCompile>
   </ItemGroup>
