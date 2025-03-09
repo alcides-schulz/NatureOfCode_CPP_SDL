@@ -33,6 +33,7 @@
     <ClCompile Include="Chapter01\Mover_1_7.cpp" />
     <ClCompile Include="Chapter01\Mover_1_8.cpp" />
     <ClCompile Include="Chapter01\Mover_1_9.cpp" />
+    <ClCompile Include="Chapter02\Attractor_2_6.cpp" />
     <ClCompile Include="Chapter02\Chapter02MoverV1.cpp" />
     <ClCompile Include="Chapter02\Chapter02MoverV2.cpp" />
     <ClCompile Include="Chapter02\Chapter02MoverV3.cpp" />
@@ -52,6 +53,7 @@
     <ClCompile Include="Chapter02\Mover_2_3.cpp" />
     <ClCompile Include="Chapter02\Mover_2_4.cpp" />
     <ClCompile Include="Chapter02\Mover_2_5.cpp" />
+    <ClCompile Include="Chapter02\Mover_2_6.cpp" />
     <ClCompile Include="Chapter03\Attractor_3_2.cpp" />
     <ClCompile Include="Chapter03\Mover_3_2.cpp" />
     <ClCompile Include="Chapter03\Example_3_1.cpp" />
@@ -77,6 +79,7 @@
     <ClInclude Include="Chapter01\Mover_1_7.h" />
     <ClInclude Include="Chapter01\Mover_1_8.h" />
     <ClInclude Include="Chapter01\Mover_1_9.h" />
+    <ClInclude Include="Chapter02\Attractor_2_6.h" />
     <ClInclude Include="Chapter02\Chapter02MoverV1.h" />
     <ClInclude Include="Chapter02\Chapter02MoverV2.h" />
     <ClInclude Include="Chapter02\Chapter02MoverV3.h" />
@@ -96,6 +99,7 @@
     <ClInclude Include="Chapter02\Mover_2_3.h" />
     <ClInclude Include="Chapter02\Mover_2_4.h" />
     <ClInclude Include="Chapter02\Mover_2_5.h" />
+    <ClInclude Include="Chapter02\Mover_2_6.h" />
     <ClInclude Include="Chapter03\Attractor_3_2.h" />
     <ClInclude Include="Chapter03\Mover_3_2.h" />
     <ClInclude Include="Chapter03\Example_3_1.h" />

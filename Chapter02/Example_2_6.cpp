@@ -2,15 +2,14 @@
 
 bool Example_2_6::UserInit()
 {
-    mover_ = new Chapter02MoverV1(PVector(300, 0), 2);
-    mover_->SetVelocity(PVector(1, 0));
-    attractor_ = new Attractor(PVector(WindowWidth() / 2.0f, WindowHeight() / 2.0f), 10);
+    mover_ = new Mover_2_6(PVector(300, 50), 2);
+    attractor_ = new Attractor_2_6(PVector(WindowWidth() / 2.0f, WindowHeight() / 2.0f), 20);
     return true;
 }
 
 bool Example_2_6::UserRender(int elapsed_time)
 {
-    SDL_SetRenderDrawColor(Renderer(), 255, 255, 255, 255);
+    SDL_SetRenderDrawColor(Renderer(), kColorWhite.r, kColorWhite.b, kColorWhite.g, 255);
     SDL_RenderClear(Renderer());
 
     if (!isDragging && IsMouseButtonPressed(kMouseLeftButton)) {
@@ -32,7 +31,6 @@ bool Example_2_6::UserRender(int elapsed_time)
     PVector force = attractor_->Attract(mover_);
     mover_->ApplyForce(force);
     mover_->Update();
-    mover_->CheckEdges(this);
     mover_->Display(this);
 
     return true;
