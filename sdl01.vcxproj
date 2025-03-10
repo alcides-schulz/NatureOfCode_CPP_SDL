@@ -61,6 +61,7 @@
     <ClCompile Include="Common\PVector.cpp" />
     <ClCompile Include="Common\SDL_Framework.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Tests\CircleTest.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Chapter01\Example_1_1.h" />
@@ -104,6 +105,7 @@
     <ClInclude Include="Chapter03\Example_3_2.h" />
     <ClInclude Include="Common\PVector.h" />
     <ClInclude Include="Common\SDL_Framework.h" />
+    <ClInclude Include="Tests\CircleTest.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Readme.md" />

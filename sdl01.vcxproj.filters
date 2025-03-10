@@ -17,6 +17,9 @@
     <Filter Include="Source Files\Chapter03">
       <UniqueIdentifier>{eb91655a-aa63-4e9a-b160-47029037cc55}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Tests">
+      <UniqueIdentifier>{ca78f855-4866-472a-9f27-bddfd4af4d18}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Common\PVector.h">
@@ -141,6 +144,9 @@
     </ClInclude>
     <ClInclude Include="Chapter02\Body_2_9.h">
       <Filter>Source Files\Chapter02</Filter>
+    </ClInclude>
+    <ClInclude Include="Tests\CircleTest.h">
+      <Filter>Source Files\Tests</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -269,6 +275,9 @@
     </ClCompile>
     <ClCompile Include="Chapter02\Body_2_9.cpp">
       <Filter>Source Files\Chapter02</Filter>
+    </ClCompile>
+    <ClCompile Include="Tests\CircleTest.cpp">
+      <Filter>Source Files\Tests</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

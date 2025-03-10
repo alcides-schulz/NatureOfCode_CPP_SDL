@@ -33,19 +33,20 @@ public:
     SDL_Framework() { };
     SDL_Framework(const char *title, int x, int y, int width, int height, int flags) :
         window_title_(title), window_x_(x), window_y_(y), window_width_(width), window_height_(height), window_flags_(flags) { };
-    virtual bool UserInit() { return true; };
+    virtual bool UserInit(void) { return true; };
     virtual bool UserRender(int elapsed_time) { return true; };
-    virtual void UserClean() {};
-    const char *WindowTitle() { return window_title_; }
-    int WindowWidth() { return window_width_; }
-    int WindowHeight() { return window_height_; }
-    SDL_Renderer* Renderer() { return renderer_; }
-    SDL_Window* Window() { return window_; }
-    SDL_Point MousePosition() { return mouse_position_; }
+    virtual void UserClean(void) {};
+    const char *WindowTitle(void) { return window_title_; }
+    int WindowWidth(void) { return window_width_; }
+    int WindowHeight(void) { return window_height_; }
+    SDL_Renderer* Renderer(void) { return renderer_; }
+    SDL_Window* Window(void) { return window_; }
+    void ClearScreen(void);
+    SDL_Point MousePosition(void) { return mouse_position_; }
     bool IsMouseButtonPressed(int mouse_button) { return mouse_button_states_[mouse_button]; }
-    bool Init();
-    void Run();
-    void DrawCircle(SDL_Point center, int radius, SDL_Color color, bool fill);
+    bool Init(void);
+    void Run(void);
+    void DrawCircle(SDL_Point center, int diameter, SDL_Color color, bool fill);
     bool IsKeyPressed(Sint32 key);
 private:
     SDL_Window      *window_;

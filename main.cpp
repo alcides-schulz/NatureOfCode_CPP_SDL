@@ -28,6 +28,8 @@
 #include "Chapter03/Example_3_1.h"
 #include "Chapter03/Example_3_2.h"
 
+#include "Tests/CircleTest.h"
+
 using namespace std;
 
 vector<SDL_Framework *> chapter01_menu = {
@@ -58,7 +60,11 @@ vector<SDL_Framework *> chapter03_menu = {
     new Example_3_2(),
 };
 
-void NatureOfCodeChapterMenu(vector<SDL_Framework *> chapter_menu)
+vector<SDL_Framework *> tests_menu = {
+    new CircleTest(),
+};
+
+void ShowMenu(vector<SDL_Framework *> chapter_menu)
 {
     while (true) {
         cout << "Menu" << endl << endl;
@@ -91,21 +97,27 @@ int main(int argc, char* argv[])
         cout << endl << "\t a. Chapter 1 - Vectors";
         cout << endl << "\t b. Chapter 2 - Forces";
         cout << endl << "\t c. Chapter 3 - Oscillation";
+        cout << endl;
+        cout << endl << "\t z. Tests";
         cout << endl << "\t x. Exit" << endl << endl << "--> ";
         getline(cin, response);
         if (response.compare("x") == 0) {
             break;
         }
         if (response.compare("a") == 0) {
-            NatureOfCodeChapterMenu(chapter01_menu);
+            ShowMenu(chapter01_menu);
             continue;
         }
         if (response.compare("b") == 0) {
-            NatureOfCodeChapterMenu(chapter02_menu);
+            ShowMenu(chapter02_menu);
             continue;
         }
         if (response.compare("c") == 0) {
-            NatureOfCodeChapterMenu(chapter03_menu);
+            ShowMenu(chapter03_menu);
+            continue;
+        }
+        if (response.compare("z") == 0) {
+            ShowMenu(tests_menu);
             continue;
         }
     }

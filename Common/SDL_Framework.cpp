@@ -76,10 +76,10 @@ void SDL_Framework::Run()
     SDL_Quit();
 }
 
-void SDL_Framework::DrawCircle(SDL_Point center, int radius, SDL_Color color, bool fill)
+void SDL_Framework::DrawCircle(SDL_Point center, int diameter, SDL_Color color, bool fill)
 {
-    int radius2 = radius * radius;
-
+    auto radius = diameter / 2;
+    auto radius2 = radius * radius;
     SDL_SetRenderDrawColor(renderer_, color.r, color.g, color.b, color.a);
     for (int w = 0; w <= radius * 2; w++) {
         for (int h = 0; h <= radius * 2; h++) {
@@ -146,5 +146,11 @@ bool SDL_Framework::IsKeyPressed(Sint32 key)
 {
     return std::find(pressed_keys_.begin(), pressed_keys_.end(), key) != pressed_keys_.end();
 }
-    
+
+void SDL_Framework::ClearScreen(void)
+{
+    SDL_SetRenderDrawColor(Renderer(), kColorWhite.r, kColorWhite.g, kColorWhite.b, 255);
+    SDL_RenderClear(Renderer());
+}
+
 //END
