@@ -2,16 +2,17 @@
 
 bool Example_2_8::UserInit()
 {
-    bodyA_ = new Body(PVector(WindowWidth() / 4.0f * 1, WindowHeight() / 4.0f * 1), 2);
+    bodyA_ = new Body_2_8(PVector(320, 40), 8);
+    bodyB_ = new Body_2_8(PVector(320, 200), 8);
+
     bodyA_->SetVelocity(PVector(1, 0));
-    bodyB_ = new Body(PVector(WindowWidth() / 4.0f * 3, WindowHeight() / 4.0f * 3), 2);
     bodyB_->SetVelocity(PVector(-1, 0));
     return true;
 }
 
 bool Example_2_8::UserRender(int elapsed_time)
 {
-    SDL_SetRenderDrawColor(Renderer(), 255, 255, 255, 255);
+    SDL_SetRenderDrawColor(Renderer(), kColorWhite.r, kColorWhite.b, kColorWhite.g, 255);
     SDL_RenderClear(Renderer());
 
     bodyA_->Attract(bodyB_);

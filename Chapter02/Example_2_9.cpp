@@ -9,15 +9,15 @@ bool Example_2_9::UserInit()
     for (int i = 0; i < std::size(body_); i++) {
         auto x = (float)(std::rand() % WindowWidth());
         auto y = (float)(std::rand() % WindowHeight());
-        auto m = std::rand() % 5 + 1;
-        body_[i] = new Body(PVector(x, y), m);
+        auto m = std::rand() % 3 + 1;
+        body_[i] = new Body_2_9(PVector(x, y), m);
     }
     return true;
 }
 
 bool Example_2_9::UserRender(int elapsed_time)
 {
-    SDL_SetRenderDrawColor(Renderer(), 255, 255, 255, 255);
+    SDL_SetRenderDrawColor(Renderer(), kColorWhite.r, kColorWhite.b, kColorWhite.g, 255);
     SDL_RenderClear(Renderer());
 
     for (int i = 0; i < std::size(body_); i++) {
@@ -31,7 +31,6 @@ bool Example_2_9::UserRender(int elapsed_time)
         body_[i]->Update();
         body_[i]->Display(this);
     }
-
     return true;
 }
 

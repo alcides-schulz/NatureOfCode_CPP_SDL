@@ -1,26 +1,26 @@
-#ifndef CHAPTER02MOVERV2_H
-#define CHAPTER02MOVERV2_H
+#ifndef BODY_2_9_H
+#define BODY_2_9_H
 
 #include "../Common/SDL_Framework.h"
 #include "../Common/PVector.h"
 
-class Chapter02MoverV2
+class Body_2_9
 {
 public:
-    Chapter02MoverV2::Chapter02MoverV2(PVector position, int mass) : position_(position), mass_(mass) {
-        velocity_ = PVector(0, 0);
-        radius_ = 10 * mass;
+    Body_2_9(PVector position, int mass) : position_(position), mass_(mass)
+    {
+        radius_ = mass_ * 4;
         acceleration_ = PVector(0.0f, 0.0f);
     };
     void ApplyForce(PVector force);
     void Update(void);
     void Display(SDL_Framework *framework);
-    void CheckEdges(SDL_Framework *framework);
-    bool ContactEdge(SDL_Framework *framework);
-    void BounceEdges(SDL_Framework *framework);
     int GetMass(void) { return mass_; };
-    PVector GetVelocity(void) { return velocity_; };
     PVector GetPosition(void) { return position_; };
+    void SetVelocity(PVector velocity) { velocity_ = velocity; };
+    void Attract(Body_2_9 *body);
+
+    static const int kGravity = 1;
 private:
     PVector position_;
     PVector velocity_;
