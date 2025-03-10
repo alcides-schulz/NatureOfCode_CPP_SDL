@@ -16,7 +16,6 @@ private:
     PVector position_;
     PVector velocity_ = PVector(0, 0);
     PVector acceleration_ = PVector(0, 0);
-    int     radius_ = 20;
     int     mass_;
 };
 

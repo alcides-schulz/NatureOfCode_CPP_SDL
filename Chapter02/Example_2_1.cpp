@@ -3,6 +3,7 @@
 bool Example_2_1::UserInit()
 {
     mover_ = new Mover_2_1(PVector(WindowWidth() / 2, 30), 1);
+
     return true;
 }
 

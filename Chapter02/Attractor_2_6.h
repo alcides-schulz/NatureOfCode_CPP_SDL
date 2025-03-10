@@ -17,6 +17,7 @@ public:
     PVector GetPosition(void) { return position_; };
     void SetPosition(PVector position) { position_ = position; };
     int GetRadius(void) { return radius_; };
+
     static const int kGravity = 1;
 private:
     PVector position_;

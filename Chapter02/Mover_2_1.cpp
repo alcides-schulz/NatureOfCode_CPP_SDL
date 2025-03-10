@@ -16,25 +16,25 @@ void Mover_2_1::Update(void)
 
 void Mover_2_1::Display(SDL_Framework *framework)
 {
-    framework->DrawCircle({ (int)position_.x, (int)position_.y }, radius_, kColorGray, true);
+    framework->DrawCircle({ (int)position_.x, (int)position_.y }, 48, kColorGray, true);
 }
 
 void Mover_2_1::CheckEdges(SDL_Framework *framework)
 {
-    if (position_.x > framework->WindowWidth() - radius_) {
-        position_.x = (float)framework->WindowWidth() - radius_;
+    if (position_.x > framework->WindowWidth()) {
+        position_.x = (float)framework->WindowWidth();
         velocity_.x *= -1;
     }
-    else if (position_.x < radius_) {
-        position_.x = (float)radius_;
+    else if (position_.x < 0) {
+        position_.x = 0;
         velocity_.x *= -1;
     }
-    if (position_.y > framework->WindowHeight() - radius_) {
-        position_.y = (float)framework->WindowHeight() - radius_;
+    if (position_.y > framework->WindowHeight()) {
+        position_.y = (float)framework->WindowHeight();
         velocity_.y *= -1;
     }
-    else if (position_.y < radius_) {
-        position_.y = (float)radius_;
+    else if (position_.y < 0) {
+        position_.y = 0;
         velocity_.y *= -1;
     }
 }
