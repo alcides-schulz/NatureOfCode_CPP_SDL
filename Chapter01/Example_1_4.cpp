@@ -4,8 +4,8 @@ bool Example_1_4::UserRender(int elapsed_time)
 {
     ClearScreen();
 
-    PVector mouse = PVector(MousePosition().x, MousePosition().y);
-    PVector center = PVector((WindowWidth() / 2), (WindowHeight() / 2));
+    auto mouse = PVector(MousePosition().x, MousePosition().y);
+    auto center = PVector((WindowWidth() / 2), (WindowHeight() / 2));
     mouse.Sub(center);
 
     Translate(WindowWidth() / 2, WindowHeight() / 2);

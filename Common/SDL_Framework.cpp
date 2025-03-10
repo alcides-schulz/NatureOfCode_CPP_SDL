@@ -104,6 +104,16 @@ void SDL_Framework::DrawLine(int x1, int y1, int x2, int y2, SDL_Color color)
     SDL_RenderDrawLine(renderer_, origin_x_ + x1, origin_y_ + y1, origin_x_ + x2, origin_y_ + y2);
 }
 
+void SDL_Framework::DrawRectangle(int x1, int y1, int x2, int y2, SDL_Color color, bool fill)
+{
+    SDL_SetRenderDrawColor(renderer_, color.r, color.g, color.b, color.a);
+    SDL_Rect rect = { x1, y1, x2, y2 };
+    if (fill)
+        SDL_RenderFillRect(Renderer(), &rect);
+    else
+        SDL_RenderDrawRect(Renderer(), &rect);
+}
+
 void SDL_Framework::HandleEvents()
 {
     SDL_Event event;
