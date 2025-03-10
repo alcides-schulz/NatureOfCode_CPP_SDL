@@ -2,8 +2,7 @@
 
 bool Example_1_4::UserRender(int elapsed_time)
 {
-    SDL_SetRenderDrawColor(Renderer(), kColorWhite.r, kColorWhite.g, kColorWhite.b, 255);
-    SDL_RenderClear(Renderer());
+    ClearScreen();
 
     PVector mouse = PVector((float)MousePosition().x, (float)MousePosition().y);
     PVector center = PVector((float)(WindowWidth() / 2), (float)(WindowHeight() / 2));

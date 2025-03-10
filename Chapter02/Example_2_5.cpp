@@ -12,8 +12,7 @@ bool Example_2_5::UserInit()
 
 bool Example_2_5::UserRender(int elapsed_time)
 {
-    SDL_SetRenderDrawColor(Renderer(), kColorWhite.r, kColorWhite.g, kColorWhite.b, 255);
-    SDL_RenderClear(Renderer());
+    ClearScreen();
 
     if (IsMouseButtonPressed(kMouseLeftButton)) {
         Reset();

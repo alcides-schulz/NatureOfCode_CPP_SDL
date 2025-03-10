@@ -8,8 +8,7 @@ bool Example_2_1::UserInit()
 
 bool Example_2_1::UserRender(int elapsed_time)
 {
-    SDL_SetRenderDrawColor(Renderer(), kColorWhite.r, kColorWhite.g, kColorWhite.b, 255);
-    SDL_RenderClear(Renderer());
+    ClearScreen();
 
     PVector gravity(0, 0.1f);
     mover_->ApplyForce(gravity);

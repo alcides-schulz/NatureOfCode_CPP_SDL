@@ -10,8 +10,7 @@ bool Example_1_10::UserInit()
 
 bool Example_1_10::UserRender(int elapsed_time)
 {
-    SDL_SetRenderDrawColor(Renderer(), kColorWhite.r, kColorWhite.g, kColorWhite.b, 255);
-    SDL_RenderClear(Renderer());
+    ClearScreen();
 
     PVector mouse = PVector((float)MousePosition().x, (float)MousePosition().y);
     PVector direction = PVector(mouse.x, mouse.y);

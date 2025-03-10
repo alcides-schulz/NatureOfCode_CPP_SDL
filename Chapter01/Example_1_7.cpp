@@ -10,8 +10,7 @@ bool Example_1_7::UserInit()
 
 bool Example_1_7::UserRender(int elapsed_time)
 {
-    SDL_SetRenderDrawColor(Renderer(), kColorWhite.r, kColorWhite.g, kColorWhite.b, 255);
-    SDL_RenderClear(Renderer());
+    ClearScreen();
 
     mover_->Update();
     mover_->CheckEdges(this);

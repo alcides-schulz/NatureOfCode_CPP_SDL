@@ -17,8 +17,7 @@ bool Example_2_9::UserInit()
 
 bool Example_2_9::UserRender(int elapsed_time)
 {
-    SDL_SetRenderDrawColor(Renderer(), kColorWhite.r, kColorWhite.b, kColorWhite.g, 255);
-    SDL_RenderClear(Renderer());
+    ClearScreen();
 
     for (int i = 0; i < std::size(body_); i++) {
         for (int j = 0; j < std::size(body_); j++) {

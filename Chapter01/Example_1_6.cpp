@@ -2,8 +2,7 @@
 
 bool Example_1_6::UserRender(int elapsed_time)
 {
-    SDL_SetRenderDrawColor(Renderer(), 255, 255, 255, 255);
-    SDL_RenderClear(Renderer());
+    ClearScreen();
 
     // Subtract center from mouse which results in a vector that points from center to mouse
     PVector mouse = PVector((float)MousePosition().x, (float)MousePosition().y);

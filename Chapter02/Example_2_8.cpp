@@ -12,8 +12,7 @@ bool Example_2_8::UserInit()
 
 bool Example_2_8::UserRender(int elapsed_time)
 {
-    SDL_SetRenderDrawColor(Renderer(), kColorWhite.r, kColorWhite.b, kColorWhite.g, 255);
-    SDL_RenderClear(Renderer());
+    ClearScreen();
 
     bodyA_->Attract(bodyB_);
     bodyB_->Attract(bodyA_);

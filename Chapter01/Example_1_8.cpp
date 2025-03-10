@@ -11,8 +11,7 @@ bool Example_1_8::UserInit()
 
 bool Example_1_8::UserRender(int elapsed_time)
 {
-    SDL_SetRenderDrawColor(Renderer(), kColorWhite.r, kColorWhite.g, kColorWhite.b, 255);
-    SDL_RenderClear(Renderer());
+    ClearScreen();
 
     mover_->Display(this);
     mover_->Update();

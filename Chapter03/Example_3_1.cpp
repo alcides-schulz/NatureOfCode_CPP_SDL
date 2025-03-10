@@ -2,8 +2,7 @@
 
 bool Example_3_1::UserRender(int elapsed_time)
 {
-    SDL_SetRenderDrawColor(Renderer(), 255, 255, 255, 255);
-    SDL_RenderClear(Renderer());
+    ClearScreen();
 
     // Translate() function simulation
     int screen_x_center = WindowWidth() / 2;

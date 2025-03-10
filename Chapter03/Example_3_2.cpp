@@ -17,8 +17,7 @@ bool Example_3_2::UserInit()
 
 bool Example_3_2::UserRender(int elapsed_time)
 {
-    SDL_SetRenderDrawColor(Renderer(), 255, 255, 255, 255);
-    SDL_RenderClear(Renderer());
+    ClearScreen();
 
     if (!isDragging && IsMouseButtonPressed(kMouseLeftButton)) {
         auto mouse_position = PVector((float)MousePosition().x, (float)MousePosition().y);

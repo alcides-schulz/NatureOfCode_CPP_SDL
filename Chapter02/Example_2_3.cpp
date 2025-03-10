@@ -9,8 +9,7 @@ bool Example_2_3::UserInit()
 
 bool Example_2_3::UserRender(int elapsed_time)
 {
-    SDL_SetRenderDrawColor(Renderer(), kColorWhite.r, kColorWhite.g, kColorWhite.b, 255);
-    SDL_RenderClear(Renderer());
+    ClearScreen();
 
     PVector gravityA(0, 0.1f);
     gravityA.Mult((float)moverA_->GetMass());

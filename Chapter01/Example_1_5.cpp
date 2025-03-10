@@ -2,8 +2,7 @@
 
 bool Example_1_5::UserRender(int elapsed_time)
 {
-    SDL_SetRenderDrawColor(Renderer(), kColorWhite.r, kColorWhite.g, kColorWhite.b, 255);
-    SDL_RenderClear(Renderer());
+    ClearScreen();
 
     // The magnitude (i.e. length) of a vector can be accessed via the mag() function.
     // Here it is used as the width of a rectangle drawn at the top of the window.
