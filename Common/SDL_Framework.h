@@ -46,8 +46,11 @@ public:
     bool IsMouseButtonPressed(int mouse_button) { return mouse_button_states_[mouse_button]; }
     bool Init(void);
     void Run(void);
-    void DrawCircle(SDL_Point center, int diameter, SDL_Color color, bool fill);
     bool IsKeyPressed(Sint32 key);
+    void Translate(int x, int y) { origin_x_ += x, origin_y_ += y; }
+    void ResetMatrix(void) { origin_x_ = origin_y_ = 0; }
+    void DrawCircle(SDL_Point center, int diameter, SDL_Color color, bool fill);
+    void DrawLine(int x1, int y1, int x2, int y2, SDL_Color color);
 private:
     SDL_Window      *window_;
     const char      *window_title_;
@@ -57,6 +60,8 @@ private:
     int             window_height_ = 0;
     int             window_flags_ = 0;
     SDL_Renderer    *renderer_;
+    int             origin_x_ = 0;
+    int             origin_y_ = 0;
     list<Sint32>    pressed_keys_;
     bool            mouse_button_states_[3] = { false, false, false };
     SDL_Point       mouse_position_ = { 0, 0 };

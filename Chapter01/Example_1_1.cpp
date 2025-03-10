@@ -4,8 +4,8 @@ bool Example_1_1::UserInit()
 {
     x_ = 100;
     y_ = 100;
-    x_speed_ = 1;
-    y_speed_ = 3.3f;
+    x_speed_ = 2.5f;
+    y_speed_ = 2.0f;
 
     return true;
 }

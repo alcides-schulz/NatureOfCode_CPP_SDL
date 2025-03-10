@@ -4,21 +4,17 @@ bool Example_1_3::UserRender(int elapsed_time)
 {
     ClearScreen();
 
-    auto mouse = PVector((float)MousePosition().x, (float)MousePosition().y);
-    auto center = PVector((float)(WindowWidth() / 2), (float)(WindowHeight() / 2));
+    auto mouse = PVector(MousePosition().x, MousePosition().y);
+    auto center = PVector((WindowWidth() / 2), (WindowHeight() / 2));
 
-    SDL_SetRenderDrawColor(Renderer(), kColorBlack.r, kColorBlack.g, kColorBlack.b, 255);
-    SDL_RenderDrawLine(Renderer(), 0, 0, (int)mouse.x, (int)mouse.y);
-    SDL_RenderDrawLine(Renderer(), 0, 0, (int)center.x, (int)center.y);
+    DrawLine(0, 0, (int)mouse.x, (int)mouse.y, kColorBlack);
+    DrawLine(0, 0, (int)center.x, (int)center.y, kColorBlack);
 
     mouse.Sub(center);
 
     // Draw a line to represent the result of subtraction.
-    // Simulate translate() method to draw the line from center of window to new vector location.
-    int translate_x = WindowWidth() / 2;
-    int translate_y = WindowHeight() / 2;
-    SDL_SetRenderDrawColor(Renderer(), kColorRed.r, kColorRed.g, kColorRed.b, 255);
-    SDL_RenderDrawLine(Renderer(), translate_x, translate_y, (int)mouse.x + translate_x, (int)mouse.y + translate_y);
+    Translate(WindowWidth() / 2, WindowHeight() / 2);
+    DrawLine(0, 0, (int)mouse.x, (int)mouse.y, kColorRed);
 
     return true;
 }

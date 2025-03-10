@@ -2,7 +2,7 @@
 
 bool Example_2_4::UserInit()
 {
-    mover_ = new Mover_2_4(PVector(WindowWidth() / 2.0f, 30), 5);
+    mover_ = new Mover_2_4(PVector(WindowWidth() / 2, 30), 5);
     return true;
 }
 
@@ -10,11 +10,11 @@ bool Example_2_4::UserRender(int elapsed_time)
 {
     ClearScreen();
 
-    PVector gravity(0, 0.1f);
+    PVector gravity(0.0f, 0.1f);
     mover_->ApplyForce(gravity);
 
     if (IsMouseButtonPressed(kMouseLeftButton)) {
-        PVector wind(0.5f, 0);
+        PVector wind(0.5f, 0.0f);
         mover_->ApplyForce(wind);
     }
 

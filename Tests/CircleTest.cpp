@@ -2,10 +2,11 @@
 
 bool CircleTest::UserRender(int elapsed_time)
 {
-    SDL_SetRenderDrawColor(Renderer(), kColorWhite.r, kColorWhite.g, kColorWhite.b, 255);
-    SDL_RenderClear(Renderer());
+    ClearScreen();
 
-    DrawCircle({ 50, 50 }, 100, kColorGray, true);
+    DrawCircle({ 0, 0 }, 100, kColorGray, true);
+    Translate(WindowWidth() / 2, WindowHeight() / 2);
+    DrawCircle({ 0, 0 }, 100, kColorGray, true);
 
     return true;
 }

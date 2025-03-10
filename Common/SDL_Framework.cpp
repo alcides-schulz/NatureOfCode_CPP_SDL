@@ -51,6 +51,7 @@ void SDL_Framework::Run()
             is_running_ = false;
         }
         SDL_RenderPresent(Renderer());
+        ResetMatrix();
 
         frame_count++;
         if (SDL_GetTicks() - timer > 1000) {
@@ -87,14 +88,20 @@ void SDL_Framework::DrawCircle(SDL_Point center, int diameter, SDL_Color color, 
             int dy = radius - h;
             int pos = dx * dx + dy * dy;
             if (fill && pos <= radius2) {
-                SDL_RenderDrawPoint(renderer_, center.x + dx, center.y + dy);
+                SDL_RenderDrawPoint(renderer_, origin_x_ + center.x + dx, origin_y_ + center.y + dy);
             }
             int diff = pos - radius2;
             if (!fill && abs(diff) <= 10) {
-                SDL_RenderDrawPoint(renderer_, center.x + dx, center.y + dy);
+                SDL_RenderDrawPoint(renderer_, origin_x_ + center.x + dx, origin_y_ + center.y + dy);
             }
         }
     }
+}
+
+void SDL_Framework::DrawLine(int x1, int y1, int x2, int y2, SDL_Color color)
+{
+    SDL_SetRenderDrawColor(renderer_, color.r, color.g, color.b, color.a);
+    SDL_RenderDrawLine(renderer_, origin_x_ + x1, origin_y_ + y1, origin_x_ + x2, origin_y_ + y2);
 }
 
 void SDL_Framework::HandleEvents()

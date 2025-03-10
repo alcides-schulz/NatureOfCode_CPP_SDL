@@ -11,6 +11,7 @@ public:
     float y;
     PVector() : x(0), y(0) {};
     PVector(float x, float y) : x(x), y(y) { };
+    PVector(int x, int y) : x((float)x), y((float)y) { };
     void Add(PVector other);
     void Sub(PVector other);
     void Mult(float value);

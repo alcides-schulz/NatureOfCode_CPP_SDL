@@ -11,16 +11,16 @@ bool Example_2_3::UserRender(int elapsed_time)
 {
     ClearScreen();
 
-    PVector gravityA(0, 0.1f);
+    PVector gravityA(0.0f, 0.1f);
     gravityA.Mult((float)moverA_->GetMass());
     moverA_->ApplyForce(gravityA);
     
-    PVector gravityB(0, 0.1f);
+    PVector gravityB(0.0f, 0.1f);
     gravityB.Mult((float)moverB_->GetMass());
     moverB_->ApplyForce(gravityB);
     
     if (IsMouseButtonPressed(kMouseLeftButton)) {
-        PVector wind(0.1f, 0);
+        PVector wind(0.1f, 0.0f);
         moverA_->ApplyForce(wind);
         moverB_->ApplyForce(wind);
     }

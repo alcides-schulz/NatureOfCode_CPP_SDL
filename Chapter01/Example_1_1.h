@@ -6,7 +6,7 @@
 class Example_1_1 : public SDL_Framework
 {
 public:
-    Example_1_1() : SDL_Framework("Example 1.1: Bouncing ball with no vectors", -1, -1, 400, 400, 0) {}
+    Example_1_1() : SDL_Framework("Example 1.1: Bouncing ball with no vectors", -1, -1, 640, 240, 0) {}
     bool UserInit() override;
     bool UserRender(int elapsed_time) override;
 private:

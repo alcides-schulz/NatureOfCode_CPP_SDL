@@ -11,12 +11,12 @@ bool Example_2_2::UserRender(int elapsed_time)
 {
     ClearScreen();
 
-    PVector gravity(0, 0.1f);
+    PVector gravity(0.0f, 0.1f);
     moverA_->ApplyForce(gravity);
     moverB_->ApplyForce(gravity);
 
     if (IsMouseButtonPressed(kMouseLeftButton)) {
-        PVector wind(0.1f, 0);
+        PVector wind(0.1f, 0.0f);
         moverA_->ApplyForce(wind);
         moverB_->ApplyForce(wind);
     }
