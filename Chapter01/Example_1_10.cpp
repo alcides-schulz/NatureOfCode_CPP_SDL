@@ -2,9 +2,10 @@
 
 bool Example_1_10::UserInit()
 {
-    PVector location((float)(WindowWidth() / 2), (float)(WindowHeight() / 2));
+    PVector location(WindowWidth() / 2, WindowHeight() / 2);
     PVector velocity(0, 0);
     mover_ = new Mover_1_10(location, velocity);
+
     return true;
 }
 
@@ -12,15 +13,13 @@ bool Example_1_10::UserRender(int elapsed_time)
 {
     ClearScreen();
 
-    PVector mouse = PVector((float)MousePosition().x, (float)MousePosition().y);
-    PVector direction = PVector(mouse.x, mouse.y);
+    auto direction = PVector(MousePosition().x, MousePosition().y);
     direction.Sub(mover_->GetLocation());
     direction.Normalize();
     direction.Mult(0.2f);
-    
     mover_->SetAcceleration(direction);
+
     mover_->Update();
-    mover_->CheckEdges(this);
     mover_->Display(this);
 
     return true;

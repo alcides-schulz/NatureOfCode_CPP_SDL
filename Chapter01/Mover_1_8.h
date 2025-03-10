@@ -9,9 +9,8 @@ class Mover_1_8
 public:
     Mover_1_8(PVector location, PVector velocity) : location_(location), velocity_(velocity)
     {
-        radius_ = 16; 
         acceleration_ = PVector(0, 0);
-        top_speed_ = 2;
+        top_speed_ = 10;
     };
     void Update(void);
     void Display(SDL_Framework *framework);
@@ -23,7 +22,6 @@ private:
     PVector velocity_;
     PVector acceleration_;
     float   top_speed_;
-    int     radius_;
 };
 
 #endif

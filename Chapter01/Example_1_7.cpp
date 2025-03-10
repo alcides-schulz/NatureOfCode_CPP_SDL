@@ -2,9 +2,10 @@
 
 bool Example_1_7::UserInit()
 {
-    auto location = PVector((float)(rand() % WindowWidth()), (float)(rand() % WindowHeight()));
-    auto velocity = PVector((float)(rand() % 8 - 4), (float)(rand() % 8 - 4));
+    auto location = PVector(rand() % WindowWidth(), rand() % WindowHeight());
+    auto velocity = PVector(rand() % 5 - 2, rand() % 5 - 2);
     mover_ = new Mover_1_7(location, velocity);
+
     return true;
 }
 

@@ -9,7 +9,7 @@ void Mover_1_8::Update(void)
 
 void Mover_1_8::Display(SDL_Framework *framework)
 {
-    framework->DrawCircle({ (int)location_.x, (int)location_.y }, radius_, kColorGray, true);
+    framework->DrawCircle({ (int)location_.x, (int)location_.y }, 48, kColorGray, true);
 }
 
 void Mover_1_8::CheckEdges(SDL_Framework *framework)
