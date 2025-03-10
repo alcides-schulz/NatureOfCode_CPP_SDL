@@ -148,6 +148,12 @@
     <ClInclude Include="Chapter02\Attractor_2_6.h">
       <Filter>Source Files\Chapter02</Filter>
     </ClInclude>
+    <ClInclude Include="Chapter02\Mover_2_7.h">
+      <Filter>Source Files\Chapter02</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter02\Attractor_2_7.h">
+      <Filter>Source Files\Chapter02</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -280,6 +286,12 @@
       <Filter>Source Files\Chapter02</Filter>
     </ClCompile>
     <ClCompile Include="Chapter02\Attractor_2_6.cpp">
+      <Filter>Source Files\Chapter02</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter02\Mover_2_7.cpp">
+      <Filter>Source Files\Chapter02</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter02\Attractor_2_7.cpp">
       <Filter>Source Files\Chapter02</Filter>
     </ClCompile>
   </ItemGroup>
