@@ -14,7 +14,6 @@ public:
     void ApplyForce(PVector force);
     void Update(void);
     void Display(SDL_Framework *framework);
-    void CheckEdges(SDL_Framework *framework);
     int GetMass(void) { return mass_; };
     PVector GetVelocity(void) { return velocity_; };
     bool ContactEdge(SDL_Framework *framework);
