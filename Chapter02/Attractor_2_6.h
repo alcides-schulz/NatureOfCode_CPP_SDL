@@ -8,22 +8,18 @@
 class Attractor_2_6
 {
 public:
-    Attractor_2_6(PVector position, int mass) : position_(position), mass_(mass)
-    { 
-        radius_ = mass_;
-    };
+    Attractor_2_6(PVector position, int mass) : position_(position), mass_(mass) { };
     PVector Attract(Mover_2_6 *mover);
     void Display(SDL_Framework *framework);
     PVector GetPosition(void) { return position_; };
     void SetPosition(PVector position) { position_ = position; };
-    int GetRadius(void) { return radius_; };
+    int GetRadius(void) { return mass_; };
 
     static const int kGravity = 1;
 private:
     PVector position_;
     PVector velocity_;
     PVector acceleration_;
-    int     radius_;
     int     mass_;
 };
 

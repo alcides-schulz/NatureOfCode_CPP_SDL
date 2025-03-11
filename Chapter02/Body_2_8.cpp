@@ -16,7 +16,7 @@ void Body_2_8::Update(void)
 
 void Body_2_8::Display(SDL_Framework *framework)
 {
-    framework->DrawCircle({ (int)position_.x, (int)position_.y }, radius_ * 2, kColorGray, true);
+    framework->DrawCircle({ (int)position_.x, (int)position_.y }, radius_ * 4, kColorGray, true);
 }
 
 void Body_2_8::Attract(Body_2_8 *body)

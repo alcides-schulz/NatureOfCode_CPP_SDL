@@ -7,6 +7,7 @@ bool Example_2_8::UserInit()
 
     bodyA_->SetVelocity(PVector(1, 0));
     bodyB_->SetVelocity(PVector(-1, 0));
+
     return true;
 }
 

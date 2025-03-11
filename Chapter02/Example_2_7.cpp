@@ -5,10 +5,11 @@ bool Example_2_7::UserInit()
     for (int i = 0; i < std::size(mover_); i++) {
         auto x = (float)(std::rand() % WindowWidth());
         auto y = (float)(std::rand() % WindowHeight());
-        auto m = std::rand() % 3 + 1;
+        auto m = rand() % 3 + 1;
         mover_[i] = new Mover_2_7(PVector(x, y), m);
     }
     attractor_ = new Attractor_2_7(PVector(WindowWidth() / 2.0f, WindowHeight() / 2.0f), 20);
+
     return true;
 }
 

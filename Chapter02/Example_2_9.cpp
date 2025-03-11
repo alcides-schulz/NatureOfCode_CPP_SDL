@@ -1,17 +1,14 @@
 #include "Example_2_9.h"
 
-#include <cstdlib>
-#include <ctime>
-
 bool Example_2_9::UserInit()
 {
-    std::srand(static_cast<unsigned int>(std::time(nullptr)));
     for (int i = 0; i < std::size(body_); i++) {
         auto x = (float)(std::rand() % WindowWidth());
         auto y = (float)(std::rand() % WindowHeight());
-        auto m = std::rand() % 3 + 1;
+        auto m = rand() % 2 + 1;
         body_[i] = new Body_2_9(PVector(x, y), m);
     }
+
     return true;
 }
 

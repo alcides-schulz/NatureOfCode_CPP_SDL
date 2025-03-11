@@ -91,6 +91,8 @@ void ShowMenu(vector<SDL_Framework *> chapter_menu)
 
 int main(int argc, char* argv[])
 {
+    std::srand(static_cast<unsigned int>(std::time(nullptr)));
+
     string response;
     while (true) {
         cout << "Nature of Code Menu" << endl;

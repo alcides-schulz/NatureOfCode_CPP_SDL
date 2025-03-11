@@ -12,7 +12,7 @@
 #include <random>
 #include <cstdlib>
 #include <list>
-#include <time.h>
+#include <ctime>
 
 using namespace std;
 

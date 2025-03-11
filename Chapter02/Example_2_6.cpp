@@ -4,6 +4,7 @@ bool Example_2_6::UserInit()
 {
     mover_ = new Mover_2_6(PVector(300, 50), 2);
     attractor_ = new Attractor_2_6(PVector(WindowWidth() / 2.0f, WindowHeight() / 2.0f), 20);
+
     return true;
 }
 

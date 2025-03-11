@@ -9,7 +9,6 @@ class Body_2_9
 public:
     Body_2_9(PVector position, int mass) : position_(position), mass_(mass)
     {
-        radius_ = mass_ * 4;
         acceleration_ = PVector(0.0f, 0.0f);
     };
     void ApplyForce(PVector force);
@@ -25,7 +24,6 @@ private:
     PVector position_;
     PVector velocity_;
     PVector acceleration_;
-    int     radius_;
     int     mass_;
 };
 
