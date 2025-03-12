@@ -82,8 +82,8 @@ void SDL_Framework::DrawCircle(SDL_Point center, int diameter, SDL_Color color, 
     auto radius = diameter / 2;
     auto radius2 = radius * radius;
     SDL_SetRenderDrawColor(renderer_, color.r, color.g, color.b, color.a);
-    for (int w = 0; w <= radius * 2; w++) {
-        for (int h = 0; h <= radius * 2; h++) {
+    for (int w = 0; w <= diameter; w++) {
+        for (int h = 0; h <= diameter; h++) {
             int dx = radius - w;
             int dy = radius - h;
             int pos = dx * dx + dy * dy;

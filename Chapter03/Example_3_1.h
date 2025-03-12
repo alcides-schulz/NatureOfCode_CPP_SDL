@@ -6,12 +6,13 @@
 class Example_3_1 : public SDL_Framework
 {
 public:
-    Example_3_1() : SDL_Framework("Example 3.1: Angular Motion with rotation.", 400, 100, 1200, 800, 0) {};
+    Example_3_1() : SDL_Framework("Example 3.1: Angular Motion with rotation.", -1, -1, 640, 240, 0) {};
+    bool UserInit(void) override;
     bool UserRender(int elapsed_time) override;
 private:
-    float   angle_ = 0;
-    float   angleVelocity_ = 0;
-    float   angleAcceleration_ = 0.001f;
+    float   angle_;
+    float   angleVelocity_;
+    float   angleAcceleration_;
 };
 
 #endif

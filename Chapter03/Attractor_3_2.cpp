@@ -2,7 +2,7 @@
 
 PVector Attractor_3_2::Attract(Mover_3_2 *mover)
 {
-    auto force = PVector(position_.x, position_.y);
+    auto force = position_.Clone();
     force.Sub(mover->GetPosition());
     auto distance = force.Mag();
     distance = (float)std::fmax(5, std::fmin(25, distance));
@@ -13,7 +13,7 @@ PVector Attractor_3_2::Attract(Mover_3_2 *mover)
 
 void Attractor_3_2::Display(SDL_Framework *framework)
 {
-    framework->DrawCircle({ (int)position_.x, (int)position_.y }, radius_, { 0, 0, 255, 0 }, true);
+    framework->DrawCircle({ (int)position_.x, (int)position_.y }, radius_ * 2, kColorBlack, true);
 }
 
 // END
