@@ -79,6 +79,15 @@ void SDL_Framework::Run()
 
 void SDL_Framework::DrawCircle(SDL_Point center, int diameter, SDL_Color color, bool fill)
 {
+    double sin_value = sin(rotation_radians_);
+    double cos_value = cos(rotation_radians_);
+
+    double rotated_x1 = center.x * cos_value - center.y * sin_value;
+    double rotated_y1 = center.x * sin_value + center.y * cos_value;
+
+    int final_x1 = static_cast<int>(rotated_x1 + origin_x_);
+    int final_y1 = static_cast<int>(rotated_y1 + origin_y_);
+
     auto radius = diameter / 2;
     auto radius2 = radius * radius;
     SDL_SetRenderDrawColor(renderer_, color.r, color.g, color.b, color.a);
@@ -88,20 +97,14 @@ void SDL_Framework::DrawCircle(SDL_Point center, int diameter, SDL_Color color, 
             int dy = radius - h;
             int pos = dx * dx + dy * dy;
             if (fill && pos <= radius2) {
-                SDL_RenderDrawPoint(renderer_, origin_x_ + center.x + dx, origin_y_ + center.y + dy);
+                SDL_RenderDrawPoint(renderer_, final_x1 + dx, final_y1 + dy);
             }
             int diff = pos - radius2;
             if (!fill && abs(diff) <= 10) {
-                SDL_RenderDrawPoint(renderer_, origin_x_ + center.x + dx, origin_y_ + center.y + dy);
+                SDL_RenderDrawPoint(renderer_, final_x1 + dx, final_y1 + dy);
             }
         }
     }
-}
-
-void SDL_Framework::DrawLine(int x1, int y1, int x2, int y2, SDL_Color color)
-{
-    SDL_SetRenderDrawColor(renderer_, color.r, color.g, color.b, color.a);
-    SDL_RenderDrawLine(renderer_, origin_x_ + x1, origin_y_ + y1, origin_x_ + x2, origin_y_ + y2);
 }
 
 void SDL_Framework::DrawRectangle(int x1, int y1, int x2, int y2, SDL_Color color, bool fill)
@@ -112,6 +115,25 @@ void SDL_Framework::DrawRectangle(int x1, int y1, int x2, int y2, SDL_Color colo
         SDL_RenderFillRect(Renderer(), &rect);
     else
         SDL_RenderDrawRect(Renderer(), &rect);
+}
+
+void SDL_Framework::DrawLine(int x1, int y1, int x2, int y2, SDL_Color color)
+{
+    double sin_value = sin(rotation_radians_);
+    double cos_value = cos(rotation_radians_);
+
+    double rotated_x1 = x1 * cos_value - y1 * sin_value;
+    double rotated_y1 = x1 * sin_value + y1 * cos_value;
+    double rotated_x2 = x2 * cos_value - y2 * sin_value;
+    double rotated_y2 = x2 * sin_value + y2 * cos_value;
+
+    int final_x1 = static_cast<int>(rotated_x1 + origin_x_);
+    int final_y1 = static_cast<int>(rotated_y1 + origin_y_);
+    int final_x2 = static_cast<int>(rotated_x2 + origin_x_);
+    int final_y2 = static_cast<int>(rotated_y2 + origin_y_);
+
+    SDL_SetRenderDrawColor(renderer_, color.r, color.g, color.b, color.a);
+    SDL_RenderDrawLine(renderer_, final_x1, final_y1, final_x2, final_y2);
 }
 
 void SDL_Framework::HandleEvents()
