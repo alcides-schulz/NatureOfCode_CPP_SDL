@@ -77,13 +77,13 @@ void SDL_Framework::Run()
     SDL_Quit();
 }
 
-void SDL_Framework::DrawCircle(SDL_Point center, int diameter, SDL_Color color, bool fill)
+void SDL_Framework::DrawCircle(int center_x, int center_y, int diameter, SDL_Color color, bool fill)
 {
     double sin_value = sin(rotation_radians_);
     double cos_value = cos(rotation_radians_);
 
-    double rotated_x1 = center.x * cos_value - center.y * sin_value;
-    double rotated_y1 = center.x * sin_value + center.y * cos_value;
+    double rotated_x1 = center_x * cos_value - center_y * sin_value;
+    double rotated_y1 = center_x * sin_value + center_y * cos_value;
 
     int final_x1 = static_cast<int>(rotated_x1 + origin_x_);
     int final_y1 = static_cast<int>(rotated_y1 + origin_y_);

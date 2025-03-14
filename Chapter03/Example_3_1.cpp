@@ -21,8 +21,8 @@ bool Example_3_1::UserRender(int elapsed_time)
     Translate(WindowWidth() / 2, WindowHeight() / 2);
     RotateRadians(angle_);
     DrawLine(line_x1, line_y1, line_x2, line_y2, kColorBlack);
-    DrawCircle({ line_x1, line_y1 }, 16, kColorGray, true);
-    DrawCircle({ line_x2, line_y2 }, 16, kColorGray, true);
+    DrawCircle(line_x1, line_y1, 16, kColorGray, true);
+    DrawCircle(line_x2, line_y2, 16, kColorGray, true);
 
     angleVelocity_ += angleAcceleration_;
     angle_ += angleVelocity_;

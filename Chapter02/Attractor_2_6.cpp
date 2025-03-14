@@ -13,7 +13,7 @@ PVector Attractor_2_6::Attract(Mover_2_6 *mover)
 
 void Attractor_2_6::Display(SDL_Framework *framework)
 {
-    framework->DrawCircle({ (int)position_.x, (int)position_.y }, mass_ * 2, kColorBlack, true);
+    framework->DrawCircle((int)position_.x, (int)position_.y, mass_ * 2, kColorBlack, true);
 }
 
 // END

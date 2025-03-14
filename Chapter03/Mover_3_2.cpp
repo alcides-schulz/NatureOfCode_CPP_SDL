@@ -30,7 +30,7 @@ void Mover_3_2::Display(SDL_Framework *framework)
 
     framework->Translate((int)position_.x, (int)position_.y);
     framework->RotateRadians(angle_);
-    framework->DrawCircle({ 0, 0 }, radius_ * 2, kColorGray, true);
+    framework->DrawCircle(0, 0, radius_ * 2, kColorGray, true);
     framework->DrawLine(line_x1, line_y1, line_x2, line_y2, kColorBlack);
     framework->ResetMatrix();
 }

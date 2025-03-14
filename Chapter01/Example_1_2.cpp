@@ -20,7 +20,7 @@ bool Example_1_2::UserRender(int elapsed_time)
         velocity_.y *= -1;
     }
 
-    DrawCircle({ (int)location_.x, (int)location_.y }, 48, kColorGray, true);
+    DrawCircle((int)location_.x, (int)location_.y, 48, kColorGray, true);
 
     return true;
 }

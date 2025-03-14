@@ -16,7 +16,7 @@ void Mover_2_2::Update(void)
 
 void Mover_2_2::Display(SDL_Framework *framework)
 {
-    framework->DrawCircle({ (int)position_.x, (int)position_.y }, mass_ * 16, kColorGray, true);
+    framework->DrawCircle((int)position_.x, (int)position_.y, mass_ * 16, kColorGray, true);
 }
 
 void Mover_2_2::CheckEdges(SDL_Framework *framework)

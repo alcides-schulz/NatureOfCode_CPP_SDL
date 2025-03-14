@@ -18,7 +18,7 @@ bool Example_3_4::UserRender(int elapsed_time)
     auto y = static_cast<int>(radius * std::sin(theta));
 
     DrawLine(0, 0, x, y, kColorBlack);
-    DrawCircle({ x, y }, 30, kColorBlack, true);
+    DrawCircle(x, y, 30, kColorBlack, true);
 
     theta += 0.02f;
 

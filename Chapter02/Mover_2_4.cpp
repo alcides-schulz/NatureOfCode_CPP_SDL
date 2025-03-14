@@ -16,7 +16,7 @@ void Mover_2_4::Update(void)
 
 void Mover_2_4::Display(SDL_Framework *framework)
 {
-    framework->DrawCircle({ (int)position_.x, (int)position_.y }, radius_ * 2, kColorGray, true);
+    framework->DrawCircle((int)position_.x, (int)position_.y, radius_ * 2, kColorGray, true);
 }
 
 bool Mover_2_4::ContactEdge(SDL_Framework *framework)
