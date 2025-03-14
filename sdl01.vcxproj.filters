@@ -154,6 +154,9 @@
     <ClInclude Include="Chapter03\Mover_3_3.h">
       <Filter>Source Files\Chapter03</Filter>
     </ClInclude>
+    <ClInclude Include="Chapter03\Example_3_4.h">
+      <Filter>Source Files\Chapter03</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -289,6 +292,9 @@
       <Filter>Source Files\Chapter03</Filter>
     </ClCompile>
     <ClCompile Include="Chapter03\Mover_3_3.cpp">
+      <Filter>Source Files\Chapter03</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter03\Example_3_4.cpp">
       <Filter>Source Files\Chapter03</Filter>
     </ClCompile>
   </ItemGroup>
