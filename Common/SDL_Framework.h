@@ -44,6 +44,7 @@ public:
     void ClearScreen(void);
     SDL_Point MousePosition(void) { return mouse_position_; }
     bool IsMouseButtonPressed(int mouse_button) { return mouse_button_states_[mouse_button]; }
+    Uint32 FrameCount(void) { return global_frame_count_; }
     bool Init(void);
     void Run(void);
     bool IsKeyPressed(Sint32 key);
@@ -72,6 +73,7 @@ private:
     bool            is_running_ = false;
     const int       kFPS = 60;
     const Uint32    kMaxFrameTime = (Uint32)(1000.0f / kFPS);
+    Uint32          global_frame_count_;
     void            HandleEvents();
 };
 

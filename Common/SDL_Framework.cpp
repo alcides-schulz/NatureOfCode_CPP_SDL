@@ -39,7 +39,7 @@ void SDL_Framework::Run()
 {
     Uint32 start_time = SDL_GetTicks();
     Uint32 timer = start_time;
-    int frame_count = 0;
+    int local_frame_count = 0;
 
     while (is_running_) {
         Uint32 frame_start = SDL_GetTicks();
@@ -53,15 +53,16 @@ void SDL_Framework::Run()
         SDL_RenderPresent(Renderer());
         ResetMatrix();
 
-        frame_count++;
+        local_frame_count++;
+        global_frame_count_++;
         if (SDL_GetTicks() - timer > 1000) {
             std::string t = window_title_;
             t.append(" (");
-            t.append(std::to_string(frame_count));
+            t.append(std::to_string(local_frame_count));
             t.append(" FPS)");
             SDL_SetWindowTitle(window_, t.c_str());
             timer += 1000;
-            frame_count = 0;
+            local_frame_count = 0;
         }
 
         Uint32 frame_time = SDL_GetTicks() - frame_start;

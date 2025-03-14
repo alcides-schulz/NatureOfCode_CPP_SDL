@@ -157,6 +157,12 @@
     <ClInclude Include="Chapter03\Example_3_4.h">
       <Filter>Source Files\Chapter03</Filter>
     </ClInclude>
+    <ClInclude Include="Chapter03\Example_3_5.h">
+      <Filter>Source Files\Chapter03</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter03\Example_3_6.h">
+      <Filter>Source Files\Chapter03</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -295,6 +301,12 @@
       <Filter>Source Files\Chapter03</Filter>
     </ClCompile>
     <ClCompile Include="Chapter03\Example_3_4.cpp">
+      <Filter>Source Files\Chapter03</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter03\Example_3_5.cpp">
+      <Filter>Source Files\Chapter03</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter03\Example_3_6.cpp">
       <Filter>Source Files\Chapter03</Filter>
     </ClCompile>
   </ItemGroup>

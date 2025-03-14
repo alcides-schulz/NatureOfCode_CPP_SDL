@@ -57,6 +57,8 @@
     <ClCompile Include="Chapter03\Attractor_3_2.cpp" />
     <ClCompile Include="Chapter03\Example_3_3.cpp" />
     <ClCompile Include="Chapter03\Example_3_4.cpp" />
+    <ClCompile Include="Chapter03\Example_3_5.cpp" />
+    <ClCompile Include="Chapter03\Example_3_6.cpp" />
     <ClCompile Include="Chapter03\Mover_3_2.cpp" />
     <ClCompile Include="Chapter03\Example_3_1.cpp" />
     <ClCompile Include="Chapter03\Example_3_2.cpp" />
@@ -105,6 +107,8 @@
     <ClInclude Include="Chapter03\Attractor_3_2.h" />
     <ClInclude Include="Chapter03\Example_3_3.h" />
     <ClInclude Include="Chapter03\Example_3_4.h" />
+    <ClInclude Include="Chapter03\Example_3_5.h" />
+    <ClInclude Include="Chapter03\Example_3_6.h" />
     <ClInclude Include="Chapter03\Mover_3_2.h" />
     <ClInclude Include="Chapter03\Example_3_1.h" />
     <ClInclude Include="Chapter03\Example_3_2.h" />
