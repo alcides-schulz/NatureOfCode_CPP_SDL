@@ -107,14 +107,35 @@ void SDL_Framework::DrawCircle(SDL_Point center, int diameter, SDL_Color color, 
     }
 }
 
-void SDL_Framework::DrawRectangle(int x1, int y1, int x2, int y2, SDL_Color color, bool fill)
+void SDL_Framework::DrawRectangle(int x, int y, int width, int height, SDL_Color color)
 {
+    std::vector<SDL_Point> corner = {
+        {x, y},
+        {x + width, y},
+        {x + width, y + height},
+        {x, y + height}
+    };
+    auto center_x = x + width / 2;
+    auto center_y = y + height / 2;
+    double sin = std::sin(rotation_radians_);
+    double cos = std::cos(rotation_radians_);
+    for (int i = 0; i < 4; i++) {
+        corner[i].x -= center_x;
+        corner[i].y -= center_y;
+        double x_new = corner[i].x * cos - corner[i].y * sin;
+        double y_new = corner[i].x * sin + corner[i].y * cos;
+        corner[i].x = static_cast<int>(x_new + center_x);
+        corner[i].y = static_cast<int>(y_new + center_y);
+    }
     SDL_SetRenderDrawColor(renderer_, color.r, color.g, color.b, color.a);
-    SDL_Rect rect = { x1, y1, x2, y2 };
-    if (fill)
-        SDL_RenderFillRect(Renderer(), &rect);
-    else
-        SDL_RenderDrawRect(Renderer(), &rect);
+    for (int i = 0; i < 4; i++) {
+        auto next = (i + 1) % 4;
+        auto x1 = corner[i].x + origin_x_;
+        auto y1 = corner[i].y + origin_y_;
+        auto x2 = corner[next].x + origin_x_;
+        auto y2 = corner[next].y + origin_y_;
+        SDL_RenderDrawLine(renderer_, x1, y1, x2, y2);
+    }
 }
 
 void SDL_Framework::DrawLine(int x1, int y1, int x2, int y2, SDL_Color color)

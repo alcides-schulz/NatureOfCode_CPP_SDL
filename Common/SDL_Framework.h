@@ -53,7 +53,7 @@ public:
     void ResetMatrix(void) { origin_x_ = origin_y_ = 0, rotation_radians_ = 0; }
     void DrawCircle(SDL_Point center, int diameter, SDL_Color color, bool fill);
     void DrawLine(int x1, int y1, int x2, int y2, SDL_Color color);
-    void DrawRectangle(int x1, int y1, int x2, int y2, SDL_Color color, bool fill);
+    void DrawRectangle(int x, int y, int width, int heigth, SDL_Color color);
 private:
     SDL_Window      *window_;
     const char      *window_title_;

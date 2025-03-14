@@ -51,6 +51,11 @@ void PVector::Limit(float max)
     }
 }
 
+float PVector::Heading(void)
+{
+    return std::atan2(y, x);
+}
+
 PVector PVector::Clone(void)
 {
     return PVector(x, y);

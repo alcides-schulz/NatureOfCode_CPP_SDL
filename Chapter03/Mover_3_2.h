@@ -11,7 +11,7 @@ public:
     {
         velocity_ = PVector(0, 0);
         radius_ = 8 * mass;
-        acceleration_ = PVector(0.0f, 0.0f);
+        acceleration_ = PVector(0, 0);
     };
     void ApplyForce(PVector force);
     void Update(void);
