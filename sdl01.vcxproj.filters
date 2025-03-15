@@ -169,6 +169,15 @@
     <ClInclude Include="Chapter03\Oscillator_3_7.h">
       <Filter>Source Files\Chapter03</Filter>
     </ClInclude>
+    <ClInclude Include="Tests\GenerateExampleInitialCode.h">
+      <Filter>Source Files\Tests</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter03\Example_3_8.h">
+      <Filter>Source Files\Chapter03</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter03\Example_3_9.h">
+      <Filter>Source Files\Chapter03</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -320,6 +329,18 @@
     </ClCompile>
     <ClCompile Include="Chapter03\Oscillator_3_7.cpp">
       <Filter>Source Files\Chapter03</Filter>
+    </ClCompile>
+    <ClCompile Include="Tests\GenerateExampleInitialCode.cpp">
+      <Filter>Source Files\Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter03\Example_3_8.cpp">
+      <Filter>Source Files\Chapter03</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter03\Example_3_9.cpp">
+      <Filter>Source Files\Chapter03</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\P5Functions.h">
+      <Filter>Source Files\Common</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

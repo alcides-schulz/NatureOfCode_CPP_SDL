@@ -60,15 +60,19 @@
     <ClCompile Include="Chapter03\Example_3_5.cpp" />
     <ClCompile Include="Chapter03\Example_3_6.cpp" />
     <ClCompile Include="Chapter03\Example_3_7.cpp" />
+    <ClCompile Include="Chapter03\Example_3_8.cpp" />
+    <ClCompile Include="Chapter03\Example_3_9.cpp" />
     <ClCompile Include="Chapter03\Mover_3_2.cpp" />
     <ClCompile Include="Chapter03\Example_3_1.cpp" />
     <ClCompile Include="Chapter03\Example_3_2.cpp" />
     <ClCompile Include="Chapter03\Mover_3_3.cpp" />
     <ClCompile Include="Chapter03\Oscillator_3_7.cpp" />
+    <ClCompile Include="Common\P5Functions.h" />
     <ClCompile Include="Common\PVector.cpp" />
     <ClCompile Include="Common\SDL_Framework.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Tests\CircleTest.cpp" />
+    <ClCompile Include="Tests\GenerateExampleInitialCode.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Chapter01\Example_1_1.h" />
@@ -112,6 +116,8 @@
     <ClInclude Include="Chapter03\Example_3_5.h" />
     <ClInclude Include="Chapter03\Example_3_6.h" />
     <ClInclude Include="Chapter03\Example_3_7.h" />
+    <ClInclude Include="Chapter03\Example_3_8.h" />
+    <ClInclude Include="Chapter03\Example_3_9.h" />
     <ClInclude Include="Chapter03\Mover_3_2.h" />
     <ClInclude Include="Chapter03\Example_3_1.h" />
     <ClInclude Include="Chapter03\Example_3_2.h" />
@@ -120,6 +126,7 @@
     <ClInclude Include="Common\PVector.h" />
     <ClInclude Include="Common\SDL_Framework.h" />
     <ClInclude Include="Tests\CircleTest.h" />
+    <ClInclude Include="Tests\GenerateExampleInitialCode.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Readme.md" />
