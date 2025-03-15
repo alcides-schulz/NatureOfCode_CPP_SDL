@@ -8,6 +8,7 @@ class GenerateExampleInitialCode : public SDL_Framework
 public:
     GenerateExampleInitialCode() : SDL_Framework("Generate Example Initial Code", -1, -1, 640, 240, 0) {}
     bool UserInit(void) override;
+    bool UserRender(int elapsed_time) override { return false; };
 };
 
 #endif

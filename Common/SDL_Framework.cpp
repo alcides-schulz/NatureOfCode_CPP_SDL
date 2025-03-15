@@ -78,6 +78,11 @@ void SDL_Framework::Run()
     SDL_Quit();
 }
 
+void SDL_Framework::DrawCircle(float center_x, float center_y, int diameter, SDL_Color color, bool fill)
+{
+    DrawCircle((int)center_x, (int)center_y, diameter, color, fill);
+}
+
 void SDL_Framework::DrawCircle(int center_x, int center_y, int diameter, SDL_Color color, bool fill)
 {
     double sin_value = sin(rotation_radians_);
@@ -137,6 +142,11 @@ void SDL_Framework::DrawRectangle(int x, int y, int width, int height, SDL_Color
         auto y2 = corner[next].y + origin_y_;
         SDL_RenderDrawLine(renderer_, x1, y1, x2, y2);
     }
+}
+
+void SDL_Framework::DrawLine(float x1, float y1, float x2, float y2, SDL_Color color)
+{
+    DrawLine((int)x1, (int)y1, (int)x2, (int)y2, color);
 }
 
 void SDL_Framework::DrawLine(int x1, int y1, int x2, int y2, SDL_Color color)

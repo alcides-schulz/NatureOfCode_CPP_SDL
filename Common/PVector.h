@@ -24,4 +24,6 @@ public:
     PVector Clone(void);
     static PVector Random2D();
     static float Distance(PVector vector1, PVector vector2);
+    static PVector Add(PVector vector1, PVector vector2);
+    static PVector Sub(PVector vector1, PVector vector2);
 };

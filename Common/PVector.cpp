@@ -74,4 +74,14 @@ float PVector::Distance(PVector vector1, PVector vector2)
     return sqrt(dx * dx + dy * dy);
 }
 
+PVector PVector::Add(PVector vector1, PVector vector2)
+{
+    return PVector(vector1.x + vector2.x, vector1.y + vector2.y);
+}
+
+PVector PVector::Sub(PVector vector1, PVector vector2)
+{
+    return PVector(vector1.x - vector2.x, vector1.y - vector2.y);
+}
+
 // End

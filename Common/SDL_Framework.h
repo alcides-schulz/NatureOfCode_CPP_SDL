@@ -53,7 +53,9 @@ public:
     void RotateDegrees(double degrees) { rotation_radians_ += degrees * M_PI / 180.0; }
     void ResetMatrix(void) { origin_x_ = origin_y_ = 0, rotation_radians_ = 0; }
     void DrawCircle(int center_x, int center_y, int diameter, SDL_Color color, bool fill);
+    void DrawCircle(float center_x, float center_y, int diameter, SDL_Color color, bool fill);
     void DrawLine(int x1, int y1, int x2, int y2, SDL_Color color);
+    void DrawLine(float x1, float y1, float x2, float y2, SDL_Color color);
     void DrawRectangle(int x, int y, int width, int heigth, SDL_Color color);
 private:
     SDL_Window      *window_;

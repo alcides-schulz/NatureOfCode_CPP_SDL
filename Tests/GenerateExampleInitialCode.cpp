@@ -8,7 +8,7 @@ bool GenerateExampleInitialCode::UserInit()
     ClearScreen();
 
     string chapter = "03";
-    string example = "3_9";
+    string example = "3_10";
     string title = string(example);
     title.replace(1, 1, ".");
 

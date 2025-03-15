@@ -12,19 +12,6 @@ bool Example_3_9::UserInit(void)
 bool Example_3_9::UserRender(int elapsed_time)
 {
     ClearScreen();
-    /*
-      let angle = startAngle;
-  startAngle += 0.02;
-
-  for (let x = 0; x <= width; x += 24) {
-    let y = map(sin(angle), -1, 1, 0, height);
-    stroke(0);
-    strokeWeight(2);
-    fill(127, 127);
-    circle(x, y, 48);
-    angle += angleVelocity;
-  }
-    */
 
     auto angle = start_angle_;
     start_angle_ += 0.02f;
