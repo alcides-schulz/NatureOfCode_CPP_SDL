@@ -163,6 +163,12 @@
     <ClInclude Include="Chapter03\Example_3_6.h">
       <Filter>Source Files\Chapter03</Filter>
     </ClInclude>
+    <ClInclude Include="Chapter03\Example_3_7.h">
+      <Filter>Source Files\Chapter03</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter03\Oscillator_3_7.h">
+      <Filter>Source Files\Chapter03</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -307,6 +313,12 @@
       <Filter>Source Files\Chapter03</Filter>
     </ClCompile>
     <ClCompile Include="Chapter03\Example_3_6.cpp">
+      <Filter>Source Files\Chapter03</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter03\Example_3_7.cpp">
+      <Filter>Source Files\Chapter03</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter03\Oscillator_3_7.cpp">
       <Filter>Source Files\Chapter03</Filter>
     </ClCompile>
   </ItemGroup>
