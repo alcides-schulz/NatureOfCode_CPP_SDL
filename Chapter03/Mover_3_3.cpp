@@ -14,7 +14,7 @@ void Mover_3_3::Update(SDL_Framework *framework)
     position_.Add(velocity_);
 }
 
-void Mover_3_3::Display(SDL_Framework *framework)
+void Mover_3_3::Show(SDL_Framework *framework)
 {
     auto angle = velocity_.Heading();
     framework->Translate(static_cast<int>(position_.x), static_cast<int>(position_.y));
@@ -24,14 +24,14 @@ void Mover_3_3::Display(SDL_Framework *framework)
 
 void Mover_3_3::CheckEdges(SDL_Framework *framework)
 {
-    if (position_.x > framework->WindowWidth())
+    if (position_.x > framework->Width())
         position_.x = 0;
     else if (position_.x < 0)
-        position_.x = static_cast<float>(framework->WindowWidth());
-    if (position_.y > framework->WindowHeight())
+        position_.x = static_cast<float>(framework->Width());
+    if (position_.y > framework->Height())
         position_.y = 0;
     else if (position_.y < 0)
-        position_.y = static_cast<float>(framework->WindowHeight());
+        position_.y = static_cast<float>(framework->Height());
 }
 
 // EOF

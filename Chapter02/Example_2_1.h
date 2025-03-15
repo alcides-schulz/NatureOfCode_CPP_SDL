@@ -8,8 +8,8 @@ class Example_2_1 : public SDL_Framework
 {
 public:
     Example_2_1() : SDL_Framework("Example 2.1: Forces", -1, -1, 640, 240, 0) {};
-    bool UserInit() override;
-    bool UserRender(int elapsed_time) override;
+    bool Setup() override;
+    bool Draw() override;
 private:
     Mover_2_1   *mover_;
 };

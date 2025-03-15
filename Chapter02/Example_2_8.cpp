@@ -1,6 +1,6 @@
 #include "Example_2_8.h"
 
-bool Example_2_8::UserInit()
+bool Example_2_8::Setup()
 {
     bodyA_ = new Body_2_8(PVector(320, 40), 8);
     bodyB_ = new Body_2_8(PVector(320, 200), 8);
@@ -11,7 +11,7 @@ bool Example_2_8::UserInit()
     return true;
 }
 
-bool Example_2_8::UserRender(int elapsed_time)
+bool Example_2_8::Draw()
 {
     ClearScreen();
 
@@ -19,10 +19,10 @@ bool Example_2_8::UserRender(int elapsed_time)
     bodyB_->Attract(bodyA_);
 
     bodyA_->Update();
-    bodyA_->Display(this);
+    bodyA_->Show(this);
 
     bodyB_->Update();
-    bodyB_->Display(this);
+    bodyB_->Show(this);
 
     return true;
 }

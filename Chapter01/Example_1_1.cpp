@@ -1,6 +1,6 @@
 #include "Example_1_1.h"
 
-bool Example_1_1::UserInit()
+bool Example_1_1::Setup()
 {
     x_ = 100;
     y_ = 100;
@@ -10,20 +10,20 @@ bool Example_1_1::UserInit()
     return true;
 }
 
-bool Example_1_1::UserRender(int elapsed_time)
+bool Example_1_1::Draw()
 {
     ClearScreen();
 
     x_ += x_speed_;
     y_ += y_speed_;
-    if (x_ > WindowWidth() || x_ < 0) {
+    if (x_ > Width() || x_ < 0) {
         x_speed_ *= -1;
     }
-    if (y_ > WindowHeight() || y_ < 0) {
+    if (y_ > Height() || y_ < 0) {
         y_speed_ *= -1;
     }
 
-    DrawCircle((int)x_, (int)y_, 48, kColorGray, true);
+    DrawCircle(x_, y_, 48, kColorGray, true);
 
     return true;
 }

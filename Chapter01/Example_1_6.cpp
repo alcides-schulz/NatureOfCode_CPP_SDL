@@ -1,16 +1,16 @@
 #include "Example_1_6.h"
 
-bool Example_1_6::UserRender(int elapsed_time)
+bool Example_1_6::Draw()
 {
     ClearScreen();
 
     // Subtract center from mouse which results in a vector that points from center to mouse
     PVector mouse = PVector(MousePosition().x, MousePosition().y);
-    PVector center = PVector(WindowWidth() / 2, WindowHeight() / 2);
+    PVector center = PVector(Width() / 2, Height() / 2);
 
     mouse.Sub(center);
 
-    Translate(WindowWidth() / 2, WindowHeight() / 2);
+    Translate(Width() / 2, Height() / 2);
     DrawLine(0, 0, (int)mouse.x, (int)mouse.y, kColorBlack);
 
     // Normalize the vector and draw the vector

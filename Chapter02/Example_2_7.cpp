@@ -1,19 +1,19 @@
 #include "Example_2_7.h"
 
-bool Example_2_7::UserInit()
+bool Example_2_7::Setup()
 {
     for (int i = 0; i < std::size(mover_); i++) {
-        auto x = (float)(std::rand() % WindowWidth());
-        auto y = (float)(std::rand() % WindowHeight());
+        auto x = (float)(std::rand() % Width());
+        auto y = (float)(std::rand() % Height());
         auto m = rand() % 3 + 1;
         mover_[i] = new Mover_2_7(PVector(x, y), m);
     }
-    attractor_ = new Attractor_2_7(PVector(WindowWidth() / 2.0f, WindowHeight() / 2.0f), 20);
+    attractor_ = new Attractor_2_7(PVector(Width() / 2.0f, Height() / 2.0f), 20);
 
     return true;
 }
 
-bool Example_2_7::UserRender(int elapsed_time)
+bool Example_2_7::Draw()
 {
     ClearScreen();
 
@@ -31,13 +31,13 @@ bool Example_2_7::UserRender(int elapsed_time)
         isDragging = false;
     }
 
-    attractor_->Display(this);
+    attractor_->Show(this);
 
     for (int i = 0; i < std::size(mover_); i++) {
         PVector force = attractor_->Attract(mover_[i]);
         mover_[i]->ApplyForce(force);
         mover_[i]->Update();
-        mover_[i]->Display(this);
+        mover_[i]->Show(this);
     }
 
     return true;

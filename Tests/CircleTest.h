@@ -7,7 +7,7 @@ class CircleTest : public SDL_Framework
 {
 public:
     CircleTest() : SDL_Framework("Circle Test", -1, -1, 640, 240, 0) {}
-    bool UserRender(int elapsed_time) override;
+    bool Draw() override;
 };
 
 #endif

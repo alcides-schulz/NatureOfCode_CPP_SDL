@@ -7,7 +7,7 @@ class Example_3_8 : public SDL_Framework
 {
 public:
     Example_3_8() : SDL_Framework("Example 3.8: Static Wave", -1, -1, 640, 240, 0) {};
-    bool UserInit(void) override;
+    bool Setup(void) override;
 private:
     float angle_ = 0;
     float angle_velocity_ = 0.2f;

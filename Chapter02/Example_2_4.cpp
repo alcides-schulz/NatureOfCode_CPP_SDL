@@ -1,12 +1,12 @@
 #include "Example_2_4.h"
 
-bool Example_2_4::UserInit()
+bool Example_2_4::Setup()
 {
-    mover_ = new Mover_2_4(PVector(WindowWidth() / 2, 30), 5);
+    mover_ = new Mover_2_4(PVector(Width() / 2, 30), 5);
     return true;
 }
 
-bool Example_2_4::UserRender(int elapsed_time)
+bool Example_2_4::Draw()
 {
     ClearScreen();
 
@@ -28,7 +28,7 @@ bool Example_2_4::UserRender(int elapsed_time)
 
     mover_->BounceEdges(this);
     mover_->Update();
-    mover_->Display(this);
+    mover_->Show(this);
 
     return true;
 }

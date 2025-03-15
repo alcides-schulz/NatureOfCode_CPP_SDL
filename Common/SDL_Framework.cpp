@@ -31,7 +31,7 @@ bool SDL_Framework::Init()
         std::getchar();
         return false;
     }
-    is_running_ = UserInit();
+    is_running_ = Setup();
     return is_running_;
 }
 
@@ -47,7 +47,7 @@ void SDL_Framework::Run()
         start_time = frame_start;
 
         HandleEvents();
-        if (!UserRender(elapsed_time)) {
+        if (!Draw()) {
             is_running_ = false;
         }
         SDL_RenderPresent(Renderer());

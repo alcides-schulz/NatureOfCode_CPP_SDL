@@ -1,14 +1,14 @@
 #include "Example_3_10.h"
 
-bool Example_3_10::UserInit(void)
+bool Example_3_10::Setup(void)
 {
-    spring_ = new Spring_3_10(PVector(WindowWidth() / 2, 10), 100);
-    bob_ = new Bob_3_10(PVector(WindowWidth() / 2, 100));
+    spring_ = new Spring_3_10(PVector(Width() / 2, 10), 100);
+    bob_ = new Bob_3_10(PVector(Width() / 2, 100));
 
     return true;
 }
 
-bool Example_3_10::UserRender(int elapsed_time)
+bool Example_3_10::Draw()
 {
     ClearScreen();
 
@@ -26,8 +26,8 @@ bool Example_3_10::UserRender(int elapsed_time)
     spring_->ConstrainLength(bob_, 30, 200);
     spring_->ShowLine(this, bob_);
 
-    bob_->Display(this);
-    spring_->Display(this);
+    bob_->Show(this);
+    spring_->Show(this);
 
     return true;
 }

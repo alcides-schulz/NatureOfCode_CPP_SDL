@@ -25,7 +25,7 @@ void Spring_3_10::ConstrainLength(Bob_3_10 *bob, float min_length, float max_len
     }
 }
 
-void Spring_3_10::Display(SDL_Framework *framework)
+void Spring_3_10::Show(SDL_Framework *framework)
 {
     framework->DrawCircle(anchor_.x, anchor_.y, 10, kColorBlack, true);
 }

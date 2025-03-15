@@ -14,15 +14,15 @@ void Mover_2_5::Update(void)
     acceleration_.Mult(0);
 }
 
-void Mover_2_5::Display(SDL_Framework *framework)
+void Mover_2_5::Show(SDL_Framework *framework)
 {
     framework->DrawCircle((int)position_.x, (int)position_.y, radius_ * 2, kColorGray, true);
 }
 
 void Mover_2_5::CheckEdges(SDL_Framework *framework)
 {
-    if (position_.y > framework->WindowHeight() - radius_) {
-        position_.y = (float)(framework->WindowHeight() - radius_);
+    if (position_.y > framework->Height() - radius_) {
+        position_.y = (float)(framework->Height() - radius_);
         velocity_.y *= -0.9f;
     }
 }

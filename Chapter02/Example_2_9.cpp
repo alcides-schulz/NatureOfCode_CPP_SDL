@@ -1,10 +1,10 @@
 #include "Example_2_9.h"
 
-bool Example_2_9::UserInit()
+bool Example_2_9::Setup()
 {
     for (int i = 0; i < std::size(body_); i++) {
-        auto x = (float)(std::rand() % WindowWidth());
-        auto y = (float)(std::rand() % WindowHeight());
+        auto x = (float)(std::rand() % Width());
+        auto y = (float)(std::rand() % Height());
         auto m = rand() % 2 + 1;
         body_[i] = new Body_2_9(PVector(x, y), m);
     }
@@ -12,7 +12,7 @@ bool Example_2_9::UserInit()
     return true;
 }
 
-bool Example_2_9::UserRender(int elapsed_time)
+bool Example_2_9::Draw()
 {
     ClearScreen();
 
@@ -25,7 +25,7 @@ bool Example_2_9::UserRender(int elapsed_time)
     }
     for (int i = 0; i < std::size(body_); i++) {
         body_[i]->Update();
-        body_[i]->Display(this);
+        body_[i]->Show(this);
     }
     return true;
 }

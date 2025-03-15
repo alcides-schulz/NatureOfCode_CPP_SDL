@@ -21,7 +21,7 @@ void Mover_3_2::Update(void)
     angle_acceleration_ = 0;
 }
 
-void Mover_3_2::Display(SDL_Framework *framework)
+void Mover_3_2::Show(SDL_Framework *framework)
 {
     int line_x1 = 0;
     int line_y1 = 0;

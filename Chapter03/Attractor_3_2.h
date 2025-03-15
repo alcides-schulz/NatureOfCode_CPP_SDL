@@ -13,7 +13,7 @@ public:
         radius_ = mass;
     };
     PVector Attract(Mover_3_2 *mover);
-    void Display(SDL_Framework *framework);
+    void Show(SDL_Framework *framework);
     PVector GetPosition(void) { return position_; };
     void SetPosition(PVector position) { position_ = position; };
     int GetRadius(void) { return radius_; };

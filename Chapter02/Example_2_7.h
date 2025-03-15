@@ -9,8 +9,8 @@ class Example_2_7 : public SDL_Framework
 {
 public:
     Example_2_7() : SDL_Framework("Example 2.7: Attraction with many movers", -1, -1, 640, 240, 0) {};
-    bool UserInit() override;
-    bool UserRender(int elapsed_time) override;
+    bool Setup() override;
+    bool Draw() override;
 private:
     Attractor_2_7   *attractor_;
     Mover_2_7       *mover_[10];

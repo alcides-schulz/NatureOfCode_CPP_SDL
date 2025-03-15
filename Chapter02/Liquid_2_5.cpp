@@ -16,7 +16,7 @@ PVector Liquid_2_5::CalculateDrag(Mover_2_5 *mover)
     return drag_force;
 }
 
-void Liquid_2_5::Display(SDL_Framework *framework)
+void Liquid_2_5::Show(SDL_Framework *framework)
 {
     SDL_SetRenderDrawColor(framework->Renderer(), 173, 216, 230, 255);
     SDL_Rect rect = { x_, y_, width_, height_ };

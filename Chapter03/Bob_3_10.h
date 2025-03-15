@@ -18,7 +18,7 @@ public:
     };
     void ApplyForce(PVector force);
     void Update(SDL_Framework *framework);
-    void Display(SDL_Framework *framework);
+    void Show(SDL_Framework *framework);
     PVector GetPosition(void) { return position_; };
     void SetPosition(PVector position) { position_ = position; };
     PVector GetVelocity(void) { return velocity_; };

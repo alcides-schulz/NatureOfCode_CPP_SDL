@@ -10,7 +10,7 @@ public:
     Mover_2_2(PVector position, int mass) : position_(position), mass_(mass) { };
     void ApplyForce(PVector force);
     void Update(void);
-    void Display(SDL_Framework *framework);
+    void Show(SDL_Framework *framework);
     void CheckEdges(SDL_Framework *framework);
 private:
     PVector position_;

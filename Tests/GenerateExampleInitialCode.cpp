@@ -3,7 +3,7 @@
 #include <fstream>
 #include <string>
 
-bool GenerateExampleInitialCode::UserInit()
+bool GenerateExampleInitialCode::Setup()
 {
     ClearScreen();
 
@@ -41,8 +41,8 @@ bool GenerateExampleInitialCode::UserInit()
     include_output_file << "{" << endl;
     include_output_file << "public:" << endl;
     include_output_file << "    Example_" << example << "() : SDL_Framework(\"Example " << title << ": DESC\", -1, -1, 640, 240, 0) {};" << endl;
-    include_output_file << "    bool UserInit(void) override;" << endl;
-    include_output_file << "    bool UserRender(int elapsed_time) override;" << endl;
+    include_output_file << "    bool Setup(void) override;" << endl;
+    include_output_file << "    bool Draw() override;" << endl;
     include_output_file << "private:" << endl;
     include_output_file << "};" << endl << endl;
     include_output_file << "#endif" << endl;
@@ -56,11 +56,11 @@ bool GenerateExampleInitialCode::UserInit()
         return true;
     }
     class_output_file << "#include \"Example_" << example << ".h\"" << endl << endl;
-    class_output_file << "bool Example_" << example << "::UserInit(void)" << endl;
+    class_output_file << "bool Example_" << example << "::Setup(void)" << endl;
     class_output_file << "{" << endl;
     class_output_file << "    return true;" << endl;
     class_output_file << "}" << endl << endl;
-    class_output_file << "bool Example_" << example << "::UserRender(int elapsed_time)" << endl;
+    class_output_file << "bool Example_" << example << "::Draw()" << endl;
     class_output_file << "{" << endl;
     class_output_file << "    ClearScreen();" << endl << endl;
     class_output_file << "    return true;" << endl;

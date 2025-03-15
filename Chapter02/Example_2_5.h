@@ -9,8 +9,8 @@ class Example_2_5 : public SDL_Framework
 {
 public:
     Example_2_5() : SDL_Framework("Example 2.5: Fluid Resistance", -1, -1, 640, 240, 0) {};
-    bool UserInit() override;
-    bool UserRender(int elapsed_time) override;
+    bool Setup() override;
+    bool Draw() override;
     void Reset(void);
 private:
     Mover_2_5   *mover_[10];

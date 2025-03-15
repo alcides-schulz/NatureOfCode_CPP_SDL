@@ -1,14 +1,14 @@
 #include "Example_2_6.h"
 
-bool Example_2_6::UserInit()
+bool Example_2_6::Setup()
 {
     mover_ = new Mover_2_6(PVector(300, 50), 2);
-    attractor_ = new Attractor_2_6(PVector(WindowWidth() / 2.0f, WindowHeight() / 2.0f), 20);
+    attractor_ = new Attractor_2_6(PVector(Width() / 2.0f, Height() / 2.0f), 20);
 
     return true;
 }
 
-bool Example_2_6::UserRender(int elapsed_time)
+bool Example_2_6::Draw()
 {
     ClearScreen();
 
@@ -26,12 +26,12 @@ bool Example_2_6::UserRender(int elapsed_time)
         isDragging = false;
     }
     
-    attractor_->Display(this);
+    attractor_->Show(this);
 
     PVector force = attractor_->Attract(mover_);
     mover_->ApplyForce(force);
     mover_->Update();
-    mover_->Display(this);
+    mover_->Show(this);
 
     return true;
 }

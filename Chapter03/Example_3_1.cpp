@@ -1,6 +1,6 @@
 #include "Example_3_1.h"
 
-bool Example_3_1::UserInit(void)
+bool Example_3_1::Setup(void)
 {
     angle_ = 0;
     angleVelocity_ = 0;
@@ -9,7 +9,7 @@ bool Example_3_1::UserInit(void)
     return true;
 }
 
-bool Example_3_1::UserRender(int elapsed_time)
+bool Example_3_1::Draw()
 {
     ClearScreen();
 
@@ -18,7 +18,7 @@ bool Example_3_1::UserRender(int elapsed_time)
     int line_x2 = 60;
     int line_y2 = 0;
 
-    Translate(WindowWidth() / 2, WindowHeight() / 2);
+    Translate(Width() / 2, Height() / 2);
     RotateRadians(angle_);
     DrawLine(line_x1, line_y1, line_x2, line_y2, kColorBlack);
     DrawCircle(line_x1, line_y1, 16, kColorGray, true);

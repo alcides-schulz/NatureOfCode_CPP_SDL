@@ -1,15 +1,15 @@
 #include "Example_1_10.h"
 
-bool Example_1_10::UserInit()
+bool Example_1_10::Setup()
 {
-    PVector location(WindowWidth() / 2, WindowHeight() / 2);
+    PVector location(Width() / 2, Height() / 2);
     PVector velocity(0, 0);
     mover_ = new Mover_1_10(location, velocity);
 
     return true;
 }
 
-bool Example_1_10::UserRender(int elapsed_time)
+bool Example_1_10::Draw()
 {
     ClearScreen();
 
@@ -20,7 +20,7 @@ bool Example_1_10::UserRender(int elapsed_time)
     mover_->SetAcceleration(direction);
 
     mover_->Update();
-    mover_->Display(this);
+    mover_->Show(this);
 
     return true;
 }

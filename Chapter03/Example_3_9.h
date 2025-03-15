@@ -7,8 +7,8 @@ class Example_3_9 : public SDL_Framework
 {
 public:
     Example_3_9() : SDL_Framework("Example 3.9: The Wave", -1, -1, 640, 240, 0) {};
-    bool UserInit(void) override;
-    bool UserRender(int elapsed_time) override;
+    bool Setup(void) override;
+    bool Draw() override;
 private:
     float   start_angle_;
     float   angle_velocity_;

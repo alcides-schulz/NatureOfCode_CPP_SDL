@@ -9,8 +9,8 @@ class Example_1_8 : public SDL_Framework
 {
 public:
     Example_1_8() : SDL_Framework("Example 1.8: Motion 101 (velocity and constant acceleration)", -1, -1, 640, 240, 0) {}
-    bool UserInit() override;
-    bool UserRender(int elapsed_time) override;
+    bool Setup() override;
+    bool Draw() override;
 private:
     Mover_1_8   *mover_;
 };

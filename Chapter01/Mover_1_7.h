@@ -9,7 +9,7 @@ class Mover_1_7
 public:
     Mover_1_7(PVector location, PVector velocity) : location_(location), velocity_(velocity) { };
     void Update(void);
-    void Display(SDL_Framework *framework);
+    void Show(SDL_Framework *framework);
     void CheckEdges(SDL_Framework *framework);
 private:
     PVector location_;

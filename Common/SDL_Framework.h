@@ -33,12 +33,12 @@ public:
     SDL_Framework() { };
     SDL_Framework(const char *title, int x, int y, int width, int height, int flags) :
         window_title_(title), window_x_(x), window_y_(y), window_width_(width), window_height_(height), window_flags_(flags) { };
-    virtual bool UserInit(void) { return true; };
-    virtual bool UserRender(int elapsed_time) { return true; };
+    virtual bool Setup(void) { return true; };
+    virtual bool Draw(void) { return true; };
     virtual void UserClean(void) {};
     const char *WindowTitle(void) { return window_title_; }
-    int WindowWidth(void) { return window_width_; }
-    int WindowHeight(void) { return window_height_; }
+    int Width(void) { return window_width_; }
+    int Height(void) { return window_height_; }
     SDL_Renderer* Renderer(void) { return renderer_; }
     SDL_Window* Window(void) { return window_; }
     void ClearScreen(void);

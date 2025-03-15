@@ -1,13 +1,13 @@
 #include "Example_2_3.h"
 
-bool Example_2_3::UserInit()
+bool Example_2_3::Setup()
 {
     moverA_ = new Mover_2_3(PVector(200, 30), 10);
     moverB_ = new Mover_2_3(PVector(440, 30), 2);
     return true;
 }
 
-bool Example_2_3::UserRender(int elapsed_time)
+bool Example_2_3::Draw()
 {
     ClearScreen();
 
@@ -26,11 +26,11 @@ bool Example_2_3::UserRender(int elapsed_time)
     }
     
     moverA_->Update();
-    moverA_->Display(this);
+    moverA_->Show(this);
     moverA_->CheckEdges(this);
     
     moverB_->Update();
-    moverB_->Display(this);
+    moverB_->Show(this);
     moverB_->CheckEdges(this);
     
     return true;

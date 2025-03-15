@@ -14,23 +14,23 @@ void Mover_2_1::Update(void)
     acceleration_.Mult(0);
 }
 
-void Mover_2_1::Display(SDL_Framework *framework)
+void Mover_2_1::Show(SDL_Framework *framework)
 {
     framework->DrawCircle((int)position_.x, (int)position_.y, 48, kColorGray, true);
 }
 
 void Mover_2_1::CheckEdges(SDL_Framework *framework)
 {
-    if (position_.x > framework->WindowWidth()) {
-        position_.x = (float)framework->WindowWidth();
+    if (position_.x > framework->Width()) {
+        position_.x = (float)framework->Width();
         velocity_.x *= -1;
     }
     else if (position_.x < 0) {
         position_.x = 0;
         velocity_.x *= -1;
     }
-    if (position_.y > framework->WindowHeight()) {
-        position_.y = (float)framework->WindowHeight();
+    if (position_.y > framework->Height()) {
+        position_.y = (float)framework->Height();
         velocity_.y *= -1;
     }
     else if (position_.y < 0) {

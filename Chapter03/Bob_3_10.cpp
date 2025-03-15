@@ -15,7 +15,7 @@ void Bob_3_10::Update(SDL_Framework *framework)
     acceleration_.Mult(0);
 }
 
-void Bob_3_10::Display(SDL_Framework *framework)
+void Bob_3_10::Show(SDL_Framework *framework)
 {
     auto color = is_dragging_ ? kColorBlack : kColorGray;
     framework->DrawCircle(position_.x, position_.y, (int)(mass_ * 2), color, true);

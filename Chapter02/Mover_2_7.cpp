@@ -14,7 +14,7 @@ void Mover_2_7::Update(void)
     acceleration_.Mult(0);
 }
 
-void Mover_2_7::Display(SDL_Framework *framework)
+void Mover_2_7::Show(SDL_Framework *framework)
 {
     framework->DrawCircle((int)position_.x, (int)position_.y, radius_ * 2, kColorGray, true);
 }

@@ -9,8 +9,8 @@ class Example_3_10 : public SDL_Framework
 {
 public:
     Example_3_10() : SDL_Framework("Example 3.10: A Spring Connection", -1, -1, 640, 240, 0) {};
-    bool UserInit(void) override;
-    bool UserRender(int elapsed_time) override;
+    bool Setup(void) override;
+    bool Draw() override;
 private:
     Bob_3_10    *bob_;
     Spring_3_10 *spring_;

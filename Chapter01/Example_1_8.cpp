@@ -1,8 +1,8 @@
 #include "Example_1_8.h"
 
-bool Example_1_8::UserInit()
+bool Example_1_8::Setup()
 {
-    auto location = PVector(WindowWidth() / 2, WindowHeight() / 2);
+    auto location = PVector(Width() / 2, Height() / 2);
     auto velocity = PVector(0, 0);
     mover_ = new Mover_1_8(location, velocity);
     mover_->SetAcceleration(PVector(-0.001f, 0.01f));
@@ -10,13 +10,13 @@ bool Example_1_8::UserInit()
     return true;
 }
 
-bool Example_1_8::UserRender(int elapsed_time)
+bool Example_1_8::Draw()
 {
     ClearScreen();
 
     mover_->Update();
     mover_->CheckEdges(this);
-    mover_->Display(this);
+    mover_->Show(this);
 
     return true;
 }

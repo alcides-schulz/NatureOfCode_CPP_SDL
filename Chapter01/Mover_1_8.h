@@ -13,7 +13,7 @@ public:
         top_speed_ = 10;
     };
     void Update(void);
-    void Display(SDL_Framework *framework);
+    void Show(SDL_Framework *framework);
     void CheckEdges(SDL_Framework *framework);
     PVector GetLocation(void) { return location_; };
     void SetAcceleration(PVector acceleration) { acceleration_ = acceleration; };

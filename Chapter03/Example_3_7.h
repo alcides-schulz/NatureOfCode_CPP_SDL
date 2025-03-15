@@ -8,8 +8,8 @@ class Example_3_7 : public SDL_Framework
 {
 public:
     Example_3_7() : SDL_Framework("Example 3.7: Oscillator Objects", -1, -1, 640, 240, 0) {};
-    bool UserInit(void) override;
-    bool UserRender(int elapsed_time) override;
+    bool Setup(void) override;
+    bool Draw() override;
 private:
     std::vector<Oscillator_3_7 *> oscillators_;
 };

@@ -1,6 +1,6 @@
 #include "Example_3_6.h"
 
-bool Example_3_6::UserInit(void)
+bool Example_3_6::Setup(void)
 {
     angle_ = 0;
     angle_velocity_ = 0.05f;
@@ -8,7 +8,7 @@ bool Example_3_6::UserInit(void)
     return true;
 }
 
-bool Example_3_6::UserRender(int elapsed_time)
+bool Example_3_6::Draw()
 {
     ClearScreen();
 
@@ -16,7 +16,7 @@ bool Example_3_6::UserRender(int elapsed_time)
 
     auto x = static_cast<int>(amplitude * sin(angle_));
 
-    Translate(WindowWidth() / 2, WindowHeight() / 2);
+    Translate(Width() / 2, Height() / 2);
 
     DrawLine(0, 0, x, 0, kColorBlack);
     DrawCircle(x, 0, 30, kColorBlack, true);

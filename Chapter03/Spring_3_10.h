@@ -14,7 +14,7 @@ public:
     };
     void Connect(Bob_3_10 *bob);
     void ConstrainLength(Bob_3_10 *bob, float min_length, float max_length);
-    void Display(SDL_Framework *framework);
+    void Show(SDL_Framework *framework);
     void ShowLine(SDL_Framework *framework, Bob_3_10 *bob);
 private:
     PVector anchor_;

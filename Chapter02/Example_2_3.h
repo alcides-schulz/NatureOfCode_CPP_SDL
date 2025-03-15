@@ -8,8 +8,8 @@ class Example_2_3 : public SDL_Framework
 {
 public:
     Example_2_3() : SDL_Framework("Example 2.3: Gravity scaled by Mass", -1, -1, 640, 240, 0) {};
-    bool UserInit() override;
-    bool UserRender(int elapsed_time) override;
+    bool Setup() override;
+    bool Draw() override;
 private:
     Mover_2_3   *moverA_;
     Mover_2_3   *moverB_;

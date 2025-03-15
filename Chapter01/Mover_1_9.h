@@ -12,7 +12,7 @@ public:
         top_speed_ = 5;
     };
     void Update(void);
-    void Display(SDL_Framework *framework);
+    void Show(SDL_Framework *framework);
     void CheckEdges(SDL_Framework *framework);
 private:
     PVector location_;

@@ -8,7 +8,7 @@ class Example_1_3 : public SDL_Framework
 {
 public:
     Example_1_3() : SDL_Framework("Example 1.3: PVector subtraction", -1, -1, 640, 240, 0) {}
-    bool UserRender(int elapsed_time) override;
+    bool Draw() override;
 };
 
 #endif

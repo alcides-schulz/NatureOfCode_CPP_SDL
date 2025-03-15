@@ -10,7 +10,7 @@ class Attractor_2_6
 public:
     Attractor_2_6(PVector position, int mass) : position_(position), mass_(mass) { };
     PVector Attract(Mover_2_6 *mover);
-    void Display(SDL_Framework *framework);
+    void Show(SDL_Framework *framework);
     PVector GetPosition(void) { return position_; };
     void SetPosition(PVector position) { position_ = position; };
     int GetRadius(void) { return mass_; };
