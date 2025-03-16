@@ -35,6 +35,7 @@
 #include "Chapter03/Example_3_8.h"
 #include "Chapter03/Example_3_9.h"
 #include "Chapter03/Example_3_10.h"
+#include "Chapter03/Example_3_11.h"
 
 #include "Tests/CircleTest.h"
 #include "Tests/GenerateExampleInitialCode.h"
@@ -75,6 +76,7 @@ vector<SDL_Framework *> chapter03_menu = {
     new Example_3_8(),
     new Example_3_9(),
     new Example_3_10(),
+    new Example_3_11(),
 };
 
 vector<SDL_Framework *> tests_menu = {

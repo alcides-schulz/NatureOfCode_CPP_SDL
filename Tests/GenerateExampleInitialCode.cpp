@@ -8,7 +8,7 @@ bool GenerateExampleInitialCode::Setup()
     ClearScreen();
 
     string chapter = "03";
-    string example = "3_10";
+    string example = "3_11";
     string title = string(example);
     title.replace(1, 1, ".");
 
@@ -42,7 +42,7 @@ bool GenerateExampleInitialCode::Setup()
     include_output_file << "public:" << endl;
     include_output_file << "    Example_" << example << "() : SDL_Framework(\"Example " << title << ": DESC\", -1, -1, 640, 240, 0) {};" << endl;
     include_output_file << "    bool Setup(void) override;" << endl;
-    include_output_file << "    bool Draw() override;" << endl;
+    include_output_file << "    bool Draw(void) override;" << endl;
     include_output_file << "private:" << endl;
     include_output_file << "};" << endl << endl;
     include_output_file << "#endif" << endl;
@@ -60,7 +60,7 @@ bool GenerateExampleInitialCode::Setup()
     class_output_file << "{" << endl;
     class_output_file << "    return true;" << endl;
     class_output_file << "}" << endl << endl;
-    class_output_file << "bool Example_" << example << "::Draw()" << endl;
+    class_output_file << "bool Example_" << example << "::Draw(void)" << endl;
     class_output_file << "{" << endl;
     class_output_file << "    ClearScreen();" << endl << endl;
     class_output_file << "    return true;" << endl;

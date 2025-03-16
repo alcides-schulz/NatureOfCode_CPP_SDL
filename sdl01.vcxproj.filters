@@ -187,6 +187,12 @@
     <ClInclude Include="Chapter03\Spring_3_10.h">
       <Filter>Source Files\Chapter03</Filter>
     </ClInclude>
+    <ClInclude Include="Chapter03\Example_3_11.h">
+      <Filter>Source Files\Chapter03</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter03\Pendulum_3_11.h">
+      <Filter>Source Files\Chapter03</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -358,6 +364,12 @@
       <Filter>Source Files\Chapter03</Filter>
     </ClCompile>
     <ClCompile Include="Chapter03\Spring_3_10.cpp">
+      <Filter>Source Files\Chapter03</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter03\Example_3_11.cpp">
+      <Filter>Source Files\Chapter03</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter03\Pendulum_3_11.cpp">
       <Filter>Source Files\Chapter03</Filter>
     </ClCompile>
   </ItemGroup>
