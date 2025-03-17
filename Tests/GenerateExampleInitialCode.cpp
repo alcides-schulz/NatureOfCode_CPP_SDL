@@ -8,7 +8,8 @@ bool GenerateExampleInitialCode::Setup()
     ClearScreen();
 
     string chapter = "04";
-    string example = "4_1";
+    string example = "4_2";
+    string description = "An Array of Particles";
     string title = string(example);
     title.replace(1, 1, ".");
 
@@ -40,7 +41,7 @@ bool GenerateExampleInitialCode::Setup()
     include_output_file << "class Example_" << example << " : public SDL_Framework" << endl;
     include_output_file << "{" << endl;
     include_output_file << "public:" << endl;
-    include_output_file << "    Example_" << example << "() : SDL_Framework(\"Example " << title << ": DESC\", -1, -1, 640, 240, 0) {};" << endl;
+    include_output_file << "    Example_" << example << "() : SDL_Framework(\"Example " << title << ": " << description << "\", -1, -1, 640, 240, 0) {};" << endl;
     include_output_file << "    bool Setup(void) override;" << endl;
     include_output_file << "    bool Draw(void) override;" << endl;
     include_output_file << "private:" << endl;

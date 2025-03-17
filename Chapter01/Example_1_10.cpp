@@ -14,7 +14,7 @@ bool Example_1_10::Draw()
     ClearScreen();
 
     auto direction = PVector(MousePosition().x, MousePosition().y);
-    direction.Sub(mover_->GetLocation());
+    direction.Sub(mover_->GetPosition());
     direction.Normalize();
     direction.Mult(0.2f);
     mover_->SetAcceleration(direction);

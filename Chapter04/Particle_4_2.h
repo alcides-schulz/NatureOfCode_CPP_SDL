@@ -1,14 +1,14 @@
-#ifndef PARTICLE_4_1_H
-#define PARTICLE_4_1_H
+#ifndef PARTICLE_4_2_H
+#define PARTICLE_4_2_H
 
 #include "../Common/PVector.h"
 #include "../Common/SDL_Framework.h"
 #include "../Common/Utils.h"
 
-class Particle_4_1
+class Particle_4_2
 {
 public:
-    Particle_4_1(int x, int y)
+    Particle_4_2(int x, int y)
     {
         position_ = PVector(x, y);
         velocity_ = PVector(Utils::Random(-1, 1), Utils::Random(-2, 0));
@@ -19,6 +19,7 @@ public:
     void Show(SDL_Framework *framework);
     void ApplyForce(PVector force);
     bool IsDead(void) { return life_span_ < 0; };
+    void Run(SDL_Framework *framework);
 private:
     PVector position_;
     PVector velocity_;

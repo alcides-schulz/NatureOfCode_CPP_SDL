@@ -31,6 +31,7 @@ bool SDL_Framework::Init()
         std::getchar();
         return false;
     }
+    SDL_SetRenderDrawBlendMode(renderer_, SDL_BLENDMODE_BLEND);
     is_running_ = Setup();
     return is_running_;
 }

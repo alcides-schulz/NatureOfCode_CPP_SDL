@@ -1,16 +1,25 @@
 #include "Example_4_1.h"
-#include "../Common/Utils.h"
 
 bool Example_4_1::Setup(void)
 {
-    for (int i = 0; i < 20; i++)
-        cout << Utils::Random(-1, 1) << endl;
+    particle_ = new Particle_4_1(Width() / 2, 10);
     return true;
 }
 
 bool Example_4_1::Draw(void)
 {
     ClearScreen();
+
+    particle_->Update();
+    particle_->Show(this);
+
+    auto gravity = PVector(0.0f, 0.1f);
+    particle_->ApplyForce(gravity);
+
+    if (particle_->IsDead()) {
+        particle_ = new Particle_4_1(Width() / 2, 10);
+        cout << "particle is dead !" << endl;
+    }
 
     return true;
 }

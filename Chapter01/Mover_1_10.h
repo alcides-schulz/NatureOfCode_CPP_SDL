@@ -7,7 +7,7 @@
 class Mover_1_10 
 {
 public:
-    Mover_1_10(PVector location, PVector velocity) : location_(location), velocity_(velocity)
+    Mover_1_10(PVector position, PVector velocity) : position_(position), velocity_(velocity)
     {
         acceleration_ = PVector(0, 0);
         top_speed_ = 2;
@@ -15,10 +15,10 @@ public:
     void Update(void);
     void Show(SDL_Framework *framework);
     void CheckEdges(SDL_Framework *framework);
-    PVector GetLocation(void) { return location_; };
+    PVector GetPosition(void) { return position_; };
     void SetAcceleration(PVector acceleration) { acceleration_ = acceleration; };
 private:
-    PVector location_;
+    PVector position_;
     PVector velocity_;
     PVector acceleration_;
     float   top_speed_;

@@ -38,6 +38,7 @@
 #include "Chapter03/Example_3_11.h"
 
 #include "Chapter04/Example_4_1.h"
+#include "Chapter04/Example_4_2.h"
 
 #include "Tests/CircleTest.h"
 #include "Tests/GenerateExampleInitialCode.h"
@@ -83,6 +84,7 @@ vector<SDL_Framework *> chapter03_menu = {
 
 vector<SDL_Framework *> chapter04_menu = {
     new Example_4_1(),
+    new Example_4_2(),
 };
 
 vector<SDL_Framework *> tests_menu = {
@@ -125,7 +127,7 @@ int main(int argc, char* argv[])
         cout << endl << "\t a. Chapter 1 - Vectors";
         cout << endl << "\t b. Chapter 2 - Forces";
         cout << endl << "\t c. Chapter 3 - Oscillation";
-        cout << endl << "\t d. Chapter 4 - Particles";
+        cout << endl << "\t d. Chapter 4 - Particle System";
         cout << endl;
         cout << endl << "\t z. Tests";
         cout << endl << "\t x. Exit" << endl << endl << "--> ";

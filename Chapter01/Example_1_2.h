@@ -11,7 +11,7 @@ public:
     bool Setup() override;
     bool Draw() override;
 private:
-    PVector location_;
+    PVector position_;
     PVector velocity_;
 };
 

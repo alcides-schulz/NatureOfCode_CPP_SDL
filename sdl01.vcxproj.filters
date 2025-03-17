@@ -202,6 +202,12 @@
     <ClInclude Include="Chapter04\Particle_4_1.h">
       <Filter>Source Files\Chapter04</Filter>
     </ClInclude>
+    <ClInclude Include="Chapter04\Example_4_2.h">
+      <Filter>Source Files\Chapter04</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter04\Particle_4_2.h">
+      <Filter>Source Files\Chapter04</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -386,6 +392,12 @@
     </ClCompile>
     <ClCompile Include="Common\Utils.h">
       <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter04\Example_4_2.cpp">
+      <Filter>Source Files\Chapter04</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter04\Particle_4_2.cpp">
+      <Filter>Source Files\Chapter04</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
