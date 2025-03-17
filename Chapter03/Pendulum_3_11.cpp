@@ -1,5 +1,5 @@
 #include "Pendulum_3_11.h"
-#include "../Common/P5Functions.h"
+#include "../Common/Utils.h"
 
 void Pendulum_3_11::Update(void)
 {
@@ -35,7 +35,7 @@ void Pendulum_3_11::HandleDrag(int mouse_x, int mouse_y)
 {
     if (is_dragging_) {
         auto diff = PVector::Sub(pivot_, PVector(mouse_x, mouse_y));
-        angle_ = atan2(-1 * diff.y, diff.x) - P5Functions::Radians(90);
+        angle_ = atan2(-1 * diff.y, diff.x) - Utils::Radians(90);
     }
 }
 

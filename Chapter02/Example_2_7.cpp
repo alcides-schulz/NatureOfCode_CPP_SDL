@@ -1,11 +1,12 @@
 #include "Example_2_7.h"
+#include "../Common/Utils.h"
 
 bool Example_2_7::Setup()
 {
     for (int i = 0; i < std::size(mover_); i++) {
-        auto x = (float)(std::rand() % Width());
-        auto y = (float)(std::rand() % Height());
-        auto m = rand() % 3 + 1;
+        auto x = Utils::Random((float)Width());
+        auto y = Utils::Random((float)Height());
+        auto m = (int)Utils::Random(1, 4);
         mover_[i] = new Mover_2_7(PVector(x, y), m);
     }
     attractor_ = new Attractor_2_7(PVector(Width() / 2.0f, Height() / 2.0f), 20);

@@ -72,7 +72,9 @@
     <ClCompile Include="Chapter03\Oscillator_3_7.cpp" />
     <ClCompile Include="Chapter03\Pendulum_3_11.cpp" />
     <ClCompile Include="Chapter03\Spring_3_10.cpp" />
-    <ClCompile Include="Common\P5Functions.h" />
+    <ClCompile Include="Chapter04\Example_4_1.cpp" />
+    <ClCompile Include="Chapter04\Particle_4_1.cpp" />
+    <ClCompile Include="Common\Utils.h" />
     <ClCompile Include="Common\PVector.cpp" />
     <ClCompile Include="Common\SDL_Framework.cpp" />
     <ClCompile Include="main.cpp" />
@@ -133,6 +135,8 @@
     <ClInclude Include="Chapter03\Oscillator_3_7.h" />
     <ClInclude Include="Chapter03\Pendulum_3_11.h" />
     <ClInclude Include="Chapter03\Spring_3_10.h" />
+    <ClInclude Include="Chapter04\Example_4_1.h" />
+    <ClInclude Include="Chapter04\Particle_4_1.h" />
     <ClInclude Include="Common\PVector.h" />
     <ClInclude Include="Common\SDL_Framework.h" />
     <ClInclude Include="Tests\CircleTest.h" />

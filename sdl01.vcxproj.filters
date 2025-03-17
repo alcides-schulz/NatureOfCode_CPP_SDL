@@ -20,6 +20,9 @@
     <Filter Include="Source Files\Tests">
       <UniqueIdentifier>{ca78f855-4866-472a-9f27-bddfd4af4d18}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Chapter04">
+      <UniqueIdentifier>{84268f8d-3472-44cd-8573-d244750a7c11}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Common\PVector.h">
@@ -193,6 +196,12 @@
     <ClInclude Include="Chapter03\Pendulum_3_11.h">
       <Filter>Source Files\Chapter03</Filter>
     </ClInclude>
+    <ClInclude Include="Chapter04\Example_4_1.h">
+      <Filter>Source Files\Chapter04</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter04\Particle_4_1.h">
+      <Filter>Source Files\Chapter04</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -354,9 +363,6 @@
     <ClCompile Include="Chapter03\Example_3_9.cpp">
       <Filter>Source Files\Chapter03</Filter>
     </ClCompile>
-    <ClCompile Include="Common\P5Functions.h">
-      <Filter>Source Files\Common</Filter>
-    </ClCompile>
     <ClCompile Include="Chapter03\Example_3_10.cpp">
       <Filter>Source Files\Chapter03</Filter>
     </ClCompile>
@@ -371,6 +377,15 @@
     </ClCompile>
     <ClCompile Include="Chapter03\Pendulum_3_11.cpp">
       <Filter>Source Files\Chapter03</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter04\Example_4_1.cpp">
+      <Filter>Source Files\Chapter04</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter04\Particle_4_1.cpp">
+      <Filter>Source Files\Chapter04</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\Utils.h">
+      <Filter>Source Files\Common</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

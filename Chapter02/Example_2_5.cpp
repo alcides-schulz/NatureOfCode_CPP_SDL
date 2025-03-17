@@ -1,4 +1,5 @@
 #include "Example_2_5.h"
+#include "../Common/Utils.h"
 
 bool Example_2_5::Setup()
 {
@@ -40,7 +41,7 @@ void Example_2_5::Reset(void)
         if (mover_[i] != nullptr) {
             delete mover_[i];
         }
-        mover_[i] = new Mover_2_5(PVector(40 + i * 70, 0), (int)((rand() % 3) + 1.0f));
+        mover_[i] = new Mover_2_5(PVector(40 + i * 70, 0), (int)(Utils::Random(1, 4)));
     }
 }
 

@@ -1,11 +1,12 @@
 #include "Example_2_9.h"
+#include "../Common/Utils.h"
 
 bool Example_2_9::Setup()
 {
     for (int i = 0; i < std::size(body_); i++) {
-        auto x = (float)(std::rand() % Width());
-        auto y = (float)(std::rand() % Height());
-        auto m = rand() % 2 + 1;
+        auto x = Utils::Random((float)Width());
+        auto y = Utils::Random((float)Height());
+        auto m = (int)Utils::Random(1, 4);
         body_[i] = new Body_2_9(PVector(x, y), m);
     }
 
@@ -27,6 +28,7 @@ bool Example_2_9::Draw()
         body_[i]->Update();
         body_[i]->Show(this);
     }
+
     return true;
 }
 

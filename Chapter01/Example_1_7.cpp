@@ -1,9 +1,10 @@
 #include "Example_1_7.h"
+#include "../Common/Utils.h"
 
 bool Example_1_7::Setup()
 {
-    auto location = PVector(rand() % Width(), rand() % Height());
-    auto velocity = PVector(rand() % 5 - 2, rand() % 5 - 2);
+    auto location = PVector(Utils::Random((float)Width()), Utils::Random((float)Height()));
+    auto velocity = PVector(Utils::Random(-2, 2), Utils::Random(-2, 2));
     mover_ = new Mover_1_7(location, velocity);
 
     return true;

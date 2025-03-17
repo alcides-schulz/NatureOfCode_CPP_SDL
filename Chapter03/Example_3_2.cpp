@@ -1,14 +1,15 @@
 #include "Example_3_2.h"
+#include "../Common/Utils.h"
 
 bool Example_3_2::Setup()
 {
     for (int i = 0; i < std::size(mover_); i++) {
-        auto x = (float)(std::rand() % Width());
-        auto y = (float)(std::rand() % Height());
-        auto m = std::rand() % 2 + 1;
+        auto x = Utils::Random((float)Width());
+        auto y = Utils::Random((float)Height());
+        auto m = (int)Utils::Random(1.0f, 4.0f);
         mover_[i] = new Mover_3_2(PVector(x, y), m);
-        auto vx = rand() / RAND_MAX * 2.0f - 1.0f;
-        auto vy = rand() / RAND_MAX * 2.0f - 1.0f;
+        auto vx = Utils::Random(-1, 1);
+        auto vy = Utils::Random(-1, 1);
         mover_[i]->SetVelocity(PVector(vx, vy));
     }
     attractor_ = new Attractor_3_2(PVector(Width() / 2.0f, Height() / 2.0f), 20);

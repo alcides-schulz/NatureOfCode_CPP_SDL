@@ -1,21 +1,15 @@
-#include "Mover_1_9.h"
-#include "../Common/Utils.h"
+#include "Particle_4_1.h"
 
-void Mover_1_9::Update(void)
+void Particle_4_1::Update(void)
 {
-    acceleration_ = PVector::Random2D();
-    acceleration_.Mult(Utils::Random(2));
-    velocity_.Add(acceleration_);
-    velocity_.Limit(top_speed_);
-    location_.Add(velocity_);
 }
 
-void Mover_1_9::Show(SDL_Framework *framework)
+void Particle_4_1::Show(SDL_Framework *framework)
 {
     framework->DrawCircle((int)location_.x, (int)location_.y, 48, kColorGray, true);
 }
 
-void Mover_1_9::CheckEdges(SDL_Framework *framework)
+void Particle_4_1::CheckEdges(SDL_Framework *framework)
 {
     if (location_.x > framework->Width())
         location_.x = 0;

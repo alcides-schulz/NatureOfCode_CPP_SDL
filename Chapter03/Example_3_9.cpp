@@ -1,5 +1,5 @@
 #include "Example_3_9.h"
-#include "../Common/P5Functions.h"
+#include "../Common/Utils.h"
 
 bool Example_3_9::Setup(void)
 {
@@ -17,7 +17,7 @@ bool Example_3_9::Draw()
     start_angle_ += 0.02f;
 
     for (int x = 0; x <= Width(); x += 24) {
-        auto y = static_cast<int>(P5Functions::Map(sin(angle), -1, 1, 0, Height()));
+        auto y = static_cast<int>(Utils::Map(sin(angle), -1, 1, 0, Height()));
         DrawCircle(x, y, 48, kColorGray, true);
         DrawCircle(x, y, 48, kColorBlack, false);
         angle += angle_velocity_;

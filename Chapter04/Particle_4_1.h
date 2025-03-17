@@ -1,15 +1,15 @@
-#ifndef MOVER_1_9_H
-#define MOVER_1_9_H
+#ifndef PARTICLE_4_1_H
+#define PARTICLE_4_1_H
 
 #include "../Common/PVector.h"
 #include "../Common/SDL_Framework.h"
 
-class Mover_1_9 
+class Particle_4_1
 {
 public:
-    Mover_1_9(PVector location, PVector velocity) : location_(location), velocity_(velocity)
+    Particle_4_1(PVector location, PVector velocity) : location_(location), velocity_(velocity)
     {
-        top_speed_ = 2;
+        top_speed_ = 5;
     };
     void Update(void);
     void Show(SDL_Framework *framework);
