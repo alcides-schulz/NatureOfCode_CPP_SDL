@@ -9,7 +9,7 @@ bool Example_3_11::Setup(void)
 bool Example_3_11::Draw(void)
 {
     ClearScreen();
-    if (IsMouseButtonPressed(kMouseLeftButton))
+    if (IsMouseButtonHeld(kMouseLeftButton))
         pendulum_->HandleClick(MousePosition().x, MousePosition().y);
     else
         pendulum_->StopDragging();

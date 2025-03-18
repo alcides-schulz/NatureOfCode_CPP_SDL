@@ -8,8 +8,8 @@ bool GenerateExampleInitialCode::Setup()
     ClearScreen();
 
     string chapter = "04";
-    string example = "4_2";
-    string description = "An Array of Particles";
+    string example = "4_4";
+    string description = "A System of Systems";
     string title = string(example);
     title.replace(1, 1, ".");
 

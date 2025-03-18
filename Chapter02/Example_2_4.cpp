@@ -13,7 +13,7 @@ bool Example_2_4::Draw()
     PVector gravity(0.0f, 0.1f);
     mover_->ApplyForce(gravity);
 
-    if (IsMouseButtonPressed(kMouseLeftButton)) {
+    if (IsMouseButtonHeld(kMouseLeftButton)) {
         PVector wind(0.5f, 0.0f);
         mover_->ApplyForce(wind);
     }

@@ -15,7 +15,8 @@ void Particle_4_1::Update(void)
 
 void Particle_4_1::Show(SDL_Framework *framework)
 {
-    framework->DrawCircle(position_.x, position_.y, 8, { kColorBlack.r, kColorBlack.g, kColorBlack.b, (Uint8)life_span_ }, true);
+    SDL_Color color = kColorBlack;
+    framework->DrawCircle(position_.x, position_.y, 8, { color.r, color.g, color.b, (Uint8)life_span_ }, true);
 }
 
 // END

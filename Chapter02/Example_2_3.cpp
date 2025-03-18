@@ -19,7 +19,7 @@ bool Example_2_3::Draw()
     gravityB.Mult((float)moverB_->GetMass());
     moverB_->ApplyForce(gravityB);
     
-    if (IsMouseButtonPressed(kMouseLeftButton)) {
+    if (IsMouseButtonHeld(kMouseLeftButton)) {
         PVector wind(0.1f, 0.0f);
         moverA_->ApplyForce(wind);
         moverB_->ApplyForce(wind);

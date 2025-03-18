@@ -12,17 +12,17 @@ bool Example_2_6::Draw()
 {
     ClearScreen();
 
-    if (!isDragging && IsMouseButtonPressed(kMouseLeftButton)) {
+    if (!isDragging && IsMouseButtonHeld(kMouseLeftButton)) {
         auto mouse_position = PVector((float)MousePosition().x, (float)MousePosition().y);
         auto distance = PVector::Distance(mouse_position, attractor_->GetPosition());
         if (distance <= attractor_->GetRadius()) {
             isDragging = true;
         }
     }
-    if (isDragging && IsMouseButtonPressed(kMouseLeftButton)) {
+    if (isDragging && IsMouseButtonHeld(kMouseLeftButton)) {
         attractor_->SetPosition(PVector((float)MousePosition().x, (float)MousePosition().y));
     }
-    if (!IsMouseButtonPressed(kMouseLeftButton)) {
+    if (!IsMouseButtonHeld(kMouseLeftButton)) {
         isDragging = false;
     }
     

@@ -15,7 +15,7 @@ bool Example_2_2::Draw()
     moverA_->ApplyForce(gravity);
     moverB_->ApplyForce(gravity);
 
-    if (IsMouseButtonPressed(kMouseLeftButton)) {
+    if (IsMouseButtonHeld(kMouseLeftButton)) {
         PVector wind(0.1f, 0.0f);
         moverA_->ApplyForce(wind);
         moverB_->ApplyForce(wind);

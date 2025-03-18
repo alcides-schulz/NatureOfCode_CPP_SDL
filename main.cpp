@@ -39,6 +39,8 @@
 
 #include "Chapter04/Example_4_1.h"
 #include "Chapter04/Example_4_2.h"
+#include "Chapter04/Example_4_3.h"
+#include "Chapter04/Example_4_4.h"
 
 #include "Tests/CircleTest.h"
 #include "Tests/GenerateExampleInitialCode.h"
@@ -85,6 +87,8 @@ vector<SDL_Framework *> chapter03_menu = {
 vector<SDL_Framework *> chapter04_menu = {
     new Example_4_1(),
     new Example_4_2(),
+    new Example_4_3(),
+    new Example_4_4(),
 };
 
 vector<SDL_Framework *> tests_menu = {

@@ -15,7 +15,7 @@ bool Example_2_5::Draw()
 {
     ClearScreen();
 
-    if (IsMouseButtonPressed(kMouseLeftButton)) {
+    if (IsMouseButtonHeld(kMouseLeftButton)) {
         Reset();
     }
     liquid_->Show(this);

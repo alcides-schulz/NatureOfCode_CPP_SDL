@@ -12,7 +12,7 @@ bool Example_3_10::Draw()
 {
     ClearScreen();
 
-    if (IsMouseButtonPressed(kMouseLeftButton))
+    if (IsMouseButtonHeld(kMouseLeftButton))
         bob_->HandleClick(MousePosition().x, MousePosition().y);
     else
         bob_->StopDragging();

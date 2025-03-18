@@ -13,6 +13,7 @@
 #include <cstdlib>
 #include <list>
 #include <ctime>
+#include <chrono>
 
 using namespace std;
 
@@ -43,7 +44,8 @@ public:
     SDL_Window* Window(void) { return window_; }
     void ClearScreen(void);
     SDL_Point MousePosition(void) { return mouse_position_; }
-    bool IsMouseButtonPressed(int mouse_button) { return mouse_button_states_[mouse_button]; }
+    bool IsMouseButtonHeld(int mouse_button) { return mouse_button_held_[mouse_button]; }
+    bool IsMouseButtonClicked(int mouse_button) { return mouse_button_clicked_[mouse_button]; }
     Uint32 FrameCount(void) { return global_frame_count_; }
     bool Init(void);
     void Run(void);
@@ -70,12 +72,16 @@ private:
     int             origin_y_ = 0;
     double          rotation_radians_ = 0;
     list<Sint32>    pressed_keys_;
-    bool            mouse_button_states_[3] = { false, false, false };
+    bool            mouse_button_held_[3] = { false, false, false };
+    bool            mouse_button_clicked_[3] = { false, false, false };
     SDL_Point       mouse_position_ = { 0, 0 };
     bool            is_running_ = false;
     const int       kFPS = 60;
     const Uint32    kMaxFrameTime = (Uint32)(1000.0f / kFPS);
     Uint32          global_frame_count_;
+    Uint32          last_mouse_click_time = SDL_GetTicks();
+    Uint32          mouse_debounce_milliseconds_ = 200;
+
     void            HandleEvents();
 };
 
