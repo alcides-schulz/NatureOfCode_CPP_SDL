@@ -89,6 +89,10 @@
     <ClCompile Include="Chapter04\Example_04_06_Emitter.cpp" />
     <ClCompile Include="Chapter04\Example_04_06_Particle.cpp" />
     <ClCompile Include="Chapter04\Example_04_06_Sketch.cpp" />
+    <ClCompile Include="Chapter04\Example_04_07_Emitter.cpp" />
+    <ClCompile Include="Chapter04\Example_04_07_Particle.cpp" />
+    <ClCompile Include="Chapter04\Example_04_07_Repeller.cpp" />
+    <ClCompile Include="Chapter04\Example_04_07_Sketch.cpp" />
     <ClCompile Include="Common\Utils.h" />
     <ClCompile Include="Common\PVector.cpp" />
     <ClCompile Include="Common\SDL_Framework.cpp" />
@@ -167,6 +171,10 @@
     <ClInclude Include="Chapter04\Example_04_06_Emitter.h" />
     <ClInclude Include="Chapter04\Example_04_06_Particle.h" />
     <ClInclude Include="Chapter04\Example_04_06_Sketch.h" />
+    <ClInclude Include="Chapter04\Example_04_07_Emitter.h" />
+    <ClInclude Include="Chapter04\Example_04_07_Particle.h" />
+    <ClInclude Include="Chapter04\Example_04_07_Sketch.h" />
+    <ClInclude Include="Chapter04\Example_04_07_Repeller.h" />
     <ClInclude Include="Common\PVector.h" />
     <ClInclude Include="Common\SDL_Framework.h" />
     <ClInclude Include="Tests\CircleTest.h" />

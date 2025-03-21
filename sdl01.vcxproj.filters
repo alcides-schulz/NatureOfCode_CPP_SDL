@@ -247,6 +247,18 @@
     <ClInclude Include="Chapter04\Example_04_06_Sketch.h">
       <Filter>Source Files\Chapter04</Filter>
     </ClInclude>
+    <ClInclude Include="Chapter04\Example_04_07_Emitter.h">
+      <Filter>Source Files\Chapter04</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter04\Example_04_07_Particle.h">
+      <Filter>Source Files\Chapter04</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter04\Example_04_07_Sketch.h">
+      <Filter>Source Files\Chapter04</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter04\Example_04_07_Repeller.h">
+      <Filter>Source Files\Chapter04</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -475,6 +487,18 @@
       <Filter>Source Files\Chapter04</Filter>
     </ClCompile>
     <ClCompile Include="Chapter04\Example_04_06_Sketch.cpp">
+      <Filter>Source Files\Chapter04</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter04\Example_04_07_Emitter.cpp">
+      <Filter>Source Files\Chapter04</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter04\Example_04_07_Particle.cpp">
+      <Filter>Source Files\Chapter04</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter04\Example_04_07_Sketch.cpp">
+      <Filter>Source Files\Chapter04</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter04\Example_04_07_Repeller.cpp">
       <Filter>Source Files\Chapter04</Filter>
     </ClCompile>
   </ItemGroup>

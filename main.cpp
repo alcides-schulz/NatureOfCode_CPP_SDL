@@ -43,6 +43,7 @@
 #include "Chapter04/Example_04_04_Sketch.h"
 #include "Chapter04/Example_04_05_Sketch.h"
 #include "Chapter04/Example_04_06_Sketch.h"
+#include "Chapter04/Example_04_07_Sketch.h"
 
 
 #include "Tests/CircleTest.h"
@@ -94,6 +95,7 @@ vector<SDL_Framework *> chapter04_menu = {
     new nature_of_code_chapter_04_example_04::Sketch(),
     new nature_of_code_chapter_04_example_05::Sketch(),
     new nature_of_code_chapter_04_example_06::Sketch(),
+    new nature_of_code_chapter_04_example_07::Sketch(),
 };
 
 vector<SDL_Framework *> tests_menu = {
