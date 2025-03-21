@@ -4,43 +4,46 @@
 
 #include "Common/SDL_Framework.h"
 
-#include "Chapter01/Example_1_1.h"
-#include "Chapter01/Example_1_2.h"
-#include "Chapter01/Example_1_3.h"
-#include "Chapter01/Example_1_4.h"
-#include "Chapter01/Example_1_5.h"
-#include "Chapter01/Example_1_6.h"
-#include "Chapter01/Example_1_7.h"
-#include "Chapter01/Example_1_8.h"
-#include "Chapter01/Example_1_9.h"
-#include "Chapter01/Example_1_10.h"
+#include "Chapter01/Example_01_01_Sketch.h"
+#include "Chapter01/Example_01_02_Sketch.h"
+#include "Chapter01/Example_01_03_Sketch.h"
+#include "Chapter01/Example_01_04_Sketch.h"
+#include "Chapter01/Example_01_05_Sketch.h"
+#include "Chapter01/Example_01_06_Sketch.h"
+#include "Chapter01/Example_01_07_Sketch.h"
+#include "Chapter01/Example_01_08_Sketch.h"
+#include "Chapter01/Example_01_09_Sketch.h"
+#include "Chapter01/Example_01_10_Sketch.h"
 
-#include "Chapter02/Example_2_1.h"
-#include "Chapter02/Example_2_2.h"
-#include "Chapter02/Example_2_3.h"
-#include "Chapter02/Example_2_4.h"
-#include "Chapter02/Example_2_5.h"
-#include "Chapter02/Example_2_6.h"
-#include "Chapter02/Example_2_7.h"
-#include "Chapter02/Example_2_8.h"
-#include "Chapter02/Example_2_9.h"
+#include "Chapter02/Example_02_01_Sketch.h"
+#include "Chapter02/Example_02_02_Sketch.h"
+#include "Chapter02/Example_02_03_Sketch.h"
+#include "Chapter02/Example_02_04_Sketch.h"
+#include "Chapter02/Example_02_05_Sketch.h"
+#include "Chapter02/Example_02_06_Sketch.h"
+#include "Chapter02/Example_02_07_Sketch.h"
+#include "Chapter02/Example_02_08_Sketch.h"
+#include "Chapter02/Example_02_09_Sketch.h"
 
-#include "Chapter03/Example_3_1.h"
-#include "Chapter03/Example_3_2.h"
-#include "Chapter03/Example_3_3.h"
-#include "Chapter03/Example_3_4.h"
-#include "Chapter03/Example_3_5.h"
-#include "Chapter03/Example_3_6.h"
-#include "Chapter03/Example_3_7.h"
-#include "Chapter03/Example_3_8.h"
-#include "Chapter03/Example_3_9.h"
-#include "Chapter03/Example_3_10.h"
-#include "Chapter03/Example_3_11.h"
+#include "Chapter03/Example_03_01_Sketch.h"
+#include "Chapter03/Example_03_02_Sketch.h"
+#include "Chapter03/Example_03_03_Sketch.h"
+#include "Chapter03/Example_03_04_Sketch.h"
+#include "Chapter03/Example_03_05_Sketch.h"
+#include "Chapter03/Example_03_06_Sketch.h"
+#include "Chapter03/Example_03_07_Sketch.h"
+#include "Chapter03/Example_03_08_Sketch.h"
+#include "Chapter03/Example_03_09_Sketch.h"
+#include "Chapter03/Example_03_10_Sketch.h"
+#include "Chapter03/Example_03_11_Sketch.h"
 
-#include "Chapter04/Example_4_1.h"
-#include "Chapter04/Example_4_2.h"
-#include "Chapter04/Example_4_3.h"
-#include "Chapter04/Example_4_4.h"
+#include "Chapter04/Example_04_01_Sketch.h"
+#include "Chapter04/Example_04_02_Sketch.h"
+#include "Chapter04/Example_04_03_Sketch.h"
+#include "Chapter04/Example_04_04_Sketch.h"
+#include "Chapter04/Example_04_05_Sketch.h"
+#include "Chapter04/Example_04_06_Sketch.h"
+
 
 #include "Tests/CircleTest.h"
 #include "Tests/GenerateExampleInitialCode.h"
@@ -48,47 +51,49 @@
 using namespace std;
 
 vector<SDL_Framework *> chapter01_menu = {
-    new Example_1_1(),
-    new Example_1_2(),
-    new Example_1_3(),
-    new Example_1_4(),
-    new Example_1_5(),
-    new Example_1_6(),
-    new Example_1_7(),
-    new Example_1_8(),
-    new Example_1_9(),
-    new Example_1_10(),
+    new nature_of_code_chapter_01_example_01::Sketch(),
+    new nature_of_code_chapter_01_example_02::Sketch(),
+    new nature_of_code_chapter_01_example_03::Sketch(),
+    new nature_of_code_chapter_01_example_04::Sketch(),
+    new nature_of_code_chapter_01_example_05::Sketch(),
+    new nature_of_code_chapter_01_example_06::Sketch(),
+    new nature_of_code_chapter_01_example_07::Sketch(),
+    new nature_of_code_chapter_01_example_08::Sketch(),
+    new nature_of_code_chapter_01_example_09::Sketch(),
+    new nature_of_code_chapter_01_example_10::Sketch(),
 };
 vector<SDL_Framework *> chapter02_menu = {
-    new Example_2_1(),
-    new Example_2_2(),
-    new Example_2_3(),
-    new Example_2_4(),
-    new Example_2_5(),
-    new Example_2_6(),
-    new Example_2_7(),
-    new Example_2_8(),
-    new Example_2_9(),
+    new nature_of_code_chapter_02_example_01::Sketch(),
+    new nature_of_code_chapter_02_example_02::Sketch(),
+    new nature_of_code_chapter_02_example_03::Sketch(),
+    new nature_of_code_chapter_02_example_04::Sketch(),
+    new nature_of_code_chapter_02_example_05::Sketch(),
+    new nature_of_code_chapter_02_example_06::Sketch(),
+    new nature_of_code_chapter_02_example_07::Sketch(),
+    new nature_of_code_chapter_02_example_08::Sketch(),
+    new nature_of_code_chapter_02_example_09::Sketch(),
 };
 vector<SDL_Framework *> chapter03_menu = {
-    new Example_3_1(),
-    new Example_3_2(),
-    new Example_3_3(),
-    new Example_3_4(),
-    new Example_3_5(),
-    new Example_3_6(),
-    new Example_3_7(),
-    new Example_3_8(),
-    new Example_3_9(),
-    new Example_3_10(),
-    new Example_3_11(),
+    new nature_of_code_chapter_03_example_01::Sketch(),
+    new nature_of_code_chapter_03_example_02::Sketch(),
+    new nature_of_code_chapter_03_example_03::Sketch(),
+    new nature_of_code_chapter_03_example_04::Sketch(),
+    new nature_of_code_chapter_03_example_05::Sketch(),
+    new nature_of_code_chapter_03_example_06::Sketch(),
+    new nature_of_code_chapter_03_example_07::Sketch(),
+    new nature_of_code_chapter_03_example_08::Sketch(),
+    new nature_of_code_chapter_03_example_09::Sketch(),
+    new nature_of_code_chapter_03_example_10::Sketch(),
+    new nature_of_code_chapter_03_example_11::Sketch(),
 };
 
 vector<SDL_Framework *> chapter04_menu = {
-    new Example_4_1(),
-    new Example_4_2(),
-    new Example_4_3(),
-    new Example_4_4(),
+    new nature_of_code_chapter_04_example_01::Sketch(),
+    new nature_of_code_chapter_04_example_02::Sketch(),
+    new nature_of_code_chapter_04_example_03::Sketch(),
+    new nature_of_code_chapter_04_example_04::Sketch(),
+    new nature_of_code_chapter_04_example_05::Sketch(),
+    new nature_of_code_chapter_04_example_06::Sketch(),
 };
 
 vector<SDL_Framework *> tests_menu = {

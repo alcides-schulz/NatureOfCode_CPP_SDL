@@ -28,202 +28,223 @@
     <ClInclude Include="Common\PVector.h">
       <Filter>Source Files\Common</Filter>
     </ClInclude>
-    <ClInclude Include="Chapter01\Example_1_1.h">
-      <Filter>Source Files\Chapter01</Filter>
-    </ClInclude>
-    <ClInclude Include="Chapter01\Example_1_2.h">
-      <Filter>Source Files\Chapter01</Filter>
-    </ClInclude>
-    <ClInclude Include="Chapter01\Example_1_3.h">
-      <Filter>Source Files\Chapter01</Filter>
-    </ClInclude>
-    <ClInclude Include="Chapter01\Example_1_4.h">
-      <Filter>Source Files\Chapter01</Filter>
-    </ClInclude>
-    <ClInclude Include="Chapter01\Example_1_5.h">
-      <Filter>Source Files\Chapter01</Filter>
-    </ClInclude>
-    <ClInclude Include="Chapter01\Example_1_6.h">
-      <Filter>Source Files\Chapter01</Filter>
-    </ClInclude>
-    <ClInclude Include="Chapter01\Example_1_7.h">
-      <Filter>Source Files\Chapter01</Filter>
-    </ClInclude>
-    <ClInclude Include="Chapter01\Example_1_8.h">
-      <Filter>Source Files\Chapter01</Filter>
-    </ClInclude>
-    <ClInclude Include="Chapter01\Example_1_9.h">
-      <Filter>Source Files\Chapter01</Filter>
-    </ClInclude>
-    <ClInclude Include="Chapter01\Example_1_10.h">
-      <Filter>Source Files\Chapter01</Filter>
-    </ClInclude>
-    <ClInclude Include="Chapter02\Example_2_1.h">
-      <Filter>Source Files\Chapter02</Filter>
-    </ClInclude>
-    <ClInclude Include="Chapter02\Example_2_2.h">
-      <Filter>Source Files\Chapter02</Filter>
-    </ClInclude>
-    <ClInclude Include="Chapter02\Example_2_3.h">
-      <Filter>Source Files\Chapter02</Filter>
-    </ClInclude>
-    <ClInclude Include="Chapter02\Example_2_4.h">
-      <Filter>Source Files\Chapter02</Filter>
-    </ClInclude>
-    <ClInclude Include="Chapter02\Example_2_5.h">
-      <Filter>Source Files\Chapter02</Filter>
-    </ClInclude>
-    <ClInclude Include="Chapter02\Example_2_6.h">
-      <Filter>Source Files\Chapter02</Filter>
-    </ClInclude>
-    <ClInclude Include="Chapter02\Example_2_7.h">
-      <Filter>Source Files\Chapter02</Filter>
-    </ClInclude>
-    <ClInclude Include="Chapter02\Example_2_8.h">
-      <Filter>Source Files\Chapter02</Filter>
-    </ClInclude>
-    <ClInclude Include="Chapter02\Example_2_9.h">
-      <Filter>Source Files\Chapter02</Filter>
-    </ClInclude>
     <ClInclude Include="Common\SDL_Framework.h">
       <Filter>Source Files\Common</Filter>
-    </ClInclude>
-    <ClInclude Include="Chapter03\Example_3_1.h">
-      <Filter>Source Files\Chapter03</Filter>
-    </ClInclude>
-    <ClInclude Include="Chapter03\Example_3_2.h">
-      <Filter>Source Files\Chapter03</Filter>
-    </ClInclude>
-    <ClInclude Include="Chapter03\Attractor_3_2.h">
-      <Filter>Source Files\Chapter03</Filter>
-    </ClInclude>
-    <ClInclude Include="Chapter03\Mover_3_2.h">
-      <Filter>Source Files\Chapter03</Filter>
-    </ClInclude>
-    <ClInclude Include="Chapter01\Mover_1_7.h">
-      <Filter>Source Files\Chapter01</Filter>
-    </ClInclude>
-    <ClInclude Include="Chapter01\Mover_1_8.h">
-      <Filter>Source Files\Chapter01</Filter>
-    </ClInclude>
-    <ClInclude Include="Chapter01\Mover_1_9.h">
-      <Filter>Source Files\Chapter01</Filter>
-    </ClInclude>
-    <ClInclude Include="Chapter01\Mover_1_10.h">
-      <Filter>Source Files\Chapter01</Filter>
-    </ClInclude>
-    <ClInclude Include="Chapter02\Mover_2_1.h">
-      <Filter>Source Files\Chapter02</Filter>
-    </ClInclude>
-    <ClInclude Include="Chapter02\Mover_2_2.h">
-      <Filter>Source Files\Chapter02</Filter>
-    </ClInclude>
-    <ClInclude Include="Chapter02\Mover_2_3.h">
-      <Filter>Source Files\Chapter02</Filter>
-    </ClInclude>
-    <ClInclude Include="Chapter02\Mover_2_4.h">
-      <Filter>Source Files\Chapter02</Filter>
-    </ClInclude>
-    <ClInclude Include="Chapter02\Mover_2_5.h">
-      <Filter>Source Files\Chapter02</Filter>
-    </ClInclude>
-    <ClInclude Include="Chapter02\Liquid_2_5.h">
-      <Filter>Source Files\Chapter02</Filter>
-    </ClInclude>
-    <ClInclude Include="Chapter02\Mover_2_6.h">
-      <Filter>Source Files\Chapter02</Filter>
-    </ClInclude>
-    <ClInclude Include="Chapter02\Attractor_2_6.h">
-      <Filter>Source Files\Chapter02</Filter>
-    </ClInclude>
-    <ClInclude Include="Chapter02\Mover_2_7.h">
-      <Filter>Source Files\Chapter02</Filter>
-    </ClInclude>
-    <ClInclude Include="Chapter02\Attractor_2_7.h">
-      <Filter>Source Files\Chapter02</Filter>
-    </ClInclude>
-    <ClInclude Include="Chapter02\Body_2_8.h">
-      <Filter>Source Files\Chapter02</Filter>
-    </ClInclude>
-    <ClInclude Include="Chapter02\Body_2_9.h">
-      <Filter>Source Files\Chapter02</Filter>
     </ClInclude>
     <ClInclude Include="Tests\CircleTest.h">
       <Filter>Source Files\Tests</Filter>
     </ClInclude>
-    <ClInclude Include="Chapter03\Example_3_3.h">
-      <Filter>Source Files\Chapter03</Filter>
-    </ClInclude>
-    <ClInclude Include="Chapter03\Mover_3_3.h">
-      <Filter>Source Files\Chapter03</Filter>
-    </ClInclude>
-    <ClInclude Include="Chapter03\Example_3_4.h">
-      <Filter>Source Files\Chapter03</Filter>
-    </ClInclude>
-    <ClInclude Include="Chapter03\Example_3_5.h">
-      <Filter>Source Files\Chapter03</Filter>
-    </ClInclude>
-    <ClInclude Include="Chapter03\Example_3_6.h">
-      <Filter>Source Files\Chapter03</Filter>
-    </ClInclude>
-    <ClInclude Include="Chapter03\Example_3_7.h">
-      <Filter>Source Files\Chapter03</Filter>
-    </ClInclude>
-    <ClInclude Include="Chapter03\Oscillator_3_7.h">
-      <Filter>Source Files\Chapter03</Filter>
-    </ClInclude>
     <ClInclude Include="Tests\GenerateExampleInitialCode.h">
       <Filter>Source Files\Tests</Filter>
     </ClInclude>
-    <ClInclude Include="Chapter03\Example_3_8.h">
+    <ClInclude Include="Chapter01\Example_01_01_Sketch.h">
+      <Filter>Source Files\Chapter01</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter01\Example_01_02_Sketch.h">
+      <Filter>Source Files\Chapter01</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter01\Example_01_03_Sketch.h">
+      <Filter>Source Files\Chapter01</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter01\Example_01_04_Sketch.h">
+      <Filter>Source Files\Chapter01</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter01\Example_01_05_Sketch.h">
+      <Filter>Source Files\Chapter01</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter01\Example_01_06_Sketch.h">
+      <Filter>Source Files\Chapter01</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter01\Example_01_07_Mover.h">
+      <Filter>Source Files\Chapter01</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter01\Example_01_07_Sketch.h">
+      <Filter>Source Files\Chapter01</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter01\Example_01_08_Mover.h">
+      <Filter>Source Files\Chapter01</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter01\Example_01_08_Sketch.h">
+      <Filter>Source Files\Chapter01</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter01\Example_01_09_Mover.h">
+      <Filter>Source Files\Chapter01</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter01\Example_01_09_Sketch.h">
+      <Filter>Source Files\Chapter01</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter01\Example_01_10_Mover.h">
+      <Filter>Source Files\Chapter01</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter01\Example_01_10_Sketch.h">
+      <Filter>Source Files\Chapter01</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter02\Example_02_01_Mover.h">
+      <Filter>Source Files\Chapter02</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter02\Example_02_01_Sketch.h">
+      <Filter>Source Files\Chapter02</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter02\Example_02_02_Mover.h">
+      <Filter>Source Files\Chapter02</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter02\Example_02_02_Sketch.h">
+      <Filter>Source Files\Chapter02</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter02\Example_02_03_Mover.h">
+      <Filter>Source Files\Chapter02</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter02\Example_02_03_Sketch.h">
+      <Filter>Source Files\Chapter02</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter02\Example_02_04_Mover.h">
+      <Filter>Source Files\Chapter02</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter02\Example_02_04_Sketch.h">
+      <Filter>Source Files\Chapter02</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter02\Example_02_05_Liquid.h">
+      <Filter>Source Files\Chapter02</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter02\Example_02_05_Mover.h">
+      <Filter>Source Files\Chapter02</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter02\Example_02_05_Sketch.h">
+      <Filter>Source Files\Chapter02</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter02\Example_02_06_Attractor.h">
+      <Filter>Source Files\Chapter02</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter02\Example_02_06_Mover.h">
+      <Filter>Source Files\Chapter02</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter02\Example_02_06_Sketch.h">
+      <Filter>Source Files\Chapter02</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter02\Example_02_07_Attractor.h">
+      <Filter>Source Files\Chapter02</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter02\Example_02_07_Mover.h">
+      <Filter>Source Files\Chapter02</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter02\Example_02_07_Sketch.h">
+      <Filter>Source Files\Chapter02</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter02\Example_02_08_Body.h">
+      <Filter>Source Files\Chapter02</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter02\Example_02_08_Sketch.h">
+      <Filter>Source Files\Chapter02</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter02\Example_02_09_Body.h">
+      <Filter>Source Files\Chapter02</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter02\Example_02_09_Sketch.h">
+      <Filter>Source Files\Chapter02</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter03\Example_03_01_Sketch.h">
       <Filter>Source Files\Chapter03</Filter>
     </ClInclude>
-    <ClInclude Include="Chapter03\Example_3_9.h">
+    <ClInclude Include="Chapter03\Example_03_02_Attractor.h">
       <Filter>Source Files\Chapter03</Filter>
     </ClInclude>
-    <ClInclude Include="Chapter03\Example_3_10.h">
+    <ClInclude Include="Chapter03\Example_03_02_Mover.h">
       <Filter>Source Files\Chapter03</Filter>
     </ClInclude>
-    <ClInclude Include="Chapter03\Bob_3_10.h">
+    <ClInclude Include="Chapter03\Example_03_02_Sketch.h">
       <Filter>Source Files\Chapter03</Filter>
     </ClInclude>
-    <ClInclude Include="Chapter03\Spring_3_10.h">
+    <ClInclude Include="Chapter03\Example_03_03_Mover.h">
       <Filter>Source Files\Chapter03</Filter>
     </ClInclude>
-    <ClInclude Include="Chapter03\Example_3_11.h">
+    <ClInclude Include="Chapter03\Example_03_03_Sketch.h">
       <Filter>Source Files\Chapter03</Filter>
     </ClInclude>
-    <ClInclude Include="Chapter03\Pendulum_3_11.h">
+    <ClInclude Include="Chapter03\Example_03_04_Sketch.h">
       <Filter>Source Files\Chapter03</Filter>
     </ClInclude>
-    <ClInclude Include="Chapter04\Example_4_1.h">
+    <ClInclude Include="Chapter03\Example_03_05_Sketch.h">
+      <Filter>Source Files\Chapter03</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter03\Example_03_06_Sketch.h">
+      <Filter>Source Files\Chapter03</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter03\Example_03_07_Oscillator.h">
+      <Filter>Source Files\Chapter03</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter03\Example_03_07_Sketch.h">
+      <Filter>Source Files\Chapter03</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter03\Example_03_08_Sketch.h">
+      <Filter>Source Files\Chapter03</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter03\Example_03_09_Sketch.h">
+      <Filter>Source Files\Chapter03</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter03\Example_03_10_Bob.h">
+      <Filter>Source Files\Chapter03</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter03\Example_03_10_Sketch.h">
+      <Filter>Source Files\Chapter03</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter03\Example_03_10_Spring.h">
+      <Filter>Source Files\Chapter03</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter03\Example_03_11_Pendulum.h">
+      <Filter>Source Files\Chapter03</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter03\Example_03_11_Sketch.h">
+      <Filter>Source Files\Chapter03</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter04\Example_04_01_Particle.h">
       <Filter>Source Files\Chapter04</Filter>
     </ClInclude>
-    <ClInclude Include="Chapter04\Particle_4_1.h">
+    <ClInclude Include="Chapter04\Example_04_01_Sketch.h">
       <Filter>Source Files\Chapter04</Filter>
     </ClInclude>
-    <ClInclude Include="Chapter04\Example_4_2.h">
+    <ClInclude Include="Chapter04\Example_04_02_Particle.h">
       <Filter>Source Files\Chapter04</Filter>
     </ClInclude>
-    <ClInclude Include="Chapter04\Particle_4_2.h">
+    <ClInclude Include="Chapter04\Example_04_02_Sketch.h">
       <Filter>Source Files\Chapter04</Filter>
     </ClInclude>
-    <ClInclude Include="Chapter04\Particle_4_3.h">
+    <ClInclude Include="Chapter04\Example_04_03_Emitter.h">
       <Filter>Source Files\Chapter04</Filter>
     </ClInclude>
-    <ClInclude Include="Chapter04\Example_4_3.h">
+    <ClInclude Include="Chapter04\Example_04_03_Particle.h">
       <Filter>Source Files\Chapter04</Filter>
     </ClInclude>
-    <ClInclude Include="Chapter04\Emitter_4_3.h">
+    <ClInclude Include="Chapter04\Example_04_03_Sketch.h">
       <Filter>Source Files\Chapter04</Filter>
     </ClInclude>
-    <ClInclude Include="Chapter04\Particle_4_4.h">
+    <ClInclude Include="Chapter04\Example_04_04_Emitter.h">
       <Filter>Source Files\Chapter04</Filter>
     </ClInclude>
-    <ClInclude Include="Chapter04\Emitter_4_4.h">
+    <ClInclude Include="Chapter04\Example_04_04_Particle.h">
       <Filter>Source Files\Chapter04</Filter>
     </ClInclude>
-    <ClInclude Include="Chapter04\Example_4_4.h">
+    <ClInclude Include="Chapter04\Example_04_04_Sketch.h">
+      <Filter>Source Files\Chapter04</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter04\Example_04_05_Confetti.h">
+      <Filter>Source Files\Chapter04</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter04\Example_04_05_Emitter.h">
+      <Filter>Source Files\Chapter04</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter04\Example_04_05_Particle.h">
+      <Filter>Source Files\Chapter04</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter04\Example_04_05_Sketch.h">
+      <Filter>Source Files\Chapter04</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter04\Example_04_06_Emitter.h">
+      <Filter>Source Files\Chapter04</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter04\Example_04_06_Particle.h">
+      <Filter>Source Files\Chapter04</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter04\Example_04_06_Sketch.h">
       <Filter>Source Files\Chapter04</Filter>
     </ClInclude>
   </ItemGroup>
@@ -234,205 +255,226 @@
     <ClCompile Include="Common\PVector.cpp">
       <Filter>Source Files\Common</Filter>
     </ClCompile>
-    <ClCompile Include="Chapter01\Example_1_1.cpp">
-      <Filter>Source Files\Chapter01</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter01\Example_1_2.cpp">
-      <Filter>Source Files\Chapter01</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter01\Example_1_3.cpp">
-      <Filter>Source Files\Chapter01</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter01\Example_1_4.cpp">
-      <Filter>Source Files\Chapter01</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter01\Example_1_5.cpp">
-      <Filter>Source Files\Chapter01</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter01\Example_1_6.cpp">
-      <Filter>Source Files\Chapter01</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter01\Example_1_7.cpp">
-      <Filter>Source Files\Chapter01</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter01\Example_1_8.cpp">
-      <Filter>Source Files\Chapter01</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter01\Example_1_9.cpp">
-      <Filter>Source Files\Chapter01</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter01\Example_1_10.cpp">
-      <Filter>Source Files\Chapter01</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter02\Example_2_1.cpp">
-      <Filter>Source Files\Chapter02</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter02\Example_2_2.cpp">
-      <Filter>Source Files\Chapter02</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter02\Example_2_3.cpp">
-      <Filter>Source Files\Chapter02</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter02\Example_2_4.cpp">
-      <Filter>Source Files\Chapter02</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter02\Example_2_5.cpp">
-      <Filter>Source Files\Chapter02</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter02\Example_2_6.cpp">
-      <Filter>Source Files\Chapter02</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter02\Example_2_7.cpp">
-      <Filter>Source Files\Chapter02</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter02\Example_2_8.cpp">
-      <Filter>Source Files\Chapter02</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter02\Example_2_9.cpp">
-      <Filter>Source Files\Chapter02</Filter>
-    </ClCompile>
     <ClCompile Include="Common\SDL_Framework.cpp">
       <Filter>Source Files\Common</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter03\Example_3_1.cpp">
-      <Filter>Source Files\Chapter03</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter03\Example_3_2.cpp">
-      <Filter>Source Files\Chapter03</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter03\Attractor_3_2.cpp">
-      <Filter>Source Files\Chapter03</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter03\Mover_3_2.cpp">
-      <Filter>Source Files\Chapter03</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter01\Mover_1_7.cpp">
-      <Filter>Source Files\Chapter01</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter01\Mover_1_8.cpp">
-      <Filter>Source Files\Chapter01</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter01\Mover_1_9.cpp">
-      <Filter>Source Files\Chapter01</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter01\Mover_1_10.cpp">
-      <Filter>Source Files\Chapter01</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter02\Mover_2_1.cpp">
-      <Filter>Source Files\Chapter02</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter02\Mover_2_2.cpp">
-      <Filter>Source Files\Chapter02</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter02\Mover_2_3.cpp">
-      <Filter>Source Files\Chapter02</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter02\Mover_2_4.cpp">
-      <Filter>Source Files\Chapter02</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter02\Mover_2_5.cpp">
-      <Filter>Source Files\Chapter02</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter02\Liquid_2_5.cpp">
-      <Filter>Source Files\Chapter02</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter02\Mover_2_6.cpp">
-      <Filter>Source Files\Chapter02</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter02\Attractor_2_6.cpp">
-      <Filter>Source Files\Chapter02</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter02\Mover_2_7.cpp">
-      <Filter>Source Files\Chapter02</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter02\Attractor_2_7.cpp">
-      <Filter>Source Files\Chapter02</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter02\Body_2_8.cpp">
-      <Filter>Source Files\Chapter02</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter02\Body_2_9.cpp">
-      <Filter>Source Files\Chapter02</Filter>
     </ClCompile>
     <ClCompile Include="Tests\CircleTest.cpp">
       <Filter>Source Files\Tests</Filter>
     </ClCompile>
-    <ClCompile Include="Chapter03\Example_3_3.cpp">
-      <Filter>Source Files\Chapter03</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter03\Mover_3_3.cpp">
-      <Filter>Source Files\Chapter03</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter03\Example_3_4.cpp">
-      <Filter>Source Files\Chapter03</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter03\Example_3_5.cpp">
-      <Filter>Source Files\Chapter03</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter03\Example_3_6.cpp">
-      <Filter>Source Files\Chapter03</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter03\Example_3_7.cpp">
-      <Filter>Source Files\Chapter03</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter03\Oscillator_3_7.cpp">
-      <Filter>Source Files\Chapter03</Filter>
-    </ClCompile>
     <ClCompile Include="Tests\GenerateExampleInitialCode.cpp">
       <Filter>Source Files\Tests</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter03\Example_3_8.cpp">
-      <Filter>Source Files\Chapter03</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter03\Example_3_9.cpp">
-      <Filter>Source Files\Chapter03</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter03\Example_3_10.cpp">
-      <Filter>Source Files\Chapter03</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter03\Bob_3_10.cpp">
-      <Filter>Source Files\Chapter03</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter03\Spring_3_10.cpp">
-      <Filter>Source Files\Chapter03</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter03\Example_3_11.cpp">
-      <Filter>Source Files\Chapter03</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter03\Pendulum_3_11.cpp">
-      <Filter>Source Files\Chapter03</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter04\Example_4_1.cpp">
-      <Filter>Source Files\Chapter04</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter04\Particle_4_1.cpp">
-      <Filter>Source Files\Chapter04</Filter>
     </ClCompile>
     <ClCompile Include="Common\Utils.h">
       <Filter>Source Files\Common</Filter>
     </ClCompile>
-    <ClCompile Include="Chapter04\Example_4_2.cpp">
+    <ClCompile Include="Chapter01\Example_01_01_Sketch.cpp">
+      <Filter>Source Files\Chapter01</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter01\Example_01_02_Sketch.cpp">
+      <Filter>Source Files\Chapter01</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter01\Example_01_03_Sketch.cpp">
+      <Filter>Source Files\Chapter01</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter01\Example_01_04_Sketch.cpp">
+      <Filter>Source Files\Chapter01</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter01\Example_01_05_Sketch.cpp">
+      <Filter>Source Files\Chapter01</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter01\Example_01_06_Sketch.cpp">
+      <Filter>Source Files\Chapter01</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter01\Example_01_07_Mover.cpp">
+      <Filter>Source Files\Chapter01</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter01\Example_01_07_Sketch.cpp">
+      <Filter>Source Files\Chapter01</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter01\Example_01_08_Mover.cpp">
+      <Filter>Source Files\Chapter01</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter01\Example_01_08_Sketch.cpp">
+      <Filter>Source Files\Chapter01</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter01\Example_01_09_Mover.cpp">
+      <Filter>Source Files\Chapter01</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter01\Example_01_09_Sketch.cpp">
+      <Filter>Source Files\Chapter01</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter01\Example_01_10_Mover.cpp">
+      <Filter>Source Files\Chapter01</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter01\Example_01_10_Sketch.cpp">
+      <Filter>Source Files\Chapter01</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter02\Example_02_01_Mover.cpp">
+      <Filter>Source Files\Chapter02</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter02\Example_02_01_Sketch.cpp">
+      <Filter>Source Files\Chapter02</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter02\Example_02_02_Mover.cpp">
+      <Filter>Source Files\Chapter02</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter02\Example_02_02_Sketch.cpp">
+      <Filter>Source Files\Chapter02</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter02\Example_02_03_Mover.cpp">
+      <Filter>Source Files\Chapter02</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter02\Example_02_03_Sketch.cpp">
+      <Filter>Source Files\Chapter02</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter02\Example_02_04_Mover.cpp">
+      <Filter>Source Files\Chapter02</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter02\Example_02_04_Sketch.cpp">
+      <Filter>Source Files\Chapter02</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter02\Example_02_05_Liquid.cpp">
+      <Filter>Source Files\Chapter02</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter02\Example_02_05_Mover.cpp">
+      <Filter>Source Files\Chapter02</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter02\Example_02_05_Sketch.cpp">
+      <Filter>Source Files\Chapter02</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter02\Example_02_06_Attractor.cpp">
+      <Filter>Source Files\Chapter02</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter02\Example_02_06_Mover.cpp">
+      <Filter>Source Files\Chapter02</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter02\Example_02_06_Sketch.cpp">
+      <Filter>Source Files\Chapter02</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter02\Example_02_07_Attractor.cpp">
+      <Filter>Source Files\Chapter02</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter02\Example_02_07_Mover.cpp">
+      <Filter>Source Files\Chapter02</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter02\Example_02_07_Sketch.cpp">
+      <Filter>Source Files\Chapter02</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter02\Example_02_08_Body.cpp">
+      <Filter>Source Files\Chapter02</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter02\Example_02_08_Sketch.cpp">
+      <Filter>Source Files\Chapter02</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter02\Example_02_09_Body.cpp">
+      <Filter>Source Files\Chapter02</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter02\Example_02_09_Sketch.cpp">
+      <Filter>Source Files\Chapter02</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter03\Example_03_01_Sketch.cpp">
+      <Filter>Source Files\Chapter03</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter03\Example_03_02_Attractor.cpp">
+      <Filter>Source Files\Chapter03</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter03\Example_03_02_Mover.cpp">
+      <Filter>Source Files\Chapter03</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter03\Example_03_02_Sketch.cpp">
+      <Filter>Source Files\Chapter03</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter03\Example_03_03_Mover.cpp">
+      <Filter>Source Files\Chapter03</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter03\Example_03_03_Sketch.cpp">
+      <Filter>Source Files\Chapter03</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter03\Example_03_04_Sketch.cpp">
+      <Filter>Source Files\Chapter03</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter03\Example_03_05_Sketch.cpp">
+      <Filter>Source Files\Chapter03</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter03\Example_03_06_Sketch.cpp">
+      <Filter>Source Files\Chapter03</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter03\Example_03_07_Oscillator.cpp">
+      <Filter>Source Files\Chapter03</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter03\Example_03_07_Sketch.cpp">
+      <Filter>Source Files\Chapter03</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter03\Example_03_08_Sketch.cpp">
+      <Filter>Source Files\Chapter03</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter03\Example_03_09_Sketch.cpp">
+      <Filter>Source Files\Chapter03</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter03\Example_03_10_Bob.cpp">
+      <Filter>Source Files\Chapter03</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter03\Example_03_10_Sketch.cpp">
+      <Filter>Source Files\Chapter03</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter03\Example_03_10_Spring.cpp">
+      <Filter>Source Files\Chapter03</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter03\Example_03_11_Pendulum.cpp">
+      <Filter>Source Files\Chapter03</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter03\Example_03_11_Sketch.cpp">
+      <Filter>Source Files\Chapter03</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter04\Example_04_01_Particle.cpp">
       <Filter>Source Files\Chapter04</Filter>
     </ClCompile>
-    <ClCompile Include="Chapter04\Particle_4_2.cpp">
+    <ClCompile Include="Chapter04\Example_04_01_Sketch.cpp">
       <Filter>Source Files\Chapter04</Filter>
     </ClCompile>
-    <ClCompile Include="Chapter04\Particle_4_3.cpp">
+    <ClCompile Include="Chapter04\Example_04_02_Particle.cpp">
       <Filter>Source Files\Chapter04</Filter>
     </ClCompile>
-    <ClCompile Include="Chapter04\Example_4_3.cpp">
+    <ClCompile Include="Chapter04\Example_04_02_Sketch.cpp">
       <Filter>Source Files\Chapter04</Filter>
     </ClCompile>
-    <ClCompile Include="Chapter04\Emitter_4_3.cpp">
+    <ClCompile Include="Chapter04\Example_04_03_Emitter.cpp">
       <Filter>Source Files\Chapter04</Filter>
     </ClCompile>
-    <ClCompile Include="Chapter04\Particle_4_4.cpp">
+    <ClCompile Include="Chapter04\Example_04_03_Particle.cpp">
       <Filter>Source Files\Chapter04</Filter>
     </ClCompile>
-    <ClCompile Include="Chapter04\Emitter_4_4.cpp">
+    <ClCompile Include="Chapter04\Example_04_03_Sketch.cpp">
       <Filter>Source Files\Chapter04</Filter>
     </ClCompile>
-    <ClCompile Include="Chapter04\Example_4_4.cpp">
+    <ClCompile Include="Chapter04\Example_04_04_Emitter.cpp">
+      <Filter>Source Files\Chapter04</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter04\Example_04_04_Particle.cpp">
+      <Filter>Source Files\Chapter04</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter04\Example_04_04_Sketch.cpp">
+      <Filter>Source Files\Chapter04</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter04\Example_04_05_Confetti.cpp">
+      <Filter>Source Files\Chapter04</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter04\Example_04_05_Emitter.cpp">
+      <Filter>Source Files\Chapter04</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter04\Example_04_05_Particle.cpp">
+      <Filter>Source Files\Chapter04</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter04\Example_04_05_Sketch.cpp">
+      <Filter>Source Files\Chapter04</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter04\Example_04_06_Emitter.cpp">
+      <Filter>Source Files\Chapter04</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter04\Example_04_06_Particle.cpp">
+      <Filter>Source Files\Chapter04</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter04\Example_04_06_Sketch.cpp">
       <Filter>Source Files\Chapter04</Filter>
     </ClCompile>
   </ItemGroup>
