@@ -259,6 +259,15 @@
     <ClInclude Include="Chapter04\Example_04_07_Repeller.h">
       <Filter>Source Files\Chapter04</Filter>
     </ClInclude>
+    <ClInclude Include="Chapter04\Example_04_08_Emitter.h">
+      <Filter>Source Files\Chapter04</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter04\Example_04_08_Particle.h">
+      <Filter>Source Files\Chapter04</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter04\Example_04_08_Sketch.h">
+      <Filter>Source Files\Chapter04</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -501,8 +510,22 @@
     <ClCompile Include="Chapter04\Example_04_07_Repeller.cpp">
       <Filter>Source Files\Chapter04</Filter>
     </ClCompile>
+    <ClCompile Include="Chapter04\Example_04_08_Emitter.cpp">
+      <Filter>Source Files\Chapter04</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter04\Example_04_08_Particle.cpp">
+      <Filter>Source Files\Chapter04</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter04\Example_04_08_Sketch.cpp">
+      <Filter>Source Files\Chapter04</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="Readme.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Chapter04\Example_04_08_Texture.png">
+      <Filter>Source Files\Chapter04</Filter>
+    </Image>
   </ItemGroup>
 </Project>

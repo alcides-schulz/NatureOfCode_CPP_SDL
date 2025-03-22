@@ -33,6 +33,11 @@ bool SDL_Framework::Init()
     }
     SDL_SetRenderDrawBlendMode(renderer_, SDL_BLENDMODE_BLEND);
     is_running_ = Setup();
+    if (!is_running_) {
+        SDL_DestroyWindow(window_);
+        SDL_DestroyRenderer(renderer_);
+        SDL_Quit();
+    }
     return is_running_;
 }
 
@@ -72,7 +77,7 @@ void SDL_Framework::Run()
         }
     }
 
-    UserClean();
+    Cleanup();
 
     SDL_DestroyWindow(window_);
     SDL_DestroyRenderer(renderer_);
@@ -239,6 +244,12 @@ bool SDL_Framework::IsKeyPressed(Sint32 key)
 void SDL_Framework::ClearScreen(void)
 {
     SDL_SetRenderDrawColor(Renderer(), kColorWhite.r, kColorWhite.g, kColorWhite.b, 255);
+    SDL_RenderClear(Renderer());
+}
+
+void SDL_Framework::ClearScreen(SDL_Color background_color)
+{
+    SDL_SetRenderDrawColor(Renderer(), background_color.r, background_color.g, background_color.b, 255);
     SDL_RenderClear(Renderer());
 }
 

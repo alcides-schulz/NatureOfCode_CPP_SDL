@@ -36,13 +36,14 @@ public:
         window_title_(title), window_x_(x), window_y_(y), window_width_(width), window_height_(height), window_flags_(flags) { };
     virtual bool Setup(void) { return true; };
     virtual bool Draw(void) { return true; };
-    virtual void UserClean(void) {};
+    virtual void Cleanup(void) {};
     const char *WindowTitle(void) { return window_title_; }
     int Width(void) { return window_width_; }
     int Height(void) { return window_height_; }
     SDL_Renderer* Renderer(void) { return renderer_; }
     SDL_Window* Window(void) { return window_; }
     void ClearScreen(void);
+    void ClearScreen(SDL_Color background_color);
     SDL_Point MousePosition(void) { return mouse_position_; }
     bool IsMouseButtonHeld(int mouse_button) { return mouse_button_held_[mouse_button]; }
     bool IsMouseButtonClicked(int mouse_button) { return mouse_button_clicked_[mouse_button]; }

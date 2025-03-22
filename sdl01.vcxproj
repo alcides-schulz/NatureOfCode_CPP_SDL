@@ -93,6 +93,9 @@
     <ClCompile Include="Chapter04\Example_04_07_Particle.cpp" />
     <ClCompile Include="Chapter04\Example_04_07_Repeller.cpp" />
     <ClCompile Include="Chapter04\Example_04_07_Sketch.cpp" />
+    <ClCompile Include="Chapter04\Example_04_08_Emitter.cpp" />
+    <ClCompile Include="Chapter04\Example_04_08_Particle.cpp" />
+    <ClCompile Include="Chapter04\Example_04_08_Sketch.cpp" />
     <ClCompile Include="Common\Utils.h" />
     <ClCompile Include="Common\PVector.cpp" />
     <ClCompile Include="Common\SDL_Framework.cpp" />
@@ -175,6 +178,9 @@
     <ClInclude Include="Chapter04\Example_04_07_Particle.h" />
     <ClInclude Include="Chapter04\Example_04_07_Sketch.h" />
     <ClInclude Include="Chapter04\Example_04_07_Repeller.h" />
+    <ClInclude Include="Chapter04\Example_04_08_Emitter.h" />
+    <ClInclude Include="Chapter04\Example_04_08_Particle.h" />
+    <ClInclude Include="Chapter04\Example_04_08_Sketch.h" />
     <ClInclude Include="Common\PVector.h" />
     <ClInclude Include="Common\SDL_Framework.h" />
     <ClInclude Include="Tests\CircleTest.h" />
@@ -182,6 +188,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Readme.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Chapter04\Example_04_08_Texture.png" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>

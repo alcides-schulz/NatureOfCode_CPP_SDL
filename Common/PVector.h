@@ -20,7 +20,7 @@ public:
     void Normalize();
     void SetMag(float max);
     void Limit(float max);
-    float Heading(void);
+    double Heading(void);
     PVector Clone(void);
     static PVector Random2D();
     static float Distance(PVector vector1, PVector vector2);

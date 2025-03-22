@@ -68,7 +68,7 @@ bool GenerateExampleInitialCode::Setup()
     class_output_file << "    {" << endl;
     class_output_file << "        ClearScreen();" << endl << endl;
     class_output_file << "        return true;" << endl;
-    class_output_file << "    }" << endl << endl;
+    class_output_file << "    }" << endl;
     class_output_file << "}" << endl << endl;
     class_output_file << "// END" << endl;
 
