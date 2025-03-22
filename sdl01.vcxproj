@@ -100,6 +100,8 @@
     <ClCompile Include="Chapter05\Example_05_01_Vehicle.cpp" />
     <ClCompile Include="Chapter05\Example_05_02_Sketch.cpp" />
     <ClCompile Include="Chapter05\Example_05_02_Vehicle.cpp" />
+    <ClCompile Include="Chapter05\Example_05_03_Sketch.cpp" />
+    <ClCompile Include="Chapter05\Example_05_03_Vehicle.cpp" />
     <ClCompile Include="Common\Utils.h" />
     <ClCompile Include="Common\PVector.cpp" />
     <ClCompile Include="Common\SDL_Framework.cpp" />
@@ -189,6 +191,8 @@
     <ClInclude Include="Chapter05\Example_05_01_Vehicle.h" />
     <ClInclude Include="Chapter05\Example_05_02_Sketch.h" />
     <ClInclude Include="Chapter05\Example_05_02_Vehicle.h" />
+    <ClInclude Include="Chapter05\Example_05_03_Sketch.h" />
+    <ClInclude Include="Chapter05\Example_05_03_Vehicle.h" />
     <ClInclude Include="Common\PVector.h" />
     <ClInclude Include="Common\SDL_Framework.h" />
     <ClInclude Include="Tests\CircleTest.h" />
