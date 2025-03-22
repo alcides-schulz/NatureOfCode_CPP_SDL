@@ -39,7 +39,7 @@ namespace nature_of_code_chapter_04_example_08
         auto scayl = 500;
         auto arrow_position = PVector(Width() / 2, 50);
         auto arrow_size = 4;
-        Translate((int)arrow_position.x, (int)arrow_position.y);
+        Translate(arrow_position.x, arrow_position.y);
         RotateRadians(wind.Heading());
         auto length = (int)(wind.Mag() * scayl);
         DrawLine(0, 0, length, 0, kColorWhite);

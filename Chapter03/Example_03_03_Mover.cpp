@@ -19,7 +19,7 @@ namespace nature_of_code_chapter_03_example_03
     void Mover::Show(SDL_Framework *framework)
     {
         auto angle = velocity_.Heading();
-        framework->Translate(static_cast<int>(position_.x), static_cast<int>(position_.y));
+        framework->Translate(position_.x, position_.y);
         framework->RotateRadians(angle);
         framework->DrawRectangle(0, 0, 40, 20, kColorBlack);
     }

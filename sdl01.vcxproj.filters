@@ -23,6 +23,9 @@
     <Filter Include="Source Files\Chapter04">
       <UniqueIdentifier>{84268f8d-3472-44cd-8573-d244750a7c11}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Chapter05">
+      <UniqueIdentifier>{52f4d609-e12e-40da-81a7-f0053f629b5a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Common\PVector.h">
@@ -267,6 +270,12 @@
     </ClInclude>
     <ClInclude Include="Chapter04\Example_04_08_Sketch.h">
       <Filter>Source Files\Chapter04</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter05\Example_05_01_Sketch.h">
+      <Filter>Source Files\Chapter05</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter05\Example_05_01_Vehicle.h">
+      <Filter>Source Files\Chapter05</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -518,6 +527,12 @@
     </ClCompile>
     <ClCompile Include="Chapter04\Example_04_08_Sketch.cpp">
       <Filter>Source Files\Chapter04</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter05\Example_05_01_Sketch.cpp">
+      <Filter>Source Files\Chapter05</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter05\Example_05_01_Vehicle.cpp">
+      <Filter>Source Files\Chapter05</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

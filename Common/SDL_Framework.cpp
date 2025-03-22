@@ -174,9 +174,22 @@ void SDL_Framework::DrawLine(int x1, int y1, int x2, int y2, SDL_Color color)
     SDL_RenderDrawLine(renderer_, final_x1, final_y1, final_x2, final_y2);
 }
 
+void SDL_Framework::DrawLines(SDL_Point points[], int count, SDL_Color color)
+{
+    double sin_value = sin(rotation_radians_);
+    double cos_value = cos(rotation_radians_);
+    for (int i = 0; i < count; i++) {
+        double rotated_x1 = points[i].x * cos_value - points[i].y * sin_value;
+        double rotated_y1 = points[i].x * sin_value + points[i].y * cos_value;
+        points[i].x = static_cast<int>(rotated_x1 + origin_x_);
+        points[i].y = static_cast<int>(rotated_y1 + origin_y_);
+    }
+    SDL_SetRenderDrawColor(renderer_, color.r, color.g, color.b, color.a);
+    SDL_RenderDrawLines(renderer_, points, count);
+}
+
 void SDL_Framework::HandleEvents()
 {
-
     mouse_button_clicked_[kMouseLeftButton] = false;
     mouse_button_clicked_[kMouseMiddleButton] = false;
     mouse_button_clicked_[kMouseRightButton] = false;

@@ -46,6 +46,8 @@
 #include "Chapter04/Example_04_07_Sketch.h"
 #include "Chapter04/Example_04_08_Sketch.h"
 
+#include "Chapter05/Example_05_01_Sketch.h"
+
 #include "Tests/CircleTest.h"
 #include "Tests/GenerateExampleInitialCode.h"
 
@@ -98,6 +100,9 @@ vector<SDL_Framework *> chapter04_menu = {
     new nature_of_code_chapter_04_example_07::Sketch(),
     new nature_of_code_chapter_04_example_08::Sketch(),
 };
+vector<SDL_Framework *> chapter05_menu = {
+    new nature_of_code_chapter_05_example_01::Sketch(),
+};
 
 vector<SDL_Framework *> tests_menu = {
     new CircleTest(),
@@ -140,6 +145,7 @@ int main(int argc, char* argv[])
         cout << endl << "\t b. Chapter 2 - Forces";
         cout << endl << "\t c. Chapter 3 - Oscillation";
         cout << endl << "\t d. Chapter 4 - Particle System";
+        cout << endl << "\t e. Chapter 5 - Autonomous Agents";
         cout << endl;
         cout << endl << "\t z. Tests";
         cout << endl << "\t x. Exit" << endl << endl << "--> ";
@@ -161,6 +167,10 @@ int main(int argc, char* argv[])
         }
         if (response.compare("d") == 0) {
             ShowMenu(chapter04_menu);
+            continue;
+        }
+        if (response.compare("e") == 0) {
+            ShowMenu(chapter05_menu);
             continue;
         }
         if (response.compare("z") == 0) {

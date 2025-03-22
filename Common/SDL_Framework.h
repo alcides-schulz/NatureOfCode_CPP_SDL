@@ -52,6 +52,7 @@ public:
     void Run(void);
     bool IsKeyPressed(Sint32 key);
     void Translate(int x, int y) { origin_x_ += x, origin_y_ += y; }
+    void Translate(float x, float y) { origin_x_ += (int)x, origin_y_ += (int)y; }
     void RotateRadians(double radians) { rotation_radians_ += radians; }
     void RotateDegrees(double degrees) { rotation_radians_ += degrees * M_PI / 180.0; }
     void ResetMatrix(void) { origin_x_ = origin_y_ = 0, rotation_radians_ = 0; }
@@ -59,6 +60,7 @@ public:
     void DrawCircle(float center_x, float center_y, int diameter, SDL_Color color, bool fill);
     void DrawLine(int x1, int y1, int x2, int y2, SDL_Color color);
     void DrawLine(float x1, float y1, float x2, float y2, SDL_Color color);
+    void DrawLines(SDL_Point points[], int count, SDL_Color color);
     void DrawRectangle(int x, int y, int width, int heigth, SDL_Color color);
 private:
     SDL_Window      *window_;

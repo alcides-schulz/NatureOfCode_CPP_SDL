@@ -96,6 +96,8 @@
     <ClCompile Include="Chapter04\Example_04_08_Emitter.cpp" />
     <ClCompile Include="Chapter04\Example_04_08_Particle.cpp" />
     <ClCompile Include="Chapter04\Example_04_08_Sketch.cpp" />
+    <ClCompile Include="Chapter05\Example_05_01_Sketch.cpp" />
+    <ClCompile Include="Chapter05\Example_05_01_Vehicle.cpp" />
     <ClCompile Include="Common\Utils.h" />
     <ClCompile Include="Common\PVector.cpp" />
     <ClCompile Include="Common\SDL_Framework.cpp" />
@@ -181,6 +183,8 @@
     <ClInclude Include="Chapter04\Example_04_08_Emitter.h" />
     <ClInclude Include="Chapter04\Example_04_08_Particle.h" />
     <ClInclude Include="Chapter04\Example_04_08_Sketch.h" />
+    <ClInclude Include="Chapter05\Example_05_01_Sketch.h" />
+    <ClInclude Include="Chapter05\Example_05_01_Vehicle.h" />
     <ClInclude Include="Common\PVector.h" />
     <ClInclude Include="Common\SDL_Framework.h" />
     <ClInclude Include="Tests\CircleTest.h" />
