@@ -1,6 +1,6 @@
-#include "Example_05_01_Vehicle.h"
+#include "Example_05_02_Vehicle.h"
 
-namespace nature_of_code_chapter_05_example_01
+namespace nature_of_code_chapter_05_example_02
 {
     void Vehicle::Update(void)
     {
@@ -15,10 +15,17 @@ namespace nature_of_code_chapter_05_example_01
         acceleration_.Add(force);
     }
 
-    void Vehicle::Seek(PVector target)
+    void Vehicle::Arrive(PVector target)
     {
         auto desired = PVector::Sub(target, position_);
-        desired.SetMag(max_speed_);
+        auto current_mag = desired.Mag();
+        if (current_mag < 100) {
+            auto new_mag = (float)Utils::Map(current_mag, 0, 100, 0, max_speed_);
+            desired.SetMag(new_mag);
+        }
+        else {
+            desired.SetMag(max_speed_);
+        }
         auto steer = PVector::Sub(desired, velocity_);
         steer.Limit(max_force_);
         ApplyForce(steer);

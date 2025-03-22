@@ -277,6 +277,12 @@
     <ClInclude Include="Chapter05\Example_05_01_Vehicle.h">
       <Filter>Source Files\Chapter05</Filter>
     </ClInclude>
+    <ClInclude Include="Chapter05\Example_05_02_Sketch.h">
+      <Filter>Source Files\Chapter05</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter05\Example_05_02_Vehicle.h">
+      <Filter>Source Files\Chapter05</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -532,6 +538,12 @@
       <Filter>Source Files\Chapter05</Filter>
     </ClCompile>
     <ClCompile Include="Chapter05\Example_05_01_Vehicle.cpp">
+      <Filter>Source Files\Chapter05</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter05\Example_05_02_Sketch.cpp">
+      <Filter>Source Files\Chapter05</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter05\Example_05_02_Vehicle.cpp">
       <Filter>Source Files\Chapter05</Filter>
     </ClCompile>
   </ItemGroup>
