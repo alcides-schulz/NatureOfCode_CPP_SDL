@@ -3,6 +3,8 @@
 
 #define _USE_MATH_DEFINES
 #include <cmath>
+#include <iostream>
+#include  <algorithm>
 
 class Utils
 {
@@ -25,6 +27,16 @@ public:
     float static Random(float min, float max)
     {
         return (float)rand() / RAND_MAX * (max - min) + min;
+    }
+
+    float static Constrain(float value, float min, float max)
+    {
+        return std::fmax(min, std::fmin(max, value));
+    }
+
+    int static Constrain(int value, int min, int max)
+    {
+        return std::max(min, std::min(max, value));
     }
 };
 

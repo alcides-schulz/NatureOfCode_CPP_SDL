@@ -289,6 +289,18 @@
     <ClInclude Include="Chapter05\Example_05_03_Vehicle.h">
       <Filter>Source Files\Chapter05</Filter>
     </ClInclude>
+    <ClInclude Include="Common\PerlinNoise2D.h">
+      <Filter>Source Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter05\Example_05_04_Sketch.h">
+      <Filter>Source Files\Chapter05</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter05\Example_05_04_Vehicle.h">
+      <Filter>Source Files\Chapter05</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter05\Example_05_04_FlowField.h">
+      <Filter>Source Files\Chapter05</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -556,6 +568,18 @@
       <Filter>Source Files\Chapter05</Filter>
     </ClCompile>
     <ClCompile Include="Chapter05\Example_05_03_Vehicle.cpp">
+      <Filter>Source Files\Chapter05</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\PerlinNoise2D.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter05\Example_05_04_Sketch.cpp">
+      <Filter>Source Files\Chapter05</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter05\Example_05_04_Vehicle.cpp">
+      <Filter>Source Files\Chapter05</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter05\Example_05_04_FlowField.cpp">
       <Filter>Source Files\Chapter05</Filter>
     </ClCompile>
   </ItemGroup>

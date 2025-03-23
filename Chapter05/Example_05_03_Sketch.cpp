@@ -17,8 +17,9 @@ namespace nature_of_code_chapter_05_example_03
     {
         ClearScreen();
 
-        if (IsMouseButtonClicked(kMouseLeftButton))
+        if (IsMouseButtonClicked(kMouseLeftButton)) {
             debug_ = !debug_;
+        }
 
         if (debug_) {
             DrawRectangle(offset_, offset_, Width() - offset_ * 2, Height() - offset_ * 2, kColorBlack);

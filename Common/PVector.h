@@ -26,4 +26,5 @@ public:
     static float Distance(PVector vector1, PVector vector2);
     static PVector Add(PVector vector1, PVector vector2);
     static PVector Sub(PVector vector1, PVector vector2);
+    static PVector FromAngle(double angle);
 };

@@ -84,4 +84,9 @@ PVector PVector::Sub(PVector vector1, PVector vector2)
     return PVector(vector1.x - vector2.x, vector1.y - vector2.y);
 }
 
+PVector PVector::FromAngle(double angle)
+{
+    return PVector((float)cos(angle), (float)sin(angle));
+}
+
 // End
