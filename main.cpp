@@ -2,6 +2,11 @@
 //  Nature of Code menu
 //-------------------------------------------------------------------------------------------------
 
+//TODO: benchmark perlin noise
+//TODO: improve DrawCircle: quality to look similar to p5
+//TODO: implement thickness for lines/circles
+//TODO: review drawlines, drawrectangle and drawcircle to use stroke_weight
+
 #include "Common/SDL_Framework.h"
 
 #include "Chapter01/Example_01_01_Sketch.h"
@@ -50,6 +55,7 @@
 #include "Chapter05/Example_05_02_Sketch.h"
 #include "Chapter05/Example_05_03_Sketch.h"
 #include "Chapter05/Example_05_04_Sketch.h"
+#include "Chapter05/Example_05_05_Sketch.h"
 
 #include "Tests/CircleTest.h"
 #include "Tests/GenerateExampleInitialCode.h"
@@ -108,6 +114,7 @@ vector<SDL_Framework *> chapter05_menu = {
     new nature_of_code_chapter_05_example_02::Sketch(),
     new nature_of_code_chapter_05_example_03::Sketch(),
     new nature_of_code_chapter_05_example_04::Sketch(),
+    new nature_of_code_chapter_05_example_05::Sketch(),
 };
 
 vector<SDL_Framework *> tests_menu = {

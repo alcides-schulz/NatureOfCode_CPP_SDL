@@ -27,6 +27,7 @@ constexpr SDL_Color kColorRed = { 255, 0, 0, 255 };
 constexpr SDL_Color kColorGreen = { 0, 255, 0, 255 };
 constexpr SDL_Color kColorBlue = { 0, 0, 255, 255 };
 constexpr SDL_Color kColorGray = { 128, 128, 128, 255 };
+constexpr SDL_Color kColorLightGray = { 211, 211, 211, 255 };
 
 class SDL_Framework
 {
@@ -51,11 +52,13 @@ public:
     bool Init(void);
     void Run(void);
     bool IsKeyPressed(Sint32 key);
+
     void Translate(int x, int y) { origin_x_ += x, origin_y_ += y; }
     void Translate(float x, float y) { origin_x_ += (int)x, origin_y_ += (int)y; }
     void RotateRadians(double radians) { rotation_radians_ += radians; }
     void RotateDegrees(double degrees) { rotation_radians_ += degrees * M_PI / 180.0; }
     void ResetMatrix(void) { origin_x_ = origin_y_ = 0, rotation_radians_ = 0; }
+    void StrokeWeight(int stroke_weight) { stroke_weight_ = stroke_weight; }
     void DrawCircle(int center_x, int center_y, int diameter, SDL_Color color, bool fill);
     void DrawCircle(float center_x, float center_y, int diameter, SDL_Color color, bool fill);
     void DrawLine(int x1, int y1, int x2, int y2, SDL_Color color);
@@ -74,6 +77,7 @@ private:
     int             origin_x_ = 0;
     int             origin_y_ = 0;
     double          rotation_radians_ = 0;
+    int             stroke_weight_ = 1;
     list<Sint32>    pressed_keys_;
     bool            mouse_button_held_[3] = { false, false, false };
     bool            mouse_button_clicked_[3] = { false, false, false };

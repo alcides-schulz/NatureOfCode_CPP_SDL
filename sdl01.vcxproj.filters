@@ -301,6 +301,12 @@
     <ClInclude Include="Chapter05\Example_05_04_FlowField.h">
       <Filter>Source Files\Chapter05</Filter>
     </ClInclude>
+    <ClInclude Include="Chapter05\Example_05_05_Sketch.h">
+      <Filter>Source Files\Chapter05</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter05\Example_05_05_Path.h">
+      <Filter>Source Files\Chapter05</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -580,6 +586,12 @@
       <Filter>Source Files\Chapter05</Filter>
     </ClCompile>
     <ClCompile Include="Chapter05\Example_05_04_FlowField.cpp">
+      <Filter>Source Files\Chapter05</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter05\Example_05_05_Sketch.cpp">
+      <Filter>Source Files\Chapter05</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter05\Example_05_05_Path.cpp">
       <Filter>Source Files\Chapter05</Filter>
     </ClCompile>
   </ItemGroup>

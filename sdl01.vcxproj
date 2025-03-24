@@ -105,6 +105,8 @@
     <ClCompile Include="Chapter05\Example_05_04_FlowField.cpp" />
     <ClCompile Include="Chapter05\Example_05_04_Sketch.cpp" />
     <ClCompile Include="Chapter05\Example_05_04_Vehicle.cpp" />
+    <ClCompile Include="Chapter05\Example_05_05_Path.cpp" />
+    <ClCompile Include="Chapter05\Example_05_05_Sketch.cpp" />
     <ClCompile Include="Common\PerlinNoise2D.cpp" />
     <ClCompile Include="Common\Utils.h" />
     <ClCompile Include="Common\PVector.cpp" />
@@ -200,6 +202,8 @@
     <ClInclude Include="Chapter05\Example_05_04_FlowField.h" />
     <ClInclude Include="Chapter05\Example_05_04_Sketch.h" />
     <ClInclude Include="Chapter05\Example_05_04_Vehicle.h" />
+    <ClInclude Include="Chapter05\Example_05_05_Path.h" />
+    <ClInclude Include="Chapter05\Example_05_05_Sketch.h" />
     <ClInclude Include="Common\PerlinNoise2D.h" />
     <ClInclude Include="Common\PVector.h" />
     <ClInclude Include="Common\SDL_Framework.h" />

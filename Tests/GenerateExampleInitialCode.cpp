@@ -8,8 +8,8 @@ bool GenerateExampleInitialCode::Setup()
     ClearScreen();
 
     string chapter = "05";
-    string example = "01";
-    string description = "Seeking a Target";
+    string example = "05";
+    string description = "Creating a Path Object";
 
     auto include_filename = "Chapter" + chapter + "/Example_" + chapter + "_" + example + "_Sketch.h";
     auto class_filename = "Chapter" + chapter + "/Example_" + chapter + "_" + example + "_Sketch.cpp";
@@ -41,9 +41,10 @@ bool GenerateExampleInitialCode::Setup()
     include_output_file << "    class Sketch : public SDL_Framework" << endl;
     include_output_file << "    {" << endl;
     include_output_file << "    public:" << endl;
-    include_output_file << "        Sketch() : SDL_Framework(\"Example " << chapter << "." << example << ": " << description << "\", -1, -1, 640, 240, 0) {};" << endl;
+    include_output_file << "        Sketch() : SDL_Framework(\"Example " << stoi(chapter) << "." << stoi(example) << ": " << description << "\", -1, -1, 640, 240, 0) {};" << endl;
     include_output_file << "        bool Setup(void) override;" << endl;
     include_output_file << "        bool Draw(void) override;" << endl;
+    include_output_file << "        void Cleanup(void) override;" << endl;
     include_output_file << "    private:" << endl;
     include_output_file << "    };" << endl;
     include_output_file << "}" << endl << endl;

@@ -157,6 +157,7 @@ void SDL_Framework::DrawLine(float x1, float y1, float x2, float y2, SDL_Color c
 
 void SDL_Framework::DrawLine(int x1, int y1, int x2, int y2, SDL_Color color)
 {
+    // Rotate
     double sin_value = sin(rotation_radians_);
     double cos_value = cos(rotation_radians_);
 
@@ -165,13 +166,21 @@ void SDL_Framework::DrawLine(int x1, int y1, int x2, int y2, SDL_Color color)
     double rotated_x2 = x2 * cos_value - y2 * sin_value;
     double rotated_y2 = x2 * sin_value + y2 * cos_value;
 
+    // Translate
     int final_x1 = static_cast<int>(rotated_x1 + origin_x_);
     int final_y1 = static_cast<int>(rotated_y1 + origin_y_);
     int final_x2 = static_cast<int>(rotated_x2 + origin_x_);
     int final_y2 = static_cast<int>(rotated_y2 + origin_y_);
 
+    // Draw using stroke weight
+    auto dx = abs(final_x1 - final_x2);
+    auto dy = abs(final_y1 - final_y2);
     SDL_SetRenderDrawColor(renderer_, color.r, color.g, color.b, color.a);
-    SDL_RenderDrawLine(renderer_, final_x1, final_y1, final_x2, final_y2);
+    for (int i = -stroke_weight_ / 2; i <= stroke_weight_ / 2; i++) {
+        auto swx = i * (dx < dy);
+        auto swy = i * (dx >= dy);
+        SDL_RenderDrawLine(renderer_, final_x1 + swx, final_y1 + swy, final_x2 + swx, final_y2 + swy);
+    }
 }
 
 void SDL_Framework::DrawLines(SDL_Point points[], int count, SDL_Color color)
