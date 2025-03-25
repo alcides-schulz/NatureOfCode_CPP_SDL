@@ -10,7 +10,7 @@ namespace nature_of_code_chapter_04_example_05
 
     bool Sketch::Draw(void)
     {
-        ClearScreen();
+        Background(255);
         emitter_->AddParticle();
         emitter_->Run(this);
         return true;

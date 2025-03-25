@@ -21,7 +21,7 @@ namespace nature_of_code_chapter_05_example_04
 
     bool Sketch::Draw(void)
     {
-        ClearScreen();
+        Background(255);
 
         for (auto vehicle : vehicles_) {
             vehicle->Follow(flowfield_);

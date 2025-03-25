@@ -15,7 +15,7 @@ namespace nature_of_code_chapter_02_example_05
     
     bool Sketch::Draw()
     {
-        ClearScreen();
+        Background(255);
     
         if (IsMouseButtonHeld(kMouseLeftButton)) {
             Reset();

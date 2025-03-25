@@ -14,7 +14,7 @@ namespace nature_of_code_chapter_01_example_01
     
     bool Sketch::Draw()
     {
-        ClearScreen();
+        Background(255);
     
         x_ += x_speed_;
         y_ += y_speed_;
@@ -25,7 +25,9 @@ namespace nature_of_code_chapter_01_example_01
             y_speed_ *= -1;
         }
     
-        DrawCircle(x_, y_, 48, kColorGray, true);
+        Stroke(0);
+        Fill(127);
+        Circle(x_, y_, 48);
     
         return true;
     }

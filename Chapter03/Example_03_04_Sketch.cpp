@@ -12,15 +12,17 @@ namespace nature_of_code_chapter_03_example_04
     
     bool Sketch::Draw()
     {
-        ClearScreen();
+        Background(255);
     
         Translate(Width() / 2, Height() / 2);
     
         auto x = static_cast<int>(radius * std::cos(theta));
         auto y = static_cast<int>(radius * std::sin(theta));
     
-        DrawLine(0, 0, x, y, kColorBlack);
-        DrawCircle(x, y, 30, kColorBlack, true);
+        Stroke(kColorBlack);
+        Line(0, 0, x, y);
+        Fill(127);
+        Circle(x, y, 30);
     
         theta += 0.02f;
     

@@ -12,7 +12,7 @@ namespace nature_of_code_chapter_03_example_06
     
     bool Sketch::Draw()
     {
-        ClearScreen();
+        Background(255);
     
         auto amplitude = 200;
     
@@ -20,8 +20,10 @@ namespace nature_of_code_chapter_03_example_06
     
         Translate(Width() / 2, Height() / 2);
     
-        DrawLine(0, 0, x, 0, kColorBlack);
-        DrawCircle(x, 0, 30, kColorBlack, true);
+        Stroke(kColorBlack);
+        Line(0, 0, x, 0);
+        Fill(127);
+        Circle(x, 0, 30);
     
         angle_ += angle_velocity_;
     

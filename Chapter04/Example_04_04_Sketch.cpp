@@ -10,7 +10,7 @@ namespace nature_of_code_chapter_04_example_04
     
     bool Sketch::Draw(void)
     {
-        ClearScreen();
+        Background(255);
         if (IsMouseButtonClicked(kMouseLeftButton)) {
             emitters_.push_back(new Emitter(MousePosition().x, MousePosition().y));
         }

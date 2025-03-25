@@ -9,7 +9,7 @@ namespace nature_of_code_chapter_04_example_02
     
     bool Sketch::Draw(void)
     {
-        ClearScreen();
+        Background(255);
     
         particles_.push_back(new Particle(Width() / 2, 20));
     

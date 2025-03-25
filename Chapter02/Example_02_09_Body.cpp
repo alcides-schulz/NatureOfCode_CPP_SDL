@@ -18,7 +18,9 @@ namespace nature_of_code_chapter_02_example_09
     
     void Body::Show(SDL_Framework *framework)
     {
-        framework->DrawCircle((int)position_.x, (int)position_.y, mass_ * 16, kColorGray, true);
+        framework->Stroke(0);
+        framework->Fill(127);
+        framework->Circle(position_.x, position_.y, mass_ * 16);
     }
     
     void Body::Attract(Body *body)

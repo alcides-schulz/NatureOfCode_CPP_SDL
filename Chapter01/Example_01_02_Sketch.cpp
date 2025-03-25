@@ -6,13 +6,12 @@ namespace nature_of_code_chapter_01_example_02
     {
         position_ = PVector(100, 100);
         velocity_ = PVector(2.5f, 2.0f);
-    
         return true;
     }
     
     bool Sketch::Draw()
     {
-        ClearScreen();
+        Background(255);
     
         position_.Add(velocity_);
         if (position_.x > Width() || position_.x < 0) {
@@ -22,7 +21,9 @@ namespace nature_of_code_chapter_01_example_02
             velocity_.y *= -1;
         }
     
-        DrawCircle(position_.x, position_.y, 48, kColorGray, true);
+        Stroke(0);
+        Fill(127);
+        Circle(position_.x, position_.y, 48);
     
         return true;
     }

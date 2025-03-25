@@ -10,10 +10,12 @@ namespace nature_of_code_chapter_05_example_01
 
     bool Sketch::Draw(void)
     {
-        ClearScreen();
+        Background(255);
 
         auto mouse = PVector(MousePosition().x, MousePosition().y);
-        DrawCircle(mouse.x, mouse.y, 48, kColorGray, true);
+        Stroke(0);
+        Fill(127);
+        Circle(mouse.x, mouse.y, 48);
 
         vehicle_->Seek(mouse);
         vehicle_->Update();

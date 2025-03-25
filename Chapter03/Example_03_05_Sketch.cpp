@@ -4,7 +4,7 @@ namespace nature_of_code_chapter_03_example_05
 {
     bool Sketch::Draw()
     {
-        ClearScreen();
+        Background(255);
     
         auto period = 120;
         auto amplitude = 200;
@@ -13,8 +13,10 @@ namespace nature_of_code_chapter_03_example_05
     
         Translate(Width() / 2, Height() / 2);
     
-        DrawLine(0, 0, x, 0, kColorBlack);
-        DrawCircle(x, 0, 30, kColorBlack, true);
+        Stroke(kColorBlack);
+        Line(0, 0, x, 0);
+        Fill(127);
+        Circle(x, 0, 30);
     
         return true;
     }

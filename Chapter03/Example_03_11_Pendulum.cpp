@@ -18,9 +18,11 @@ namespace nature_of_code_chapter_03_example_11
     {
         bob_ = PVector(r_ * sin(angle_), r_ * cos(angle_));
         bob_.Add(pivot_);
-        framework->DrawLine(pivot_.x, pivot_.y, bob_.x, bob_.y, kColorBlack);
+        framework->Stroke(kColorBlack);
+        framework->Line(pivot_.x, pivot_.y, bob_.x, bob_.y);
         auto color = is_dragging_ ? kColorBlack : kColorGray;
-        framework->DrawCircle(bob_.x, bob_.y, (int)(ball_r_ * 2), color, true);
+        framework->Fill(color);
+        framework->Circle(bob_.x, bob_.y, (int)(ball_r_ * 2));
     }
 
     void Pendulum::HandleClick(int mouse_x, int mouse_y)

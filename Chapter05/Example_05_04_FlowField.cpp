@@ -21,6 +21,7 @@ namespace nature_of_code_chapter_05_example_04
 
     void FlowField::Show(SDL_Framework *framework)
     {
+        framework->Stroke(kColorBlack);
         for (int i = 0; i < cols_; i++) {
             for (int j = 0; j < rows_; j++) {
                 auto w = framework->Width() / cols_;
@@ -29,7 +30,7 @@ namespace nature_of_code_chapter_05_example_04
                 v.SetMag(w * 0.5f);
                 auto x = i * w + w / 2;
                 auto y = j * h + h / 2;
-                framework->DrawLine(x, y, (int)(x + v.x), (int)(y + v.y), kColorBlack);
+                framework->Line(x, y, (int)(x + v.x), (int)(y + v.y));
             }
         }
     }

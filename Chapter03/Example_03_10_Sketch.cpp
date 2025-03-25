@@ -12,7 +12,7 @@ namespace nature_of_code_chapter_03_example_10
     
     bool Sketch::Draw()
     {
-        ClearScreen();
+        Background(255);
     
         if (IsMouseButtonHeld(kMouseLeftButton))
             bob_->HandleClick(MousePosition().x, MousePosition().y);

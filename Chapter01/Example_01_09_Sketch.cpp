@@ -12,7 +12,7 @@ namespace nature_of_code_chapter_01_example_09
     
     bool Sketch::Draw()
     {
-        ClearScreen();
+        Background(255);
     
         mover_->Update();
         mover_->CheckEdges(this);

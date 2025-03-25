@@ -15,7 +15,9 @@ namespace nature_of_code_chapter_03_example_02
     
     void Attractor::Show(SDL_Framework *framework)
     {
-        framework->DrawCircle((int)position_.x, (int)position_.y, radius_ * 2, kColorBlack, true);
+        framework->Stroke(0);
+        framework->Fill(0);
+        framework->Circle((int)position_.x, (int)position_.y, radius_ * 2);
     }
     
 }

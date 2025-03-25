@@ -17,7 +17,7 @@ namespace nature_of_code_chapter_02_example_09
     
     bool Sketch::Draw()
     {
-        ClearScreen();
+        Background(255);
     
         for (int i = 0; i < std::size(body_); i++) {
             for (int j = 0; j < std::size(body_); j++) {

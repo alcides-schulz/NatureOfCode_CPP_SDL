@@ -4,19 +4,21 @@ namespace nature_of_code_chapter_01_example_03
 {
     bool Sketch::Draw()
     {
-        ClearScreen();
+        Background(255);
     
         auto mouse = PVector(MousePosition().x, MousePosition().y);
         auto center = PVector((Width() / 2), (Height() / 2));
     
-        DrawLine(0, 0, (int)mouse.x, (int)mouse.y, kColorBlack);
-        DrawLine(0, 0, (int)center.x, (int)center.y, kColorBlack);
+        Stroke(kColorBlack);
+        Line(0, 0, (int)mouse.x, (int)mouse.y);
+        Line(0, 0, (int)center.x, (int)center.y);
     
         mouse.Sub(center);
     
         // Draw a line to represent the result of subtraction.
         Translate(Width() / 2, Height() / 2);
-        DrawLine(0, 0, (int)mouse.x, (int)mouse.y, kColorRed);
+        Stroke(kColorRed);
+        Line(0, 0, (int)mouse.x, (int)mouse.y);
     
         return true;
     }

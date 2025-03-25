@@ -13,7 +13,7 @@ namespace nature_of_code_chapter_01_example_10
     
     bool Sketch::Draw()
     {
-        ClearScreen();
+        Background(255);
     
         auto direction = PVector(MousePosition().x, MousePosition().y);
         direction.Sub(mover_->GetPosition());

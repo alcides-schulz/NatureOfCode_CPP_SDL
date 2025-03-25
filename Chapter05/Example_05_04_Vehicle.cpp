@@ -44,14 +44,15 @@ namespace nature_of_code_chapter_05_example_04
     {
         framework->Translate(position_.x, position_.y);
         auto angle = velocity_.Heading();
-        framework->RotateRadians(angle);
+        framework->Rotate(angle);
         SDL_Point vertices[] = { 
             {r_ * 2, 0}, 
             {-r_ * 2, -r_}, 
             {-r_ * 2, r_},
             {r_ * 2, 0},
         };
-        framework->DrawLines(vertices, sizeof(vertices) / sizeof(SDL_Point), kColorBlack);
+        framework->Stroke(kColorBlack);
+        framework->Lines(vertices, sizeof(vertices) / sizeof(SDL_Point));
         framework->ResetMatrix();
     }
 }

@@ -13,7 +13,7 @@ namespace nature_of_code_chapter_03_example_07
     
     bool Sketch::Draw()
     {
-        ClearScreen();
+        Background(255);
     
         for (int i = 0; i < oscillators_.size(); i++) {
             oscillators_[i]->Update();

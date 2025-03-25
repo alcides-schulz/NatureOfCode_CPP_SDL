@@ -14,7 +14,9 @@ namespace nature_of_code_chapter_04_example_07
 
     void Repeller::Show(SDL_Framework *framework)
     {
-        framework->DrawCircle(position_.x, position_.y, 32, kColorBlack, true);
+        framework->Stroke(0);
+        framework->Fill(0);
+        framework->Circle(position_.x, position_.y, 32);
     }
 }
 

@@ -29,12 +29,15 @@ namespace nature_of_code_chapter_03_example_10
 
     void Spring::Show(SDL_Framework *framework)
     {
-        framework->DrawCircle(anchor_.x, anchor_.y, 10, kColorBlack, true);
+        framework->Stroke(0);
+        framework->Fill(0);
+        framework->Circle(anchor_.x, anchor_.y, 10);
     }
 
     void Spring::ShowLine(SDL_Framework *framework, Bob *bob)
     {
-        framework->DrawLine(bob->GetPosition().x, bob->GetPosition().y, anchor_.x, anchor_.y, kColorBlack);
+        framework->Stroke(kColorBlack);
+        framework->Line(bob->GetPosition().x, bob->GetPosition().y, anchor_.x, anchor_.y);
     }
 
 }

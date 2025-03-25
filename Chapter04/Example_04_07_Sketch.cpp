@@ -11,7 +11,7 @@ namespace nature_of_code_chapter_04_example_07
 
     bool Sketch::Draw(void)
     {
-        ClearScreen();
+        Background(255);
         emitter_->AddParticle();
         auto gravity = PVector(0.0f, 0.1f);
         emitter_->ApplyForce(gravity);

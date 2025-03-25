@@ -18,7 +18,9 @@ namespace nature_of_code_chapter_02_example_04
     
     void Mover::Show(SDL_Framework *framework)
     {
-        framework->DrawCircle((int)position_.x, (int)position_.y, radius_ * 2, kColorGray, true);
+        framework->Stroke(0);
+        framework->Fill(127);
+        framework->Circle(position_.x, position_.y, radius_ * 2);
     }
     
     bool Mover::ContactEdge(SDL_Framework *framework)

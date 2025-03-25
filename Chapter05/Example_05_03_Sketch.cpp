@@ -6,7 +6,7 @@ namespace nature_of_code_chapter_05_example_03
     {
         vehicle_ = new Vehicle(Width() / 2, Height() / 2);
         offset_ = 25;
-        debug_ = false;
+        debug_ = true;
 
         cout << "Click to show/hide boundaries." << endl;
 
@@ -15,14 +15,14 @@ namespace nature_of_code_chapter_05_example_03
 
     bool Sketch::Draw(void)
     {
-        ClearScreen();
+        Background(255);
 
         if (IsMouseButtonClicked(kMouseLeftButton)) {
             debug_ = !debug_;
         }
 
         if (debug_) {
-            DrawRectangle(offset_, offset_, Width() - offset_ * 2, Height() - offset_ * 2, kColorBlack);
+            Rect(offset_, offset_, Width() - offset_ * 2, Height() - offset_ * 2);
         }
 
         vehicle_->Boundaries(this, offset_);

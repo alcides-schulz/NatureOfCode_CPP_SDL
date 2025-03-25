@@ -20,7 +20,8 @@ namespace nature_of_code_chapter_03_example_10
     void Bob::Show(SDL_Framework *framework)
     {
         auto color = is_dragging_ ? kColorBlack : kColorGray;
-        framework->DrawCircle(position_.x, position_.y, (int)(mass_ * 2), color, true);
+        framework->Fill(color);
+        framework->Circle(position_.x, position_.y, (int)(mass_ * 2));
     }
 
     void Bob::HandleClick(int mouse_x, int mouse_y)

@@ -4,7 +4,7 @@ namespace nature_of_code_chapter_01_example_05
 {
     bool Sketch::Draw()
     {
-        ClearScreen();
+        Background(255);
     
         auto mouse = PVector(MousePosition().x, MousePosition().y);
         auto center = PVector(Width() / 2, Height() / 2);
@@ -17,7 +17,8 @@ namespace nature_of_code_chapter_01_example_05
         SDL_RenderFillRect(Renderer(), &rect);
     
         Translate(Width() / 2, Height() / 2);
-        DrawLine(0, 0, (int)mouse.x, (int)mouse.y, kColorBlack);
+        Stroke(kColorBlack);
+        Line(0, 0, (int)mouse.x, (int)mouse.y);
     
         return true;
     }

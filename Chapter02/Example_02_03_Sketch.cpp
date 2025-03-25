@@ -11,7 +11,7 @@ namespace nature_of_code_chapter_02_example_03
     
     bool Sketch::Draw()
     {
-        ClearScreen();
+        Background(255);
     
         PVector gravityA(0.0f, 0.1f);
         gravityA.Mult((float)moverA_->GetMass());

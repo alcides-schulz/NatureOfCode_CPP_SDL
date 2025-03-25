@@ -15,7 +15,7 @@ namespace nature_of_code_chapter_02_example_08
     
     bool Sketch::Draw()
     {
-        ClearScreen();
+        Background(255);
     
         bodyA_->Attract(bodyB_);
         bodyB_->Attract(bodyA_);

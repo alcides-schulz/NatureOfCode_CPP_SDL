@@ -11,7 +11,7 @@ namespace nature_of_code_chapter_02_example_01
     
     bool Sketch::Draw()
     {
-        ClearScreen();
+        Background(255);
     
         PVector gravity(0.0f, 0.1f);
         mover_->ApplyForce(gravity);

@@ -24,7 +24,7 @@ namespace nature_of_code_chapter_04_example_08
 
     bool Sketch::Draw(void)
     {
-        ClearScreen(kColorBlack);
+        Background(kColorBlack);
 
         auto dx = (float)Utils::Map(MousePosition().x, 0, Width(), -0.2, 0.2);
         auto wind = PVector(dx, 0.0f);
@@ -40,11 +40,12 @@ namespace nature_of_code_chapter_04_example_08
         auto arrow_position = PVector(Width() / 2, 50);
         auto arrow_size = 4;
         Translate(arrow_position.x, arrow_position.y);
-        RotateRadians(wind.Heading());
+        Rotate(wind.Heading());
         auto length = (int)(wind.Mag() * scayl);
-        DrawLine(0, 0, length, 0, kColorWhite);
-        DrawLine(length, 0, length - arrow_size, +arrow_size / 2, kColorWhite);
-        DrawLine(length, 0, length - arrow_size, -arrow_size / 2, kColorWhite);
+        Stroke(kColorWhite);
+        Line(0, 0, length, 0);
+        Line(length, 0, length - arrow_size, +arrow_size / 2);
+        Line(length, 0, length - arrow_size, -arrow_size / 2);
 
         return true;
     }

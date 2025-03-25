@@ -19,9 +19,10 @@ namespace nature_of_code_chapter_03_example_03
     void Mover::Show(SDL_Framework *framework)
     {
         auto angle = velocity_.Heading();
+        framework->Rotate(angle);
         framework->Translate(position_.x, position_.y);
-        framework->RotateRadians(angle);
-        framework->DrawRectangle(0, 0, 40, 20, kColorBlack);
+        framework->RectMode(kRectCenter);
+        framework->Rect(0, 0, 40, 20);
     }
 
     void Mover::CheckEdges(SDL_Framework *framework)

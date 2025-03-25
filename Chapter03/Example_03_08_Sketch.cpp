@@ -4,12 +4,14 @@ namespace nature_of_code_chapter_03_example_08
 {
     bool Sketch::Setup(void)
     {
-        ClearScreen();
+        Background(255);
     
         for (int x = 0; x < Width(); x += 24) {
             auto y = amplitude_ * sin(angle_);
-            DrawCircle(x, (int)(y + Height() / 2), 48, kColorGray, true);
-            DrawCircle(x, (int)(y + Height() / 2), 48, kColorBlack, false);
+            Fill(127);
+            Circle(x, (int)(y + Height() / 2), 48);
+            Fill(0);
+            Circle(x, (int)(y + Height() / 2), 48);
             angle_ += angle_velocity_;
         }
     

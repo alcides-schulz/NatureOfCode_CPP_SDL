@@ -13,8 +13,10 @@ namespace nature_of_code_chapter_03_example_07
         auto y = static_cast<int>(std::sin(angle_.y) * amplitude_.y);
 
         framework->Translate(framework->Width() / 2, framework->Height() / 2);
-        framework->DrawLine(0, 0, x, y, kColorBlack);
-        framework->DrawCircle(x, y, 32, kColorGray, true);
+        framework->Stroke(kColorBlack);
+        framework->Line(0, 0, x, y);
+        framework->Fill(127);
+        framework->Circle(x, y, 32);
         framework->ResetMatrix();
     }
 

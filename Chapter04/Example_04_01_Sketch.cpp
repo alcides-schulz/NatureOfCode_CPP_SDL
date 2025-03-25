@@ -5,12 +5,13 @@ namespace nature_of_code_chapter_04_example_01
     bool Sketch::Setup(void)
     {
         particle_ = new Particle(Width() / 2, 10);
+        SDL_SetRenderDrawBlendMode(Renderer(), SDL_BLENDMODE_BLEND);
         return true;
     }
     
     bool Sketch::Draw(void)
     {
-        ClearScreen();
+        Background(255);
     
         particle_->Update();
         particle_->Show(this);

@@ -10,7 +10,7 @@ namespace nature_of_code_chapter_05_example_05
 
     bool Sketch::Draw(void)
     {
-        ClearScreen();
+        Background(255);
 
         path_->Show(this);
 

@@ -3,9 +3,7 @@
 //-------------------------------------------------------------------------------------------------
 
 //TODO: benchmark perlin noise
-//TODO: improve DrawCircle: quality to look similar to p5
-//TODO: implement thickness for lines/circles
-//TODO: review drawlines, drawrectangle and drawcircle to use stroke_weight
+//TODO: implement fill rectangle
 
 #include "Common/SDL_Framework.h"
 

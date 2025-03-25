@@ -14,7 +14,7 @@ namespace nature_of_code_chapter_03_example_03
     
     bool Sketch::Draw()
     {
-        ClearScreen();
+        Background(255);
     
         mover_->Update(this);
         mover_->CheckEdges(this);

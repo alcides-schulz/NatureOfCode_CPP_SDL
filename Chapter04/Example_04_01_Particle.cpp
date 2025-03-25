@@ -11,17 +11,16 @@ namespace nature_of_code_chapter_04_example_01
     {
         velocity_.Add(acceleration_);
         position_.Add(velocity_);
-        life_span_ -= 2.0f;
         acceleration_.Mult(0);
+        life_span_ = std::max(0.0f, life_span_ - 2.0f);
     }
     
     void Particle::Show(SDL_Framework *framework)
     {
-        SDL_Color color = kColorBlack;
-        auto alpha = (Uint8)std::max(0.0f, life_span_);
-        framework->DrawCircle(position_.x, position_.y, 8, { color.r, color.g, color.b, alpha }, true);
+        framework->StrokeWeight(0);
+        framework->Fill({ kColorBlack.r, kColorBlack.g, kColorBlack.b, (Uint8)life_span_ });
+        framework->Circle(position_.x, position_.y, 8);
     }
-    
 }
 
 // END

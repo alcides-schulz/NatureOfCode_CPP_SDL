@@ -32,6 +32,10 @@ bool SDL_Framework::Init()
         return false;
     }
     SDL_SetRenderDrawBlendMode(renderer_, SDL_BLENDMODE_BLEND);
+    for (int degree = 0; degree < 360; degree++) {
+        circle_cos_cache[degree] = (double)cos(degree * M_PI / 180);
+        circle_sin_cache[degree] = (double)sin(degree * M_PI / 180);
+    }
     is_running_ = Setup();
     if (!is_running_) {
         SDL_DestroyWindow(window_);
@@ -84,42 +88,43 @@ void SDL_Framework::Run()
     SDL_Quit();
 }
 
-void SDL_Framework::DrawCircle(float center_x, float center_y, int diameter, SDL_Color color, bool fill)
+void SDL_Framework::Circle(float center_x, float center_y, int diameter)
 {
-    DrawCircle((int)center_x, (int)center_y, diameter, color, fill);
+    Circle((int)center_x, (int)center_y, diameter);
 }
 
-void SDL_Framework::DrawCircle(int center_x, int center_y, int diameter, SDL_Color color, bool fill)
+void SDL_Framework::Circle(int center_x, int center_y, int diameter)
 {
+    // Translate and rotate circle position
     double sin_value = sin(rotation_radians_);
     double cos_value = cos(rotation_radians_);
-
-    double rotated_x1 = center_x * cos_value - center_y * sin_value;
-    double rotated_y1 = center_x * sin_value + center_y * cos_value;
-
-    int final_x1 = static_cast<int>(rotated_x1 + origin_x_);
-    int final_y1 = static_cast<int>(rotated_y1 + origin_y_);
-
-    auto radius = diameter / 2;
-    auto radius2 = radius * radius;
-    SDL_SetRenderDrawColor(renderer_, color.r, color.g, color.b, color.a);
-    for (int w = 0; w <= diameter; w++) {
-        for (int h = 0; h <= diameter; h++) {
-            int dx = radius - w;
-            int dy = radius - h;
-            int pos = dx * dx + dy * dy;
-            if (fill && pos <= radius2) {
-                SDL_RenderDrawPoint(renderer_, final_x1 + dx, final_y1 + dy);
-            }
-            int diff = pos - radius2;
-            if (!fill && abs(diff) <= 10) {
-                SDL_RenderDrawPoint(renderer_, final_x1 + dx, final_y1 + dy);
-            }
+    double rotated_x = center_x * cos_value - center_y * sin_value;
+    double rotated_y = center_x * sin_value + center_y * cos_value;
+    int final_x = static_cast<int>(rotated_x + origin_x_);
+    int final_y = static_cast<int>(rotated_y + origin_y_);
+    // Fill in
+    if (fill_color_.r != background_color_.r || fill_color_.g != background_color_.g || fill_color_.b != background_color_.b || fill_color_.a != background_color_.a) {
+        auto radius = diameter / 2;
+        auto radius2 = radius * radius;
+        SDL_SetRenderDrawColor(renderer_, fill_color_.r, fill_color_.g, fill_color_.b, fill_color_.a);
+        for (int y = -radius; y <= radius; y++) {
+            int maxX = (int)(sqrt(radius2 - y * y));
+            SDL_RenderDrawLine(renderer_, final_x - maxX, final_y + y, final_x + maxX, final_y + y);
+        }
+    }
+    // Draw circle
+    SDL_SetRenderDrawColor(renderer_, stroke_color_.r, stroke_color_.g, stroke_color_.b, stroke_color_.a);
+    for (int thickness = 0; thickness < stroke_weight_; thickness++) {
+        auto radius = diameter / 2 - thickness;
+        for (int degree = 0; degree < 360; degree++) {
+            int x = (int)(final_x + radius * circle_cos_cache[degree]); //cos(degree * M_PI / 180)
+            int y = (int)(final_y + radius * circle_sin_cache[degree]); //sin(degree * M_PI / 180)
+            SDL_RenderDrawPoint(renderer_, x, y);
         }
     }
 }
 
-void SDL_Framework::DrawRectangle(int x, int y, int width, int height, SDL_Color color)
+void SDL_Framework::Rect(int x, int y, int width, int height)
 {
     std::vector<SDL_Point> corner = {
         {x, y},
@@ -127,35 +132,31 @@ void SDL_Framework::DrawRectangle(int x, int y, int width, int height, SDL_Color
         {x + width, y + height},
         {x, y + height}
     };
-    auto center_x = x + width / 2;
-    auto center_y = y + height / 2;
-    double sin = std::sin(rotation_radians_);
-    double cos = std::cos(rotation_radians_);
-    for (int i = 0; i < 4; i++) {
-        corner[i].x -= center_x;
-        corner[i].y -= center_y;
-        double x_new = corner[i].x * cos - corner[i].y * sin;
-        double y_new = corner[i].x * sin + corner[i].y * cos;
-        corner[i].x = static_cast<int>(x_new + center_x);
-        corner[i].y = static_cast<int>(y_new + center_y);
+    if (rect_mode_ == kRectCorner) {
+        for (int i = 0; i < 4; i++) {
+            auto next = (i + 1) % 4;
+            Line(corner[i].x, corner[i].y, corner[next].x, corner[next].y);
+        }
+        return;
     }
-    SDL_SetRenderDrawColor(renderer_, color.r, color.g, color.b, color.a);
-    for (int i = 0; i < 4; i++) {
-        auto next = (i + 1) % 4;
-        auto x1 = corner[i].x + origin_x_;
-        auto y1 = corner[i].y + origin_y_;
-        auto x2 = corner[next].x + origin_x_;
-        auto y2 = corner[next].y + origin_y_;
-        SDL_RenderDrawLine(renderer_, x1, y1, x2, y2);
+    if (rect_mode_ == kRectCenter) {
+        auto center_x = x + width / 2;
+        auto center_y = y + height / 2;
+        for (int i = 0; i < 4; i++) {
+            auto next = (i + 1) % 4;
+            Line(corner[i].x - center_x, corner[i].y - center_y, corner[next].x - center_x, corner[next].y - center_y);
+        }
+        return;
     }
+    cerr << "ERROR: Invalid rectangle mode: " << rect_mode_ << endl;
 }
 
-void SDL_Framework::DrawLine(float x1, float y1, float x2, float y2, SDL_Color color)
+void SDL_Framework::Line(float x1, float y1, float x2, float y2)
 {
-    DrawLine((int)x1, (int)y1, (int)x2, (int)y2, color);
+    Line((int)x1, (int)y1, (int)x2, (int)y2);
 }
 
-void SDL_Framework::DrawLine(int x1, int y1, int x2, int y2, SDL_Color color)
+void SDL_Framework::Line(int x1, int y1, int x2, int y2)
 {
     // Rotate
     double sin_value = sin(rotation_radians_);
@@ -175,7 +176,7 @@ void SDL_Framework::DrawLine(int x1, int y1, int x2, int y2, SDL_Color color)
     // Draw using stroke weight
     auto dx = abs(final_x1 - final_x2);
     auto dy = abs(final_y1 - final_y2);
-    SDL_SetRenderDrawColor(renderer_, color.r, color.g, color.b, color.a);
+    SDL_SetRenderDrawColor(renderer_, stroke_color_.r, stroke_color_.g, stroke_color_.b, stroke_color_.a);
     for (int i = -stroke_weight_ / 2; i <= stroke_weight_ / 2; i++) {
         auto swx = i * (dx < dy);
         auto swy = i * (dx >= dy);
@@ -183,18 +184,11 @@ void SDL_Framework::DrawLine(int x1, int y1, int x2, int y2, SDL_Color color)
     }
 }
 
-void SDL_Framework::DrawLines(SDL_Point points[], int count, SDL_Color color)
+void SDL_Framework::Lines(SDL_Point points[], int count)
 {
-    double sin_value = sin(rotation_radians_);
-    double cos_value = cos(rotation_radians_);
-    for (int i = 0; i < count; i++) {
-        double rotated_x1 = points[i].x * cos_value - points[i].y * sin_value;
-        double rotated_y1 = points[i].x * sin_value + points[i].y * cos_value;
-        points[i].x = static_cast<int>(rotated_x1 + origin_x_);
-        points[i].y = static_cast<int>(rotated_y1 + origin_y_);
+    for (int i = 1; i < count; i++) {
+        Line(points[i - 1].x, points[i - 1].y, points[i].x, points[i].y);
     }
-    SDL_SetRenderDrawColor(renderer_, color.r, color.g, color.b, color.a);
-    SDL_RenderDrawLines(renderer_, points, count);
 }
 
 void SDL_Framework::HandleEvents()
@@ -263,15 +257,15 @@ bool SDL_Framework::IsKeyPressed(Sint32 key)
     return std::find(pressed_keys_.begin(), pressed_keys_.end(), key) != pressed_keys_.end();
 }
 
-void SDL_Framework::ClearScreen(void)
+void SDL_Framework::Background(Uint8 gray_scale)
 {
-    SDL_SetRenderDrawColor(Renderer(), kColorWhite.r, kColorWhite.g, kColorWhite.b, 255);
-    SDL_RenderClear(Renderer());
+    Background({ gray_scale, gray_scale, gray_scale, 255 });
 }
 
-void SDL_Framework::ClearScreen(SDL_Color background_color)
+void SDL_Framework::Background(SDL_Color background_color)
 {
-    SDL_SetRenderDrawColor(Renderer(), background_color.r, background_color.g, background_color.b, 255);
+    background_color_ = background_color;
+    SDL_SetRenderDrawColor(Renderer(), background_color_.r, background_color_.g, background_color_.b, background_color_.a);
     SDL_RenderClear(Renderer());
 }
 

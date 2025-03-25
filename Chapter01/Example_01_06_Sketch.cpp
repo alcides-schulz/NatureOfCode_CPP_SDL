@@ -4,7 +4,7 @@ namespace nature_of_code_chapter_01_example_06
 {
     bool Sketch::Draw()
     {
-        ClearScreen();
+        Background(255);
     
         // Subtract center from mouse which results in a vector that points from center to mouse
         PVector mouse = PVector(MousePosition().x, MousePosition().y);
@@ -13,12 +13,14 @@ namespace nature_of_code_chapter_01_example_06
         mouse.Sub(center);
     
         Translate(Width() / 2, Height() / 2);
-        DrawLine(0, 0, (int)mouse.x, (int)mouse.y, kColorBlack);
+        Stroke(kColorBlack);
+        Line(0, 0, (int)mouse.x, (int)mouse.y);
     
         // Normalize the vector and draw the vector
         mouse.Normalize();
         mouse.Mult(50);
-        DrawLine(0, 0, (int)mouse.x, (int)mouse.y, kColorRed);
+        Stroke(kColorRed);
+        Line(0, 0, (int)mouse.x, (int)mouse.y);
     
         return true;
     }

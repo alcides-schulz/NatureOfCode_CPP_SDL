@@ -5,7 +5,7 @@
 
 bool GenerateExampleInitialCode::Setup()
 {
-    ClearScreen();
+    Background(255);
 
     string chapter = "05";
     string example = "05";
@@ -67,7 +67,7 @@ bool GenerateExampleInitialCode::Setup()
     class_output_file << "    }" << endl << endl;
     class_output_file << "    bool Sketch::Draw(void)" << endl;
     class_output_file << "    {" << endl;
-    class_output_file << "        ClearScreen();" << endl << endl;
+    class_output_file << "        Background(255);" << endl << endl;
     class_output_file << "        return true;" << endl;
     class_output_file << "    }" << endl;
     class_output_file << "}" << endl << endl;

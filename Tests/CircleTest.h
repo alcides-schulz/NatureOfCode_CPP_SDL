@@ -6,8 +6,11 @@
 class CircleTest : public SDL_Framework
 {
 public:
-    CircleTest() : SDL_Framework("Circle Test", -1, -1, 640, 240, 0) {}
+    CircleTest() : SDL_Framework("Circle Test", -1, -1, 800, 600, 0) {}
+    bool Setup() override;
     bool Draw() override;
+private:
+    int     radius_ = 0;
 };
 
 #endif

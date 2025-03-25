@@ -10,7 +10,7 @@ namespace nature_of_code_chapter_03_example_11
     
     bool Sketch::Draw(void)
     {
-        ClearScreen();
+        Background(255);
         if (IsMouseButtonHeld(kMouseLeftButton))
             pendulum_->HandleClick(MousePosition().x, MousePosition().y);
         else

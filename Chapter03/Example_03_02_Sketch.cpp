@@ -20,7 +20,7 @@ namespace nature_of_code_chapter_03_example_02
     
     bool Sketch::Draw()
     {
-        ClearScreen();
+        Background(255);
     
         if (!isDragging && IsMouseButtonHeld(kMouseLeftButton)) {
             auto mouse_position = PVector((float)MousePosition().x, (float)MousePosition().y);

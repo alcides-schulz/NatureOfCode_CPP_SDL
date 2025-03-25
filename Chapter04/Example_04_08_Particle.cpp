@@ -12,7 +12,7 @@ namespace nature_of_code_chapter_04_example_08
         velocity_.Add(acceleration_);
         position_.Add(velocity_);
         acceleration_.Mult(0);
-        life_span_ -= 2.5f;
+        life_span_ = std::max(0.0f, life_span_ - 2.5f);
     }
 
     void Particle::Show(SDL_Framework *framework)

@@ -31,9 +31,11 @@ namespace nature_of_code_chapter_03_example_02
         int line_y2 = 0;
 
         framework->Translate(position_.x, position_.y);
-        framework->RotateRadians(angle_);
-        framework->DrawCircle(0, 0, radius_ * 2, kColorGray, true);
-        framework->DrawLine(line_x1, line_y1, line_x2, line_y2, kColorBlack);
+        framework->Rotate(angle_);
+        framework->Stroke(kColorBlack);
+        framework->Fill(127);
+        framework->Circle(0, 0, radius_ * 2);
+        framework->Line(line_x1, line_y1, line_x2, line_y2);
         framework->ResetMatrix();
     }
 }
