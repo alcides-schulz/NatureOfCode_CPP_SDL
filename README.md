@@ -1,6 +1,6 @@
-[The Nature of Code by Daniel Shiffman](https://natureofcode.com/book/)
+#Nature of Code using C++/SDL
 
-"This project aims to reimplement the interactive examples from Daniel Shiffman's renowned book, 'The Nature of Code,' using the C++ programming language and the Simple DirectMedia Layer (SDL) library.
+This project aims to reimplement the interactive examples from Daniel Shiffman's renowned book, [The Nature of Code by Daniel Shiffman](https://natureofcode.com/book/) using the C++ programming language and the Simple DirectMedia Layer (SDL) library.
 
 The primary goal is to deepen my understanding of both C++ and the SDL framework through practical application. 'The Nature of Code' serves as an excellent resource, providing clear explanations of fundamental concepts in computational physics, simulation, and generative art, along with well-structured code examples. By translating these examples into C++/SDL, I aim to solidify my grasp of these principles and gain hands-on experience in low-level graphics and event handling.
 
