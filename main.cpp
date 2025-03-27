@@ -54,9 +54,11 @@
 #include "Chapter05/Example_05_03_Sketch.h"
 #include "Chapter05/Example_05_04_Sketch.h"
 #include "Chapter05/Example_05_05_Sketch.h"
+#include "Chapter05/Example_05_06_Sketch.h"
 
-#include "Tests/CircleTest.h"
-#include "Tests/GenerateExampleInitialCode.h"
+#include "Miscellaneous/CircleTest.h"
+#include "Miscellaneous/GenerateExampleInitialCode.h"
+#include "Miscellaneous/CopyExample.h"
 
 using namespace std;
 
@@ -113,11 +115,13 @@ vector<SDL_Framework *> chapter05_menu = {
     new nature_of_code_chapter_05_example_03::Sketch(),
     new nature_of_code_chapter_05_example_04::Sketch(),
     new nature_of_code_chapter_05_example_05::Sketch(),
+    new nature_of_code_chapter_05_example_06::Sketch(),
 };
 
-vector<SDL_Framework *> tests_menu = {
+vector<SDL_Framework *> miscellaneous = {
     new CircleTest(),
     new GenerateExampleInitialCode(),
+    new CopyExample(),
 };
 
 void ShowMenu(vector<SDL_Framework *> chapter_menu)
@@ -158,7 +162,7 @@ int main(int argc, char* argv[])
         cout << endl << "\t d. Chapter 4 - Particle System";
         cout << endl << "\t e. Chapter 5 - Autonomous Agents";
         cout << endl;
-        cout << endl << "\t z. Tests";
+        cout << endl << "\t z. Miscellaneous";
         cout << endl << "\t x. Exit" << endl << endl << "--> ";
         getline(cin, response);
         if (response.compare("x") == 0) {
@@ -185,7 +189,7 @@ int main(int argc, char* argv[])
             continue;
         }
         if (response.compare("z") == 0) {
-            ShowMenu(tests_menu);
+            ShowMenu(miscellaneous);
             continue;
         }
     }

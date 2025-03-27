@@ -2,7 +2,14 @@
 #include "../Common/Utils.h"
 namespace nature_of_code_chapter_01_example_09
 {
-    
+    Mover::Mover(PVector position, PVector velocity)
+    {
+        position_ = position;
+        velocity_ = velocity;
+        acceleration_ = PVector(0, 0);
+        top_speed_ = 2;
+    };
+
     void Mover::Update(void)
     {
         acceleration_ = PVector::Random2D();

@@ -17,14 +17,14 @@
     <Filter Include="Source Files\Chapter03">
       <UniqueIdentifier>{eb91655a-aa63-4e9a-b160-47029037cc55}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\Tests">
-      <UniqueIdentifier>{ca78f855-4866-472a-9f27-bddfd4af4d18}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Source Files\Chapter04">
       <UniqueIdentifier>{84268f8d-3472-44cd-8573-d244750a7c11}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files\Chapter05">
       <UniqueIdentifier>{52f4d609-e12e-40da-81a7-f0053f629b5a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Miscellaneous">
+      <UniqueIdentifier>{2ddfdc83-e54d-4d67-8aa6-9309de9c1e7c}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -33,12 +33,6 @@
     </ClInclude>
     <ClInclude Include="Common\SDL_Framework.h">
       <Filter>Source Files\Common</Filter>
-    </ClInclude>
-    <ClInclude Include="Tests\CircleTest.h">
-      <Filter>Source Files\Tests</Filter>
-    </ClInclude>
-    <ClInclude Include="Tests\GenerateExampleInitialCode.h">
-      <Filter>Source Files\Tests</Filter>
     </ClInclude>
     <ClInclude Include="Chapter01\Example_01_01_Sketch.h">
       <Filter>Source Files\Chapter01</Filter>
@@ -307,6 +301,24 @@
     <ClInclude Include="Chapter05\Example_05_05_Path.h">
       <Filter>Source Files\Chapter05</Filter>
     </ClInclude>
+    <ClInclude Include="Tests\CircleTest.h">
+      <Filter>Source Files\Miscellaneous</Filter>
+    </ClInclude>
+    <ClInclude Include="Miscellaneous\CopyExample.h">
+      <Filter>Source Files\Miscellaneous</Filter>
+    </ClInclude>
+    <ClInclude Include="Tests\GenerateExampleInitialCode.h">
+      <Filter>Source Files\Miscellaneous</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter05\Example_05_06_Path.h">
+      <Filter>Source Files\Chapter05</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter05\Example_05_06_Sketch.h">
+      <Filter>Source Files\Chapter05</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter05\Example_05_06_Vehicle.h">
+      <Filter>Source Files\Chapter05</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -317,12 +329,6 @@
     </ClCompile>
     <ClCompile Include="Common\SDL_Framework.cpp">
       <Filter>Source Files\Common</Filter>
-    </ClCompile>
-    <ClCompile Include="Tests\CircleTest.cpp">
-      <Filter>Source Files\Tests</Filter>
-    </ClCompile>
-    <ClCompile Include="Tests\GenerateExampleInitialCode.cpp">
-      <Filter>Source Files\Tests</Filter>
     </ClCompile>
     <ClCompile Include="Common\Utils.h">
       <Filter>Source Files\Common</Filter>
@@ -592,6 +598,24 @@
       <Filter>Source Files\Chapter05</Filter>
     </ClCompile>
     <ClCompile Include="Chapter05\Example_05_05_Path.cpp">
+      <Filter>Source Files\Chapter05</Filter>
+    </ClCompile>
+    <ClCompile Include="Tests\CircleTest.cpp">
+      <Filter>Source Files\Miscellaneous</Filter>
+    </ClCompile>
+    <ClCompile Include="Miscellaneous\CopyExample.cpp">
+      <Filter>Source Files\Miscellaneous</Filter>
+    </ClCompile>
+    <ClCompile Include="Tests\GenerateExampleInitialCode.cpp">
+      <Filter>Source Files\Miscellaneous</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter05\Example_05_06_Path.cpp">
+      <Filter>Source Files\Chapter05</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter05\Example_05_06_Sketch.cpp">
+      <Filter>Source Files\Chapter05</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter05\Example_05_06_Vehicle.cpp">
       <Filter>Source Files\Chapter05</Filter>
     </ClCompile>
   </ItemGroup>

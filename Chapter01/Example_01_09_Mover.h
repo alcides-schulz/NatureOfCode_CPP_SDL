@@ -9,10 +9,7 @@ namespace nature_of_code_chapter_01_example_09
     class Mover
     {
     public:
-        Mover(PVector position, PVector velocity) : position_(position), velocity_(velocity)
-        {
-            top_speed_ = 2;
-        };
+        Mover(PVector position, PVector velocity);
         void Update(void);
         void Show(SDL_Framework *framework);
         void CheckEdges(SDL_Framework *framework);

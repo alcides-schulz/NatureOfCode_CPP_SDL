@@ -4,6 +4,7 @@ namespace nature_of_code_chapter_01_example_02
 {
     bool Sketch::Setup()
     {
+        cout << position_.x << endl;
         position_ = PVector(100, 100);
         velocity_ = PVector(2.5f, 2.0f);
         return true;

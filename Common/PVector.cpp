@@ -61,6 +61,11 @@ PVector PVector::Clone(void)
     return PVector(x, y);
 }
 
+float PVector::Dot(PVector other)
+{
+    return x * other.x + y * other.y;
+}
+
 PVector PVector::Random2D()
 {
     float angle = (static_cast<float>(rand()) / RAND_MAX) * 2.0f * static_cast<float>(PI_VALUE);
