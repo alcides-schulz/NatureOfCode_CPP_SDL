@@ -2,7 +2,7 @@
 #define EXAMPLE_03_11_PENDULUM_H
 
 #include "../Common/SDL_Framework.h"
-#include "../Common/PVector.h"
+#include "../Common/Vector.h"
 
 namespace nature_of_code_chapter_03_example_11
 {
@@ -11,8 +11,8 @@ namespace nature_of_code_chapter_03_example_11
     public:
         Pendulum(int x, int y, float r)
         {
-            pivot_ = PVector(x, y);
-            bob_ = PVector(0, 0);
+            pivot_ = Vector(x, y);
+            bob_ = Vector(0, 0);
             r_ = r;
             angle_ = (float)(M_PI / 4);
             angle_velocity_ = 0;
@@ -27,8 +27,8 @@ namespace nature_of_code_chapter_03_example_11
         void HandleDrag(int mouse_x, int mouse_y);
         void StopDragging(void);
     private:
-        PVector pivot_;
-        PVector bob_;
+        Vector pivot_;
+        Vector bob_;
         float   r_;
         float   angle_;
         float   angle_velocity_;

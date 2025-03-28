@@ -2,29 +2,29 @@
 #define EXAMPLE_03_02_MOVER_H
 
 #include "../Common/SDL_Framework.h"
-#include "../Common/PVector.h"
+#include "../Common/Vector.h"
 
 namespace nature_of_code_chapter_03_example_02
 {
     class Mover
     {
     public:
-        Mover(PVector position, int mass) : position_(position), mass_(mass)
+        Mover(Vector position, int mass) : position_(position), mass_(mass)
         {
-            velocity_ = PVector(0, 0);
+            velocity_ = Vector(0, 0);
             radius_ = 8 * mass;
-            acceleration_ = PVector(0, 0);
+            acceleration_ = Vector(0, 0);
         };
-        void ApplyForce(PVector force);
+        void ApplyForce(Vector force);
         void Update(void);
         void Show(SDL_Framework *framework);
         int GetMass(void) { return mass_; };
-        PVector GetPosition(void) { return position_; };
-        void SetVelocity(PVector velocity) { velocity_ = velocity; };
+        Vector GetPosition(void) { return position_; };
+        void SetVelocity(Vector velocity) { velocity_ = velocity; };
     private:
-        PVector position_;
-        PVector velocity_;
-        PVector acceleration_;
+        Vector position_;
+        Vector velocity_;
+        Vector acceleration_;
         int     radius_;
         int     mass_;
         float   angle_ = 0;

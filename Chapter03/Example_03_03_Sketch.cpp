@@ -4,9 +4,9 @@ namespace nature_of_code_chapter_03_example_03
 {
     bool Sketch::Setup(void)
     {
-        mover_ = new Mover(PVector(Width() / 2, Height() / 2));
+        mover_ = new Mover(Vector(Width() / 2, Height() / 2));
     
-        auto x = PVector(100, 50).Heading();
+        auto x = Vector(100, 50).Heading();
         cout << x << endl;
     
         return true;

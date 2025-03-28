@@ -2,9 +2,9 @@
 
 namespace nature_of_code_chapter_02_example_07
 {
-    PVector Attractor::Attract(Mover *mover)
+    Vector Attractor::Attract(Mover *mover)
     {
-        auto force = PVector(position_.x, position_.y);
+        auto force = Vector(position_.x, position_.y);
         force.Sub(mover->GetPosition());
         auto distance = force.Mag();
         distance = (float)std::fmax(5, std::fmin(25, distance));

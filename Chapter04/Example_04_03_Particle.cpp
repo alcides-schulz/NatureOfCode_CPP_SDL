@@ -2,7 +2,7 @@
 
 namespace nature_of_code_chapter_04_example_03
 {
-    void Particle::ApplyForce(PVector force)
+    void Particle::ApplyForce(Vector force)
     {
         acceleration_.Add(force);
     }
@@ -24,7 +24,7 @@ namespace nature_of_code_chapter_04_example_03
 
     void Particle::Run(SDL_Framework *framework)
     {
-        auto gravity = PVector(0.0f, 0.05f);
+        auto gravity = Vector(0.0f, 0.05f);
         ApplyForce(gravity);
         Update();
         Show(framework);

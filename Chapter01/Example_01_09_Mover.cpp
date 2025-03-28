@@ -2,17 +2,17 @@
 #include "../Common/Utils.h"
 namespace nature_of_code_chapter_01_example_09
 {
-    Mover::Mover(PVector position, PVector velocity)
+    Mover::Mover(Vector position, Vector velocity)
     {
         position_ = position;
         velocity_ = velocity;
-        acceleration_ = PVector(0, 0);
+        acceleration_ = Vector(0, 0);
         top_speed_ = 2;
     };
 
     void Mover::Update(void)
     {
-        acceleration_ = PVector::Random2D();
+        acceleration_ = Vector::Random2D();
         acceleration_.Mult(Utils::Random(2));
         velocity_.Add(acceleration_);
         velocity_.Limit(top_speed_);

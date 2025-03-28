@@ -2,7 +2,7 @@
 #define EXAMPLE_04_07_PARTICLE_H
 
 #include "../Common/SDL_Framework.h"
-#include "../Common/PVector.h"
+#include "../Common/Vector.h"
 #include "../Common/Utils.h"
 
 namespace nature_of_code_chapter_04_example_07
@@ -12,22 +12,22 @@ namespace nature_of_code_chapter_04_example_07
     public:
         Particle(int x, int y)
         {
-            position_ = PVector(x, y);
-            velocity_ = PVector(Utils::Random(-1, 1), Utils::Random(-2, 0));
-            acceleration_ = PVector(0, 0);
+            position_ = Vector(x, y);
+            velocity_ = Vector(Utils::Random(-1, 1), Utils::Random(-2, 0));
+            acceleration_ = Vector(0, 0);
             life_span_ = 255.0f;
             mass_ = 1.0f;
         };
         void Update(void);
         virtual void Show(SDL_Framework *framework);
-        void ApplyForce(PVector force);
+        void ApplyForce(Vector force);
         bool IsDead(void) { return life_span_ < 0; };
         void Run(SDL_Framework *framework);
-        PVector GetPosition(void) { return position_; };
+        Vector GetPosition(void) { return position_; };
     protected:
-        PVector     position_;
-        PVector     velocity_;
-        PVector     acceleration_;
+        Vector     position_;
+        Vector     velocity_;
+        Vector     acceleration_;
         float       life_span_;
         float       mass_;
     };

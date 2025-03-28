@@ -13,7 +13,7 @@ namespace nature_of_code_chapter_04_example_07
     {
         Background(255);
         emitter_->AddParticle();
-        auto gravity = PVector(0.0f, 0.1f);
+        auto gravity = Vector(0.0f, 0.1f);
         emitter_->ApplyForce(gravity);
         emitter_->ApplyRepeller(repeller_);
         emitter_->Run(this);

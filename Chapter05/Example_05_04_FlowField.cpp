@@ -11,7 +11,7 @@ namespace nature_of_code_chapter_05_example_04
             for (int j = 0; j < rows_; j++) {
                 auto noise = perlin_noise->Noise(xoff, yoff);
                 auto angle = Utils::Map(noise, 0, 1, 0, M_PI * 2);
-                field_[i][j] = PVector::FromAngle(angle);
+                field_[i][j] = Vector::FromAngle(angle);
                 yoff += 0.1f;
             }
             xoff += 0.1f;
@@ -35,7 +35,7 @@ namespace nature_of_code_chapter_05_example_04
         }
     }
 
-    PVector FlowField::Lookup(PVector position)
+    Vector FlowField::Lookup(Vector position)
     {
         auto column = Utils::Constrain((int)std::floor(position.x / resolution_), 0, cols_ - 1);
         auto row = Utils::Constrain((int)std::floor(position.y / resolution_), 0, rows_ - 1);

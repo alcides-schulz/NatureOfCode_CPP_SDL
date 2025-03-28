@@ -4,7 +4,7 @@ namespace nature_of_code_chapter_03_example_10
 {
     void Spring::Connect(Bob *bob)
     {
-        auto force = PVector::Sub(bob->GetPosition(), anchor_);
+        auto force = Vector::Sub(bob->GetPosition(), anchor_);
         float current_length = force.Mag();
         float stretch = current_length - rest_length_;
         force.SetMag(-1 * k_ * stretch);
@@ -13,17 +13,17 @@ namespace nature_of_code_chapter_03_example_10
 
     void Spring::ConstrainLength(Bob *bob, float min_length, float max_length)
     {
-        auto direction = PVector::Sub(bob->GetPosition(), anchor_);
+        auto direction = Vector::Sub(bob->GetPosition(), anchor_);
         float length = direction.Mag();
         if (length < min_length) {
             direction.SetMag(min_length);
-            bob->SetPosition(PVector::Add(anchor_, direction));
-            bob->SetVelocity(PVector(0, 0));
+            bob->SetPosition(Vector::Add(anchor_, direction));
+            bob->SetVelocity(Vector(0, 0));
         }
         else if (length > max_length) {
             direction.SetMag(max_length);
-            bob->SetPosition(PVector::Add(anchor_, direction));
-            bob->SetVelocity(PVector(0, 0));
+            bob->SetPosition(Vector::Add(anchor_, direction));
+            bob->SetVelocity(Vector(0, 0));
         }
     }
 

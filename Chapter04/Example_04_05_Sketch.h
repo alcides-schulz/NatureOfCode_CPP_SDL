@@ -2,7 +2,7 @@
 #define EXAMPLE_4_5_SKETCH_H
 
 #include "../Common/SDL_Framework.h"
-#include "../Common/PVector.h"
+#include "../Common/Vector.h"
 #include "../Common/Utils.h"
 
 #include "Example_04_05_Emitter.h"

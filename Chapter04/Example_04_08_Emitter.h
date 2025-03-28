@@ -2,7 +2,7 @@
 #define EXAMPLE_04_08_EMITTER_H
 
 #include "../Common/SDL_Framework.h"
-#include "../Common/PVector.h"
+#include "../Common/Vector.h"
 
 #include "Example_04_08_Particle.h"
 
@@ -13,14 +13,14 @@ namespace nature_of_code_chapter_04_example_08
     public:
         Emitter(int x, int y, SDL_Texture *texture)
         {
-            origin_ = PVector(x, y);
+            origin_ = Vector(x, y);
             texture_ = texture;
         };
         void AddParticle(void);
-        void ApplyForce(PVector force);
+        void ApplyForce(Vector force);
         void Run(SDL_Framework *framework);
     private:
-        PVector             origin_;
+        Vector             origin_;
         SDL_Texture         *texture_;
         vector<Particle *>  particles_;
     };

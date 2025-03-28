@@ -26,7 +26,7 @@ namespace nature_of_code_chapter_02_example_05
                 auto dragForce = liquid_->CalculateDrag(mover_[i]);
                 mover_[i]->ApplyForce(dragForce);
             }
-            PVector gravity(0.0f, 0.1f);
+            Vector gravity(0.0f, 0.1f);
             gravity.Mult((float)mover_[i]->GetMass());
             mover_[i]->ApplyForce(gravity);
             mover_[i]->Update();
@@ -43,7 +43,7 @@ namespace nature_of_code_chapter_02_example_05
             if (mover_[i] != nullptr) {
                 delete mover_[i];
             }
-            mover_[i] = new Mover(PVector(40 + i * 70, 0), (int)(Utils::Random(1, 4)));
+            mover_[i] = new Mover(Vector(40 + i * 70, 0), (int)(Utils::Random(1, 4)));
         }
     }
     

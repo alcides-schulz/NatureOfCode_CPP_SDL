@@ -14,12 +14,12 @@ namespace nature_of_code_chapter_05_example_04
     {
         auto desired = flowfield->Lookup(position_);
         desired.Mult(max_speed_);
-        auto steer = PVector::Sub(desired, velocity_);
+        auto steer = Vector::Sub(desired, velocity_);
         steer.Limit(max_force_);
         ApplyForce(steer);
     }
     
-    void Vehicle::ApplyForce(PVector force)
+    void Vehicle::ApplyForce(Vector force)
     {
         acceleration_.Add(force);
     }

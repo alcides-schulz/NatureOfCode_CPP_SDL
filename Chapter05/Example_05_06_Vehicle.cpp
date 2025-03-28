@@ -2,13 +2,13 @@
 
 namespace nature_of_code_chapter_05_example_06
 {
-    static PVector GetNormalPoint(PVector position, PVector a, PVector b);
+    static Vector GetNormalPoint(Vector position, Vector a, Vector b);
 
     Vehicle::Vehicle(int x, int y, float max_speed, float max_force)
     {
-        position_ = PVector(x, y);
-        acceleration_ = PVector(0, 0);
-        velocity_ = PVector(2, 0);
+        position_ = Vector(x, y);
+        acceleration_ = Vector(0, 0);
+        velocity_ = Vector(2, 0);
         r_ = 4;
         max_speed_ = max_speed;
         max_force_ = max_force;
@@ -28,11 +28,11 @@ namespace nature_of_code_chapter_05_example_06
 
         auto normal_point = GetNormalPoint(future, path->GetStart(), path->GetEnd());
 
-        auto b = PVector::Sub(path->GetEnd(), path->GetStart());
+        auto b = Vector::Sub(path->GetEnd(), path->GetStart());
         b.SetMag(25);
-        auto target = PVector::Add(normal_point, b);
+        auto target = Vector::Add(normal_point, b);
 
-        auto distance = PVector::Distance(normal_point, future);
+        auto distance = Vector::Distance(normal_point, future);
         if (distance > path->GetRadius())
             Seek(target);
 
@@ -51,16 +51,16 @@ namespace nature_of_code_chapter_05_example_06
         }
     }
 
-    void Vehicle::Seek(PVector target)
+    void Vehicle::Seek(Vector target)
     {
-        auto desired = PVector::Sub(target, position_);
+        auto desired = Vector::Sub(target, position_);
         if (desired.Mag() == 0)
             return;
 
         desired.Normalize();
         desired.Mult(max_speed_);
 
-        auto steer = PVector::Sub(desired, velocity_);
+        auto steer = Vector::Sub(desired, velocity_);
         steer.Limit(max_force_);
 
         ApplyForce(steer);
@@ -74,7 +74,7 @@ namespace nature_of_code_chapter_05_example_06
         acceleration_.Mult(0);
     }
 
-    void Vehicle::ApplyForce(PVector force)
+    void Vehicle::ApplyForce(Vector force)
     {
         acceleration_.Add(force);
     }
@@ -103,13 +103,13 @@ namespace nature_of_code_chapter_05_example_06
         framework->ResetMatrix();
     }
 
-    static PVector GetNormalPoint(PVector position, PVector a, PVector b)
+    static Vector GetNormalPoint(Vector position, Vector a, Vector b)
     {
-        auto vectorA = PVector::Sub(position, a);
-        auto vectorB = PVector::Sub(b, a);
+        auto vectorA = Vector::Sub(position, a);
+        auto vectorB = Vector::Sub(b, a);
         vectorB.Normalize();
         vectorB.Mult(vectorA.Dot(vectorB));
-        auto normal_point = PVector::Add(a, vectorB);
+        auto normal_point = Vector::Add(a, vectorB);
         return normal_point;
     }
 }

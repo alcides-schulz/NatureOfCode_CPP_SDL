@@ -5,8 +5,8 @@ namespace nature_of_code_chapter_05_example_06
     Path::Path(SDL_Framework *framework)
     {
         radius_ = 20;
-        start_ = PVector(0, framework->Height() / 3);
-        end_ = PVector(framework->Width(), (2 * framework->Height()) / 3);
+        start_ = Vector(0, framework->Height() / 3);
+        end_ = Vector(framework->Width(), (2 * framework->Height()) / 3);
     }
 
     void Path::Show(SDL_Framework *framework)

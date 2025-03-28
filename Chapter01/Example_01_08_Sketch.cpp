@@ -4,10 +4,10 @@ namespace nature_of_code_chapter_01_example_08
 {
     bool Sketch::Setup()
     {
-        auto location = PVector(Width() / 2, Height() / 2);
-        auto velocity = PVector(0, 0);
+        auto location = Vector(Width() / 2, Height() / 2);
+        auto velocity = Vector(0, 0);
         mover_ = new Mover(location, velocity);
-        mover_->SetAcceleration(PVector(-0.001f, 0.01f));
+        mover_->SetAcceleration(Vector(-0.001f, 0.01f));
     
         return true;
     }

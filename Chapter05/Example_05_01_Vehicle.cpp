@@ -10,16 +10,16 @@ namespace nature_of_code_chapter_05_example_01
         acceleration_.Mult(0);
     }
 
-    void Vehicle::ApplyForce(PVector force)
+    void Vehicle::ApplyForce(Vector force)
     {
         acceleration_.Add(force);
     }
 
-    void Vehicle::Seek(PVector target)
+    void Vehicle::Seek(Vector target)
     {
-        auto desired = PVector::Sub(target, position_);
+        auto desired = Vector::Sub(target, position_);
         desired.SetMag(max_speed_);
-        auto steer = PVector::Sub(desired, velocity_);
+        auto steer = Vector::Sub(desired, velocity_);
         steer.Limit(max_force_);
         ApplyForce(steer);
     }

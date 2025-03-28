@@ -2,9 +2,9 @@
 
 namespace nature_of_code_chapter_02_example_09
 {
-    void Body::ApplyForce(PVector force)
+    void Body::ApplyForce(Vector force)
     {
-        PVector temp = force.Clone();
+        Vector temp = force.Clone();
         temp.Div((float)mass_);
         acceleration_.Add(temp);
     }
@@ -25,7 +25,7 @@ namespace nature_of_code_chapter_02_example_09
     
     void Body::Attract(Body *body)
     {
-        auto force = PVector(position_.x, position_.y);
+        auto force = Vector(position_.x, position_.y);
         force.Sub(body->GetPosition());
         auto distance = force.Mag();
         distance = (float)std::fmax(5, std::fmin(25, distance));

@@ -2,7 +2,7 @@
 
 namespace nature_of_code_chapter_04_example_07
 {
-    void Particle::ApplyForce(PVector force)
+    void Particle::ApplyForce(Vector force)
     {
         auto temp = force.Clone();
         temp.Div(mass_);
@@ -26,7 +26,7 @@ namespace nature_of_code_chapter_04_example_07
 
     void Particle::Run(SDL_Framework *framework)
     {
-        auto gravity = PVector(0.0f, 0.05f);
+        auto gravity = Vector(0.0f, 0.05f);
         ApplyForce(gravity);
         Update();
         Show(framework);

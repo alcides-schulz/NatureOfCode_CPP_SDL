@@ -4,11 +4,11 @@ namespace nature_of_code_chapter_02_example_08
 {
     bool Sketch::Setup()
     {
-        bodyA_ = new Body(PVector(320, 40), 8);
-        bodyB_ = new Body(PVector(320, 200), 8);
+        bodyA_ = new Body(Vector(320, 40), 8);
+        bodyB_ = new Body(Vector(320, 200), 8);
     
-        bodyA_->SetVelocity(PVector(1, 0));
-        bodyB_->SetVelocity(PVector(-1, 0));
+        bodyA_->SetVelocity(Vector(1, 0));
+        bodyB_->SetVelocity(Vector(-1, 0));
     
         return true;
     }

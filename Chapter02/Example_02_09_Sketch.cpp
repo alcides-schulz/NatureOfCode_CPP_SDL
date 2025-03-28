@@ -9,7 +9,7 @@ namespace nature_of_code_chapter_02_example_09
             auto x = Utils::Random((float)Width());
             auto y = Utils::Random((float)Height());
             auto m = (int)Utils::Random(1, 4);
-            body_[i] = new Body(PVector(x, y), m);
+            body_[i] = new Body(Vector(x, y), m);
         }
     
         return true;

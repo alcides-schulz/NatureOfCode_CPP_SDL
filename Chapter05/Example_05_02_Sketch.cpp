@@ -12,7 +12,7 @@ namespace nature_of_code_chapter_05_example_02
     {
         Background(255);
 
-        auto mouse = PVector(MousePosition().x, MousePosition().y);
+        auto mouse = Vector(MousePosition().x, MousePosition().y);
         Stroke(0);
         Fill(127);
         Circle(mouse.x, mouse.y, 48);

@@ -11,7 +11,7 @@ namespace nature_of_code_chapter_02_example_05
     public:
         Liquid(int x, int y, int width, int height, float drag_coef) : x_(x), y_(y), width_(width), height_(height), drag_coef_(drag_coef) { };
         bool Contains(Mover    * mover);
-        PVector CalculateDrag(Mover     *mover);
+        Vector CalculateDrag(Mover     *mover);
         void Show(SDL_Framework *framework);
     private:
         int     x_;

@@ -4,8 +4,8 @@ namespace nature_of_code_chapter_02_example_03
 {
     bool Sketch::Setup()
     {
-        moverA_ = new Mover(PVector(200, 30), 10);
-        moverB_ = new Mover(PVector(440, 30), 2);
+        moverA_ = new Mover(Vector(200, 30), 10);
+        moverB_ = new Mover(Vector(440, 30), 2);
         return true;
     }
     
@@ -13,16 +13,16 @@ namespace nature_of_code_chapter_02_example_03
     {
         Background(255);
     
-        PVector gravityA(0.0f, 0.1f);
+        Vector gravityA(0.0f, 0.1f);
         gravityA.Mult((float)moverA_->GetMass());
         moverA_->ApplyForce(gravityA);
     
-        PVector gravityB(0.0f, 0.1f);
+        Vector gravityB(0.0f, 0.1f);
         gravityB.Mult((float)moverB_->GetMass());
         moverB_->ApplyForce(gravityB);
     
         if (IsMouseButtonHeld(kMouseLeftButton)) {
-            PVector wind(0.1f, 0.0f);
+            Vector wind(0.1f, 0.0f);
             moverA_->ApplyForce(wind);
             moverB_->ApplyForce(wind);
         }

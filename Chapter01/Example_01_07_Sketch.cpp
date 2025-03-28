@@ -5,8 +5,8 @@ namespace nature_of_code_chapter_01_example_07
     
     bool Sketch::Setup()
     {
-        auto location = PVector(Utils::Random((float)Width()), Utils::Random((float)Height()));
-        auto velocity = PVector(Utils::Random(-2, 2), Utils::Random(-2, 2));
+        auto location = Vector(Utils::Random((float)Width()), Utils::Random((float)Height()));
+        auto velocity = Vector(Utils::Random(-2, 2), Utils::Random(-2, 2));
         mover_ = new Mover(location, velocity);
     
         return true;

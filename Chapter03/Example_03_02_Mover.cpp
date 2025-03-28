@@ -2,9 +2,9 @@
 
 namespace nature_of_code_chapter_03_example_02
 {
-    void Mover::ApplyForce(PVector force)
+    void Mover::ApplyForce(Vector force)
     {
-        PVector temp = PVector(force);
+        Vector temp = Vector(force);
         temp.Div((float)mass_);
         acceleration_.Add(temp);
     }

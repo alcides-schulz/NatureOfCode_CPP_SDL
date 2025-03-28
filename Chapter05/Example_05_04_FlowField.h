@@ -2,7 +2,7 @@
 #define EXAMPLE_05_04_FLOWFIELD_H
 
 #include "../Common/SDL_Framework.h"
-#include "../Common/PVector.h"
+#include "../Common/Vector.h"
 #include "../Common/Utils.h"
 #include "../Common/PerlinNoise2D.h"
 
@@ -16,17 +16,17 @@ namespace nature_of_code_chapter_05_example_04
             resolution_ = resolution;
             cols_ = width / resolution_;
             rows_ = height / resolution_;
-            field_ = std::vector<std::vector<PVector>>(cols_, std::vector<PVector>(rows_));
+            field_ = std::vector<std::vector<Vector>>(cols_, std::vector<Vector>(rows_));
             Init();
         };
         void Init(void);
         void Show(SDL_Framework *framework);
-        PVector Lookup(PVector position);
+        Vector Lookup(Vector position);
     private:
         int     resolution_;
         int     rows_;
         int     cols_;
-        std::vector<std::vector<PVector>> field_;
+        std::vector<std::vector<Vector>> field_;
     };
 }
 

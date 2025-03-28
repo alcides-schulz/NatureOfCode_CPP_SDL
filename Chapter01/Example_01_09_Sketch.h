@@ -2,7 +2,7 @@
 #define EXAMPLE_01_09_SKETCH_H
 
 #include "../Common/SDL_Framework.h"
-#include "../Common/PVector.h"
+#include "../Common/Vector.h"
 #include "Example_01_09_Mover.h"
 
 namespace nature_of_code_chapter_01_example_09

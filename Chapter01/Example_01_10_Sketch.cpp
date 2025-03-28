@@ -4,8 +4,8 @@ namespace nature_of_code_chapter_01_example_10
 {
     bool Sketch::Setup()
     {
-        PVector location(Width() / 2, Height() / 2);
-        PVector velocity(0, 0);
+        Vector location(Width() / 2, Height() / 2);
+        Vector velocity(0, 0);
         mover_ = new Mover(location, velocity);
     
         return true;
@@ -15,7 +15,7 @@ namespace nature_of_code_chapter_01_example_10
     {
         Background(255);
     
-        auto direction = PVector(MousePosition().x, MousePosition().y);
+        auto direction = Vector(MousePosition().x, MousePosition().y);
         direction.Sub(mover_->GetPosition());
         direction.Normalize();
         direction.Mult(0.2f);

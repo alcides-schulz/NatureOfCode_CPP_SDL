@@ -2,7 +2,7 @@
 
 namespace nature_of_code_chapter_02_example_06
 {
-    void Mover::ApplyForce(PVector force)
+    void Mover::ApplyForce(Vector force)
     {
         auto temp = force.Clone();
         temp.Div((float)mass_);

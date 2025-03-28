@@ -4,8 +4,8 @@ namespace nature_of_code_chapter_03_example_10
 {
     bool Sketch::Setup(void)
     {
-        spring_ = new Spring(PVector(Width() / 2, 10), 100);
-        bob_ = new Bob(PVector(Width() / 2, 100));
+        spring_ = new Spring(Vector(Width() / 2, 10), 100);
+        bob_ = new Bob(Vector(Width() / 2, 100));
     
         return true;
     }
@@ -19,7 +19,7 @@ namespace nature_of_code_chapter_03_example_10
         else
             bob_->StopDragging();
     
-        auto gravity = PVector(0, 2);
+        auto gravity = Vector(0, 2);
         bob_->ApplyForce(gravity);
         bob_->Update(this);
         bob_->HandleDrag(MousePosition().x, MousePosition().y);

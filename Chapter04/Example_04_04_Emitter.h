@@ -11,12 +11,12 @@ namespace nature_of_code_chapter_04_example_04
     public:
         Emitter(int x, int y)
         {
-            origin_ = PVector(x, y);
+            origin_ = Vector(x, y);
         };
         void AddParticle(void);
         void Run(SDL_Framework *framework);
     private:
-        PVector                 origin_;
+        Vector                 origin_;
         vector<Particle     *>  particles_;
     };
 }

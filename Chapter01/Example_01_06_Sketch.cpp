@@ -7,8 +7,8 @@ namespace nature_of_code_chapter_01_example_06
         Background(255);
     
         // Subtract center from mouse which results in a vector that points from center to mouse
-        PVector mouse = PVector(MousePosition().x, MousePosition().y);
-        PVector center = PVector(Width() / 2, Height() / 2);
+        Vector mouse = Vector(MousePosition().x, MousePosition().y);
+        Vector center = Vector(Width() / 2, Height() / 2);
     
         mouse.Sub(center);
     

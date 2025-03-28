@@ -2,7 +2,7 @@
 #define EXAMPLE_01_02_SKETCH_H
 
 #include "../Common/SDL_Framework.h"
-#include "../Common/PVector.h"
+#include "../Common/Vector.h"
 
 namespace nature_of_code_chapter_01_example_02
 {
@@ -13,8 +13,8 @@ namespace nature_of_code_chapter_01_example_02
         bool Setup() override;
         bool Draw() override;
     private:
-        PVector position_;
-        PVector velocity_;
+        Vector position_;
+        Vector velocity_;
     };
 }
 

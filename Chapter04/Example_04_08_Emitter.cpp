@@ -2,7 +2,7 @@
 
 namespace nature_of_code_chapter_04_example_08
 {
-    void Emitter::ApplyForce(PVector force)
+    void Emitter::ApplyForce(Vector force)
     {
         for (auto particle : particles_) {
             particle->ApplyForce(force);

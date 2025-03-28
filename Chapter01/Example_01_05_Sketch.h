@@ -2,7 +2,7 @@
 #define EXAMPLE_01_05_SKETCH_H
 
 #include "../Common/SDL_Framework.h"
-#include "../Common/PVector.h"
+#include "../Common/Vector.h"
 
 namespace nature_of_code_chapter_01_example_05
 {

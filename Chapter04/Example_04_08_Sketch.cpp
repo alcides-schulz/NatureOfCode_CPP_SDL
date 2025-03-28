@@ -27,7 +27,7 @@ namespace nature_of_code_chapter_04_example_08
         Background(kColorBlack);
 
         auto dx = (float)Utils::Map(MousePosition().x, 0, Width(), -0.2, 0.2);
-        auto wind = PVector(dx, 0.0f);
+        auto wind = Vector(dx, 0.0f);
         emitter_->ApplyForce(wind);
         emitter_->Run(this);
 
@@ -37,7 +37,7 @@ namespace nature_of_code_chapter_04_example_08
 
         // Draw arrow to indicate wind direction/force
         auto scayl = 500;
-        auto arrow_position = PVector(Width() / 2, 50);
+        auto arrow_position = Vector(Width() / 2, 50);
         auto arrow_size = 4;
         Translate(arrow_position.x, arrow_position.y);
         Rotate(wind.Heading());

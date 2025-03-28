@@ -16,7 +16,7 @@ namespace nature_of_code_chapter_03_example_11
 
     void Pendulum::Show(SDL_Framework *framework)
     {
-        bob_ = PVector(r_ * sin(angle_), r_ * cos(angle_));
+        bob_ = Vector(r_ * sin(angle_), r_ * cos(angle_));
         bob_.Add(pivot_);
         framework->Stroke(kColorBlack);
         framework->Line(pivot_.x, pivot_.y, bob_.x, bob_.y);
@@ -28,7 +28,7 @@ namespace nature_of_code_chapter_03_example_11
     void Pendulum::HandleClick(int mouse_x, int mouse_y)
     {
         if (!is_dragging_) {
-            auto distance = PVector::Distance(PVector(mouse_x, mouse_y), bob_);
+            auto distance = Vector::Distance(Vector(mouse_x, mouse_y), bob_);
             if (distance < ball_r_) {
                 is_dragging_ = true;
             }
@@ -38,7 +38,7 @@ namespace nature_of_code_chapter_03_example_11
     void Pendulum::HandleDrag(int mouse_x, int mouse_y)
     {
         if (is_dragging_) {
-            auto diff = PVector::Sub(pivot_, PVector(mouse_x, mouse_y));
+            auto diff = Vector::Sub(pivot_, Vector(mouse_x, mouse_y));
             angle_ = atan2(-1 * diff.y, diff.x) - Utils::Radians(90);
         }
     }

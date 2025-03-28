@@ -4,8 +4,8 @@ namespace nature_of_code_chapter_01_example_09
 {
     bool Sketch::Setup()
     {
-        PVector location((float)(Width() / 2), (float)(Height() / 2));
-        PVector velocity(0, 0);
+        Vector location((float)(Width() / 2), (float)(Height() / 2));
+        Vector velocity(0, 0);
         mover_ = new Mover(location, velocity);
         return true;
     }

@@ -2,7 +2,7 @@
 
 namespace nature_of_code_chapter_03_example_10
 {
-    void Bob::ApplyForce(PVector force)
+    void Bob::ApplyForce(Vector force)
     {
         auto temp = force.Clone();
         temp.Div(mass_);
@@ -27,7 +27,7 @@ namespace nature_of_code_chapter_03_example_10
     void Bob::HandleClick(int mouse_x, int mouse_y)
     {
         if (!is_dragging_) {
-            auto distance = PVector::Distance(PVector(mouse_x, mouse_y), position_);
+            auto distance = Vector::Distance(Vector(mouse_x, mouse_y), position_);
             if (distance < mass_) {
                 is_dragging_ = true;
                 drag_offset_.x = position_.x - mouse_x;

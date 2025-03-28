@@ -16,7 +16,7 @@ namespace nature_of_code_chapter_04_example_01
         particle_->Update();
         particle_->Show(this);
     
-        auto gravity = PVector(0.0f, 0.1f);
+        auto gravity = Vector(0.0f, 0.1f);
         particle_->ApplyForce(gravity);
     
         if (particle_->IsDead()) {

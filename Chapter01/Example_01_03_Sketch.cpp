@@ -6,8 +6,8 @@ namespace nature_of_code_chapter_01_example_03
     {
         Background(255);
     
-        auto mouse = PVector(MousePosition().x, MousePosition().y);
-        auto center = PVector((Width() / 2), (Height() / 2));
+        auto mouse = Vector(MousePosition().x, MousePosition().y);
+        auto center = Vector((Width() / 2), (Height() / 2));
     
         Stroke(kColorBlack);
         Line(0, 0, (int)mouse.x, (int)mouse.y);

@@ -2,7 +2,7 @@
 
 namespace nature_of_code_chapter_03_example_02
 {
-    PVector Attractor::Attract(Mover *mover)
+    Vector Attractor::Attract(Mover *mover)
     {
         auto force = position_.Clone();
         force.Sub(mover->GetPosition());

@@ -2,7 +2,7 @@
 
 namespace nature_of_code_chapter_04_example_01
 {
-    void Particle::ApplyForce(PVector force)
+    void Particle::ApplyForce(Vector force)
     {
         acceleration_.Add(force);
     }

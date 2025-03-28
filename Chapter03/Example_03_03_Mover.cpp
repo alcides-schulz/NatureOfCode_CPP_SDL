@@ -4,7 +4,7 @@ namespace nature_of_code_chapter_03_example_03
 {
     void Mover::Update(SDL_Framework *framework)
     {
-        auto direction = PVector(framework->MousePosition().x, framework->MousePosition().y);
+        auto direction = Vector(framework->MousePosition().x, framework->MousePosition().y);
         direction.Sub(position_);
         direction.Normalize();
         direction.Mult(0.5f);

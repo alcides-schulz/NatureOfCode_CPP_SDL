@@ -6,8 +6,8 @@ namespace nature_of_code_chapter_01_example_04
     {
         Background(255);
     
-        auto mouse = PVector(MousePosition().x, MousePosition().y);
-        auto center = PVector((Width() / 2), (Height() / 2));
+        auto mouse = Vector(MousePosition().x, MousePosition().y);
+        auto center = Vector((Width() / 2), (Height() / 2));
         mouse.Sub(center);
     
         Translate(Width() / 2, Height() / 2);

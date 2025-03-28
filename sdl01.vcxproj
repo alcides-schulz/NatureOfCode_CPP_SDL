@@ -112,7 +112,7 @@
     <ClCompile Include="Chapter05\Example_05_06_Vehicle.cpp" />
     <ClCompile Include="Common\PerlinNoise2D.cpp" />
     <ClCompile Include="Common\Utils.h" />
-    <ClCompile Include="Common\PVector.cpp" />
+    <ClCompile Include="Common\Vector.cpp" />
     <ClCompile Include="Common\SDL_Framework.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Miscellaneous\CopyExample.cpp" />
@@ -212,7 +212,7 @@
     <ClInclude Include="Chapter05\Example_05_06_Sketch.h" />
     <ClInclude Include="Chapter05\Example_05_06_Vehicle.h" />
     <ClInclude Include="Common\PerlinNoise2D.h" />
-    <ClInclude Include="Common\PVector.h" />
+    <ClInclude Include="Common\Vector.h" />
     <ClInclude Include="Common\SDL_Framework.h" />
     <ClInclude Include="Miscellaneous\CopyExample.h" />
     <ClInclude Include="Tests\CircleTest.h" />
