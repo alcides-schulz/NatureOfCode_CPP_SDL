@@ -337,6 +337,9 @@
     <ClInclude Include="Common\P5SDL.h">
       <Filter>Source Files\Common</Filter>
     </ClInclude>
+    <ClInclude Include="Chapter05\Example_05_09_Sketch.h">
+      <Filter>Source Files\Chapter05</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -653,6 +656,9 @@
     </ClCompile>
     <ClCompile Include="Common\P5SDL.cpp">
       <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter05\Example_05_09_Sketch.cpp">
+      <Filter>Source Files\Chapter05</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

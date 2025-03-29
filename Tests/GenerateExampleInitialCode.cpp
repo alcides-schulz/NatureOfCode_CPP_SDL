@@ -8,8 +8,8 @@ bool GenerateExampleInitialCode::Setup()
     Background(255);
 
     string chapter = "05";
-    string example = "05";
-    string description = "Creating a Path Object";
+    string example = "09";
+    string description = "Separation";
 
     auto include_filename = "Chapter" + chapter + "/Example_" + chapter + "_" + example + "_Sketch.h";
     auto class_filename = "Chapter" + chapter + "/Example_" + chapter + "_" + example + "_Sketch.cpp";

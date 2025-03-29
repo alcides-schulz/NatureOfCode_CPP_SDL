@@ -2,23 +2,43 @@
 
 namespace nature_of_code_chapter_05_example_09
 {
-    static Vector GetNormalPoint(Vector position, Vector a, Vector b);
-
-    Vehicle::Vehicle(P5SDL *p5sdl, int x, int y, float max_speed, float max_force)
+    Vehicle::Vehicle(P5SDL *p5sdl, int x, int y)
     {
         p5sdl_ = p5sdl;
         position_ = Vector(x, y);
         acceleration_ = Vector(0, 0);
-        velocity_ = Vector(2, 0);
-        r_ = 4;
-        max_speed_ = max_speed != 0 ? max_speed : 4;
-        max_force_ = max_force != 0 ? max_force : 0.1f;
+        velocity_ = Vector(0, 0);
+        r_ = 12;
+        max_speed_ = 3;
+        max_force_ = 0.2f;
     };
 
-    void Vehicle::Run()
+    void Vehicle::ApplyForce(Vector force)
     {
-        Update();
-        Show();
+        acceleration_.Add(force);
+    }
+
+    void Vehicle::Separate(vector<Vehicle *> vehicles)
+    {
+        auto desired_separation = r_ * 2;
+        auto sum = Vector(0, 0);
+        auto count = 0;
+        for (auto other : vehicles)
+        {
+            auto distance = Vector::Distance(position_, other->position_);
+            if (this != other && distance < desired_separation) {
+                auto diff = Vector::Sub(position_, other->position_);
+                diff.SetMag(1.0f / distance);
+                sum.Add(diff);
+                count++;
+            }
+        }
+        if (count > 0) {
+            sum.SetMag(max_speed_);
+            auto steer = Vector::Sub(sum, velocity_);
+            steer.Limit(max_force_);
+            ApplyForce(steer);
+        }
     }
 
     void Vehicle::Update(void)
@@ -29,43 +49,26 @@ namespace nature_of_code_chapter_05_example_09
         acceleration_.Mult(0);
     }
 
-    void Vehicle::ApplyForce(Vector force)
+    void Vehicle::Show()
     {
-        acceleration_.Add(force);
+        p5sdl_->Fill(127);
+        p5sdl_->Stroke(0);
+        p5sdl_->StrokeWeight(2);
+        p5sdl_->Translate(position_.x, position_.y);
+        p5sdl_->Circle(0, 0, r_);
+        p5sdl_->ResetMatrix();
     }
 
     void Vehicle::Borders()
     {
-        //if (position_.x > path->GetEnd().x + r_) {
-        //    position_.x = path->GetStart().x - r_;
-        //    position_.y = path->GetStart().y + (position_.y - path->GetEnd().y);
-        //}
-    }
-
-    void Vehicle::Show()
-    {
-        p5sdl_->Translate(position_.x, position_.y);
-        auto angle = velocity_.Heading();
-        p5sdl_->Rotate(angle);
-        SDL_Point vertices[] = { 
-            {r_ * 2, 0}, 
-            {-r_ * 2, -r_}, 
-            {-r_ * 2, r_},
-            {r_ * 2, 0},
-        };
-        p5sdl_->Stroke(kColorBlack);
-        p5sdl_->Lines(vertices, sizeof(vertices) / sizeof(SDL_Point));
-        p5sdl_->ResetMatrix();
-    }
-
-    static Vector GetNormalPoint(Vector position, Vector a, Vector b)
-    {
-        auto vectorA = Vector::Sub(position, a);
-        auto vectorB = Vector::Sub(b, a);
-        vectorB.Normalize();
-        vectorB.Mult(vectorA.Dot(vectorB));
-        auto normal_point = Vector::Add(a, vectorB);
-        return normal_point;
+        if (position_.x < -r_)
+            position_.x = (float)(p5sdl_->Width() + r_);
+        if (position_.y < -r_)
+            position_.y = (float)(p5sdl_->Height() + r_);
+        if (position_.x > p5sdl_->Width() + r_)
+            position_.x = (float)-r_;
+        if (position_.y > p5sdl_->Height() + r_)
+            position_.y = (float)-r_;
     }
 }
  

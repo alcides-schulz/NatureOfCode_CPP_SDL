@@ -100,8 +100,8 @@ void P5SDL::Circle(int center_x, int center_y, int diameter)
     double cos_value = cos(rotation_radians_);
     double rotated_x = center_x * cos_value - center_y * sin_value;
     double rotated_y = center_x * sin_value + center_y * cos_value;
-    int final_x = static_cast<int>(rotated_x + origin_x_);
-    int final_y = static_cast<int>(rotated_y + origin_y_);
+    auto final_x = (int)(rotated_x + origin_x_);
+    auto final_y = (int)(rotated_y + origin_y_);
     // Fill in
     if (fill_color_.r != background_color_.r || fill_color_.g != background_color_.g || fill_color_.b != background_color_.b || fill_color_.a != background_color_.a) {
         auto radius = diameter / 2;
@@ -117,9 +117,9 @@ void P5SDL::Circle(int center_x, int center_y, int diameter)
     for (int thickness = 0; thickness < stroke_weight_; thickness++) {
         auto radius = diameter / 2 - thickness;
         for (int degree = 0; degree < 360; degree++) {
-            int x = (int)(final_x + radius * circle_cos_cache[degree]); //cos(degree * M_PI / 180)
-            int y = (int)(final_y + radius * circle_sin_cache[degree]); //sin(degree * M_PI / 180)
-            SDL_RenderDrawPoint(renderer_, x, y);
+            auto x = final_x + radius * circle_cos_cache[degree]; //cos(degree * M_PI / 180)
+            auto y = final_y + radius * circle_sin_cache[degree]; //sin(degree * M_PI / 180)
+            SDL_RenderDrawPoint(renderer_, (int)x, (int)y);
         }
     }
 }

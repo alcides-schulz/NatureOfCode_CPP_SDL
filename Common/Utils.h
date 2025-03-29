@@ -19,6 +19,11 @@ public:
         return static_cast<float>(degrees * M_PI / 180);
     }
 
+    int static Random(int max)
+    {
+        return (int)((float)rand() / (float)RAND_MAX * max);
+    }
+
     float static Random(float max)
     {
         return (float)rand() / RAND_MAX * max;

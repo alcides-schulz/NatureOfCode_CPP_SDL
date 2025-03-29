@@ -13,7 +13,7 @@ namespace nature_of_code_chapter_01_example_09
     void Mover::Update(void)
     {
         acceleration_ = Vector::Random2D();
-        acceleration_.Mult(Utils::Random(2));
+        acceleration_.Mult(Utils::Random(2.0f));
         velocity_.Add(acceleration_);
         velocity_.Limit(top_speed_);
         position_.Add(velocity_);
