@@ -16,11 +16,11 @@ namespace nature_of_code_chapter_02_example_06
         acceleration_.Mult(0);
     }
     
-    void Mover::Show(SDL_Framework *framework)
+    void Mover::Show(P5SDL *p5sdl)
     {
-        framework->Stroke(0);
-        framework->Fill(127);
-        framework->Circle(position_.x, position_.y, radius_ * 2);
+        p5sdl->Stroke(0);
+        p5sdl->Fill(127);
+        p5sdl->Circle(position_.x, position_.y, radius_ * 2);
     }
     
 }

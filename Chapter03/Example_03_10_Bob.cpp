@@ -9,7 +9,7 @@ namespace nature_of_code_chapter_03_example_10
         acceleration_.Add(temp);
     }
 
-    void Bob::Update(SDL_Framework *framework)
+    void Bob::Update(P5SDL *p5sdl)
     {
         velocity_.Add(acceleration_);
         velocity_.Mult(damping_);
@@ -17,11 +17,11 @@ namespace nature_of_code_chapter_03_example_10
         acceleration_.Mult(0);
     }
 
-    void Bob::Show(SDL_Framework *framework)
+    void Bob::Show(P5SDL *p5sdl)
     {
         auto color = is_dragging_ ? kColorBlack : kColorGray;
-        framework->Fill(color);
-        framework->Circle(position_.x, position_.y, (int)(mass_ * 2));
+        p5sdl->Fill(color);
+        p5sdl->Circle(position_.x, position_.y, (int)(mass_ * 2));
     }
 
     void Bob::HandleClick(int mouse_x, int mouse_y)

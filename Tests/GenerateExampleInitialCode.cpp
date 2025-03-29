@@ -35,13 +35,13 @@ bool GenerateExampleInitialCode::Setup()
 
     include_output_file << "#ifndef EXAMPLE_" << chapter << "_" << example << "_SKETCH_H" << endl;
     include_output_file << "#define EXAMPLE_" << chapter << "_" << example << "_SKETCH_H" << endl << endl;
-    include_output_file << "#include \"../Common/SDL_Framework.h\"" << endl << endl;
+    include_output_file << "#include \"../Common/P5SDL.h\"" << endl << endl;
     include_output_file << "namespace nature_of_code_chapter_" << chapter << "_example_" << example << endl;
     include_output_file << "{" << endl;
-    include_output_file << "    class Sketch : public SDL_Framework" << endl;
+    include_output_file << "    class Sketch : public P5SDL" << endl;
     include_output_file << "    {" << endl;
     include_output_file << "    public:" << endl;
-    include_output_file << "        Sketch() : SDL_Framework(\"Example " << stoi(chapter) << "." << stoi(example) << ": " << description << "\", -1, -1, 640, 240, 0) {};" << endl;
+    include_output_file << "        Sketch() : P5SDL(\"Example " << stoi(chapter) << "." << stoi(example) << ": " << description << "\", -1, -1, 640, 240, 0) {};" << endl;
     include_output_file << "        bool Setup(void) override;" << endl;
     include_output_file << "        bool Draw(void) override;" << endl;
     include_output_file << "        void Cleanup(void) override;" << endl;

@@ -1,7 +1,7 @@
 #ifndef EXAMPLE_05_08_PATH_H
 #define EXAMPLE_05_08_PATH_H
 
-#include "../Common/SDL_Framework.h"
+#include "../Common/P5SDL.h"
 #include "../Common/Vector.h"
 
 namespace nature_of_code_chapter_05_example_08
@@ -10,7 +10,7 @@ namespace nature_of_code_chapter_05_example_08
     {
     public:
         Path(void);
-        void Show(SDL_Framework *framework);
+        void Show(P5SDL *p5sdl);
         void AddPoint(float x, float y);
         vector<Vector> GetPoints(void) { return points_; };
         int GetRadius(void) { return radius_; };

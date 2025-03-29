@@ -31,19 +31,19 @@ namespace nature_of_code_chapter_05_example_02
         ApplyForce(steer);
     }
 
-    void Vehicle::Show(SDL_Framework *framework)
+    void Vehicle::Show(P5SDL *p5sdl)
     {
-        framework->Translate(position_.x, position_.y);
+        p5sdl->Translate(position_.x, position_.y);
         auto angle = velocity_.Heading();
-        framework->Rotate(angle);
+        p5sdl->Rotate(angle);
         SDL_Point vertices[] = { 
             {r_ * 2, 0}, 
             {-r_ * 2, -r_}, 
             {-r_ * 2, r_},
             {r_ * 2, 0},
         };
-        framework->Stroke(kColorBlack);
-        framework->Lines(vertices, sizeof(vertices) / sizeof(SDL_Point));
+        p5sdl->Stroke(kColorBlack);
+        p5sdl->Lines(vertices, sizeof(vertices) / sizeof(SDL_Point));
     }
 }
  

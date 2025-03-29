@@ -1,8 +1,8 @@
-#include "SDL_Framework.h"
+#include "P5SDL.h"
 
 using namespace std;
 
-bool SDL_Framework::Init()
+bool P5SDL::Init()
 {
     int result = SDL_Init(SDL_INIT_EVERYTHING);
     if (result != 0) {
@@ -45,7 +45,7 @@ bool SDL_Framework::Init()
     return is_running_;
 }
 
-void SDL_Framework::Run()
+void P5SDL::Run()
 {
     Uint32 start_time = SDL_GetTicks();
     Uint32 timer = start_time;
@@ -88,12 +88,12 @@ void SDL_Framework::Run()
     SDL_Quit();
 }
 
-void SDL_Framework::Circle(float center_x, float center_y, int diameter)
+void P5SDL::Circle(float center_x, float center_y, int diameter)
 {
     Circle((int)center_x, (int)center_y, diameter);
 }
 
-void SDL_Framework::Circle(int center_x, int center_y, int diameter)
+void P5SDL::Circle(int center_x, int center_y, int diameter)
 {
     // Translate and rotate circle position
     double sin_value = sin(rotation_radians_);
@@ -124,7 +124,7 @@ void SDL_Framework::Circle(int center_x, int center_y, int diameter)
     }
 }
 
-void SDL_Framework::Rect(int x, int y, int width, int height)
+void P5SDL::Rect(int x, int y, int width, int height)
 {
     std::vector<SDL_Point> corner = {
         {x, y},
@@ -151,12 +151,12 @@ void SDL_Framework::Rect(int x, int y, int width, int height)
     cerr << "ERROR: Invalid rectangle mode: " << rect_mode_ << endl;
 }
 
-void SDL_Framework::Line(float x1, float y1, float x2, float y2)
+void P5SDL::Line(float x1, float y1, float x2, float y2)
 {
     Line((int)x1, (int)y1, (int)x2, (int)y2);
 }
 
-void SDL_Framework::Line(int x1, int y1, int x2, int y2)
+void P5SDL::Line(int x1, int y1, int x2, int y2)
 {
     // Rotate
     double sin_value = sin(rotation_radians_);
@@ -184,14 +184,14 @@ void SDL_Framework::Line(int x1, int y1, int x2, int y2)
     }
 }
 
-void SDL_Framework::Lines(SDL_Point points[], int count)
+void P5SDL::Lines(SDL_Point points[], int count)
 {
     for (int i = 1; i < count; i++) {
         Line(points[i - 1].x, points[i - 1].y, points[i].x, points[i].y);
     }
 }
 
-void SDL_Framework::HandleEvents()
+void P5SDL::HandleEvents()
 {
     mouse_button_clicked_[kMouseLeftButton] = false;
     mouse_button_clicked_[kMouseMiddleButton] = false;
@@ -252,17 +252,17 @@ void SDL_Framework::HandleEvents()
     }
 }
 
-bool SDL_Framework::IsKeyPressed(Sint32 key)
+bool P5SDL::IsKeyPressed(Sint32 key)
 {
     return std::find(pressed_keys_.begin(), pressed_keys_.end(), key) != pressed_keys_.end();
 }
 
-void SDL_Framework::Background(Uint8 gray_scale)
+void P5SDL::Background(Uint8 gray_scale)
 {
     Background({ gray_scale, gray_scale, gray_scale, 255 });
 }
 
-void SDL_Framework::Background(SDL_Color background_color)
+void P5SDL::Background(SDL_Color background_color)
 {
     background_color_ = background_color;
     SDL_SetRenderDrawColor(Renderer(), background_color_.r, background_color_.g, background_color_.b, background_color_.a);

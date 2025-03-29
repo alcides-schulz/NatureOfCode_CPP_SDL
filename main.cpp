@@ -5,7 +5,7 @@
 //TODO: benchmark perlin noise
 //TODO: implement fill rectangle
 
-#include "Common/SDL_Framework.h"
+#include "Common/P5SDL.h"
 
 #include "Chapter01/Example_01_01_Sketch.h"
 #include "Chapter01/Example_01_02_Sketch.h"
@@ -64,7 +64,7 @@
 
 using namespace std;
 
-vector<SDL_Framework *> chapter01_menu = {
+vector<P5SDL *> chapter01_menu = {
     new nature_of_code_chapter_01_example_01::Sketch(),
     new nature_of_code_chapter_01_example_02::Sketch(),
     new nature_of_code_chapter_01_example_03::Sketch(),
@@ -76,7 +76,7 @@ vector<SDL_Framework *> chapter01_menu = {
     new nature_of_code_chapter_01_example_09::Sketch(),
     new nature_of_code_chapter_01_example_10::Sketch(),
 };
-vector<SDL_Framework *> chapter02_menu = {
+vector<P5SDL *> chapter02_menu = {
     new nature_of_code_chapter_02_example_01::Sketch(),
     new nature_of_code_chapter_02_example_02::Sketch(),
     new nature_of_code_chapter_02_example_03::Sketch(),
@@ -87,7 +87,7 @@ vector<SDL_Framework *> chapter02_menu = {
     new nature_of_code_chapter_02_example_08::Sketch(),
     new nature_of_code_chapter_02_example_09::Sketch(),
 };
-vector<SDL_Framework *> chapter03_menu = {
+vector<P5SDL *> chapter03_menu = {
     new nature_of_code_chapter_03_example_01::Sketch(),
     new nature_of_code_chapter_03_example_02::Sketch(),
     new nature_of_code_chapter_03_example_03::Sketch(),
@@ -100,7 +100,7 @@ vector<SDL_Framework *> chapter03_menu = {
     new nature_of_code_chapter_03_example_10::Sketch(),
     new nature_of_code_chapter_03_example_11::Sketch(),
 };
-vector<SDL_Framework *> chapter04_menu = {
+vector<P5SDL *> chapter04_menu = {
     new nature_of_code_chapter_04_example_01::Sketch(),
     new nature_of_code_chapter_04_example_02::Sketch(),
     new nature_of_code_chapter_04_example_03::Sketch(),
@@ -110,7 +110,7 @@ vector<SDL_Framework *> chapter04_menu = {
     new nature_of_code_chapter_04_example_07::Sketch(),
     new nature_of_code_chapter_04_example_08::Sketch(),
 };
-vector<SDL_Framework *> chapter05_menu = {
+vector<P5SDL *> chapter05_menu = {
     new nature_of_code_chapter_05_example_01::Sketch(),
     new nature_of_code_chapter_05_example_02::Sketch(),
     new nature_of_code_chapter_05_example_03::Sketch(),
@@ -121,13 +121,13 @@ vector<SDL_Framework *> chapter05_menu = {
     new nature_of_code_chapter_05_example_08::Sketch(),
 };
 
-vector<SDL_Framework *> miscellaneous = {
+vector<P5SDL *> miscellaneous = {
     new CircleTest(),
     new GenerateExampleInitialCode(),
     new CopyExample(),
 };
 
-void ShowMenu(vector<SDL_Framework *> chapter_menu)
+void ShowMenu(vector<P5SDL *> chapter_menu)
 {
     while (true) {
         cout << "Menu" << endl << endl;

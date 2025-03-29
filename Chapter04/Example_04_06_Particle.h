@@ -1,7 +1,7 @@
 #ifndef EXAMPLE_04_06_PARTICLE_H
 #define EXAMPLE_04_06_PARTICLE_H
 
-#include "../Common/SDL_Framework.h"
+#include "../Common/P5SDL.h"
 #include "../Common/Vector.h"
 #include "../Common/Utils.h"
 
@@ -19,10 +19,10 @@ namespace nature_of_code_chapter_04_example_06
             mass_ = 1.0f;
         };
         void Update(void);
-        virtual void Show(SDL_Framework *framework);
+        virtual void Show(P5SDL *p5sdl);
         void ApplyForce(Vector force);
         bool IsDead(void) { return life_span_ < 0; };
-        void Run(SDL_Framework *framework);
+        void Run(P5SDL *p5sdl);
     protected:
         Vector     position_;
         Vector     velocity_;

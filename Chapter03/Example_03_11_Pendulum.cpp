@@ -14,15 +14,15 @@ namespace nature_of_code_chapter_03_example_11
         }
     }
 
-    void Pendulum::Show(SDL_Framework *framework)
+    void Pendulum::Show(P5SDL *p5sdl)
     {
         bob_ = Vector(r_ * sin(angle_), r_ * cos(angle_));
         bob_.Add(pivot_);
-        framework->Stroke(kColorBlack);
-        framework->Line(pivot_.x, pivot_.y, bob_.x, bob_.y);
+        p5sdl->Stroke(kColorBlack);
+        p5sdl->Line(pivot_.x, pivot_.y, bob_.x, bob_.y);
         auto color = is_dragging_ ? kColorBlack : kColorGray;
-        framework->Fill(color);
-        framework->Circle(bob_.x, bob_.y, (int)(ball_r_ * 2));
+        p5sdl->Fill(color);
+        p5sdl->Circle(bob_.x, bob_.y, (int)(ball_r_ * 2));
     }
 
     void Pendulum::HandleClick(int mouse_x, int mouse_y)

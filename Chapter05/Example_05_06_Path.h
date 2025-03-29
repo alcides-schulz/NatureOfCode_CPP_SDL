@@ -1,7 +1,7 @@
 #ifndef EXAMPLE_05_06_PATH_H
 #define EXAMPLE_05_06_PATH_H
 
-#include "../Common/SDL_Framework.h"
+#include "../Common/P5SDL.h"
 #include "../Common/Vector.h"
 
 namespace nature_of_code_chapter_05_example_06
@@ -9,8 +9,8 @@ namespace nature_of_code_chapter_05_example_06
     class Path
     {
     public:
-        Path(SDL_Framework *framework);
-        void Show(SDL_Framework *framework);
+        Path(P5SDL *p5sdl);
+        void Show(P5SDL *p5sdl);
         Vector GetStart(void) { return start_; };
         Vector GetEnd(void) { return end_; };
         int GetRadius(void) { return radius_; };

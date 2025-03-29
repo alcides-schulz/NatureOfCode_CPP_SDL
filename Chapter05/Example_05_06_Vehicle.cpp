@@ -14,13 +14,13 @@ namespace nature_of_code_chapter_05_example_06
         max_force_ = max_force;
     };
 
-    void Vehicle::Run(SDL_Framework *framework)
+    void Vehicle::Run(P5SDL *p5sdl)
     {
         Update();
-        Show(framework);
+        Show(p5sdl);
     }
 
-    void Vehicle::Follow(Path *path, SDL_Framework *framework, bool debug)
+    void Vehicle::Follow(Path *path, P5SDL *p5sdl, bool debug)
     {
         auto future = velocity_.Clone();
         future.SetMag(25);
@@ -37,17 +37,17 @@ namespace nature_of_code_chapter_05_example_06
             Seek(target);
 
         if (debug) {
-            framework->Fill(127);
-            framework->Stroke(0);
-            framework->Line(position_.x, position_.y, future.x, future.y);
-            framework->Circle(future.x, future.y, 4);
+            p5sdl->Fill(127);
+            p5sdl->Stroke(0);
+            p5sdl->Line(position_.x, position_.y, future.x, future.y);
+            p5sdl->Circle(future.x, future.y, 4);
 
-            framework->Line(future.x, future.y, normal_point.x, normal_point.y);
-            framework->Circle(normal_point.x, normal_point.y, 4);
-            framework->Stroke(0);
+            p5sdl->Line(future.x, future.y, normal_point.x, normal_point.y);
+            p5sdl->Circle(normal_point.x, normal_point.y, 4);
+            p5sdl->Stroke(0);
             if (distance > path->GetRadius())
-                framework->Fill({ 255, 0, 0, 255 });
-            framework->Circle(target.x + b.x, target.y + b.y, 8);
+                p5sdl->Fill({ 255, 0, 0, 255 });
+            p5sdl->Circle(target.x + b.x, target.y + b.y, 8);
         }
     }
 
@@ -87,20 +87,20 @@ namespace nature_of_code_chapter_05_example_06
         }
     }
 
-    void Vehicle::Show(SDL_Framework *framework)
+    void Vehicle::Show(P5SDL *p5sdl)
     {
-        framework->Translate(position_.x, position_.y);
+        p5sdl->Translate(position_.x, position_.y);
         auto angle = velocity_.Heading();
-        framework->Rotate(angle);
+        p5sdl->Rotate(angle);
         SDL_Point vertices[] = { 
             {r_ * 2, 0}, 
             {-r_ * 2, -r_}, 
             {-r_ * 2, r_},
             {r_ * 2, 0},
         };
-        framework->Stroke(kColorBlack);
-        framework->Lines(vertices, sizeof(vertices) / sizeof(SDL_Point));
-        framework->ResetMatrix();
+        p5sdl->Stroke(kColorBlack);
+        p5sdl->Lines(vertices, sizeof(vertices) / sizeof(SDL_Point));
+        p5sdl->ResetMatrix();
     }
 
     static Vector GetNormalPoint(Vector position, Vector a, Vector b)

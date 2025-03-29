@@ -1,7 +1,7 @@
 #ifndef EXAMPLE_02_06_ATTRACTOR_H
 #define EXAMPLE_02_06_ATTRACTOR_H
 
-#include "../Common/SDL_Framework.h"
+#include "../Common/P5SDL.h"
 #include "../Common/Vector.h"
 #include "Example_02_06_Mover.h"
 
@@ -12,7 +12,7 @@ namespace nature_of_code_chapter_02_example_06
     public:
         Attractor(Vector position, int mass) : position_(position), mass_(mass) { };
         Vector Attract(Mover     *mover);
-        void Show(SDL_Framework *framework);
+        void Show(P5SDL *p5sdl);
         Vector GetPosition(void) { return position_; };
         void SetPosition(Vector position) { position_ = position; };
         int GetRadius(void) { return mass_; };

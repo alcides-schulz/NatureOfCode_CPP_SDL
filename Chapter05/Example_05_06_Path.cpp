@@ -2,21 +2,21 @@
 
 namespace nature_of_code_chapter_05_example_06
 {
-    Path::Path(SDL_Framework *framework)
+    Path::Path(P5SDL *p5sdl)
     {
         radius_ = 20;
-        start_ = Vector(0, framework->Height() / 3);
-        end_ = Vector(framework->Width(), (2 * framework->Height()) / 3);
+        start_ = Vector(0, p5sdl->Height() / 3);
+        end_ = Vector(p5sdl->Width(), (2 * p5sdl->Height()) / 3);
     }
 
-    void Path::Show(SDL_Framework *framework)
+    void Path::Show(P5SDL *p5sdl)
     {
-        framework->Stroke(200);
-        framework->StrokeWeight(radius_ * 2);
-        framework->Line(start_.x, start_.y, end_.x, end_.y);
-        framework->Stroke(0);
-        framework->StrokeWeight(1);
-        framework->Line(start_.x, start_.y, end_.x, end_.y);
+        p5sdl->Stroke(200);
+        p5sdl->StrokeWeight(radius_ * 2);
+        p5sdl->Line(start_.x, start_.y, end_.x, end_.y);
+        p5sdl->Stroke(0);
+        p5sdl->StrokeWeight(1);
+        p5sdl->Line(start_.x, start_.y, end_.x, end_.y);
     }
 }
 

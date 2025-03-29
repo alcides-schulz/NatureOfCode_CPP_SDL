@@ -15,18 +15,18 @@ namespace nature_of_code_chapter_04_example_08
         life_span_ = std::max(0.0f, life_span_ - 2.5f);
     }
 
-    void Particle::Show(SDL_Framework *framework)
+    void Particle::Show(P5SDL *p5sdl)
     {
         auto alpha = (Uint8)std::max(0.0f, life_span_);
         SDL_SetTextureAlphaMod(texture_, alpha);
         SDL_Rect image_position = { (int)position_.x - 16, (int)position_.y - 16, 32, 32 };
-        SDL_RenderCopy(framework->Renderer(), texture_, nullptr, &image_position);
+        SDL_RenderCopy(p5sdl->Renderer(), texture_, nullptr, &image_position);
     }
 
-    void Particle::Run(SDL_Framework *framework)
+    void Particle::Run(P5SDL *p5sdl)
     {
         Update();
-        Show(framework);
+        Show(p5sdl);
     }
 
 }

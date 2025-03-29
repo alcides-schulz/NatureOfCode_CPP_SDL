@@ -1,12 +1,12 @@
 #ifndef CIRCLE_TEST_H
 #define CIRCLE_TEST_H
 
-#include "../Common/SDL_Framework.h"
+#include "../Common/P5SDL.h"
 
-class CircleTest : public SDL_Framework
+class CircleTest : public P5SDL
 {
 public:
-    CircleTest() : SDL_Framework("Circle Test", -1, -1, 800, 600, 0) {}
+    CircleTest() : P5SDL("Circle Test", -1, -1, 800, 600, 0) {}
     bool Setup() override;
     bool Draw() override;
 private:

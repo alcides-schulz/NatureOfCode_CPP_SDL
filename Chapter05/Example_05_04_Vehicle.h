@@ -1,7 +1,7 @@
 #ifndef EXAMPLE_05_04_VEHICLE_H
 #define EXAMPLE_05_04_VEHICLE_H
 
-#include "../Common/SDL_Framework.h"
+#include "../Common/P5SDL.h"
 #include "../Common/Vector.h"
 #include "../Common/Utils.h"
 #include "Example_05_04_FlowField.h"
@@ -20,12 +20,12 @@ namespace nature_of_code_chapter_05_example_04
             max_speed_ = max_speed;
             max_force_ = max_force;
         };
-        void Run(SDL_Framework *framework);
+        void Run(P5SDL *p5sdl);
         void Follow(FlowField *flowfield);
         void ApplyForce(Vector force);
         void Update(void);
-        void Borders(SDL_Framework *framework);
-        void Show(SDL_Framework *framework);
+        void Borders(P5SDL *p5sdl);
+        void Show(P5SDL *p5sdl);
     private:
         Vector position_;
         Vector velocity_;

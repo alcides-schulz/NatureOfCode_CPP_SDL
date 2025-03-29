@@ -7,17 +7,17 @@ namespace nature_of_code_chapter_03_example_07
         angle_.Add(angle_velocity_);
     }
 
-    void Oscillator::Show(SDL_Framework *framework)
+    void Oscillator::Show(P5SDL *p5sdl)
     {
         auto x = static_cast<int>(std::sin(angle_.x) * amplitude_.x);
         auto y = static_cast<int>(std::sin(angle_.y) * amplitude_.y);
 
-        framework->Translate(framework->Width() / 2, framework->Height() / 2);
-        framework->Stroke(kColorBlack);
-        framework->Line(0, 0, x, y);
-        framework->Fill(127);
-        framework->Circle(x, y, 32);
-        framework->ResetMatrix();
+        p5sdl->Translate(p5sdl->Width() / 2, p5sdl->Height() / 2);
+        p5sdl->Stroke(kColorBlack);
+        p5sdl->Line(0, 0, x, y);
+        p5sdl->Fill(127);
+        p5sdl->Circle(x, y, 32);
+        p5sdl->ResetMatrix();
     }
 
 }

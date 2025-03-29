@@ -1,7 +1,7 @@
 #ifndef EXAMPLE_05_05_PATH_H
 #define EXAMPLE_05_05_PATH_H
 
-#include "../Common/SDL_Framework.h"
+#include "../Common/P5SDL.h"
 #include "../Common/Vector.h"
 
 namespace nature_of_code_chapter_05_example_05
@@ -9,13 +9,13 @@ namespace nature_of_code_chapter_05_example_05
     class Path
     {
     public:
-        Path(SDL_Framework *framework)
+        Path(P5SDL *p5sdl)
         {
             radius_ = 20;
-            start_ = Vector(0, framework->Height() / 3);
-            end_ = Vector(framework->Width(), (2 * framework->Height()) / 3);
+            start_ = Vector(0, p5sdl->Height() / 3);
+            end_ = Vector(p5sdl->Width(), (2 * p5sdl->Height()) / 3);
         }
-        void Show(SDL_Framework *framework);
+        void Show(P5SDL *p5sdl);
     private:
         int     radius_;
         Vector start_;

@@ -18,11 +18,11 @@ namespace nature_of_code_chapter_02_example_05
         return drag_force;
     }
     
-    void Liquid::Show(SDL_Framework *framework)
+    void Liquid::Show(P5SDL *p5sdl)
     {
-        SDL_SetRenderDrawColor(framework->Renderer(), 173, 216, 230, 255);
+        SDL_SetRenderDrawColor(p5sdl->Renderer(), 173, 216, 230, 255);
         SDL_Rect rect = { x_, y_, width_, height_ };
-        SDL_RenderFillRect(framework->Renderer(), &rect);
+        SDL_RenderFillRect(p5sdl->Renderer(), &rect);
     }
     
 }

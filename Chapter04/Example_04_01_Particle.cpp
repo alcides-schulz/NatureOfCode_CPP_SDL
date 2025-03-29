@@ -15,11 +15,11 @@ namespace nature_of_code_chapter_04_example_01
         life_span_ = std::max(0.0f, life_span_ - 2.0f);
     }
     
-    void Particle::Show(SDL_Framework *framework)
+    void Particle::Show(P5SDL *p5sdl)
     {
-        framework->StrokeWeight(0);
-        framework->Fill({ kColorBlack.r, kColorBlack.g, kColorBlack.b, (Uint8)life_span_ });
-        framework->Circle(position_.x, position_.y, 8);
+        p5sdl->StrokeWeight(0);
+        p5sdl->Fill({ kColorBlack.r, kColorBlack.g, kColorBlack.b, (Uint8)life_span_ });
+        p5sdl->Circle(position_.x, position_.y, 8);
     }
 }
 

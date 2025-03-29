@@ -23,20 +23,20 @@ namespace nature_of_code_chapter_03_example_02
         angle_acceleration_ = 0;
     }
 
-    void Mover::Show(SDL_Framework *framework)
+    void Mover::Show(P5SDL *p5sdl)
     {
         int line_x1 = 0;
         int line_y1 = 0;
         int line_x2 = radius_;
         int line_y2 = 0;
 
-        framework->Translate(position_.x, position_.y);
-        framework->Rotate(angle_);
-        framework->Stroke(kColorBlack);
-        framework->Fill(127);
-        framework->Circle(0, 0, radius_ * 2);
-        framework->Line(line_x1, line_y1, line_x2, line_y2);
-        framework->ResetMatrix();
+        p5sdl->Translate(position_.x, position_.y);
+        p5sdl->Rotate(angle_);
+        p5sdl->Stroke(kColorBlack);
+        p5sdl->Fill(127);
+        p5sdl->Circle(0, 0, radius_ * 2);
+        p5sdl->Line(line_x1, line_y1, line_x2, line_y2);
+        p5sdl->ResetMatrix();
     }
 }
  

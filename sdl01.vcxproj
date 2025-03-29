@@ -119,7 +119,7 @@
     <ClCompile Include="Common\PerlinNoise2D.cpp" />
     <ClCompile Include="Common\Utils.h" />
     <ClCompile Include="Common\Vector.cpp" />
-    <ClCompile Include="Common\SDL_Framework.cpp" />
+    <ClCompile Include="Common\P5SDL.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Miscellaneous\CopyExample.cpp" />
     <ClCompile Include="Tests\CircleTest.cpp" />
@@ -225,7 +225,7 @@
     <ClInclude Include="Chapter05\Example_05_09_Vehicle.h" />
     <ClInclude Include="Common\PerlinNoise2D.h" />
     <ClInclude Include="Common\Vector.h" />
-    <ClInclude Include="Common\SDL_Framework.h" />
+    <ClInclude Include="Common\P5SDL.h" />
     <ClInclude Include="Miscellaneous\CopyExample.h" />
     <ClInclude Include="Tests\CircleTest.h" />
     <ClInclude Include="Tests\GenerateExampleInitialCode.h" />

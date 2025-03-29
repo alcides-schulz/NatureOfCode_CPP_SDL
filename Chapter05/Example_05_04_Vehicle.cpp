@@ -3,11 +3,11 @@
 namespace nature_of_code_chapter_05_example_04
 {
 
-    void Vehicle::Run(SDL_Framework *framework)
+    void Vehicle::Run(P5SDL *p5sdl)
     {
         Update();
-        Borders(framework);
-        Show(framework);
+        Borders(p5sdl);
+        Show(p5sdl);
     }
 
     void Vehicle::Follow(FlowField *flowfield)
@@ -32,28 +32,28 @@ namespace nature_of_code_chapter_05_example_04
         acceleration_.Mult(0);
     }
     
-    void Vehicle::Borders(SDL_Framework *framework)
+    void Vehicle::Borders(P5SDL *p5sdl)
     {
-        if (position_.x < -r_) position_.x = (float)(framework->Width() + r_);
-        if (position_.y < -r_) position_.y = (float)(framework->Height() + r_);
-        if (position_.x > framework->Width() + r_) position_.x = (float)-r_;
-        if (position_.y > framework->Height() + r_) position_.y = (float)-r_;
+        if (position_.x < -r_) position_.x = (float)(p5sdl->Width() + r_);
+        if (position_.y < -r_) position_.y = (float)(p5sdl->Height() + r_);
+        if (position_.x > p5sdl->Width() + r_) position_.x = (float)-r_;
+        if (position_.y > p5sdl->Height() + r_) position_.y = (float)-r_;
     }
 
-    void Vehicle::Show(SDL_Framework *framework)
+    void Vehicle::Show(P5SDL *p5sdl)
     {
-        framework->Translate(position_.x, position_.y);
+        p5sdl->Translate(position_.x, position_.y);
         auto angle = velocity_.Heading();
-        framework->Rotate(angle);
+        p5sdl->Rotate(angle);
         SDL_Point vertices[] = { 
             {r_ * 2, 0}, 
             {-r_ * 2, -r_}, 
             {-r_ * 2, r_},
             {r_ * 2, 0},
         };
-        framework->Stroke(kColorBlack);
-        framework->Lines(vertices, sizeof(vertices) / sizeof(SDL_Point));
-        framework->ResetMatrix();
+        p5sdl->Stroke(kColorBlack);
+        p5sdl->Lines(vertices, sizeof(vertices) / sizeof(SDL_Point));
+        p5sdl->ResetMatrix();
     }
 }
  

@@ -1,7 +1,7 @@
 #ifndef EXAMPLE_05_04_FLOWFIELD_H
 #define EXAMPLE_05_04_FLOWFIELD_H
 
-#include "../Common/SDL_Framework.h"
+#include "../Common/P5SDL.h"
 #include "../Common/Vector.h"
 #include "../Common/Utils.h"
 #include "../Common/PerlinNoise2D.h"
@@ -20,7 +20,7 @@ namespace nature_of_code_chapter_05_example_04
             Init();
         };
         void Init(void);
-        void Show(SDL_Framework *framework);
+        void Show(P5SDL *p5sdl);
         Vector Lookup(Vector position);
     private:
         int     resolution_;

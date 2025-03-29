@@ -2,7 +2,7 @@
 #define EXAMPLE_04_02_PARTICLE_H
 
 #include "../Common/Vector.h"
-#include "../Common/SDL_Framework.h"
+#include "../Common/P5SDL.h"
 #include "../Common/Utils.h"
 
 namespace nature_of_code_chapter_04_example_02
@@ -18,10 +18,10 @@ namespace nature_of_code_chapter_04_example_02
             life_span_ = 255.0f;
         };
         void Update(void);
-        void Show(SDL_Framework *framework);
+        void Show(P5SDL *p5sdl);
         void ApplyForce(Vector force);
         bool IsDead(void) { return life_span_ < 0; };
-        void Run(SDL_Framework *framework);
+        void Run(P5SDL *p5sdl);
     private:
         Vector position_;
         Vector velocity_;

@@ -12,11 +12,11 @@ namespace nature_of_code_chapter_04_example_07
         return force;
     }
 
-    void Repeller::Show(SDL_Framework *framework)
+    void Repeller::Show(P5SDL *p5sdl)
     {
-        framework->Stroke(0);
-        framework->Fill(0);
-        framework->Circle(position_.x, position_.y, 32);
+        p5sdl->Stroke(0);
+        p5sdl->Fill(0);
+        p5sdl->Circle(position_.x, position_.y, 32);
     }
 }
 

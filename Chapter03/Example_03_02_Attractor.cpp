@@ -13,11 +13,11 @@ namespace nature_of_code_chapter_03_example_02
         return force;
     }
     
-    void Attractor::Show(SDL_Framework *framework)
+    void Attractor::Show(P5SDL *p5sdl)
     {
-        framework->Stroke(0);
-        framework->Fill(0);
-        framework->Circle((int)position_.x, (int)position_.y, radius_ * 2);
+        p5sdl->Stroke(0);
+        p5sdl->Fill(0);
+        p5sdl->Circle((int)position_.x, (int)position_.y, radius_ * 2);
     }
     
 }

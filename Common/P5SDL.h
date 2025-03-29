@@ -1,5 +1,5 @@
-#ifndef SDL_FRAMEWORK_H
-#define SDL_FRAMEWORK_H
+#ifndef P5SDL_H
+#define P5SDL_H
 
 #include "SDL.h"
 #include "SDL_image.h"
@@ -32,11 +32,11 @@ constexpr SDL_Color kColorLightGray = { 211, 211, 211, 255 };
 constexpr int kRectCorner = 0;
 constexpr int kRectCenter = 1;
 
-class SDL_Framework
+class P5SDL
 {
 public:
-    SDL_Framework() { };
-    SDL_Framework(const char *title, int x, int y, int width, int height, int flags) :
+    P5SDL() { };
+    P5SDL(const char *title, int x, int y, int width, int height, int flags) :
         window_title_(title), window_x_(x), window_y_(y), window_width_(width), window_height_(height), window_flags_(flags) { };
     virtual bool Setup(void) { return true; };
     virtual bool Draw(void) { return true; };
@@ -64,6 +64,7 @@ public:
     void Stroke(Uint8 gray_value) { stroke_color_ = SDL_Color{ gray_value, gray_value, gray_value, 255 }; };
     void Stroke(SDL_Color color) { stroke_color_ = color; };
     void Fill(Uint8 gray_value) { fill_color_ = SDL_Color{ gray_value, gray_value, gray_value, 255 }; };
+    void Fill(Uint8 gray_value, Uint8 alpha) { fill_color_ = SDL_Color{ gray_value, gray_value, gray_value, alpha }; };
     void Fill(SDL_Color color) { fill_color_ = color; };
     void Circle(int center_x, int center_y, int diameter);
     void Circle(float center_x, float center_y, int diameter);

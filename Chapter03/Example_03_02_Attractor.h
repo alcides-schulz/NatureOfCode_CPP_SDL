@@ -1,7 +1,7 @@
 #ifndef EXAMPLE_03_02_ATTRACTOR_H
 #define EXAMPLE_03_02_ATTRACTOR_H
 
-#include "../Common/SDL_Framework.h"
+#include "../Common/P5SDL.h"
 #include "../Common/Vector.h"
 #include "Example_03_02_Mover.h"
 
@@ -15,7 +15,7 @@ namespace nature_of_code_chapter_03_example_02
             radius_ = mass;
         };
         Vector Attract(Mover     *mover);
-        void Show(SDL_Framework *framework);
+        void Show(P5SDL *p5sdl);
         Vector GetPosition(void) { return position_; };
         void SetPosition(Vector position) { position_ = position; };
         int GetRadius(void) { return radius_; };

@@ -28,9 +28,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Common\SDL_Framework.h">
-      <Filter>Source Files\Common</Filter>
-    </ClInclude>
     <ClInclude Include="Chapter01\Example_01_01_Sketch.h">
       <Filter>Source Files\Chapter01</Filter>
     </ClInclude>
@@ -337,13 +334,13 @@
     <ClInclude Include="Chapter05\Example_05_09_Vehicle.h">
       <Filter>Source Files\Chapter05</Filter>
     </ClInclude>
+    <ClInclude Include="Common\P5SDL.h">
+      <Filter>Source Files\Common</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Common\SDL_Framework.cpp">
-      <Filter>Source Files\Common</Filter>
     </ClCompile>
     <ClCompile Include="Common\Utils.h">
       <Filter>Source Files\Common</Filter>
@@ -653,6 +650,9 @@
     </ClCompile>
     <ClCompile Include="Chapter05\Example_05_09_Vehicle.cpp">
       <Filter>Source Files\Chapter05</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\P5SDL.cpp">
+      <Filter>Source Files\Common</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

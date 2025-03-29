@@ -1,7 +1,7 @@
 #ifndef EXAMPLE_03_10_BOB_H
 #define EXAMPLE_03_10_BOB_H
 
-#include "../Common/SDL_Framework.h"
+#include "../Common/P5SDL.h"
 #include "../Common/Vector.h"
 
 namespace nature_of_code_chapter_03_example_10
@@ -19,8 +19,8 @@ namespace nature_of_code_chapter_03_example_10
             is_dragging_ = false;
         };
         void ApplyForce(Vector force);
-        void Update(SDL_Framework *framework);
-        void Show(SDL_Framework *framework);
+        void Update(P5SDL *p5sdl);
+        void Show(P5SDL *p5sdl);
         Vector GetPosition(void) { return position_; };
         void SetPosition(Vector position) { position_ = position; };
         Vector GetVelocity(void) { return velocity_; };

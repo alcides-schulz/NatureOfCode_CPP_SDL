@@ -1,7 +1,7 @@
 #ifndef EXAMPLE_02_04_MOVER_H
 #define EXAMPLE_02_04_MOVER_H
 
-#include "../Common/SDL_Framework.h"
+#include "../Common/P5SDL.h"
 #include "../Common/Vector.h"
 
 namespace nature_of_code_chapter_02_example_04
@@ -15,11 +15,11 @@ namespace nature_of_code_chapter_02_example_04
         };
         void ApplyForce(Vector force);
         void Update(void);
-        void Show(SDL_Framework *framework);
+        void Show(P5SDL *p5sdl);
         int GetMass(void) { return mass_; };
         Vector GetVelocity(void) { return velocity_; };
-        bool ContactEdge(SDL_Framework *framework);
-        void BounceEdges(SDL_Framework *framework);
+        bool ContactEdge(P5SDL *p5sdl);
+        void BounceEdges(P5SDL *p5sdl);
     private:
         Vector position_;
         Vector velocity_ = Vector(0, 0);

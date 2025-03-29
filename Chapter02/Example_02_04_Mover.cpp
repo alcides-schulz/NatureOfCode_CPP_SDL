@@ -16,31 +16,31 @@ namespace nature_of_code_chapter_02_example_04
         acceleration_.Mult(0);
     }
     
-    void Mover::Show(SDL_Framework *framework)
+    void Mover::Show(P5SDL *p5sdl)
     {
-        framework->Stroke(0);
-        framework->Fill(127);
-        framework->Circle(position_.x, position_.y, radius_ * 2);
+        p5sdl->Stroke(0);
+        p5sdl->Fill(127);
+        p5sdl->Circle(position_.x, position_.y, radius_ * 2);
     }
     
-    bool Mover::ContactEdge(SDL_Framework *framework)
+    bool Mover::ContactEdge(P5SDL *p5sdl)
     {
-        return position_.y > framework->Height() - radius_ - 1;
+        return position_.y > p5sdl->Height() - radius_ - 1;
     }
     
-    void Mover::BounceEdges(SDL_Framework *framework)
+    void Mover::BounceEdges(P5SDL *p5sdl)
     {
         float bounce = -0.9f;
-        if (position_.x > framework->Width() - radius_) {
-            position_.x = (float)(framework->Width() - radius_);
+        if (position_.x > p5sdl->Width() - radius_) {
+            position_.x = (float)(p5sdl->Width() - radius_);
             velocity_.x *= bounce;
         }
         else if (position_.x < radius_) {
             position_.x = (float)radius_;
             velocity_.x *= bounce;
         }
-        if (position_.y > framework->Height() - radius_) {
-            position_.y = (float)(framework->Height() - radius_);
+        if (position_.y > p5sdl->Height() - radius_) {
+            position_.y = (float)(p5sdl->Height() - radius_);
             velocity_.y *= bounce;
         }
     }

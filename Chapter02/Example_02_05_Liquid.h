@@ -1,7 +1,7 @@
 #ifndef EXAMPLE_02_05_LIQUID_H
 #define EXAMPLE_02_05_LIQUID_H
 
-#include "../Common/SDL_Framework.h"
+#include "../Common/P5SDL.h"
 #include "Example_02_05_Mover.h"
 
 namespace nature_of_code_chapter_02_example_05
@@ -12,7 +12,7 @@ namespace nature_of_code_chapter_02_example_05
         Liquid(int x, int y, int width, int height, float drag_coef) : x_(x), y_(y), width_(width), height_(height), drag_coef_(drag_coef) { };
         bool Contains(Mover    * mover);
         Vector CalculateDrag(Mover     *mover);
-        void Show(SDL_Framework *framework);
+        void Show(P5SDL *p5sdl);
     private:
         int     x_;
         int     y_;

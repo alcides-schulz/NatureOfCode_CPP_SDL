@@ -1,7 +1,7 @@
 #ifndef EXAMPLE_03_03_MOVER_H
 #define EXAMPLE_03_03_MOVER_H
 
-#include "../Common/SDL_Framework.h"
+#include "../Common/P5SDL.h"
 #include "../Common/Vector.h"
 
 namespace nature_of_code_chapter_03_example_03
@@ -15,9 +15,9 @@ namespace nature_of_code_chapter_03_example_03
             acceleration_ = Vector(0, 0);
             top_speed_ = 2;
         };
-        void Update(SDL_Framework *framework);
-        void Show(SDL_Framework *framework);
-        void CheckEdges(SDL_Framework *framework);
+        void Update(P5SDL *p5sdl);
+        void Show(P5SDL *p5sdl);
+        void CheckEdges(P5SDL *p5sdl);
     private:
         Vector position_;
         Vector velocity_;

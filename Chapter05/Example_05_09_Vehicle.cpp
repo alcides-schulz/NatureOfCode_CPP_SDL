@@ -4,9 +4,9 @@ namespace nature_of_code_chapter_05_example_09
 {
     static Vector GetNormalPoint(Vector position, Vector a, Vector b);
 
-    Vehicle::Vehicle(SDL_Framework *framework, int x, int y, float max_speed, float max_force)
+    Vehicle::Vehicle(P5SDL *p5sdl, int x, int y, float max_speed, float max_force)
     {
-        framework_ = framework;
+        p5sdl_ = p5sdl;
         position_ = Vector(x, y);
         acceleration_ = Vector(0, 0);
         velocity_ = Vector(2, 0);
@@ -44,18 +44,18 @@ namespace nature_of_code_chapter_05_example_09
 
     void Vehicle::Show()
     {
-        framework_->Translate(position_.x, position_.y);
+        p5sdl_->Translate(position_.x, position_.y);
         auto angle = velocity_.Heading();
-        framework_->Rotate(angle);
+        p5sdl_->Rotate(angle);
         SDL_Point vertices[] = { 
             {r_ * 2, 0}, 
             {-r_ * 2, -r_}, 
             {-r_ * 2, r_},
             {r_ * 2, 0},
         };
-        framework_->Stroke(kColorBlack);
-        framework_->Lines(vertices, sizeof(vertices) / sizeof(SDL_Point));
-        framework_->ResetMatrix();
+        p5sdl_->Stroke(kColorBlack);
+        p5sdl_->Lines(vertices, sizeof(vertices) / sizeof(SDL_Point));
+        p5sdl_->ResetMatrix();
     }
 
     static Vector GetNormalPoint(Vector position, Vector a, Vector b)

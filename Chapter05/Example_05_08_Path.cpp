@@ -12,17 +12,17 @@ namespace nature_of_code_chapter_05_example_08
         points_.push_back(Vector(x, y));
     }
 
-    void Path::Show(SDL_Framework *framework)
+    void Path::Show(P5SDL *p5sdl)
     {
-        framework->Stroke(200);
-        framework->StrokeWeight(radius_ * 2);
+        p5sdl->Stroke(200);
+        p5sdl->StrokeWeight(radius_ * 2);
         for (int i = 1; i < points_.size(); i++) {
-            framework->Line(points_[i - 1].x, points_[i - 1].y, points_[i].x, points_[i].y);
+            p5sdl->Line(points_[i - 1].x, points_[i - 1].y, points_[i].x, points_[i].y);
         }
-        framework->Stroke(0);
-        framework->StrokeWeight(1);
+        p5sdl->Stroke(0);
+        p5sdl->StrokeWeight(1);
         for (int i = 1; i < points_.size(); i++) {
-            framework->Line(points_[i - 1].x, points_[i - 1].y, points_[i].x, points_[i].y);
+            p5sdl->Line(points_[i - 1].x, points_[i - 1].y, points_[i].x, points_[i].y);
         }
     }
 }

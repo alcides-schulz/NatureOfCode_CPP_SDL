@@ -16,25 +16,25 @@ namespace nature_of_code_chapter_02_example_02
         acceleration_.Mult(0);
     }
     
-    void Mover::Show(SDL_Framework *framework)
+    void Mover::Show(P5SDL *p5sdl)
     {
-        framework->Stroke(0);
-        framework->Fill(127);
-        framework->Circle(position_.x, position_.y, mass_ * 16);
+        p5sdl->Stroke(0);
+        p5sdl->Fill(127);
+        p5sdl->Circle(position_.x, position_.y, mass_ * 16);
     }
     
-    void Mover::CheckEdges(SDL_Framework *framework)
+    void Mover::CheckEdges(P5SDL *p5sdl)
     {
-        if (position_.x > framework->Width()) {
-            position_.x = (float)framework->Width();
+        if (position_.x > p5sdl->Width()) {
+            position_.x = (float)p5sdl->Width();
             velocity_.x *= -1;
         }
         else if (position_.x < 0) {
             position_.x = 0;
             velocity_.x *= -1;
         }
-        if (position_.y > framework->Height()) {
-            position_.y = (float)framework->Height();
+        if (position_.y > p5sdl->Height()) {
+            position_.y = (float)p5sdl->Height();
             velocity_.y *= -1;
         }
         else if (position_.y < 0) {

@@ -2,7 +2,7 @@
 
 This project aims to reimplement the interactive examples from Daniel Shiffman's renowned book, [The Nature of Code by Daniel Shiffman](https://natureofcode.com/book/) using the C++ programming language and the Simple DirectMedia Layer (SDL) library.
 
-The primary goal is to deepen my understanding of both C++ and the SDL framework through practical application. 'The Nature of Code' serves as an excellent resource, providing clear explanations of fundamental concepts in computational physics, simulation, and generative art, along with well-structured code examples. By translating these examples into C++/SDL, I aim to solidify my grasp of these principles and gain hands-on experience in low-level graphics and event handling.
+The primary goal is to deepen my understanding of both C++ and the SDL p5sdl through practical application. 'The Nature of Code' serves as an excellent resource, providing clear explanations of fundamental concepts in computational physics, simulation, and generative art, along with well-structured code examples. By translating these examples into C++/SDL, I aim to solidify my grasp of these principles and gain hands-on experience in low-level graphics and event handling.
 
 To facilitate this process, I have developed a lightweight wrapper for Processing's P5.js within the C++/SDL environment. This wrapper provides a subset of the core P5.js functionalities, enabling a more direct porting of the book's examples without the overhead of a full P5.js emulation. It's important to note that the intention is not to create a complete P5.js clone, but rather a focused toolset tailored to the book's specific needs.
 

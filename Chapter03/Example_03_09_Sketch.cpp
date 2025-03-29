@@ -1,5 +1,6 @@
 #include "Example_03_09_Sketch.h"
 #include "../Common/Utils.h"
+
 namespace nature_of_code_chapter_03_example_09
 {
     
@@ -18,11 +19,10 @@ namespace nature_of_code_chapter_03_example_09
         auto angle = start_angle_;
         start_angle_ += 0.02f;
     
+        Stroke(0);
+        Fill(127, 127);
         for (int x = 0; x <= Width(); x += 24) {
             auto y = static_cast<int>(Utils::Map(sin(angle), -1, 1, 0, Height()));
-            Fill(127);
-            Circle(x, y, 48);
-            Fill(0);
             Circle(x, y, 48);
             angle += angle_velocity_;
         }

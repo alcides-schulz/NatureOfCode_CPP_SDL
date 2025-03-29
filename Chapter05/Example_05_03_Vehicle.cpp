@@ -15,19 +15,19 @@ namespace nature_of_code_chapter_05_example_03
         acceleration_.Add(force);
     }
 
-    void Vehicle::Boundaries(SDL_Framework *framework, int offset)
+    void Vehicle::Boundaries(P5SDL *p5sdl, int offset)
     {
         Vector *desired = nullptr;
         if (position_.x < offset) {
             desired = new Vector(max_speed_, velocity_.y);
         }
-        else if (position_.x > framework->Width() - offset) {
+        else if (position_.x > p5sdl->Width() - offset) {
             desired = new Vector(-max_speed_, velocity_.y);
         }
         if (position_.y < offset) {
             desired = new Vector(this->velocity_.x, this->max_speed_);
         }
-        else if (position_.y > framework->Height() - offset) {
+        else if (position_.y > p5sdl->Height() - offset) {
             desired = new Vector(this->velocity_.x, -this->max_speed_);
         }
         if (desired != nullptr) {
@@ -40,19 +40,19 @@ namespace nature_of_code_chapter_05_example_03
         }
     }
 
-    void Vehicle::Show(SDL_Framework *framework)
+    void Vehicle::Show(P5SDL *p5sdl)
     {
-        framework->Translate(position_.x, position_.y);
+        p5sdl->Translate(position_.x, position_.y);
         auto angle = velocity_.Heading();
-        framework->Rotate(angle);
+        p5sdl->Rotate(angle);
         SDL_Point vertices[] = { 
             {r_ * 2, 0}, 
             {-r_ * 2, -r_}, 
             {-r_ * 2, r_},
             {r_ * 2, 0},
         };
-        framework->Stroke(kColorBlack);
-        framework->Lines(vertices, sizeof(vertices) / sizeof(SDL_Point));
+        p5sdl->Stroke(kColorBlack);
+        p5sdl->Lines(vertices, sizeof(vertices) / sizeof(SDL_Point));
     }
 }
  

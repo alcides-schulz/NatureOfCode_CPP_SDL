@@ -1,7 +1,7 @@
 #ifndef EXAMPLE_05_03_VEHICLE_H
 #define EXAMPLE_05_03_VEHICLE_H
 
-#include "../Common/SDL_Framework.h"
+#include "../Common/P5SDL.h"
 #include "../Common/Vector.h"
 #include "../Common/Utils.h"
 
@@ -21,8 +21,8 @@ namespace nature_of_code_chapter_05_example_03
         };
         void Update(void);
         void ApplyForce(Vector force);
-        void Boundaries(SDL_Framework *framework, int offset);
-        void Show(SDL_Framework *framework);
+        void Boundaries(P5SDL *p5sdl, int offset);
+        void Show(P5SDL *p5sdl);
     private:
         Vector position_;
         Vector velocity_;

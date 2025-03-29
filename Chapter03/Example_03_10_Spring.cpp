@@ -27,17 +27,17 @@ namespace nature_of_code_chapter_03_example_10
         }
     }
 
-    void Spring::Show(SDL_Framework *framework)
+    void Spring::Show(P5SDL *p5sdl)
     {
-        framework->Stroke(0);
-        framework->Fill(0);
-        framework->Circle(anchor_.x, anchor_.y, 10);
+        p5sdl->Stroke(0);
+        p5sdl->Fill(0);
+        p5sdl->Circle(anchor_.x, anchor_.y, 10);
     }
 
-    void Spring::ShowLine(SDL_Framework *framework, Bob *bob)
+    void Spring::ShowLine(P5SDL *p5sdl, Bob *bob)
     {
-        framework->Stroke(kColorBlack);
-        framework->Line(bob->GetPosition().x, bob->GetPosition().y, anchor_.x, anchor_.y);
+        p5sdl->Stroke(kColorBlack);
+        p5sdl->Line(bob->GetPosition().x, bob->GetPosition().y, anchor_.x, anchor_.y);
     }
 
 }
