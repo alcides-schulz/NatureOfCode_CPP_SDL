@@ -4,8 +4,8 @@
 #include "../Common/SDL_Framework.h"
 
 #define CHAPTER "05"
-#define FROM_EXAMPLE "05"
-#define TO_EXAMPLE "07"
+#define FROM_EXAMPLE "07"
+#define TO_EXAMPLE "08"
 
 #define COPY_FOLDER ".\\Chapter" CHAPTER
 #define FROM_NUMBER CHAPTER "_" FROM_EXAMPLE

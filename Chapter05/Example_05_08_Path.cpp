@@ -1,13 +1,13 @@
-#include "Example_05_07_Path.h"
+#include "Example_05_08_Path.h"
 
-namespace nature_of_code_chapter_05_example_07
+namespace nature_of_code_chapter_05_example_08
 {
     Path::Path()
     {
         radius_ = 20;
     }
 
-    void Path::AddPoint(int x, int y)
+    void Path::AddPoint(float x, float y)
     {
         points_.push_back(Vector(x, y));
     }
