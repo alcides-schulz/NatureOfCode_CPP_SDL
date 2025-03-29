@@ -13,14 +13,14 @@ namespace nature_of_code_chapter_04_example_07
     public:
         Repeller(int x, int y)
         {
-            position_ = Vector(x, y);
-            power_ = 150;
+            _position = Vector(x, y);
+            _power = 150;
         };
         Vector Repel(Particle *particle);
         void Show(P5SDL *p5sdl);
     protected:
-        Vector position_;
-        float   power_;
+        Vector  _position;
+        float   _power;
     };
 }
 

@@ -15,10 +15,10 @@ namespace nature_of_code_chapter_05_example_06
         bool Draw(void) override;
         void Cleanup(void) override;
     private:
-        Path    *path_;
-        Vehicle *vehicle1_;
-        Vehicle *vehicle2_;
-        bool    debug_;
+        Path    *_path;
+        Vehicle *_vehicle1;
+        Vehicle *_vehicle2;
+        bool    _debug;
     };
 }
 

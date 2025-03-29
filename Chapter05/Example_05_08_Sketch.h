@@ -16,10 +16,10 @@ namespace nature_of_code_chapter_05_example_08
         void Cleanup(void) override;
         void NewPath(void);
     private:
-        Path    *path_;
-        Vehicle *car1_;
-        Vehicle *car2_;
-        bool    debug_;
+        Path    *_path;
+        Vehicle *_car1;
+        Vehicle *_car2;
+        bool    _debug;
     };
 }
 

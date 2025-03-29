@@ -14,7 +14,7 @@ namespace nature_of_code_chapter_05_example_05
         bool Draw(void) override;
         void Cleanup(void) override;
     private:
-        Path    *path_;
+        Path    *_path;
     };
 }
 

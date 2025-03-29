@@ -15,9 +15,9 @@ namespace nature_of_code_chapter_05_example_04
         bool Draw(void) override;
         void Cleanup(void) override;
     private:
-        vector<Vehicle *> vehicles_;
-        FlowField   *flowfield_;
-        bool        debug_;
+        vector<Vehicle *>   _vehicles;
+        FlowField           *_flowfield;
+        bool                _debug;
     };
 }
 

@@ -14,10 +14,10 @@ namespace nature_of_code_chapter_01_example_09
         void Show(P5SDL *p5sdl);
         void CheckEdges(P5SDL *p5sdl);
     private:
-        Vector position_;
-        Vector velocity_;
-        Vector acceleration_;
-        float   top_speed_;
+        Vector  _position;
+        Vector  _velocity;
+        Vector  _acceleration;
+        float   _top_speed;
     };
 }
 

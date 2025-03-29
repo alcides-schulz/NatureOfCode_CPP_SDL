@@ -4,7 +4,7 @@ namespace nature_of_code_chapter_05_example_01
 {
     bool Sketch::Setup(void)
     {
-        vehicle_ = new Vehicle(Width() / 2, Height() / 2);
+        _vehicle = new Vehicle(Width() / 2, Height() / 2);
         return true;
     }
 
@@ -17,9 +17,9 @@ namespace nature_of_code_chapter_05_example_01
         Fill(127);
         Circle(mouse.x, mouse.y, 48);
 
-        vehicle_->Seek(mouse);
-        vehicle_->Update();
-        vehicle_->Show(this);
+        _vehicle->Seek(mouse);
+        _vehicle->Update();
+        _vehicle->Show(this);
 
         return true;
     }

@@ -4,7 +4,7 @@ namespace nature_of_code_chapter_03_example_03
 {
     bool Sketch::Setup(void)
     {
-        mover_ = new Mover(Vector(Width() / 2, Height() / 2));
+        _mover = new Mover(Vector(Width() / 2, Height() / 2));
     
         auto x = Vector(100, 50).Heading();
         cout << x << endl;
@@ -16,9 +16,9 @@ namespace nature_of_code_chapter_03_example_03
     {
         Background(255);
     
-        mover_->Update(this);
-        mover_->CheckEdges(this);
-        mover_->Show(this);
+        _mover->Update(this);
+        _mover->CheckEdges(this);
+        _mover->Show(this);
     
         return true;
     }

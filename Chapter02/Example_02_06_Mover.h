@@ -9,24 +9,24 @@ namespace nature_of_code_chapter_02_example_06
     class Mover
     {
     public:
-        Mover(Vector position, int mass) : position_(position), mass_(mass)
+        Mover(Vector position, int mass) : _position(position), _mass(mass)
         {
-            radius_ = mass_ * 8;
-            velocity_ = Vector(1, 0);
-            acceleration_ = Vector(0, 0);
+            _radius = _mass * 8;
+            _velocity = Vector(1, 0);
+            _acceleration = Vector(0, 0);
         };
         void ApplyForce(Vector force);
         void Update(void);
         void Show(P5SDL *p5sdl);
-        int GetMass(void) { return mass_; };
-        Vector GetPosition(void) { return position_; };
-        Vector GetVelocity(void) { return velocity_; };
+        int GetMass(void) { return _mass; };
+        Vector GetPosition(void) { return _position; };
+        Vector GetVelocity(void) { return _velocity; };
     private:
-        Vector position_;
-        Vector velocity_;
-        Vector acceleration_;
-        int     radius_;
-        int     mass_;
+        Vector  _position;
+        Vector  _velocity;
+        Vector  _acceleration;
+        int     _radius;
+        int     _mass;
     };
 }
 

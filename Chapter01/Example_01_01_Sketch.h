@@ -12,10 +12,10 @@ namespace nature_of_code_chapter_01_example_01
         bool Setup() override;
         bool Draw() override;
     private:
-        float   x_;
-        float   y_;
-        float   x_speed_;
-        float   y_speed_;
+        float   _x;
+        float   _y;
+        float   _x_speed;
+        float   _y_speed;
     };
 }
 

@@ -12,8 +12,8 @@ namespace nature_of_code_chapter_03_example_04
         bool Setup(void) override;
         bool Draw() override;
     private:
-        float   radius;
-        float   theta;
+        float   _radius;
+        float   _theta;
     };
 }
 

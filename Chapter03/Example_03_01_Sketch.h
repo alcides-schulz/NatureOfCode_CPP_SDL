@@ -12,9 +12,9 @@ namespace nature_of_code_chapter_03_example_01
         bool Setup(void) override;
         bool Draw() override;
     private:
-        float   angle_;
-        float   angleVelocity_;
-        float   angleAcceleration_;
+        float   _angle;
+        float   _angle_velocity;
+        float   _angle_acceleration;
     };
 }
 

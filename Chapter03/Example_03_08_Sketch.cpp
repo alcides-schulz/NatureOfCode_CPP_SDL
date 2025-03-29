@@ -9,9 +9,9 @@ namespace nature_of_code_chapter_03_example_08
         Stroke(0);
         Fill(127, 127);
         for (int x = 0; x < Width(); x += 24) {
-            auto y = amplitude_ * sin(angle_);
+            auto y = _amplitude * sin(_angle);
             Circle(x, (int)(y + Height() / 2), 48);
-            angle_ += angle_velocity_;
+            _angle += _angle_velocity;
         }
     
         return true;

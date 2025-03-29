@@ -7,7 +7,7 @@ namespace nature_of_code_chapter_01_example_07
     {
         auto location = Vector(Utils::Random((float)Width()), Utils::Random((float)Height()));
         auto velocity = Vector(Utils::Random(-2, 2), Utils::Random(-2, 2));
-        mover_ = new Mover(location, velocity);
+        _mover = new Mover(location, velocity);
     
         return true;
     }
@@ -16,9 +16,9 @@ namespace nature_of_code_chapter_01_example_07
     {
         Background(255);
     
-        mover_->Update();
-        mover_->CheckEdges(this);
-        mover_->Show(this);
+        _mover->Update();
+        _mover->CheckEdges(this);
+        _mover->Show(this);
     
         return true;
     }

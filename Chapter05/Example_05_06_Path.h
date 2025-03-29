@@ -11,13 +11,13 @@ namespace nature_of_code_chapter_05_example_06
     public:
         Path(P5SDL *p5sdl);
         void Show(P5SDL *p5sdl);
-        Vector GetStart(void) { return start_; };
-        Vector GetEnd(void) { return end_; };
-        int GetRadius(void) { return radius_; };
+        Vector GetStart(void) { return _start; };
+        Vector GetEnd(void) { return _end; };
+        int GetRadius(void) { return _radius; };
     private:
-        int     radius_;
-        Vector start_;
-        Vector end_;
+        int     _radius;
+        Vector  _start;
+        Vector  _end;
     };
 }
 

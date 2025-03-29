@@ -12,7 +12,7 @@ namespace nature_of_code_chapter_04_example_01
         bool Setup(void) override;
         bool Draw(void) override;
     private:
-        Particle        *particle_;
+        Particle    *_particle;
     };
 }
 

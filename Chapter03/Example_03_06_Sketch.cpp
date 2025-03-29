@@ -4,8 +4,8 @@ namespace nature_of_code_chapter_03_example_06
 {
     bool Sketch::Setup(void)
     {
-        angle_ = 0;
-        angle_velocity_ = 0.05f;
+        _angle = 0;
+        _angle_velocity = 0.05f;
     
         return true;
     }
@@ -16,7 +16,7 @@ namespace nature_of_code_chapter_03_example_06
     
         auto amplitude = 200;
     
-        auto x = static_cast<int>(amplitude * sin(angle_));
+        auto x = static_cast<int>(amplitude * sin(_angle));
     
         Translate(Width() / 2, Height() / 2);
     
@@ -25,7 +25,7 @@ namespace nature_of_code_chapter_03_example_06
         Fill(127);
         Circle(x, 0, 30);
     
-        angle_ += angle_velocity_;
+        _angle += _angle_velocity;
     
         return true;
     }

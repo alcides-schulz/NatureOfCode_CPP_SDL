@@ -13,8 +13,8 @@ namespace nature_of_code_chapter_01_example_02
         bool Setup() override;
         bool Draw() override;
     private:
-        Vector position_;
-        Vector velocity_;
+        Vector _position;
+        Vector _velocity;
     };
 }
 

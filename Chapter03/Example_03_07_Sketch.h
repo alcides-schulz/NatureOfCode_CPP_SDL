@@ -13,7 +13,7 @@ namespace nature_of_code_chapter_03_example_07
         bool Setup(void) override;
         bool Draw() override;
     private:
-        std::vector<Oscillator     *> oscillators_;
+        std::vector<Oscillator *> _oscillators;
     };
 }
 

@@ -4,8 +4,8 @@ namespace nature_of_code_chapter_02_example_03
 {
     bool Sketch::Setup()
     {
-        moverA_ = new Mover(Vector(200, 30), 10);
-        moverB_ = new Mover(Vector(440, 30), 2);
+        _moverA = new Mover(Vector(200, 30), 10);
+        _moverB = new Mover(Vector(440, 30), 2);
         return true;
     }
     
@@ -14,26 +14,26 @@ namespace nature_of_code_chapter_02_example_03
         Background(255);
     
         Vector gravityA(0.0f, 0.1f);
-        gravityA.Mult((float)moverA_->GetMass());
-        moverA_->ApplyForce(gravityA);
+        gravityA.Mult((float)_moverA->GetMass());
+        _moverA->ApplyForce(gravityA);
     
         Vector gravityB(0.0f, 0.1f);
-        gravityB.Mult((float)moverB_->GetMass());
-        moverB_->ApplyForce(gravityB);
+        gravityB.Mult((float)_moverB->GetMass());
+        _moverB->ApplyForce(gravityB);
     
         if (IsMouseButtonHeld(kMouseLeftButton)) {
             Vector wind(0.1f, 0.0f);
-            moverA_->ApplyForce(wind);
-            moverB_->ApplyForce(wind);
+            _moverA->ApplyForce(wind);
+            _moverB->ApplyForce(wind);
         }
     
-        moverA_->Update();
-        moverA_->Show(this);
-        moverA_->CheckEdges(this);
+        _moverA->Update();
+        _moverA->Show(this);
+        _moverA->CheckEdges(this);
     
-        moverB_->Update();
-        moverB_->Show(this);
-        moverB_->CheckEdges(this);
+        _moverB->Update();
+        _moverB->Show(this);
+        _moverB->CheckEdges(this);
     
         return true;
     }

@@ -5,41 +5,41 @@ namespace nature_of_code_chapter_02_example_02
     void Mover::ApplyForce(Vector force)
     {
         auto temp = force.Clone();
-        temp.Div((float)mass_);
-        acceleration_.Add(temp);
+        temp.Div((float)_mass);
+        _acceleration.Add(temp);
     }
     
     void Mover::Update(void)
     {
-        velocity_.Add(acceleration_);
-        position_.Add(velocity_);
-        acceleration_.Mult(0);
+        _velocity.Add(_acceleration);
+        _position.Add(_velocity);
+        _acceleration.Mult(0);
     }
     
     void Mover::Show(P5SDL *p5sdl)
     {
         p5sdl->Stroke(0);
         p5sdl->Fill(127);
-        p5sdl->Circle(position_.x, position_.y, mass_ * 16);
+        p5sdl->Circle(_position.x, _position.y, _mass * 16);
     }
     
     void Mover::CheckEdges(P5SDL *p5sdl)
     {
-        if (position_.x > p5sdl->Width()) {
-            position_.x = (float)p5sdl->Width();
-            velocity_.x *= -1;
+        if (_position.x > p5sdl->Width()) {
+            _position.x = (float)p5sdl->Width();
+            _velocity.x *= -1;
         }
-        else if (position_.x < 0) {
-            position_.x = 0;
-            velocity_.x *= -1;
+        else if (_position.x < 0) {
+            _position.x = 0;
+            _velocity.x *= -1;
         }
-        if (position_.y > p5sdl->Height()) {
-            position_.y = (float)p5sdl->Height();
-            velocity_.y *= -1;
+        if (_position.y > p5sdl->Height()) {
+            _position.y = (float)p5sdl->Height();
+            _velocity.y *= -1;
         }
-        else if (position_.y < 0) {
-            position_.y = 0;
-            velocity_.y *= -1;
+        else if (_position.y < 0) {
+            _position.y = 0;
+            _velocity.y *= -1;
         }
     }
     

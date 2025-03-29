@@ -4,9 +4,9 @@ namespace nature_of_code_chapter_05_example_03
 {
     bool Sketch::Setup(void)
     {
-        vehicle_ = new Vehicle(Width() / 2, Height() / 2);
-        offset_ = 25;
-        debug_ = true;
+        _vehicle = new Vehicle(Width() / 2, Height() / 2);
+        _offset = 25;
+        _debug = true;
 
         cout << "Click to show/hide boundaries." << endl;
 
@@ -18,16 +18,16 @@ namespace nature_of_code_chapter_05_example_03
         Background(255);
 
         if (IsMouseButtonClicked(kMouseLeftButton)) {
-            debug_ = !debug_;
+            _debug = !_debug;
         }
 
-        if (debug_) {
-            Rect(offset_, offset_, Width() - offset_ * 2, Height() - offset_ * 2);
+        if (_debug) {
+            Rect(_offset, _offset, Width() - _offset * 2, Height() - _offset * 2);
         }
 
-        vehicle_->Boundaries(this, offset_);
-        vehicle_->Update();
-        vehicle_->Show(this);
+        _vehicle->Boundaries(this, _offset);
+        _vehicle->Update();
+        _vehicle->Show(this);
 
         return true;
     }

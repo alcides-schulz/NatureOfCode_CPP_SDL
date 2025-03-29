@@ -13,7 +13,7 @@ namespace nature_of_code_chapter_04_example_06
         bool Setup(void) override;
         bool Draw(void) override;
     private:
-        Emitter     *emitter_;
+        Emitter *_emitter;
     };
 }
 

@@ -6,8 +6,8 @@ namespace nature_of_code_chapter_01_example_08
     {
         auto location = Vector(Width() / 2, Height() / 2);
         auto velocity = Vector(0, 0);
-        mover_ = new Mover(location, velocity);
-        mover_->SetAcceleration(Vector(-0.001f, 0.01f));
+        _mover = new Mover(location, velocity);
+        _mover->SetAcceleration(Vector(-0.001f, 0.01f));
     
         return true;
     }
@@ -16,9 +16,9 @@ namespace nature_of_code_chapter_01_example_08
     {
         Background(255);
     
-        mover_->Update();
-        mover_->CheckEdges(this);
-        mover_->Show(this);
+        _mover->Update();
+        _mover->CheckEdges(this);
+        _mover->Show(this);
     
         return true;
     }

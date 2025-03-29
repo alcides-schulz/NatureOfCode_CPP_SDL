@@ -11,15 +11,15 @@ namespace nature_of_code_chapter_05_example_05
     public:
         Path(P5SDL *p5sdl)
         {
-            radius_ = 20;
-            start_ = Vector(0, p5sdl->Height() / 3);
-            end_ = Vector(p5sdl->Width(), (2 * p5sdl->Height()) / 3);
+            _radius = 20;
+            _start = Vector(0, p5sdl->Height() / 3);
+            _end = Vector(p5sdl->Width(), (2 * p5sdl->Height()) / 3);
         }
         void Show(P5SDL *p5sdl);
     private:
-        int     radius_;
-        Vector start_;
-        Vector end_;
+        int     _radius;
+        Vector  _start;
+        Vector  _end;
     };
 }
 

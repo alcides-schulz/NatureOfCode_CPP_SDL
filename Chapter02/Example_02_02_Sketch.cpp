@@ -4,8 +4,8 @@ namespace nature_of_code_chapter_02_example_02
 {
     bool Sketch::Setup()
     {
-        moverA_ = new Mover(Vector(200, 30), 8);
-        moverB_ = new Mover(Vector(440, 30), 2);
+        _moverA = new Mover(Vector(200, 30), 8);
+        _moverB = new Mover(Vector(440, 30), 2);
         return true;
     }
     
@@ -14,22 +14,22 @@ namespace nature_of_code_chapter_02_example_02
         Background(255);
     
         Vector gravity(0.0f, 0.1f);
-        moverA_->ApplyForce(gravity);
-        moverB_->ApplyForce(gravity);
+        _moverA->ApplyForce(gravity);
+        _moverB->ApplyForce(gravity);
     
         if (IsMouseButtonHeld(kMouseLeftButton)) {
             Vector wind(0.1f, 0.0f);
-            moverA_->ApplyForce(wind);
-            moverB_->ApplyForce(wind);
+            _moverA->ApplyForce(wind);
+            _moverB->ApplyForce(wind);
         }
     
-        moverA_->Update();
-        moverA_->CheckEdges(this);
-        moverA_->Show(this);
+        _moverA->Update();
+        _moverA->CheckEdges(this);
+        _moverA->Show(this);
     
-        moverB_->Update();
-        moverB_->CheckEdges(this);
-        moverB_->Show(this);
+        _moverB->Update();
+        _moverB->CheckEdges(this);
+        _moverB->Show(this);
     
         return true;
     }

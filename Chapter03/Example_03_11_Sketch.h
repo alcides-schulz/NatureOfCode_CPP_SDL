@@ -13,7 +13,7 @@ namespace nature_of_code_chapter_03_example_11
         bool Setup(void) override;
         bool Draw(void) override;
     private:
-        Pendulum        *pendulum_;
+        Pendulum    *_pendulum;
     };
 }
 

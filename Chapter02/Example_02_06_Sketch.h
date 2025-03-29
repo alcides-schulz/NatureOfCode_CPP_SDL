@@ -14,9 +14,9 @@ namespace nature_of_code_chapter_02_example_06
         bool Setup() override;
         bool Draw() override;
     private:
-        Attractor       *attractor_;
-        Mover           *mover_;
-        bool            isDragging = false;
+        Attractor   *_attractor;
+        Mover       *_mover;
+        bool        _is_dragging = false;
     };
 }
 

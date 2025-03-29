@@ -13,13 +13,13 @@ namespace nature_of_code_chapter_01_example_08
         void Update(void);
         void Show(P5SDL *p5sdl);
         void CheckEdges(P5SDL *p5sdl);
-        Vector GetPosition(void) { return position_; };
-        void SetAcceleration(Vector acceleration) { acceleration_ = acceleration; };
+        Vector GetPosition(void) { return _position; };
+        void SetAcceleration(Vector acceleration) { _acceleration = acceleration; };
     private:
-        Vector position_;
-        Vector velocity_;
-        Vector acceleration_;
-        float   top_speed_;
+        Vector  _position;
+        Vector  _velocity;
+        Vector  _acceleration;
+        float   _top_speed;
     };
 }
 

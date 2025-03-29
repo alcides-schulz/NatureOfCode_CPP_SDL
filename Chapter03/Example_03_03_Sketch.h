@@ -13,7 +13,7 @@ namespace nature_of_code_chapter_03_example_03
         bool Setup(void) override;
         bool Draw() override;
     private:
-        Mover           *mover_;
+        Mover   *_mover;
     };
 }
 

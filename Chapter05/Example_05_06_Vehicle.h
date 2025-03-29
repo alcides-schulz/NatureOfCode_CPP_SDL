@@ -20,12 +20,12 @@ namespace nature_of_code_chapter_05_example_06
         void Borders(Path *path);
         void Show(P5SDL *p5sdl);
     private:
-        Vector position_;
-        Vector velocity_;
-        Vector acceleration_;
-        int     r_;
-        float   max_speed_;
-        float   max_force_;
+        Vector  _position;
+        Vector  _velocity;
+        Vector  _acceleration;
+        int     _r;
+        float   _max_speed;
+        float   _max_force;
     };
 }
 

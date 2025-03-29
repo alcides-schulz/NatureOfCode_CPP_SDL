@@ -10,22 +10,22 @@ namespace nature_of_code_chapter_02_example_07
     class Attractor
     {
     public:
-        Attractor(Vector position, int mass) : position_(position), mass_(mass)
+        Attractor(Vector position, int mass) : _position(position), _mass(mass)
         {
-            radius_ = mass_;
+            _radius = _mass;
         };
         Vector Attract(Mover     *mover);
         void Show(P5SDL *p5sdl);
-        Vector GetPosition(void) { return position_; };
-        void SetPosition(Vector position) { position_ = position; };
-        int GetRadius(void) { return radius_; };
+        Vector GetPosition(void) { return _position; };
+        void SetPosition(Vector position) { _position = position; };
+        int GetRadius(void) { return _radius; };
         static const int kGravity = 1;
     private:
-        Vector position_;
-        Vector velocity_;
-        Vector acceleration_;
-        int     radius_;
-        int     mass_;
+        Vector  _position;
+        Vector  _velocity;
+        Vector  _acceleration;
+        int     _radius;
+        int     _mass;
     };
 }
 

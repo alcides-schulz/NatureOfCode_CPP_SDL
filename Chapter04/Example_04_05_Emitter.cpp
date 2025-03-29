@@ -4,19 +4,19 @@ namespace nature_of_code_chapter_04_example_05
 {
     void Emitter::AddParticle(void)
     {
-        if (Utils::Random(1) < 0.5f)
-            particles_.push_back(new Particle((int)origin_.x, (int)origin_.y));
+        if (Utils::Random(1.0f) < 0.5f)
+            _particles.push_back(new Particle((int)_origin.x, (int)_origin.y));
         else
-            particles_.push_back(new Confetti((int)origin_.x, (int)origin_.y));
+            _particles.push_back(new Confetti((int)_origin.x, (int)_origin.y));
     }
 
     void Emitter::Run(P5SDL *p5sdl)
     {
-        for (int i = (int)particles_.size() - 1; i >= 0; i--) {
-            auto particle = particles_[i];
+        for (int i = (int)_particles.size() - 1; i >= 0; i--) {
+            auto particle = _particles[i];
             particle->Run(p5sdl);
             if (particle->IsDead())
-                particles_.erase(particles_.begin() + i);
+                _particles.erase(_particles.begin() + i);
         }
     }
 }

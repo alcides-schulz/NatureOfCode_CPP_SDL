@@ -13,8 +13,8 @@ namespace nature_of_code_chapter_02_example_08
         bool Setup() override;
         bool Draw() override;
     private:
-        Body        *bodyA_;
-        Body        *bodyB_;
+        Body    *_bodyA;
+        Body    *_bodyB;
     };
 }
 

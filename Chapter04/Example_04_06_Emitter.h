@@ -13,13 +13,13 @@ namespace nature_of_code_chapter_04_example_06
     public:
         Emitter(int x, int y)
         {
-            origin_ = Vector(x, y);
+            _origin = Vector(x, y);
         };
         void AddParticle(void);
         void Run(P5SDL *p5sdl);
     private:
-        Vector             origin_;
-        vector<Particle *>  particles_;
+        Vector              _origin;
+        vector<Particle *>  _particles;
     };
 }
 

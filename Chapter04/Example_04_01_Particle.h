@@ -12,20 +12,20 @@ namespace nature_of_code_chapter_04_example_01
     public:
         Particle(int x, int y)
         {
-            position_ = Vector(x, y);
-            velocity_ = Vector(Utils::Random(-1, 1), Utils::Random(-2, 0));
-            acceleration_ = Vector(0, 0);
-            life_span_ = 255.0f;
+            _position = Vector(x, y);
+            _velocity = Vector(Utils::Random(-1, 1), Utils::Random(-2, 0));
+            _acceleration = Vector(0, 0);
+            _life_span = 255.0f;
         };
         void Update(void);
         void Show(P5SDL *p5sdl);
         void ApplyForce(Vector force);
-        bool IsDead(void) { return life_span_ < 0; };
+        bool IsDead(void) { return _life_span < 0; };
     private:
-        Vector position_;
-        Vector velocity_;
-        Vector acceleration_;
-        float   life_span_;
+        Vector  _position;
+        Vector  _velocity;
+        Vector  _acceleration;
+        float   _life_span;
     };
 }
 

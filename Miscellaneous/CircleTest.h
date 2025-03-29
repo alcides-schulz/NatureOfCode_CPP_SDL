@@ -10,7 +10,7 @@ public:
     bool Setup() override;
     bool Draw() override;
 private:
-    int     radius_ = 0;
+    int     _radius = 0;
 };
 
 #endif

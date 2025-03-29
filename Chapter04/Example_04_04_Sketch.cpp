@@ -12,12 +12,12 @@ namespace nature_of_code_chapter_04_example_04
     {
         Background(255);
         if (IsMouseButtonClicked(kMouseLeftButton)) {
-            emitters_.push_back(new Emitter(MousePosition().x, MousePosition().y));
+            _emitters.push_back(new Emitter(MousePosition().x, MousePosition().y));
         }
-        if (IsMouseButtonClicked(kMouseRightButton) && emitters_.size() > 0) {
-            emitters_.erase(emitters_.begin());
+        if (IsMouseButtonClicked(kMouseRightButton) && _emitters.size() > 0) {
+            _emitters.erase(_emitters.begin());
         }
-        for each (auto emitter in emitters_)
+        for each (auto emitter in _emitters)
         {
             emitter->AddParticle();
             emitter->Run(this);

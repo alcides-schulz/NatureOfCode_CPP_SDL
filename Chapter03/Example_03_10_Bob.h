@@ -9,33 +9,33 @@ namespace nature_of_code_chapter_03_example_10
     class Bob
     {
     public:
-        Bob(Vector position) : position_(position)
+        Bob(Vector position) : _position(position)
         {
-            velocity_ = Vector(0, 0);
-            acceleration_ = Vector(0, 0);
-            mass_ = 24;
-            damping_ = 0.98f;
-            drag_offset_ = Vector(0, 0);
-            is_dragging_ = false;
+            _velocity = Vector(0, 0);
+            _acceleration = Vector(0, 0);
+            _mass = 24;
+            _damping = 0.98f;
+            _drag_offset = Vector(0, 0);
+            _is_dragging = false;
         };
         void ApplyForce(Vector force);
         void Update(P5SDL *p5sdl);
         void Show(P5SDL *p5sdl);
-        Vector GetPosition(void) { return position_; };
-        void SetPosition(Vector position) { position_ = position; };
-        Vector GetVelocity(void) { return velocity_; };
-        void SetVelocity(Vector velocity) { velocity_ = velocity; };
+        Vector GetPosition(void) { return _position; };
+        void SetPosition(Vector position) { _position = position; };
+        Vector GetVelocity(void) { return _velocity; };
+        void SetVelocity(Vector velocity) { _velocity = velocity; };
         void HandleClick(int mouse_x, int mouse_y);
         void HandleDrag(int mouse_x, int mouse_y);
         void StopDragging(void);
     private:
-        Vector position_;
-        Vector velocity_;
-        Vector acceleration_;
-        float   mass_;
-        float   damping_;
-        Vector drag_offset_;
-        bool    is_dragging_;
+        Vector  _position;
+        Vector  _velocity;
+        Vector  _acceleration;
+        float   _mass;
+        float   _damping;
+        Vector  _drag_offset;
+        bool    _is_dragging;
     };
 }
 

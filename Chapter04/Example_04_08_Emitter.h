@@ -13,16 +13,16 @@ namespace nature_of_code_chapter_04_example_08
     public:
         Emitter(int x, int y, SDL_Texture *texture)
         {
-            origin_ = Vector(x, y);
-            texture_ = texture;
+            _origin = Vector(x, y);
+            _texture = texture;
         };
         void AddParticle(void);
         void ApplyForce(Vector force);
         void Run(P5SDL *p5sdl);
     private:
-        Vector             origin_;
-        SDL_Texture         *texture_;
-        vector<Particle *>  particles_;
+        Vector              _origin;
+        SDL_Texture         *_texture;
+        vector<Particle *>  _particles;
     };
 }
 

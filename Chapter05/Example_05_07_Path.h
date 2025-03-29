@@ -13,8 +13,8 @@ namespace nature_of_code_chapter_05_example_07
         void Show(P5SDL *p5sdl);
         void AddPoint(int x, int y);
     private:
-        int     radius_;
-        vector <Vector> points_;
+        int             _radius;
+        vector <Vector> _points;
     };
 }
 

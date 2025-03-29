@@ -15,8 +15,8 @@ namespace nature_of_code_chapter_02_example_05
         bool Draw() override;
         void Reset(void);
     private:
-        Mover       *mover_[10];
-        Liquid      *liquid_;
+        Mover   *_mover[10];
+        Liquid  *_liquid;
     };
 }
 

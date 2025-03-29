@@ -4,10 +4,10 @@ namespace nature_of_code_chapter_01_example_01
 {
     bool Sketch::Setup()
     {
-        x_ = 100;
-        y_ = 100;
-        x_speed_ = 2.5f;
-        y_speed_ = 2.0f;
+        _x = 100;
+        _y = 100;
+        _x_speed = 2.5f;
+        _y_speed = 2.0f;
     
         return true;
     }
@@ -16,18 +16,18 @@ namespace nature_of_code_chapter_01_example_01
     {
         Background(255);
     
-        x_ += x_speed_;
-        y_ += y_speed_;
-        if (x_ > Width() || x_ < 0) {
-            x_speed_ *= -1;
+        _x += _x_speed;
+        _y += _y_speed;
+        if (_x > Width() || _x < 0) {
+            _x_speed *= -1;
         }
-        if (y_ > Height() || y_ < 0) {
-            y_speed_ *= -1;
+        if (_y > Height() || _y < 0) {
+            _y_speed *= -1;
         }
     
         Stroke(0);
         Fill(127);
-        Circle(x_, y_, 48);
+        Circle(_x, _y, 48);
     
         return true;
     }

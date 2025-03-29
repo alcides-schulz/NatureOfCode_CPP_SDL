@@ -5,7 +5,7 @@ namespace nature_of_code_chapter_05_example_09
     bool Sketch::Setup(void)
     {
         for (int i = 0; i < 25; i++) {
-            vehicles_.push_back(new Vehicle(this, Utils::Random(Width()), Utils::Random(Height())));
+            _vehicles.push_back(new Vehicle(this, Utils::Random(Width()), Utils::Random(Height())));
         }
         cout << "Hold mouse left button to add more vehicles." << endl;
         return true;
@@ -14,23 +14,23 @@ namespace nature_of_code_chapter_05_example_09
     bool Sketch::Draw(void)
     {
         Background(255);
-        for (auto vehicle : vehicles_) {
-            vehicle->Separate(vehicles_);
+        for (auto vehicle : _vehicles) {
+            vehicle->Separate(_vehicles);
             vehicle->Update();
             vehicle->Borders();
             vehicle->Show();
         }
         if (IsMouseButtonHeld(kMouseLeftButton)) {
-            vehicles_.push_back(new Vehicle(this, MousePosition().x, MousePosition().y));
+            _vehicles.push_back(new Vehicle(this, MousePosition().x, MousePosition().y));
         }
         return true;
     }
 
     void Sketch::Cleanup(void)
     {
-        while (!vehicles_.empty()) {
-            delete vehicles_.back();
-            vehicles_.pop_back();
+        while (!_vehicles.empty()) {
+            delete _vehicles.back();
+            _vehicles.pop_back();
         }
     }
 }

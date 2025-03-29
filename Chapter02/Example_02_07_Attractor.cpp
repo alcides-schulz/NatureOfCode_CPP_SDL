@@ -4,11 +4,11 @@ namespace nature_of_code_chapter_02_example_07
 {
     Vector Attractor::Attract(Mover *mover)
     {
-        auto force = Vector(position_.x, position_.y);
+        auto force = Vector(_position.x, _position.y);
         force.Sub(mover->GetPosition());
         auto distance = force.Mag();
         distance = (float)std::fmax(5, std::fmin(25, distance));
-        auto strength = (kGravity * mass_ * mover->GetMass()) / (distance * distance);
+        auto strength = (kGravity * _mass * mover->GetMass()) / (distance * distance);
         force.SetMag(strength);
         return force;
     }
@@ -17,7 +17,7 @@ namespace nature_of_code_chapter_02_example_07
     {
         p5sdl->Stroke(0);
         p5sdl->Fill(0);
-        p5sdl->Circle(position_.x, position_.y, mass_ * 2);
+        p5sdl->Circle(_position.x, _position.y, _mass * 2);
     }
     
 }

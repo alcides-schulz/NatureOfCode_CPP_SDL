@@ -4,8 +4,8 @@ namespace nature_of_code_chapter_03_example_04
 {
     bool Sketch::Setup(void)
     {
-        radius = Height() * 0.45f;
-        theta = 0;
+        _radius = Height() * 0.45f;
+        _theta = 0;
     
         return true;
     }
@@ -16,15 +16,15 @@ namespace nature_of_code_chapter_03_example_04
     
         Translate(Width() / 2, Height() / 2);
     
-        auto x = static_cast<int>(radius * std::cos(theta));
-        auto y = static_cast<int>(radius * std::sin(theta));
+        auto x = static_cast<int>(_radius * std::cos(_theta));
+        auto y = static_cast<int>(_radius * std::sin(_theta));
     
         Stroke(kColorBlack);
         Line(0, 0, x, y);
         Fill(127);
         Circle(x, y, 30);
     
-        theta += 0.02f;
+        _theta += 0.02f;
     
         return true;
     }

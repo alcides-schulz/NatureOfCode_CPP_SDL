@@ -6,7 +6,7 @@ namespace nature_of_code_chapter_01_example_10
     {
         Vector location(Width() / 2, Height() / 2);
         Vector velocity(0, 0);
-        mover_ = new Mover(location, velocity);
+        _mover = new Mover(location, velocity);
     
         return true;
     }
@@ -16,13 +16,13 @@ namespace nature_of_code_chapter_01_example_10
         Background(255);
     
         auto direction = Vector(MousePosition().x, MousePosition().y);
-        direction.Sub(mover_->GetPosition());
+        direction.Sub(_mover->GetPosition());
         direction.Normalize();
         direction.Mult(0.2f);
-        mover_->SetAcceleration(direction);
+        _mover->SetAcceleration(direction);
     
-        mover_->Update();
-        mover_->Show(this);
+        _mover->Update();
+        _mover->Show(this);
     
         return true;
     }

@@ -11,9 +11,9 @@ namespace nature_of_code_chapter_03_example_08
         Sketch() : P5SDL("Example 3.8: Static Wave", -1, -1, 640, 240, 0) {};
         bool Setup(void) override;
     private:
-        float angle_ = 0;
-        float angle_velocity_ = 0.2f;
-        float amplitude_ = 100;
+        float _angle = 0;
+        float _angle_velocity = 0.2f;
+        float _amplitude = 100;
     };
 }
 

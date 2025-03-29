@@ -4,7 +4,7 @@ namespace nature_of_code_chapter_02_example_01
 {
     bool Sketch::Setup()
     {
-        mover_ = new Mover(Vector(Width() / 2, 30), 1);
+        _mover = new Mover(Vector(Width() / 2, 30), 1);
     
         return true;
     }
@@ -14,15 +14,15 @@ namespace nature_of_code_chapter_02_example_01
         Background(255);
     
         Vector gravity(0.0f, 0.1f);
-        mover_->ApplyForce(gravity);
+        _mover->ApplyForce(gravity);
         if (IsMouseButtonHeld(kMouseLeftButton)) {
             Vector wind(0.1f, 0.0f);
-            mover_->ApplyForce(wind);
+            _mover->ApplyForce(wind);
         }
     
-        mover_->Update();
-        mover_->CheckEdges(this);
-        mover_->Show(this);
+        _mover->Update();
+        _mover->CheckEdges(this);
+        _mover->Show(this);
     
         return true;
     }

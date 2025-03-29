@@ -5,9 +5,9 @@ namespace nature_of_code_chapter_02_example_05
     
     bool Sketch::Setup()
     {
-        liquid_ = new Liquid(0, Height() / 2, Width(), Height() / 2, 0.1f);
-        for (int i = 0; i < std::size(mover_); i++) {
-            mover_[i] = nullptr;
+        _liquid = new Liquid(0, Height() / 2, Width(), Height() / 2, 0.1f);
+        for (int i = 0; i < std::size(_mover); i++) {
+            _mover[i] = nullptr;
         }
         Reset();
         return true;
@@ -20,18 +20,18 @@ namespace nature_of_code_chapter_02_example_05
         if (IsMouseButtonHeld(kMouseLeftButton)) {
             Reset();
         }
-        liquid_->Show(this);
-        for (int i = 0; i < std::size(mover_); i++) {
-            if (liquid_->Contains(mover_[i])) {
-                auto dragForce = liquid_->CalculateDrag(mover_[i]);
-                mover_[i]->ApplyForce(dragForce);
+        _liquid->Show(this);
+        for (int i = 0; i < std::size(_mover); i++) {
+            if (_liquid->Contains(_mover[i])) {
+                auto dragForce = _liquid->CalculateDrag(_mover[i]);
+                _mover[i]->ApplyForce(dragForce);
             }
             Vector gravity(0.0f, 0.1f);
-            gravity.Mult((float)mover_[i]->GetMass());
-            mover_[i]->ApplyForce(gravity);
-            mover_[i]->Update();
-            mover_[i]->CheckEdges(this);
-            mover_[i]->Show(this);
+            gravity.Mult((float)_mover[i]->GetMass());
+            _mover[i]->ApplyForce(gravity);
+            _mover[i]->Update();
+            _mover[i]->CheckEdges(this);
+            _mover[i]->Show(this);
         }
     
         return true;
@@ -39,11 +39,11 @@ namespace nature_of_code_chapter_02_example_05
     
     void Sketch::Reset(void)
     {
-        for (int i = 0; i < std::size(mover_); i++) {
-            if (mover_[i] != nullptr) {
-                delete mover_[i];
+        for (int i = 0; i < std::size(_mover); i++) {
+            if (_mover[i] != nullptr) {
+                delete _mover[i];
             }
-            mover_[i] = new Mover(Vector(40 + i * 70, 0), (int)(Utils::Random(1, 4)));
+            _mover[i] = new Mover(Vector(40 + i * 70, 0), (int)(Utils::Random(1, 4)));
         }
     }
     

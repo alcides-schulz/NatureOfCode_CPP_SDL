@@ -4,7 +4,7 @@ namespace nature_of_code_chapter_02_example_04
 {
     bool Sketch::Setup()
     {
-        mover_ = new Mover(Vector(Width() / 2, 30), 5);
+        _mover = new Mover(Vector(Width() / 2, 30), 5);
         return true;
     }
     
@@ -13,24 +13,24 @@ namespace nature_of_code_chapter_02_example_04
         Background(255);
     
         Vector gravity(0.0f, 0.1f);
-        mover_->ApplyForce(gravity);
+        _mover->ApplyForce(gravity);
     
         if (IsMouseButtonHeld(kMouseLeftButton)) {
             Vector wind(0.5f, 0.0f);
-            mover_->ApplyForce(wind);
+            _mover->ApplyForce(wind);
         }
     
-        if (mover_->ContactEdge(this)) {
+        if (_mover->ContactEdge(this)) {
             float c = 0.1f;
-            auto friction = mover_->GetVelocity().Clone();
+            auto friction = _mover->GetVelocity().Clone();
             friction.Mult(-1);
             friction.SetMag(c);
-            mover_->ApplyForce(friction);
+            _mover->ApplyForce(friction);
         }
     
-        mover_->BounceEdges(this);
-        mover_->Update();
-        mover_->Show(this);
+        _mover->BounceEdges(this);
+        _mover->Update();
+        _mover->Show(this);
     
         return true;
     }

@@ -6,8 +6,8 @@ namespace nature_of_code_chapter_03_example_09
     
     bool Sketch::Setup(void)
     {
-        start_angle_ = 0;
-        angle_velocity_ = 0.2f;
+        _start_angle = 0;
+        _angle_velocity = 0.2f;
     
         return true;
     }
@@ -16,15 +16,15 @@ namespace nature_of_code_chapter_03_example_09
     {
         Background(255);
     
-        auto angle = start_angle_;
-        start_angle_ += 0.02f;
+        auto angle = _start_angle;
+        _start_angle += 0.02f;
     
         Stroke(0);
         Fill(127, 127);
         for (int x = 0; x <= Width(); x += 24) {
             auto y = static_cast<int>(Utils::Map(sin(angle), -1, 1, 0, Height()));
             Circle(x, y, 48);
-            angle += angle_velocity_;
+            angle += _angle_velocity;
         }
     
         return true;

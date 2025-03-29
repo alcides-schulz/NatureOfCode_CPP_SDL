@@ -12,24 +12,24 @@ namespace nature_of_code_chapter_05_example_03
     public:
         Vehicle(int x, int y)
         {
-            position_ = Vector(x, y);
-            velocity_ = Vector(3, 4);
-            acceleration_ = Vector(0, 0);
-            r_ = 6;
-            max_speed_ = 3;
-            max_force_ = 0.15f;
+            _position = Vector(x, y);
+            _velocity = Vector(3, 4);
+            _acceleration = Vector(0, 0);
+            _r = 6;
+            _max_speed = 3;
+            _max_force = 0.15f;
         };
         void Update(void);
         void ApplyForce(Vector force);
         void Boundaries(P5SDL *p5sdl, int offset);
         void Show(P5SDL *p5sdl);
     private:
-        Vector position_;
-        Vector velocity_;
-        Vector acceleration_;
-        int     r_;
-        float   max_speed_;
-        float   max_force_;
+        Vector  _position;
+        Vector  _velocity;
+        Vector  _acceleration;
+        int     _r;
+        float   _max_speed;
+        float   _max_force;
     };
 }
 

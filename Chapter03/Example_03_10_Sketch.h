@@ -14,8 +14,8 @@ namespace nature_of_code_chapter_03_example_10
         bool Setup(void) override;
         bool Draw() override;
     private:
-        Bob         *bob_;
-        Spring      *spring_;
+        Bob     *_bob;
+        Spring  *_spring;
     };
 }
 

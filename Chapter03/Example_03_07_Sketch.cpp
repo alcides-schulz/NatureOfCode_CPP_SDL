@@ -5,7 +5,7 @@ namespace nature_of_code_chapter_03_example_07
     bool Sketch::Setup(void)
     {
         for (int i = 0; i < 10; i++) {
-            oscillators_.push_back(new Oscillator(this));
+            _oscillators.push_back(new Oscillator(this));
         }
     
         return true;
@@ -15,9 +15,9 @@ namespace nature_of_code_chapter_03_example_07
     {
         Background(255);
     
-        for (int i = 0; i < oscillators_.size(); i++) {
-            oscillators_[i]->Update();
-            oscillators_[i]->Show(this);
+        for (int i = 0; i < _oscillators.size(); i++) {
+            _oscillators[i]->Update();
+            _oscillators[i]->Show(this);
         }
     
         return true;

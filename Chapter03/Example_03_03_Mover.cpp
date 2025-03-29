@@ -5,36 +5,36 @@ namespace nature_of_code_chapter_03_example_03
     void Mover::Update(P5SDL *p5sdl)
     {
         auto direction = Vector(p5sdl->MousePosition().x, p5sdl->MousePosition().y);
-        direction.Sub(position_);
+        direction.Sub(_position);
         direction.Normalize();
         direction.Mult(0.5f);
 
-        acceleration_ = direction;
+        _acceleration = direction;
 
-        velocity_.Add(acceleration_);
-        velocity_.Limit(top_speed_);
-        position_.Add(velocity_);
+        _velocity.Add(_acceleration);
+        _velocity.Limit(_top_speed);
+        _position.Add(_velocity);
     }
 
     void Mover::Show(P5SDL *p5sdl)
     {
-        auto angle = velocity_.Heading();
+        auto angle = _velocity.Heading();
         p5sdl->Rotate(angle);
-        p5sdl->Translate(position_.x, position_.y);
+        p5sdl->Translate(_position.x, _position.y);
         p5sdl->RectMode(kRectCenter);
         p5sdl->Rect(0, 0, 40, 20);
     }
 
     void Mover::CheckEdges(P5SDL *p5sdl)
     {
-        if (position_.x > p5sdl->Width())
-            position_.x = 0;
-        else if (position_.x < 0)
-            position_.x = static_cast<float>(p5sdl->Width());
-        if (position_.y > p5sdl->Height())
-            position_.y = 0;
-        else if (position_.y < 0)
-            position_.y = static_cast<float>(p5sdl->Height());
+        if (_position.x > p5sdl->Width())
+            _position.x = 0;
+        else if (_position.x < 0)
+            _position.x = static_cast<float>(p5sdl->Width());
+        if (_position.y > p5sdl->Height())
+            _position.y = 0;
+        else if (_position.y < 0)
+            _position.y = static_cast<float>(p5sdl->Height());
     }
 
 }

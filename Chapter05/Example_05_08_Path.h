@@ -12,13 +12,13 @@ namespace nature_of_code_chapter_05_example_08
         Path(void);
         void Show(P5SDL *p5sdl);
         void AddPoint(float x, float y);
-        vector<Vector> GetPoints(void) { return points_; };
-        int GetRadius(void) { return radius_; };
-        Vector GetStart(void) { return points_[0]; };
-        Vector GetEnd(void) { return points_[points_.size() - 1]; };
+        vector<Vector> GetPoints(void) { return _points; };
+        int GetRadius(void) { return _radius; };
+        Vector GetStart(void) { return _points[0]; };
+        Vector GetEnd(void) { return _points[_points.size() - 1]; };
     private:
-        int     radius_;
-        vector <Vector> points_;
+        int             _radius;
+        vector <Vector> _points;
     };
 }
 

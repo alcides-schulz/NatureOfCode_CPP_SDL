@@ -6,7 +6,7 @@ namespace nature_of_code_chapter_01_example_09
     {
         Vector location((float)(Width() / 2), (float)(Height() / 2));
         Vector velocity(0, 0);
-        mover_ = new Mover(location, velocity);
+        _mover = new Mover(location, velocity);
         return true;
     }
     
@@ -14,9 +14,9 @@ namespace nature_of_code_chapter_01_example_09
     {
         Background(255);
     
-        mover_->Update();
-        mover_->CheckEdges(this);
-        mover_->Show(this);
+        _mover->Update();
+        _mover->CheckEdges(this);
+        _mover->Show(this);
     
         return true;
     }

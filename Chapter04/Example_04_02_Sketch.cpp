@@ -11,13 +11,13 @@ namespace nature_of_code_chapter_04_example_02
     {
         Background(255);
     
-        particles_.push_back(new Particle(Width() / 2, 20));
+        _particles.push_back(new Particle(Width() / 2, 20));
     
-        for (int i = (int)particles_.size() - 1; i >= 0; i--) {
-            auto particle = particles_[i];
+        for (int i = (int)_particles.size() - 1; i >= 0; i--) {
+            auto particle = _particles[i];
             particle->Run(this);
             if (particle->IsDead())
-                particles_.erase(particles_.begin() + i);
+                _particles.erase(_particles.begin() + i);
         }
     
         return true;

@@ -6,12 +6,12 @@ namespace nature_of_code_chapter_05_example_08
 
     Vehicle::Vehicle(int x, int y, float max_speed, float max_force)
     {
-        position_ = Vector(x, y);
-        acceleration_ = Vector(0, 0);
-        velocity_ = Vector(2, 0);
-        r_ = 4;
-        max_speed_ = max_speed != 0 ? max_speed : 4;
-        max_force_ = max_force != 0 ? max_force : 0.1f;
+        _position = Vector(x, y);
+        _acceleration = Vector(0, 0);
+        _velocity = Vector(2, 0);
+        _r = 4;
+        _max_speed = max_speed != 0 ? max_speed : 4;
+        _max_force = max_force != 0 ? max_force : 0.1f;
     };
 
     void Vehicle::Run(P5SDL *p5sdl)
@@ -22,9 +22,9 @@ namespace nature_of_code_chapter_05_example_08
 
     void Vehicle::Follow(Path *path, P5SDL *p5sdl, bool debug)
     {
-        auto future = velocity_.Clone();
+        auto future = _velocity.Clone();
         future.SetMag(50);
-        future.Add(position_);
+        future.Add(_position);
 
         bool target_found = false;
         Vector target;
@@ -58,7 +58,7 @@ namespace nature_of_code_chapter_05_example_08
             p5sdl->Stroke(0);
             p5sdl->StrokeWeight(1);
             p5sdl->Fill(127);
-            p5sdl->Line(position_.x, position_.y, future.x, future.y);
+            p5sdl->Line(_position.x, _position.y, future.x, future.y);
             p5sdl->Circle(future.x, future.y, 4);
             p5sdl->Circle(normal.x, normal.y, 4);
             p5sdl->Line(future.x, future.y, normal.x, normal.y);
@@ -71,47 +71,47 @@ namespace nature_of_code_chapter_05_example_08
   
     void Vehicle::Seek(Vector target)
     {
-        auto desired = Vector::Sub(target, position_);
+        auto desired = Vector::Sub(target, _position);
         if (desired.Mag() == 0)
             return;
         desired.Normalize();
-        desired.Mult(max_speed_);
-        auto steer = Vector::Sub(desired, velocity_);
-        steer.Limit(max_force_);
+        desired.Mult(_max_speed);
+        auto steer = Vector::Sub(desired, _velocity);
+        steer.Limit(_max_force);
         ApplyForce(steer);
     }
 
     void Vehicle::Update(void)
     {
-        velocity_.Add(acceleration_);
-        velocity_.Limit(max_speed_);
-        position_.Add(velocity_);
-        acceleration_.Mult(0);
+        _velocity.Add(_acceleration);
+        _velocity.Limit(_max_speed);
+        _position.Add(_velocity);
+        _acceleration.Mult(0);
     }
 
     void Vehicle::ApplyForce(Vector force)
     {
-        acceleration_.Add(force);
+        _acceleration.Add(force);
     }
 
     void Vehicle::Borders(Path *path)
     {
-        if (position_.x > path->GetEnd().x + r_) {
-            position_.x = path->GetStart().x - r_;
-            position_.y = path->GetStart().y + (position_.y - path->GetEnd().y);
+        if (_position.x > path->GetEnd().x + _r) {
+            _position.x = path->GetStart().x - _r;
+            _position.y = path->GetStart().y + (_position.y - path->GetEnd().y);
         }
     }
 
     void Vehicle::Show(P5SDL *p5sdl)
     {
-        p5sdl->Translate(position_.x, position_.y);
-        auto angle = velocity_.Heading();
+        p5sdl->Translate(_position.x, _position.y);
+        auto angle = _velocity.Heading();
         p5sdl->Rotate(angle);
         SDL_Point vertices[] = { 
-            {r_ * 2, 0}, 
-            {-r_ * 2, -r_}, 
-            {-r_ * 2, r_},
-            {r_ * 2, 0},
+            {_r * 2, 0}, 
+            {-_r * 2, -_r}, 
+            {-_r * 2, _r},
+            {_r * 2, 0},
         };
         p5sdl->Stroke(kColorBlack);
         p5sdl->Lines(vertices, sizeof(vertices) / sizeof(SDL_Point));

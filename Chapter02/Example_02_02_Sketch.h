@@ -13,8 +13,8 @@ namespace nature_of_code_chapter_02_example_02
         bool Setup() override;
         bool Draw() override;
     private:
-        Mover       *moverA_;
-        Mover       *moverB_;
+        Mover   *_moverA;
+        Mover   *_moverB;
     };
 }
 

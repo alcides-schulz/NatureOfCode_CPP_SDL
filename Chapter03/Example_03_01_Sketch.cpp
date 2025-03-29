@@ -4,9 +4,9 @@ namespace nature_of_code_chapter_03_example_01
 {
     bool Sketch::Setup(void)
     {
-        angle_ = 0;
-        angleVelocity_ = 0;
-        angleAcceleration_ = 0.0001f;
+        _angle = 0;
+        _angle_velocity = 0;
+        _angle_acceleration = 0.0001f;
     
         return true;
     }
@@ -21,15 +21,15 @@ namespace nature_of_code_chapter_03_example_01
         int line_y2 = 0;
     
         Translate(Width() / 2, Height() / 2);
-        Rotate(angle_);
+        Rotate(_angle);
         Stroke(kColorBlack);
         Line(line_x1, line_y1, line_x2, line_y2);
         Fill(127);
         Circle(line_x1, line_y1, 16);
         Circle(line_x2, line_y2, 16);
     
-        angleVelocity_ += angleAcceleration_;
-        angle_ += angleVelocity_;
+        _angle_velocity += _angle_acceleration;
+        _angle += _angle_velocity;
     
         return true;
     }

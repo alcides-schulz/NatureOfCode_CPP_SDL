@@ -14,8 +14,8 @@ namespace nature_of_code_chapter_04_example_08
         bool Draw(void) override;
         void Cleanup(void) override;
     private:
-        Emitter     *emitter_;
-        SDL_Texture* texture_;
+        Emitter     *_emitter;
+        SDL_Texture* _texture;
     };
 }
 

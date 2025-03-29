@@ -5,11 +5,11 @@ namespace nature_of_code_chapter_02_example_09
     
     bool Sketch::Setup()
     {
-        for (int i = 0; i < std::size(body_); i++) {
+        for (int i = 0; i < std::size(_body); i++) {
             auto x = Utils::Random((float)Width());
             auto y = Utils::Random((float)Height());
             auto m = (int)Utils::Random(1, 4);
-            body_[i] = new Body(Vector(x, y), m);
+            _body[i] = new Body(Vector(x, y), m);
         }
     
         return true;
@@ -19,16 +19,16 @@ namespace nature_of_code_chapter_02_example_09
     {
         Background(255);
     
-        for (int i = 0; i < std::size(body_); i++) {
-            for (int j = 0; j < std::size(body_); j++) {
+        for (int i = 0; i < std::size(_body); i++) {
+            for (int j = 0; j < std::size(_body); j++) {
                 if (i == j)
                     continue;
-                body_[i]->Attract(body_[j]);
+                _body[i]->Attract(_body[j]);
             }
         }
-        for (int i = 0; i < std::size(body_); i++) {
-            body_[i]->Update();
-            body_[i]->Show(this);
+        for (int i = 0; i < std::size(_body); i++) {
+            _body[i]->Update();
+            _body[i]->Show(this);
         }
     
         return true;

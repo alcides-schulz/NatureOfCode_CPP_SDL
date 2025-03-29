@@ -4,11 +4,11 @@ namespace nature_of_code_chapter_02_example_08
 {
     bool Sketch::Setup()
     {
-        bodyA_ = new Body(Vector(320, 40), 8);
-        bodyB_ = new Body(Vector(320, 200), 8);
+        _bodyA = new Body(Vector(320, 40), 8);
+        _bodyB = new Body(Vector(320, 200), 8);
     
-        bodyA_->SetVelocity(Vector(1, 0));
-        bodyB_->SetVelocity(Vector(-1, 0));
+        _bodyA->SetVelocity(Vector(1, 0));
+        _bodyB->SetVelocity(Vector(-1, 0));
     
         return true;
     }
@@ -17,14 +17,14 @@ namespace nature_of_code_chapter_02_example_08
     {
         Background(255);
     
-        bodyA_->Attract(bodyB_);
-        bodyB_->Attract(bodyA_);
+        _bodyA->Attract(_bodyB);
+        _bodyB->Attract(_bodyA);
     
-        bodyA_->Update();
-        bodyA_->Show(this);
+        _bodyA->Update();
+        _bodyA->Show(this);
     
-        bodyB_->Update();
-        bodyB_->Show(this);
+        _bodyB->Update();
+        _bodyB->Show(this);
     
         return true;
     }

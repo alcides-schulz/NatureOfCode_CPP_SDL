@@ -9,15 +9,15 @@ namespace nature_of_code_chapter_04_example_08
             std::cerr << "Image could not be loaded! SDL_Error: " << IMG_GetError() << std::endl;
             return false;
         }
-        texture_ = SDL_CreateTextureFromSurface(Renderer(), surface);
+        _texture = SDL_CreateTextureFromSurface(Renderer(), surface);
         SDL_FreeSurface(surface);
-        if (!texture_) {
+        if (!_texture) {
             std::cerr << "Texture could not be created! SDL_Error: " << SDL_GetError() << std::endl;
             return false;
         }
-        SDL_SetTextureBlendMode(texture_, SDL_BLENDMODE_BLEND); // setup for alpha blending in Particle.Show
+        SDL_SetTextureBlendMode(_texture, SDL_BLENDMODE_BLEND); // setup for alpha blending in Particle.Show
 
-        emitter_ = new Emitter(Width() / 2, Height() - 75, texture_);
+        _emitter = new Emitter(Width() / 2, Height() - 75, _texture);
 
         return true;
     }
@@ -28,11 +28,11 @@ namespace nature_of_code_chapter_04_example_08
 
         auto dx = (float)Utils::Map(MousePosition().x, 0, Width(), -0.2, 0.2);
         auto wind = Vector(dx, 0.0f);
-        emitter_->ApplyForce(wind);
-        emitter_->Run(this);
+        _emitter->ApplyForce(wind);
+        _emitter->Run(this);
 
         for (int i = 0; i < 3; i++) {
-            emitter_->AddParticle();
+            _emitter->AddParticle();
         }
 
         // Draw arrow to indicate wind direction/force
@@ -52,7 +52,7 @@ namespace nature_of_code_chapter_04_example_08
 
     void Sketch::Cleanup(void)
     {
-        SDL_DestroyTexture(texture_);
+        SDL_DestroyTexture(_texture);
     }
 }
 

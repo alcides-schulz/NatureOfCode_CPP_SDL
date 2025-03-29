@@ -14,8 +14,8 @@ namespace nature_of_code_chapter_04_example_07
         bool Setup(void) override;
         bool Draw(void) override;
     private:
-        Emitter     *emitter_;
-        Repeller    *repeller_;
+        Emitter     *_emitter;
+        Repeller    *_repeller;
     };
 }
 

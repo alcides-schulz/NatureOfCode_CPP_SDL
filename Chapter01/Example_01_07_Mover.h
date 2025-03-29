@@ -9,13 +9,13 @@ namespace nature_of_code_chapter_01_example_07
     class Mover
     {
     public:
-        Mover(Vector position, Vector velocity) : position_(position), velocity_(velocity) { };
+        Mover(Vector position, Vector velocity) : _position(position), _velocity(velocity) { };
         void Update(void);
         void Show(P5SDL *p5sdl);
         void CheckEdges(P5SDL *p5sdl);
     private:
-        Vector position_;
-        Vector velocity_;
+        Vector _position;
+        Vector _velocity;
     };
 }
 

@@ -13,9 +13,9 @@ namespace nature_of_code_chapter_05_example_03
         bool Setup(void) override;
         bool Draw(void) override;
     private:
-        Vehicle     *vehicle_;
-        int         offset_;
-        bool        debug_;
+        Vehicle *_vehicle;
+        int     _offset;
+        bool    _debug;
     };
 }
 

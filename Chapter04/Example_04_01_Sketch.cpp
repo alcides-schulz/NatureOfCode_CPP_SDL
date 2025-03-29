@@ -4,7 +4,7 @@ namespace nature_of_code_chapter_04_example_01
 {
     bool Sketch::Setup(void)
     {
-        particle_ = new Particle(Width() / 2, 10);
+        _particle = new Particle(Width() / 2, 10);
         SDL_SetRenderDrawBlendMode(Renderer(), SDL_BLENDMODE_BLEND);
         return true;
     }
@@ -13,14 +13,14 @@ namespace nature_of_code_chapter_04_example_01
     {
         Background(255);
     
-        particle_->Update();
-        particle_->Show(this);
+        _particle->Update();
+        _particle->Show(this);
     
         auto gravity = Vector(0.0f, 0.1f);
-        particle_->ApplyForce(gravity);
+        _particle->ApplyForce(gravity);
     
-        if (particle_->IsDead()) {
-            particle_ = new Particle(Width() / 2, 10);
+        if (_particle->IsDead()) {
+            _particle = new Particle(Width() / 2, 10);
             cout << "particle is dead !" << endl;
         }
     

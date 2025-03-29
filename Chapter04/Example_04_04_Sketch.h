@@ -13,7 +13,7 @@ namespace nature_of_code_chapter_04_example_04
         bool Setup(void) override;
         bool Draw(void) override;
     private:
-        vector<Emitter     *>   emitters_;
+        vector<Emitter *>   _emitters;
     };
 }
 
