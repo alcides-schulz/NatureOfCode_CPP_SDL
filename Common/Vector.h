@@ -20,7 +20,7 @@ public:
     void Normalize();
     void SetMag(float max);
     void Limit(float max);
-    double Heading(void);
+    float Heading(void);
     Vector Clone(void);
     float Dot(Vector other);
     static Vector Random2D();

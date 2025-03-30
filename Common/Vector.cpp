@@ -51,9 +51,9 @@ void Vector::Limit(float max)
     }
 }
 
-double Vector::Heading(void)
+float Vector::Heading(void)
 {
-    return std::atan2((double)y, (double)x);
+    return std::atan2(y, x);
 }
 
 Vector Vector::Clone(void)
