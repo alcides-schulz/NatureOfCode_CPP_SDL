@@ -117,6 +117,8 @@
     <ClCompile Include="Chapter05\Example_05_08_Vehicle.cpp" />
     <ClCompile Include="Chapter05\Example_05_09_Sketch.cpp" />
     <ClCompile Include="Chapter05\Example_05_09_Vehicle.cpp" />
+    <ClCompile Include="Chapter05\Example_05_10_Sketch.cpp" />
+    <ClCompile Include="Chapter05\Example_05_10_Vehicle.cpp" />
     <ClCompile Include="Common\PerlinNoise2D.cpp" />
     <ClCompile Include="Common\Utils.h" />
     <ClCompile Include="Common\Vector.cpp" />
@@ -225,6 +227,8 @@
     <ClInclude Include="Chapter05\Example_05_08_Vehicle.h" />
     <ClInclude Include="Chapter05\Example_05_09_Sketch.h" />
     <ClInclude Include="Chapter05\Example_05_09_Vehicle.h" />
+    <ClInclude Include="Chapter05\Example_05_10_Sketch.h" />
+    <ClInclude Include="Chapter05\Example_05_10_Vehicle.h" />
     <ClInclude Include="Common\PerlinNoise2D.h" />
     <ClInclude Include="Common\Vector.h" />
     <ClInclude Include="Common\P5SDL.h" />

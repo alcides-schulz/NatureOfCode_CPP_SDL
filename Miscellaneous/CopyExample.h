@@ -4,8 +4,8 @@
 #include "../Common/P5SDL.h"
 
 #define CHAPTER "05"
-#define FROM_EXAMPLE "07"
-#define TO_EXAMPLE "08"
+#define FROM_EXAMPLE "09"
+#define TO_EXAMPLE "10"
 
 #define COPY_FOLDER ".\\Chapter" CHAPTER
 #define FROM_NUMBER CHAPTER "_" FROM_EXAMPLE
