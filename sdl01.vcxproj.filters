@@ -26,6 +26,45 @@
     <Filter Include="Source Files\Miscellaneous">
       <UniqueIdentifier>{2ddfdc83-e54d-4d67-8aa6-9309de9c1e7c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Chapter05\Example_05_01">
+      <UniqueIdentifier>{5928016a-f6cb-4ed8-9841-16b8ef24659b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Chapter05\Example_05_02">
+      <UniqueIdentifier>{c1775315-e48c-4bb4-af55-8a6fa5a6f003}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Chapter05\Example_05_03">
+      <UniqueIdentifier>{10f05b15-bcca-4a1a-9dae-774ae206492f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Chapter05\Example_05_04">
+      <UniqueIdentifier>{d9dd6eb1-62da-4a83-b6f0-0f1275e50efa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Chapter05\Example_05_05">
+      <UniqueIdentifier>{f2f436dc-7c10-4a46-be2d-faffab8f8131}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Chapter05\Example_05_06">
+      <UniqueIdentifier>{ae1337c5-bcd2-48e5-8269-fc2b0f92cfdb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Chapter05\Example_05_07">
+      <UniqueIdentifier>{60453a00-c335-4217-b85a-a5de0390531c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Chapter05\Example_05_08">
+      <UniqueIdentifier>{f568bee7-c905-444a-891e-c93596622f59}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Chapter05\Example_05_09">
+      <UniqueIdentifier>{1b1b67e4-b79d-4c06-9d12-906f1e9cae2a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Chapter05\Example_05_10">
+      <UniqueIdentifier>{4b83cfbc-6aad-4fbc-864a-3cde3e8aa98f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Chapter05\Example_05_11">
+      <UniqueIdentifier>{3a9d79d1-09de-45c9-a377-5efd92ef06d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Chapter05\Example_05_12">
+      <UniqueIdentifier>{f132f14a-d010-4d56-a43b-f84ab8ed8943}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Chapter05\Example_05_13">
+      <UniqueIdentifier>{ad49495a-332f-445a-8a38-139e09485b8b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Chapter01\Example_01_01_Sketch.h">
@@ -259,101 +298,116 @@
     <ClInclude Include="Chapter04\Example_04_08_Sketch.h">
       <Filter>Source Files\Chapter04</Filter>
     </ClInclude>
-    <ClInclude Include="Chapter05\Example_05_01_Sketch.h">
-      <Filter>Source Files\Chapter05</Filter>
-    </ClInclude>
-    <ClInclude Include="Chapter05\Example_05_01_Vehicle.h">
-      <Filter>Source Files\Chapter05</Filter>
-    </ClInclude>
-    <ClInclude Include="Chapter05\Example_05_02_Sketch.h">
-      <Filter>Source Files\Chapter05</Filter>
-    </ClInclude>
-    <ClInclude Include="Chapter05\Example_05_02_Vehicle.h">
-      <Filter>Source Files\Chapter05</Filter>
-    </ClInclude>
-    <ClInclude Include="Chapter05\Example_05_03_Sketch.h">
-      <Filter>Source Files\Chapter05</Filter>
-    </ClInclude>
-    <ClInclude Include="Chapter05\Example_05_03_Vehicle.h">
-      <Filter>Source Files\Chapter05</Filter>
-    </ClInclude>
     <ClInclude Include="Common\PerlinNoise2D.h">
       <Filter>Source Files\Common</Filter>
     </ClInclude>
-    <ClInclude Include="Chapter05\Example_05_04_Sketch.h">
-      <Filter>Source Files\Chapter05</Filter>
+    <ClInclude Include="Common\Vector.h">
+      <Filter>Source Files\Common</Filter>
     </ClInclude>
-    <ClInclude Include="Chapter05\Example_05_04_Vehicle.h">
-      <Filter>Source Files\Chapter05</Filter>
+    <ClInclude Include="Common\P5SDL.h">
+      <Filter>Source Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter05\Example_05_01_Sketch.h">
+      <Filter>Source Files\Chapter05\Example_05_01</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter05\Example_05_01_Vehicle.h">
+      <Filter>Source Files\Chapter05\Example_05_01</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter05\Example_05_02_Sketch.h">
+      <Filter>Source Files\Chapter05\Example_05_02</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter05\Example_05_02_Vehicle.h">
+      <Filter>Source Files\Chapter05\Example_05_02</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter05\Example_05_03_Sketch.h">
+      <Filter>Source Files\Chapter05\Example_05_03</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter05\Example_05_03_Vehicle.h">
+      <Filter>Source Files\Chapter05\Example_05_03</Filter>
     </ClInclude>
     <ClInclude Include="Chapter05\Example_05_04_FlowField.h">
-      <Filter>Source Files\Chapter05</Filter>
+      <Filter>Source Files\Chapter05\Example_05_04</Filter>
     </ClInclude>
-    <ClInclude Include="Chapter05\Example_05_05_Sketch.h">
-      <Filter>Source Files\Chapter05</Filter>
+    <ClInclude Include="Chapter05\Example_05_04_Sketch.h">
+      <Filter>Source Files\Chapter05\Example_05_04</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter05\Example_05_04_Vehicle.h">
+      <Filter>Source Files\Chapter05\Example_05_04</Filter>
     </ClInclude>
     <ClInclude Include="Chapter05\Example_05_05_Path.h">
-      <Filter>Source Files\Chapter05</Filter>
+      <Filter>Source Files\Chapter05\Example_05_05</Filter>
     </ClInclude>
-    <ClInclude Include="Tests\CircleTest.h">
+    <ClInclude Include="Chapter05\Example_05_05_Sketch.h">
+      <Filter>Source Files\Chapter05\Example_05_05</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter05\Example_05_06_Path.h">
+      <Filter>Source Files\Chapter05\Example_05_06</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter05\Example_05_06_Sketch.h">
+      <Filter>Source Files\Chapter05\Example_05_06</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter05\Example_05_06_Vehicle.h">
+      <Filter>Source Files\Chapter05\Example_05_06</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter05\Example_05_07_Path.h">
+      <Filter>Source Files\Chapter05\Example_05_07</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter05\Example_05_07_Sketch.h">
+      <Filter>Source Files\Chapter05\Example_05_07</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter05\Example_05_08_Path.h">
+      <Filter>Source Files\Chapter05\Example_05_08</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter05\Example_05_08_Sketch.h">
+      <Filter>Source Files\Chapter05\Example_05_08</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter05\Example_05_08_Vehicle.h">
+      <Filter>Source Files\Chapter05\Example_05_08</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter05\Example_05_09_Sketch.h">
+      <Filter>Source Files\Chapter05\Example_05_09</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter05\Example_05_09_Vehicle.h">
+      <Filter>Source Files\Chapter05\Example_05_09</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter05\Example_05_10_Sketch.h">
+      <Filter>Source Files\Chapter05\Example_05_10</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter05\Example_05_10_Vehicle.h">
+      <Filter>Source Files\Chapter05\Example_05_10</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter05\Example_05_11_Boid.h">
+      <Filter>Source Files\Chapter05\Example_05_11</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter05\Example_05_11_Flock.h">
+      <Filter>Source Files\Chapter05\Example_05_11</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter05\Example_05_11_Sketch.h">
+      <Filter>Source Files\Chapter05\Example_05_11</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter05\Example_05_12_Boid.h">
+      <Filter>Source Files\Chapter05\Example_05_12</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter05\Example_05_12_Flock.h">
+      <Filter>Source Files\Chapter05\Example_05_12</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter05\Example_05_12_Sketch.h">
+      <Filter>Source Files\Chapter05\Example_05_12</Filter>
+    </ClInclude>
+    <ClInclude Include="Miscellaneous\CircleTest.h">
       <Filter>Source Files\Miscellaneous</Filter>
     </ClInclude>
     <ClInclude Include="Miscellaneous\CopyExample.h">
       <Filter>Source Files\Miscellaneous</Filter>
     </ClInclude>
-    <ClInclude Include="Tests\GenerateExampleInitialCode.h">
+    <ClInclude Include="Miscellaneous\GenerateExampleInitialCode.h">
       <Filter>Source Files\Miscellaneous</Filter>
     </ClInclude>
-    <ClInclude Include="Chapter05\Example_05_06_Path.h">
-      <Filter>Source Files\Chapter05</Filter>
+    <ClInclude Include="Chapter05\Example_05_13_Sketch.h">
+      <Filter>Source Files\Chapter05\Example_05_13</Filter>
     </ClInclude>
-    <ClInclude Include="Chapter05\Example_05_06_Sketch.h">
-      <Filter>Source Files\Chapter05</Filter>
-    </ClInclude>
-    <ClInclude Include="Chapter05\Example_05_06_Vehicle.h">
-      <Filter>Source Files\Chapter05</Filter>
-    </ClInclude>
-    <ClInclude Include="Common\Vector.h">
-      <Filter>Source Files\Common</Filter>
-    </ClInclude>
-    <ClInclude Include="Chapter05\Example_05_07_Path.h">
-      <Filter>Source Files\Chapter05</Filter>
-    </ClInclude>
-    <ClInclude Include="Chapter05\Example_05_07_Sketch.h">
-      <Filter>Source Files\Chapter05</Filter>
-    </ClInclude>
-    <ClInclude Include="Chapter05\Example_05_08_Path.h">
-      <Filter>Source Files\Chapter05</Filter>
-    </ClInclude>
-    <ClInclude Include="Chapter05\Example_05_08_Sketch.h">
-      <Filter>Source Files\Chapter05</Filter>
-    </ClInclude>
-    <ClInclude Include="Chapter05\Example_05_08_Vehicle.h">
-      <Filter>Source Files\Chapter05</Filter>
-    </ClInclude>
-    <ClInclude Include="Chapter05\Example_05_09_Vehicle.h">
-      <Filter>Source Files\Chapter05</Filter>
-    </ClInclude>
-    <ClInclude Include="Common\P5SDL.h">
-      <Filter>Source Files\Common</Filter>
-    </ClInclude>
-    <ClInclude Include="Chapter05\Example_05_09_Sketch.h">
-      <Filter>Source Files\Chapter05</Filter>
-    </ClInclude>
-    <ClInclude Include="Chapter05\Example_05_10_Sketch.h">
-      <Filter>Source Files\Chapter05</Filter>
-    </ClInclude>
-    <ClInclude Include="Chapter05\Example_05_10_Vehicle.h">
-      <Filter>Source Files\Chapter05</Filter>
-    </ClInclude>
-    <ClInclude Include="Chapter05\Example_05_11_Sketch.h">
-      <Filter>Source Files\Chapter05</Filter>
-    </ClInclude>
-    <ClInclude Include="Chapter05\Example_05_11_Boid.h">
-      <Filter>Source Files\Chapter05</Filter>
-    </ClInclude>
-    <ClInclude Include="Chapter05\Example_05_11_Flock.h">
-      <Filter>Source Files\Chapter05</Filter>
+    <ClInclude Include="Chapter05\Example_05_13_Quadtree.h">
+      <Filter>Source Files\Chapter05\Example_05_13</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -594,101 +648,116 @@
     <ClCompile Include="Chapter04\Example_04_08_Sketch.cpp">
       <Filter>Source Files\Chapter04</Filter>
     </ClCompile>
-    <ClCompile Include="Chapter05\Example_05_01_Sketch.cpp">
-      <Filter>Source Files\Chapter05</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter05\Example_05_01_Vehicle.cpp">
-      <Filter>Source Files\Chapter05</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter05\Example_05_02_Sketch.cpp">
-      <Filter>Source Files\Chapter05</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter05\Example_05_02_Vehicle.cpp">
-      <Filter>Source Files\Chapter05</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter05\Example_05_03_Sketch.cpp">
-      <Filter>Source Files\Chapter05</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter05\Example_05_03_Vehicle.cpp">
-      <Filter>Source Files\Chapter05</Filter>
-    </ClCompile>
     <ClCompile Include="Common\PerlinNoise2D.cpp">
       <Filter>Source Files\Common</Filter>
     </ClCompile>
-    <ClCompile Include="Chapter05\Example_05_04_Sketch.cpp">
-      <Filter>Source Files\Chapter05</Filter>
+    <ClCompile Include="Common\Vector.cpp">
+      <Filter>Source Files\Common</Filter>
     </ClCompile>
-    <ClCompile Include="Chapter05\Example_05_04_Vehicle.cpp">
-      <Filter>Source Files\Chapter05</Filter>
+    <ClCompile Include="Common\P5SDL.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter05\Example_05_01_Sketch.cpp">
+      <Filter>Source Files\Chapter05\Example_05_01</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter05\Example_05_01_Vehicle.cpp">
+      <Filter>Source Files\Chapter05\Example_05_01</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter05\Example_05_02_Sketch.cpp">
+      <Filter>Source Files\Chapter05\Example_05_02</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter05\Example_05_02_Vehicle.cpp">
+      <Filter>Source Files\Chapter05\Example_05_02</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter05\Example_05_03_Sketch.cpp">
+      <Filter>Source Files\Chapter05\Example_05_03</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter05\Example_05_03_Vehicle.cpp">
+      <Filter>Source Files\Chapter05\Example_05_03</Filter>
     </ClCompile>
     <ClCompile Include="Chapter05\Example_05_04_FlowField.cpp">
-      <Filter>Source Files\Chapter05</Filter>
+      <Filter>Source Files\Chapter05\Example_05_04</Filter>
     </ClCompile>
-    <ClCompile Include="Chapter05\Example_05_05_Sketch.cpp">
-      <Filter>Source Files\Chapter05</Filter>
+    <ClCompile Include="Chapter05\Example_05_04_Sketch.cpp">
+      <Filter>Source Files\Chapter05\Example_05_04</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter05\Example_05_04_Vehicle.cpp">
+      <Filter>Source Files\Chapter05\Example_05_04</Filter>
     </ClCompile>
     <ClCompile Include="Chapter05\Example_05_05_Path.cpp">
-      <Filter>Source Files\Chapter05</Filter>
+      <Filter>Source Files\Chapter05\Example_05_05</Filter>
     </ClCompile>
-    <ClCompile Include="Tests\CircleTest.cpp">
+    <ClCompile Include="Chapter05\Example_05_05_Sketch.cpp">
+      <Filter>Source Files\Chapter05\Example_05_05</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter05\Example_05_06_Path.cpp">
+      <Filter>Source Files\Chapter05\Example_05_06</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter05\Example_05_06_Sketch.cpp">
+      <Filter>Source Files\Chapter05\Example_05_06</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter05\Example_05_06_Vehicle.cpp">
+      <Filter>Source Files\Chapter05\Example_05_06</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter05\Example_05_07_Path.cpp">
+      <Filter>Source Files\Chapter05\Example_05_07</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter05\Example_05_07_Sketch.cpp">
+      <Filter>Source Files\Chapter05\Example_05_07</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter05\Example_05_08_Path.cpp">
+      <Filter>Source Files\Chapter05\Example_05_08</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter05\Example_05_08_Sketch.cpp">
+      <Filter>Source Files\Chapter05\Example_05_08</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter05\Example_05_08_Vehicle.cpp">
+      <Filter>Source Files\Chapter05\Example_05_08</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter05\Example_05_09_Sketch.cpp">
+      <Filter>Source Files\Chapter05\Example_05_09</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter05\Example_05_09_Vehicle.cpp">
+      <Filter>Source Files\Chapter05\Example_05_09</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter05\Example_05_10_Sketch.cpp">
+      <Filter>Source Files\Chapter05\Example_05_10</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter05\Example_05_10_Vehicle.cpp">
+      <Filter>Source Files\Chapter05\Example_05_10</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter05\Example_05_11_Boid.cpp">
+      <Filter>Source Files\Chapter05\Example_05_11</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter05\Example_05_11_Sketch.cpp">
+      <Filter>Source Files\Chapter05\Example_05_11</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter05\Example_05_12_Boid.cpp">
+      <Filter>Source Files\Chapter05\Example_05_12</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter05\Example_05_12_Sketch.cpp">
+      <Filter>Source Files\Chapter05\Example_05_12</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter05\Example_05_11_Flock.cpp">
+      <Filter>Source Files\Chapter05\Example_05_11</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter05\Example_05_12_Flock.cpp">
+      <Filter>Source Files\Chapter05\Example_05_12</Filter>
+    </ClCompile>
+    <ClCompile Include="Miscellaneous\CircleTest.cpp">
       <Filter>Source Files\Miscellaneous</Filter>
     </ClCompile>
     <ClCompile Include="Miscellaneous\CopyExample.cpp">
       <Filter>Source Files\Miscellaneous</Filter>
     </ClCompile>
-    <ClCompile Include="Tests\GenerateExampleInitialCode.cpp">
+    <ClCompile Include="Miscellaneous\GenerateExampleInitialCode.cpp">
       <Filter>Source Files\Miscellaneous</Filter>
     </ClCompile>
-    <ClCompile Include="Chapter05\Example_05_06_Path.cpp">
-      <Filter>Source Files\Chapter05</Filter>
+    <ClCompile Include="Chapter05\Example_05_13_Sketch.cpp">
+      <Filter>Source Files\Chapter05\Example_05_13</Filter>
     </ClCompile>
-    <ClCompile Include="Chapter05\Example_05_06_Sketch.cpp">
-      <Filter>Source Files\Chapter05</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter05\Example_05_06_Vehicle.cpp">
-      <Filter>Source Files\Chapter05</Filter>
-    </ClCompile>
-    <ClCompile Include="Common\Vector.cpp">
-      <Filter>Source Files\Common</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter05\Example_05_07_Path.cpp">
-      <Filter>Source Files\Chapter05</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter05\Example_05_07_Sketch.cpp">
-      <Filter>Source Files\Chapter05</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter05\Example_05_08_Path.cpp">
-      <Filter>Source Files\Chapter05</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter05\Example_05_08_Sketch.cpp">
-      <Filter>Source Files\Chapter05</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter05\Example_05_08_Vehicle.cpp">
-      <Filter>Source Files\Chapter05</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter05\Example_05_09_Vehicle.cpp">
-      <Filter>Source Files\Chapter05</Filter>
-    </ClCompile>
-    <ClCompile Include="Common\P5SDL.cpp">
-      <Filter>Source Files\Common</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter05\Example_05_09_Sketch.cpp">
-      <Filter>Source Files\Chapter05</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter05\Example_05_10_Sketch.cpp">
-      <Filter>Source Files\Chapter05</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter05\Example_05_10_Vehicle.cpp">
-      <Filter>Source Files\Chapter05</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter05\Example_05_11_Sketch.cpp">
-      <Filter>Source Files\Chapter05</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter05\Example_05_11_Boid.cpp">
-      <Filter>Source Files\Chapter05</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter05\Example_05_05_Flock.cpp">
-      <Filter>Source Files\Chapter05</Filter>
+    <ClCompile Include="Chapter05\Example_05_13_Quadtree.cpp">
+      <Filter>Source Files\Chapter05\Example_05_13</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

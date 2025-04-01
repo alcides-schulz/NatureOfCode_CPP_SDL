@@ -105,7 +105,7 @@
     <ClCompile Include="Chapter05\Example_05_04_FlowField.cpp" />
     <ClCompile Include="Chapter05\Example_05_04_Sketch.cpp" />
     <ClCompile Include="Chapter05\Example_05_04_Vehicle.cpp" />
-    <ClCompile Include="Chapter05\Example_05_05_Flock.cpp" />
+    <ClCompile Include="Chapter05\Example_05_11_Flock.cpp" />
     <ClCompile Include="Chapter05\Example_05_05_Path.cpp" />
     <ClCompile Include="Chapter05\Example_05_05_Sketch.cpp" />
     <ClCompile Include="Chapter05\Example_05_06_Path.cpp" />
@@ -122,14 +122,19 @@
     <ClCompile Include="Chapter05\Example_05_10_Vehicle.cpp" />
     <ClCompile Include="Chapter05\Example_05_11_Boid.cpp" />
     <ClCompile Include="Chapter05\Example_05_11_Sketch.cpp" />
+    <ClCompile Include="Chapter05\Example_05_12_Boid.cpp" />
+    <ClCompile Include="Chapter05\Example_05_12_Flock.cpp" />
+    <ClCompile Include="Chapter05\Example_05_12_Sketch.cpp" />
+    <ClCompile Include="Chapter05\Example_05_13_Quadtree.cpp" />
+    <ClCompile Include="Chapter05\Example_05_13_Sketch.cpp" />
     <ClCompile Include="Common\PerlinNoise2D.cpp" />
     <ClCompile Include="Common\Utils.h" />
     <ClCompile Include="Common\Vector.cpp" />
     <ClCompile Include="Common\P5SDL.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Miscellaneous\CircleTest.cpp" />
     <ClCompile Include="Miscellaneous\CopyExample.cpp" />
-    <ClCompile Include="Tests\CircleTest.cpp" />
-    <ClCompile Include="Tests\GenerateExampleInitialCode.cpp" />
+    <ClCompile Include="Miscellaneous\GenerateExampleInitialCode.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Chapter01\Example_01_01_Sketch.h" />
@@ -235,12 +240,17 @@
     <ClInclude Include="Chapter05\Example_05_11_Boid.h" />
     <ClInclude Include="Chapter05\Example_05_11_Flock.h" />
     <ClInclude Include="Chapter05\Example_05_11_Sketch.h" />
+    <ClInclude Include="Chapter05\Example_05_12_Boid.h" />
+    <ClInclude Include="Chapter05\Example_05_12_Flock.h" />
+    <ClInclude Include="Chapter05\Example_05_12_Sketch.h" />
+    <ClInclude Include="Chapter05\Example_05_13_Quadtree.h" />
+    <ClInclude Include="Chapter05\Example_05_13_Sketch.h" />
     <ClInclude Include="Common\PerlinNoise2D.h" />
     <ClInclude Include="Common\Vector.h" />
     <ClInclude Include="Common\P5SDL.h" />
+    <ClInclude Include="Miscellaneous\CircleTest.h" />
     <ClInclude Include="Miscellaneous\CopyExample.h" />
-    <ClInclude Include="Tests\CircleTest.h" />
-    <ClInclude Include="Tests\GenerateExampleInitialCode.h" />
+    <ClInclude Include="Miscellaneous\GenerateExampleInitialCode.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Readme.md" />

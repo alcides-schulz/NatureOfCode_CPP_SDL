@@ -126,26 +126,20 @@ void P5SDL::Circle(int center_x, int center_y, int diameter)
 
 void P5SDL::Rect(int x, int y, int width, int height)
 {
-    std::vector<SDL_Point> corner = {
-        {x, y},
-        {x + width, y},
-        {x + width, y + height},
-        {x, y + height}
-    };
     if (rect_mode_ == kRectCorner) {
-        for (int i = 0; i < 4; i++) {
-            auto next = (i + 1) % 4;
-            Line(corner[i].x, corner[i].y, corner[next].x, corner[next].y);
-        }
+        Line(x, y, x + width, y);
+        Line(x + width, y, x + width, y + height);
+        Line(x + width, y + height, x, y + height);
+        Line(x, y + height, x, y);
         return;
     }
     if (rect_mode_ == kRectCenter) {
-        auto center_x = x + width / 2;
-        auto center_y = y + height / 2;
-        for (int i = 0; i < 4; i++) {
-            auto next = (i + 1) % 4;
-            Line(corner[i].x - center_x, corner[i].y - center_y, corner[next].x - center_x, corner[next].y - center_y);
-        }
+        auto middle_x = width / 2;
+        auto middle_y = height / 2;
+        Line(x - middle_x, y - middle_y, x + middle_x, y - middle_y);
+        Line(x + middle_x, y - middle_y, x + middle_x, y + middle_y);
+        Line(x + middle_x, y + middle_y, x - middle_x, y + middle_y);
+        Line(x - middle_x, y + middle_y, x - middle_x, y - middle_y);
         return;
     }
     cerr << "ERROR: Invalid rectangle mode: " << rect_mode_ << endl;

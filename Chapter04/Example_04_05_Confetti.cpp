@@ -11,7 +11,7 @@ namespace nature_of_code_chapter_04_example_05
         p5sdl->StrokeWeight(2);
         p5sdl->Rotate(angle);
         p5sdl->Translate(_position.x, _position.y);
-        p5sdl->Rect((int)_position.x, (int)_position.y, 8, 8);
+        p5sdl->Rect(0, 0, 8, 8);
         p5sdl->ResetMatrix();
     }
 }

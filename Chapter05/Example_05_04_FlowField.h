@@ -16,7 +16,7 @@ namespace nature_of_code_chapter_05_example_04
             _resolution = resolution;
             _cols = width / _resolution;
             _rows = height / _resolution;
-            _field = std::vector<std::vector<Vector>>(_cols, std::vector<Vector>(_rows));
+            _field = vector<vector<Vector>>(_cols, vector<Vector>(_rows));
             Init();
         };
         void Init(void);

@@ -21,7 +21,7 @@ namespace nature_of_code_chapter_05_example_04
 
     void FlowField::Show(P5SDL *p5sdl)
     {
-        p5sdl->Stroke(kColorBlack);
+        p5sdl->Stroke(0);
         for (int i = 0; i < _cols; i++) {
             for (int j = 0; j < _rows; j++) {
                 auto w = p5sdl->Width() / _cols;
@@ -37,8 +37,8 @@ namespace nature_of_code_chapter_05_example_04
 
     Vector FlowField::Lookup(Vector position)
     {
-        auto column = Utils::Constrain((int)std::floor(position.x / _resolution), 0, _cols - 1);
-        auto row = Utils::Constrain((int)std::floor(position.y / _resolution), 0, _rows - 1);
+        auto column = Utils::Constrain((int)floor(position.x / _resolution), 0, _cols - 1);
+        auto row = Utils::Constrain((int)floor(position.y / _resolution), 0, _rows - 1);
         return _field[column][row].Clone();
     }
 }

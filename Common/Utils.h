@@ -34,6 +34,14 @@ public:
         return (float)rand() / RAND_MAX * (max - min) + min;
     }
 
+    float static RandomGaussian(float mean, float stddev)
+    {
+        auto u1 = (float)(rand() + 1.0f) / (float)(RAND_MAX + 1.0f);
+        auto u2 = (float)(rand() + 1.0f) / (float)(RAND_MAX + 1.0f);
+        auto z0 = sqrtf(-2.0f * logf(u1)) * cosf(2.0f * (float)M_PI * u2);
+        return mean + stddev * z0;
+    }
+
     float static Constrain(float value, float min, float max)
     {
         return std::fmax(min, std::fmin(max, value));
