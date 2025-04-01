@@ -4,8 +4,8 @@
 #include "../Common/P5SDL.h"
 
 #define CHAPTER "05"
-#define EXAMPLE "13"
-#define DESC "Quadtree"
+#define EXAMPLE "14"
+#define DESC "Sin/Cos Lookup Table"
 
 #define TITLE "Gen Initial Code: " CHAPTER "." EXAMPLE ": '" DESC "'"
 

@@ -69,6 +69,9 @@ bool GenerateExampleInitialCode::Setup()
     class_output_file << "    {" << endl;
     class_output_file << "        Background(255);" << endl << endl;
     class_output_file << "        return true;" << endl;
+    class_output_file << "    }" << endl << endl;
+    class_output_file << "    void Sketch::Cleanup(void)" << endl;
+    class_output_file << "    {" << endl << endl;
     class_output_file << "    }" << endl;
     class_output_file << "}" << endl << endl;
     class_output_file << "// END" << endl;

@@ -2,11 +2,11 @@
 //  Nature of Code menu
 //-------------------------------------------------------------------------------------------------
 
-//TODO: review perlin noise to make sure is close to p5
-//TODO: implement fill rectangle (example 5.12)
+//TODO: review perlin noise to make it close to p5
+//TODO: implement fill rectangle (5.12, 5.13)
 //TODO: implement beginShape/endShape and Fill
-//TODO: implement noStroke() (example 5.12)
-//TODO: create draw point (Point), example 5.13, quadtree.cpp
+//TODO: implement noStroke() (5.12)
+//TODO: create p5.Point: 5.13, quadtree.cpp, 5.14
 
 #include "Common/P5SDL.h"
 
@@ -65,6 +65,7 @@
 #include "Chapter05/Example_05_11_Sketch.h"
 #include "Chapter05/Example_05_12_Sketch.h"
 #include "Chapter05/Example_05_13_Sketch.h"
+#include "Chapter05/Example_05_14_Sketch.h"
 
 #include "Miscellaneous/CircleTest.h"
 #include "Miscellaneous/GenerateExampleInitialCode.h"
@@ -132,6 +133,7 @@ vector<P5SDL *> chapter05_menu = {
     new nature_of_code_chapter_05_example_11::Sketch(),
     new nature_of_code_chapter_05_example_12::Sketch(),
     new nature_of_code_chapter_05_example_13::Sketch(),
+    new nature_of_code_chapter_05_example_14::Sketch(),
 };
 
 vector<P5SDL *> miscellaneous = {

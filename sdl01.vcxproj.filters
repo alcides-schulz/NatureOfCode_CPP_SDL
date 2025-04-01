@@ -65,6 +65,9 @@
     <Filter Include="Source Files\Chapter05\Example_05_13">
       <UniqueIdentifier>{ad49495a-332f-445a-8a38-139e09485b8b}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Chapter05\Example_05_14">
+      <UniqueIdentifier>{e1ae60f2-c342-4309-bcf5-890278f57a6f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Chapter01\Example_01_01_Sketch.h">
@@ -408,6 +411,9 @@
     </ClInclude>
     <ClInclude Include="Chapter05\Example_05_13_Quadtree.h">
       <Filter>Source Files\Chapter05\Example_05_13</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter05\Example_05_14_Sketch.h">
+      <Filter>Source Files\Chapter05\Example_05_14</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -758,6 +764,9 @@
     </ClCompile>
     <ClCompile Include="Chapter05\Example_05_13_Quadtree.cpp">
       <Filter>Source Files\Chapter05\Example_05_13</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter05\Example_05_14_Sketch.cpp">
+      <Filter>Source Files\Chapter05\Example_05_14</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
