@@ -129,6 +129,7 @@
     <ClCompile Include="Chapter05\Example_05_13_Sketch.cpp" />
     <ClCompile Include="Chapter05\Example_05_14_Sketch.cpp" />
     <ClCompile Include="Chapter07\Example_07_01_Sketch.cpp" />
+    <ClCompile Include="Chapter07\Example_07_02_Sketch.cpp" />
     <ClCompile Include="Common\PerlinNoise2D.cpp" />
     <ClCompile Include="Common\Utils.h" />
     <ClCompile Include="Common\Vector.cpp" />
@@ -249,6 +250,7 @@
     <ClInclude Include="Chapter05\Example_05_13_Sketch.h" />
     <ClInclude Include="Chapter05\Example_05_14_Sketch.h" />
     <ClInclude Include="Chapter07\Example_07_01_Sketch.h" />
+    <ClInclude Include="Chapter07\Example_07_02_Sketch.h" />
     <ClInclude Include="Common\PerlinNoise2D.h" />
     <ClInclude Include="Common\Vector.h" />
     <ClInclude Include="Common\P5SDL.h" />

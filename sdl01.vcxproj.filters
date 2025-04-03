@@ -74,6 +74,9 @@
     <Filter Include="Source Files\Chapter07\Example_07_01">
       <UniqueIdentifier>{4970ed48-cee9-4e22-a141-56dc87c72eb7}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Chapter07\Example_07_02">
+      <UniqueIdentifier>{f120ea9b-31ef-4fcb-9223-dcc9c6f2c598}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Chapter01\Example_01_01_Sketch.h">
@@ -423,6 +426,9 @@
     </ClInclude>
     <ClInclude Include="Chapter07\Example_07_01_Sketch.h">
       <Filter>Source Files\Chapter07\Example_07_01</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter07\Example_07_02_Sketch.h">
+      <Filter>Source Files\Chapter07\Example_07_02</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -779,6 +785,9 @@
     </ClCompile>
     <ClCompile Include="Chapter07\Example_07_01_Sketch.cpp">
       <Filter>Source Files\Chapter07\Example_07_01</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter07\Example_07_02_Sketch.cpp">
+      <Filter>Source Files\Chapter07\Example_07_02</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

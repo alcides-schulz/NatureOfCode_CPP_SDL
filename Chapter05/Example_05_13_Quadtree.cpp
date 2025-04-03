@@ -74,7 +74,7 @@ namespace nature_of_code_chapter_05_example_13
     void QuadTree::Show(void)
     {
         _p5sdl->Stroke(0);
-        // nofill
+        _p5sdl->Fill(255);
         _p5sdl->StrokeWeight(1);
         _p5sdl->RectMode(kRectCenter);
         _p5sdl->Rect(_boundary.x, _boundary.y, _boundary.w * 2, _boundary.h * 2);

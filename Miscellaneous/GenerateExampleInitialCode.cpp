@@ -7,9 +7,9 @@ bool GenerateExampleInitialCode::Setup()
 {
     Background(255);
 
-    string chapter = CHAPTER;
-    string example = EXAMPLE;
-    string description = DESC;
+    string chapter = GEN_CHAPTER;
+    string example = GEN_EXAMPLE;
+    string description = GEN_DESC;
 
     auto include_filename = "Chapter" + chapter + "/Example_" + chapter + "_" + example + "_Sketch.h";
     auto class_filename = "Chapter" + chapter + "/Example_" + chapter + "_" + example + "_Sketch.cpp";

@@ -68,6 +68,7 @@
 #include "Chapter05/Example_05_14_Sketch.h"
 
 #include "Chapter07/Example_07_01_Sketch.h"
+#include "Chapter07/Example_07_02_Sketch.h"
 
 #include "Miscellaneous/CircleTest.h"
 #include "Miscellaneous/GenerateExampleInitialCode.h"
@@ -139,6 +140,7 @@ vector<P5SDL *> chapter05_menu = {
 };
 vector<P5SDL *> chapter07_menu = {
     new nature_of_code_chapter_07_example_01::Sketch(),
+    new nature_of_code_chapter_07_example_02::Sketch(),
 };
 
 vector<P5SDL *> miscellaneous = {
