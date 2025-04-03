@@ -10,39 +10,39 @@ bool P5SDL::Init()
         std::getchar();
         return false;
     }
-    if (window_x_ == -1 || window_y_ == -1) {
+    if (_window_x == -1 || _window_y == -1) {
         SDL_DisplayMode display_mode;
         SDL_GetCurrentDisplayMode(0, &display_mode);
-        if (window_x_ == -1)
-            window_x_ = (display_mode.w - window_width_) / 2;
-        if (window_y_ == -1)
-            window_y_ = (display_mode.h - window_height_) / 2;
+        if (_window_x == -1)
+            _window_x = (display_mode.w - _window_width) / 2;
+        if (_window_y == -1)
+            _window_y = (display_mode.h - _window_height) / 2;
     }
-    window_ = SDL_CreateWindow(window_title_, window_x_, window_y_, window_width_, window_height_, window_flags_);
-    if (window_ == 0) {
+    _window = SDL_CreateWindow(_window_title, _window_x, _window_y, _window_width, _window_height, _window_flags);
+    if (_window == 0) {
         std::cout << "SDL_CreateWindow failed.\n";
         std::getchar();
         return false;
     }
-    SDL_GetWindowSize(window_, &window_width_, &window_height_);
-    renderer_ = SDL_CreateRenderer(window_, -1, 0);
-    if (renderer_ == 0) {
+    SDL_GetWindowSize(_window, &_window_width, &_window_height);
+    _renderer = SDL_CreateRenderer(_window, -1, 0);
+    if (_renderer == 0) {
         std::cout << "SDL_CreateRenderer failed.\n";
         std::getchar();
         return false;
     }
-    SDL_SetRenderDrawBlendMode(renderer_, SDL_BLENDMODE_BLEND);
+    SDL_SetRenderDrawBlendMode(_renderer, SDL_BLENDMODE_BLEND);
     for (int degree = 0; degree < 360; degree++) {
-        circle_cos_cache[degree] = (double)cos(degree * M_PI / 180);
-        circle_sin_cache[degree] = (double)sin(degree * M_PI / 180);
+        _circle_cos_cache[degree] = (double)cos(degree * M_PI / 180);
+        _circle_sin_cache[degree] = (double)sin(degree * M_PI / 180);
     }
-    is_running_ = Setup();
-    if (!is_running_) {
-        SDL_DestroyWindow(window_);
-        SDL_DestroyRenderer(renderer_);
+    _is_running = Setup();
+    if (!_is_running) {
+        SDL_DestroyWindow(_window);
+        SDL_DestroyRenderer(_renderer);
         SDL_Quit();
     }
-    return is_running_;
+    return _is_running;
 }
 
 void P5SDL::Run()
@@ -51,26 +51,28 @@ void P5SDL::Run()
     Uint32 timer = start_time;
     int local_frame_count = 0;
 
-    while (is_running_) {
+    while (_is_running) {
         Uint32 frame_start = SDL_GetTicks();
         Uint32 elapsed_time = frame_start - start_time;
         start_time = frame_start;
 
         HandleEvents();
-        if (!Draw()) {
-            is_running_ = false;
+        if (_loop) {
+            if (!Draw()) {
+                _is_running = false;
+            }
         }
         SDL_RenderPresent(Renderer());
         ResetMatrix();
 
         local_frame_count++;
-        global_frame_count_++;
+        _global_frame_count++;
         if (SDL_GetTicks() - timer > 1000) {
-            std::string t = window_title_;
+            std::string t = _window_title;
             t.append(" (");
             t.append(std::to_string(local_frame_count));
             t.append(" FPS)");
-            SDL_SetWindowTitle(window_, t.c_str());
+            SDL_SetWindowTitle(_window, t.c_str());
             timer += 1000;
             local_frame_count = 0;
         }
@@ -83,8 +85,8 @@ void P5SDL::Run()
 
     Cleanup();
 
-    SDL_DestroyWindow(window_);
-    SDL_DestroyRenderer(renderer_);
+    SDL_DestroyWindow(_window);
+    SDL_DestroyRenderer(_renderer);
     SDL_Quit();
 }
 
@@ -96,44 +98,44 @@ void P5SDL::Circle(float center_x, float center_y, int diameter)
 void P5SDL::Circle(int center_x, int center_y, int diameter)
 {
     // Translate and rotate circle position
-    double sin_value = sin(rotation_radians_);
-    double cos_value = cos(rotation_radians_);
+    double sin_value = sin(_rotation_radians);
+    double cos_value = cos(_rotation_radians);
     double rotated_x = center_x * cos_value - center_y * sin_value;
     double rotated_y = center_x * sin_value + center_y * cos_value;
-    auto final_x = (int)(rotated_x + origin_x_);
-    auto final_y = (int)(rotated_y + origin_y_);
+    auto final_x = (int)(rotated_x + _origin_x);
+    auto final_y = (int)(rotated_y + _origin_y);
     // Fill in
-    if (fill_color_.r != background_color_.r || fill_color_.g != background_color_.g || fill_color_.b != background_color_.b || fill_color_.a != background_color_.a) {
+    if (_fill_color.r != _background_color.r || _fill_color.g != _background_color.g || _fill_color.b != _background_color.b || _fill_color.a != _background_color.a) {
         auto radius = diameter / 2;
         auto radius2 = radius * radius;
-        SDL_SetRenderDrawColor(renderer_, fill_color_.r, fill_color_.g, fill_color_.b, fill_color_.a);
+        SDL_SetRenderDrawColor(_renderer, _fill_color.r, _fill_color.g, _fill_color.b, _fill_color.a);
         for (int y = -radius; y <= radius; y++) {
             int maxX = (int)(sqrt(radius2 - y * y));
-            SDL_RenderDrawLine(renderer_, final_x - maxX, final_y + y, final_x + maxX, final_y + y);
+            SDL_RenderDrawLine(_renderer, final_x - maxX, final_y + y, final_x + maxX, final_y + y);
         }
     }
     // Draw circle
-    SDL_SetRenderDrawColor(renderer_, stroke_color_.r, stroke_color_.g, stroke_color_.b, stroke_color_.a);
-    for (int thickness = 0; thickness < stroke_weight_; thickness++) {
+    SDL_SetRenderDrawColor(_renderer, _stroke_color.r, _stroke_color.g, _stroke_color.b, _stroke_color.a);
+    for (int thickness = 0; thickness < _stroke_weight; thickness++) {
         auto radius = diameter / 2 - thickness;
         for (int degree = 0; degree < 360; degree++) {
-            auto x = final_x + radius * circle_cos_cache[degree]; //cos(degree * M_PI / 180)
-            auto y = final_y + radius * circle_sin_cache[degree]; //sin(degree * M_PI / 180)
-            SDL_RenderDrawPoint(renderer_, (int)x, (int)y);
+            auto x = final_x + radius * _circle_cos_cache[degree]; //cos(degree * M_PI / 180)
+            auto y = final_y + radius * _circle_sin_cache[degree]; //sin(degree * M_PI / 180)
+            SDL_RenderDrawPoint(_renderer, (int)x, (int)y);
         }
     }
 }
 
 void P5SDL::Rect(int x, int y, int width, int height)
 {
-    if (rect_mode_ == kRectCorner) {
+    if (_rect_mode == kRectCorner) {
         Line(x, y, x + width, y);
         Line(x + width, y, x + width, y + height);
         Line(x + width, y + height, x, y + height);
         Line(x, y + height, x, y);
         return;
     }
-    if (rect_mode_ == kRectCenter) {
+    if (_rect_mode == kRectCenter) {
         auto middle_x = width / 2;
         auto middle_y = height / 2;
         Line(x - middle_x, y - middle_y, x + middle_x, y - middle_y);
@@ -142,7 +144,7 @@ void P5SDL::Rect(int x, int y, int width, int height)
         Line(x - middle_x, y + middle_y, x - middle_x, y - middle_y);
         return;
     }
-    cerr << "ERROR: Invalid rectangle mode: " << rect_mode_ << endl;
+    cerr << "ERROR: Invalid rectangle mode: " << _rect_mode << endl;
 }
 
 void P5SDL::Line(float x1, float y1, float x2, float y2)
@@ -153,8 +155,8 @@ void P5SDL::Line(float x1, float y1, float x2, float y2)
 void P5SDL::Line(int x1, int y1, int x2, int y2)
 {
     // Rotate
-    double sin_value = sin(rotation_radians_);
-    double cos_value = cos(rotation_radians_);
+    double sin_value = sin(_rotation_radians);
+    double cos_value = cos(_rotation_radians);
 
     double rotated_x1 = x1 * cos_value - y1 * sin_value;
     double rotated_y1 = x1 * sin_value + y1 * cos_value;
@@ -162,19 +164,19 @@ void P5SDL::Line(int x1, int y1, int x2, int y2)
     double rotated_y2 = x2 * sin_value + y2 * cos_value;
 
     // Translate
-    int final_x1 = static_cast<int>(rotated_x1 + origin_x_);
-    int final_y1 = static_cast<int>(rotated_y1 + origin_y_);
-    int final_x2 = static_cast<int>(rotated_x2 + origin_x_);
-    int final_y2 = static_cast<int>(rotated_y2 + origin_y_);
+    int final_x1 = static_cast<int>(rotated_x1 + _origin_x);
+    int final_y1 = static_cast<int>(rotated_y1 + _origin_y);
+    int final_x2 = static_cast<int>(rotated_x2 + _origin_x);
+    int final_y2 = static_cast<int>(rotated_y2 + _origin_y);
 
     // Draw using stroke weight
     auto dx = abs(final_x1 - final_x2);
     auto dy = abs(final_y1 - final_y2);
-    SDL_SetRenderDrawColor(renderer_, stroke_color_.r, stroke_color_.g, stroke_color_.b, stroke_color_.a);
-    for (int i = -stroke_weight_ / 2; i <= stroke_weight_ / 2; i++) {
+    SDL_SetRenderDrawColor(_renderer, _stroke_color.r, _stroke_color.g, _stroke_color.b, _stroke_color.a);
+    for (int i = -_stroke_weight / 2; i <= _stroke_weight / 2; i++) {
         auto swx = i * (dx < dy);
         auto swy = i * (dx >= dy);
-        SDL_RenderDrawLine(renderer_, final_x1 + swx, final_y1 + swy, final_x2 + swx, final_y2 + swy);
+        SDL_RenderDrawLine(_renderer, final_x1 + swx, final_y1 + swy, final_x2 + swx, final_y2 + swy);
     }
 }
 
@@ -187,58 +189,58 @@ void P5SDL::Lines(SDL_Point points[], int count)
 
 void P5SDL::HandleEvents()
 {
-    mouse_button_clicked_[kMouseLeftButton] = false;
-    mouse_button_clicked_[kMouseMiddleButton] = false;
-    mouse_button_clicked_[kMouseRightButton] = false;
+    _mouse_button_clicked[kMouseLeftButton] = false;
+    _mouse_button_clicked[kMouseMiddleButton] = false;
+    _mouse_button_clicked[kMouseRightButton] = false;
 
     SDL_Event event;
     while (SDL_PollEvent(&event)) {
         switch (event.type) {
         case SDL_KEYDOWN:
             {
-                auto found = std::find(pressed_keys_.begin(), pressed_keys_.end(), event.key.keysym.sym);
-                if (found == pressed_keys_.end()) {
-                    pressed_keys_.push_back(event.key.keysym.sym);
+                auto found = std::find(_pressed_keys.begin(), _pressed_keys.end(), event.key.keysym.sym);
+                if (found == _pressed_keys.end()) {
+                    _pressed_keys.push_back(event.key.keysym.sym);
                 }
             }
             break;
         case SDL_KEYUP:
-            pressed_keys_.remove(event.key.keysym.sym);
+            _pressed_keys.remove(event.key.keysym.sym);
             break;
         case SDL_QUIT:
-            is_running_ = false;
+            _is_running = false;
             break;
         case SDL_MOUSEMOTION:
-            mouse_position_.x = event.motion.x;
-            mouse_position_.y = event.motion.y;
+            _mouse_position.x = event.motion.x;
+            _mouse_position.y = event.motion.y;
             break;
         case SDL_MOUSEBUTTONDOWN:
         {
             if (event.button.button == SDL_BUTTON_LEFT)
-                mouse_button_held_[kMouseLeftButton] = true;
+                _mouse_button_held[kMouseLeftButton] = true;
             if (event.button.button == SDL_BUTTON_MIDDLE)
-                mouse_button_held_[kMouseMiddleButton] = true;
+                _mouse_button_held[kMouseMiddleButton] = true;
             if (event.button.button == SDL_BUTTON_RIGHT)
-                mouse_button_held_[kMouseRightButton] = true;
+                _mouse_button_held[kMouseRightButton] = true;
             auto current_time = SDL_GetTicks();
-            if (current_time - last_mouse_click_time > mouse_debounce_milliseconds_) {
+            if (current_time - _last_mouse_click_time > _mouse_debounce_milliseconds) {
                 if (event.button.button == SDL_BUTTON_LEFT)
-                    mouse_button_clicked_[kMouseLeftButton] = true;
+                    _mouse_button_clicked[kMouseLeftButton] = true;
                 if (event.button.button == SDL_BUTTON_MIDDLE)
-                    mouse_button_clicked_[kMouseMiddleButton] = true;
+                    _mouse_button_clicked[kMouseMiddleButton] = true;
                 if (event.button.button == SDL_BUTTON_RIGHT)
-                    mouse_button_clicked_[kMouseRightButton] = true;
-                last_mouse_click_time = current_time;
+                    _mouse_button_clicked[kMouseRightButton] = true;
+                _last_mouse_click_time = current_time;
             }
             break;
         }
         case SDL_MOUSEBUTTONUP:
             if (event.button.button == SDL_BUTTON_LEFT)
-                mouse_button_held_[kMouseLeftButton] = false;
+                _mouse_button_held[kMouseLeftButton] = false;
             if (event.button.button == SDL_BUTTON_MIDDLE)
-                mouse_button_held_[kMouseMiddleButton] = false;
+                _mouse_button_held[kMouseMiddleButton] = false;
             if (event.button.button == SDL_BUTTON_RIGHT)
-                mouse_button_held_[kMouseRightButton] = false;
+                _mouse_button_held[kMouseRightButton] = false;
             break;
         default:
             break;
@@ -248,7 +250,7 @@ void P5SDL::HandleEvents()
 
 bool P5SDL::IsKeyPressed(Sint32 key)
 {
-    return std::find(pressed_keys_.begin(), pressed_keys_.end(), key) != pressed_keys_.end();
+    return std::find(_pressed_keys.begin(), _pressed_keys.end(), key) != _pressed_keys.end();
 }
 
 void P5SDL::Background(Uint8 gray_scale)
@@ -258,8 +260,8 @@ void P5SDL::Background(Uint8 gray_scale)
 
 void P5SDL::Background(SDL_Color background_color)
 {
-    background_color_ = background_color;
-    SDL_SetRenderDrawColor(Renderer(), background_color_.r, background_color_.g, background_color_.b, background_color_.a);
+    _background_color = background_color;
+    SDL_SetRenderDrawColor(Renderer(), _background_color.r, _background_color.g, _background_color.b, _background_color.a);
     SDL_RenderClear(Renderer());
 }
 

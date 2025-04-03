@@ -3,9 +3,9 @@
 
 #include "../Common/P5SDL.h"
 
-#define CHAPTER "05"
-#define EXAMPLE "14"
-#define DESC "Sin/Cos Lookup Table"
+#define CHAPTER "07"
+#define EXAMPLE "01"
+#define DESC "Wolfram Elementary Cellular Automata"
 
 #define TITLE "Gen Initial Code: " CHAPTER "." EXAMPLE ": '" DESC "'"
 

@@ -37,71 +37,74 @@ class P5SDL
 public:
     P5SDL() { };
     P5SDL(const char *title, int x, int y, int width, int height, int flags) :
-        window_title_(title), window_x_(x), window_y_(y), window_width_(width), window_height_(height), window_flags_(flags) { };
+        _window_title(title), _window_x(x), _window_y(y), _window_width(width), _window_height(height), _window_flags(flags) { };
     virtual bool Setup(void) { return true; };
     virtual bool Draw(void) { return true; };
     virtual void Cleanup(void) {};
-    const char *WindowTitle(void) { return window_title_; }
-    int Width(void) { return window_width_; }
-    int Height(void) { return window_height_; }
-    SDL_Renderer* Renderer(void) { return renderer_; }
-    SDL_Window* Window(void) { return window_; }
-    SDL_Point MousePosition(void) { return mouse_position_; }
-    bool IsMouseButtonHeld(int mouse_button) { return mouse_button_held_[mouse_button]; }
-    bool IsMouseButtonClicked(int mouse_button) { return mouse_button_clicked_[mouse_button]; }
-    Uint32 FrameCount(void) { return global_frame_count_; }
+    const char *WindowTitle(void) { return _window_title; }
+    int Width(void) { return _window_width; }
+    int Height(void) { return _window_height; }
+    SDL_Renderer* Renderer(void) { return _renderer; }
+    SDL_Window* Window(void) { return _window; }
+    SDL_Point MousePosition(void) { return _mouse_position; }
+    bool IsMouseButtonHeld(int mouse_button) { return _mouse_button_held[mouse_button]; }
+    bool IsMouseButtonClicked(int mouse_button) { return _mouse_button_clicked[mouse_button]; }
+    Uint32 FrameCount(void) { return _global_frame_count; }
     bool Init(void);
     void Run(void);
     bool IsKeyPressed(Sint32 key);
 
     void Background(Uint8 gray_scale);
     void Background(SDL_Color background_color);
-    void Translate(int x, int y) { origin_x_ += x, origin_y_ += y; }
-    void Translate(float x, float y) { origin_x_ += (int)x, origin_y_ += (int)y; }
-    void Rotate(double radians) { rotation_radians_ += radians; }
-    void ResetMatrix(void) { origin_x_ = origin_y_ = 0, rotation_radians_ = 0; }
-    void StrokeWeight(int stroke_weight) { stroke_weight_ = stroke_weight; }
-    void Stroke(Uint8 gray_value) { stroke_color_ = SDL_Color{ gray_value, gray_value, gray_value, 255 }; };
-    void Stroke(SDL_Color color) { stroke_color_ = color; };
-    void Fill(Uint8 gray_value) { fill_color_ = SDL_Color{ gray_value, gray_value, gray_value, 255 }; };
-    void Fill(Uint8 gray_value, Uint8 alpha) { fill_color_ = SDL_Color{ gray_value, gray_value, gray_value, alpha }; };
-    void Fill(SDL_Color color) { fill_color_ = color; };
+    void Translate(int x, int y) { _origin_x += x, _origin_y += y; }
+    void Translate(float x, float y) { _origin_x += (int)x, _origin_y += (int)y; }
+    void Rotate(double radians) { _rotation_radians += radians; }
+    void ResetMatrix(void) { _origin_x = _origin_y = 0, _rotation_radians = 0; }
+    void StrokeWeight(int stroke_weight) { _stroke_weight = stroke_weight; }
+    void Stroke(Uint8 gray_value) { _stroke_color = SDL_Color{ gray_value, gray_value, gray_value, 255 }; };
+    void Stroke(SDL_Color color) { _stroke_color = color; };
+    void Fill(Uint8 gray_value) { _fill_color = SDL_Color{ gray_value, gray_value, gray_value, 255 }; };
+    void Fill(Uint8 gray_value, Uint8 alpha) { _fill_color = SDL_Color{ gray_value, gray_value, gray_value, alpha }; };
+    void Fill(SDL_Color color) { _fill_color = color; };
     void Circle(int center_x, int center_y, int diameter);
     void Circle(float center_x, float center_y, int diameter);
     void Line(int x1, int y1, int x2, int y2);
     void Line(float x1, float y1, float x2, float y2);
     void Lines(SDL_Point points[], int count);
     void Rect(int x, int y, int width, int heigth);
-    void RectMode(int mode) { rect_mode_ = mode; };
+    void RectMode(int mode) { _rect_mode = mode; };
+    void NoLoop(void) { _loop = false; };
+    void Loop(void) { _loop = true; };
 private:
-    SDL_Window      *window_;
-    const char      *window_title_;
-    int             window_x_ = 0;
-    int             window_y_ = 0;
-    int             window_width_ = 0;
-    int             window_height_ = 0;
-    int             window_flags_ = 0;
-    SDL_Renderer    *renderer_;
-    int             origin_x_ = 0;
-    int             origin_y_ = 0;
-    double          rotation_radians_ = 0;
-    int             stroke_weight_ = 2;
-    SDL_Color       stroke_color_ = kColorBlack;
-    SDL_Color       fill_color_ = kColorWhite;
-    SDL_Color       background_color_ = kColorWhite;
-    int             rect_mode_ = kRectCorner;
-    list<Sint32>    pressed_keys_;
-    bool            mouse_button_held_[3] = { false, false, false };
-    bool            mouse_button_clicked_[3] = { false, false, false };
-    SDL_Point       mouse_position_ = { 0, 0 };
-    bool            is_running_ = false;
+    SDL_Window      *_window;
+    const char      *_window_title;
+    int             _window_x = 0;
+    int             _window_y = 0;
+    int             _window_width = 0;
+    int             _window_height = 0;
+    int             _window_flags = 0;
+    SDL_Renderer    *_renderer;
+    int             _origin_x = 0;
+    int             _origin_y = 0;
+    double          _rotation_radians = 0;
+    int             _stroke_weight = 2;
+    SDL_Color       _stroke_color = kColorBlack;
+    SDL_Color       _fill_color = kColorWhite;
+    SDL_Color       _background_color = kColorWhite;
+    int             _rect_mode = kRectCorner;
+    list<Sint32>    _pressed_keys;
+    bool            _mouse_button_held[3] = { false, false, false };
+    bool            _mouse_button_clicked[3] = { false, false, false };
+    SDL_Point       _mouse_position = { 0, 0 };
+    bool            _is_running = false;
     const int       kFPS = 60;
     const Uint32    kMaxFrameTime = (Uint32)(1000.0f / kFPS);
-    Uint32          global_frame_count_;
-    Uint32          last_mouse_click_time = SDL_GetTicks();
-    Uint32          mouse_debounce_milliseconds_ = 200;
-    double          circle_cos_cache[360];
-    double          circle_sin_cache[360];
+    Uint32          _global_frame_count;
+    bool            _loop = true;
+    Uint32          _last_mouse_click_time = SDL_GetTicks();
+    Uint32          _mouse_debounce_milliseconds = 200;
+    double          _circle_cos_cache[360];
+    double          _circle_sin_cache[360];
 
     void            HandleEvents();
 };
