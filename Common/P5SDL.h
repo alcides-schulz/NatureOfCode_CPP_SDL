@@ -63,6 +63,7 @@ public:
     void StrokeWeight(int stroke_weight) { _stroke_weight = stroke_weight; }
     void Stroke(Uint8 gray_value) { _stroke_color = SDL_Color{ gray_value, gray_value, gray_value, 255 }; };
     void Stroke(SDL_Color color) { _stroke_color = color; };
+    void Stroke(Uint8 gray_value, Uint8 alpha) { _stroke_color = SDL_Color{ gray_value, gray_value, gray_value, alpha }; };
     void Fill(Uint8 gray_value) { _fill_color = SDL_Color{ gray_value, gray_value, gray_value, 255 }; };
     void Fill(Uint8 gray_value, Uint8 alpha) { _fill_color = SDL_Color{ gray_value, gray_value, gray_value, alpha }; };
     void Fill(SDL_Color color) { _fill_color = color; };

@@ -15,18 +15,18 @@ namespace nature_of_code_chapter_04_example_05
             _position = Vector(x, y);
             _velocity = Vector(Utils::Random(-1, 1), Utils::Random(-2, 0));
             _acceleration = Vector(0, 0);
-            _life_span = 255.0f;
+            _life_span = 255;
         };
         void Update(void);
         virtual void Show(P5SDL *p5sdl);
         void ApplyForce(Vector force);
-        bool IsDead(void) { return _life_span < 0; };
+        bool IsDead(void) { return _life_span <= 0; };
         void Run(P5SDL *p5sdl);
     protected:
         Vector  _position;
         Vector  _velocity;
         Vector  _acceleration;
-        float   _life_span;
+        Uint8   _life_span;
     };
 }
 

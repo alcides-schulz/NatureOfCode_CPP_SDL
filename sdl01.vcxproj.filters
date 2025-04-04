@@ -77,6 +77,30 @@
     <Filter Include="Source Files\Chapter07\Example_07_02">
       <UniqueIdentifier>{f120ea9b-31ef-4fcb-9223-dcc9c6f2c598}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Chapter04\Example_04_01">
+      <UniqueIdentifier>{4a751bb3-0af6-4654-8c4c-61af346c3c9f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Chapter04\Example_04_02">
+      <UniqueIdentifier>{76ad8f1a-5a6d-4d35-9bdc-e5f44d08de8c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Chapter04\Example_04_04">
+      <UniqueIdentifier>{19a0a95a-575f-44fd-bcd2-87734f0bd2fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Chapter04\Example_04_03">
+      <UniqueIdentifier>{18712656-69dd-4473-827d-9b53665afcc1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Chapter04\Example_04_05">
+      <UniqueIdentifier>{a536c7be-403b-40c5-9111-0a6f07aaacdf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Chapter04\Example_04_06">
+      <UniqueIdentifier>{73f0bece-4775-44bb-890b-54574b456972}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Chapter04\Example_04_07">
+      <UniqueIdentifier>{87411a53-05f3-4920-be22-4a05d868642a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Chapter04\Example_04_08">
+      <UniqueIdentifier>{247251be-fa59-49a4-b1fb-bf899617b036}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Chapter01\Example_01_01_Sketch.h">
@@ -238,78 +262,6 @@
     <ClInclude Include="Chapter03\Example_03_11_Sketch.h">
       <Filter>Source Files\Chapter03</Filter>
     </ClInclude>
-    <ClInclude Include="Chapter04\Example_04_01_Particle.h">
-      <Filter>Source Files\Chapter04</Filter>
-    </ClInclude>
-    <ClInclude Include="Chapter04\Example_04_01_Sketch.h">
-      <Filter>Source Files\Chapter04</Filter>
-    </ClInclude>
-    <ClInclude Include="Chapter04\Example_04_02_Particle.h">
-      <Filter>Source Files\Chapter04</Filter>
-    </ClInclude>
-    <ClInclude Include="Chapter04\Example_04_02_Sketch.h">
-      <Filter>Source Files\Chapter04</Filter>
-    </ClInclude>
-    <ClInclude Include="Chapter04\Example_04_03_Emitter.h">
-      <Filter>Source Files\Chapter04</Filter>
-    </ClInclude>
-    <ClInclude Include="Chapter04\Example_04_03_Particle.h">
-      <Filter>Source Files\Chapter04</Filter>
-    </ClInclude>
-    <ClInclude Include="Chapter04\Example_04_03_Sketch.h">
-      <Filter>Source Files\Chapter04</Filter>
-    </ClInclude>
-    <ClInclude Include="Chapter04\Example_04_04_Emitter.h">
-      <Filter>Source Files\Chapter04</Filter>
-    </ClInclude>
-    <ClInclude Include="Chapter04\Example_04_04_Particle.h">
-      <Filter>Source Files\Chapter04</Filter>
-    </ClInclude>
-    <ClInclude Include="Chapter04\Example_04_04_Sketch.h">
-      <Filter>Source Files\Chapter04</Filter>
-    </ClInclude>
-    <ClInclude Include="Chapter04\Example_04_05_Confetti.h">
-      <Filter>Source Files\Chapter04</Filter>
-    </ClInclude>
-    <ClInclude Include="Chapter04\Example_04_05_Emitter.h">
-      <Filter>Source Files\Chapter04</Filter>
-    </ClInclude>
-    <ClInclude Include="Chapter04\Example_04_05_Particle.h">
-      <Filter>Source Files\Chapter04</Filter>
-    </ClInclude>
-    <ClInclude Include="Chapter04\Example_04_05_Sketch.h">
-      <Filter>Source Files\Chapter04</Filter>
-    </ClInclude>
-    <ClInclude Include="Chapter04\Example_04_06_Emitter.h">
-      <Filter>Source Files\Chapter04</Filter>
-    </ClInclude>
-    <ClInclude Include="Chapter04\Example_04_06_Particle.h">
-      <Filter>Source Files\Chapter04</Filter>
-    </ClInclude>
-    <ClInclude Include="Chapter04\Example_04_06_Sketch.h">
-      <Filter>Source Files\Chapter04</Filter>
-    </ClInclude>
-    <ClInclude Include="Chapter04\Example_04_07_Emitter.h">
-      <Filter>Source Files\Chapter04</Filter>
-    </ClInclude>
-    <ClInclude Include="Chapter04\Example_04_07_Particle.h">
-      <Filter>Source Files\Chapter04</Filter>
-    </ClInclude>
-    <ClInclude Include="Chapter04\Example_04_07_Sketch.h">
-      <Filter>Source Files\Chapter04</Filter>
-    </ClInclude>
-    <ClInclude Include="Chapter04\Example_04_07_Repeller.h">
-      <Filter>Source Files\Chapter04</Filter>
-    </ClInclude>
-    <ClInclude Include="Chapter04\Example_04_08_Emitter.h">
-      <Filter>Source Files\Chapter04</Filter>
-    </ClInclude>
-    <ClInclude Include="Chapter04\Example_04_08_Particle.h">
-      <Filter>Source Files\Chapter04</Filter>
-    </ClInclude>
-    <ClInclude Include="Chapter04\Example_04_08_Sketch.h">
-      <Filter>Source Files\Chapter04</Filter>
-    </ClInclude>
     <ClInclude Include="Common\PerlinNoise2D.h">
       <Filter>Source Files\Common</Filter>
     </ClInclude>
@@ -429,6 +381,78 @@
     </ClInclude>
     <ClInclude Include="Chapter07\Example_07_02_Sketch.h">
       <Filter>Source Files\Chapter07\Example_07_02</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter04\Example_04_01_Particle.h">
+      <Filter>Source Files\Chapter04\Example_04_01</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter04\Example_04_01_Sketch.h">
+      <Filter>Source Files\Chapter04\Example_04_01</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter04\Example_04_02_Particle.h">
+      <Filter>Source Files\Chapter04\Example_04_02</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter04\Example_04_02_Sketch.h">
+      <Filter>Source Files\Chapter04\Example_04_02</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter04\Example_04_03_Emitter.h">
+      <Filter>Source Files\Chapter04\Example_04_03</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter04\Example_04_03_Particle.h">
+      <Filter>Source Files\Chapter04\Example_04_03</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter04\Example_04_03_Sketch.h">
+      <Filter>Source Files\Chapter04\Example_04_03</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter04\Example_04_04_Emitter.h">
+      <Filter>Source Files\Chapter04\Example_04_04</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter04\Example_04_04_Particle.h">
+      <Filter>Source Files\Chapter04\Example_04_04</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter04\Example_04_04_Sketch.h">
+      <Filter>Source Files\Chapter04\Example_04_04</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter04\Example_04_05_Confetti.h">
+      <Filter>Source Files\Chapter04\Example_04_05</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter04\Example_04_05_Emitter.h">
+      <Filter>Source Files\Chapter04\Example_04_05</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter04\Example_04_05_Particle.h">
+      <Filter>Source Files\Chapter04\Example_04_05</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter04\Example_04_05_Sketch.h">
+      <Filter>Source Files\Chapter04\Example_04_05</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter04\Example_04_06_Emitter.h">
+      <Filter>Source Files\Chapter04\Example_04_06</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter04\Example_04_06_Particle.h">
+      <Filter>Source Files\Chapter04\Example_04_06</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter04\Example_04_06_Sketch.h">
+      <Filter>Source Files\Chapter04\Example_04_06</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter04\Example_04_07_Emitter.h">
+      <Filter>Source Files\Chapter04\Example_04_07</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter04\Example_04_07_Particle.h">
+      <Filter>Source Files\Chapter04\Example_04_07</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter04\Example_04_07_Repeller.h">
+      <Filter>Source Files\Chapter04\Example_04_07</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter04\Example_04_07_Sketch.h">
+      <Filter>Source Files\Chapter04\Example_04_07</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter04\Example_04_08_Emitter.h">
+      <Filter>Source Files\Chapter04\Example_04_08</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter04\Example_04_08_Particle.h">
+      <Filter>Source Files\Chapter04\Example_04_08</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter04\Example_04_08_Sketch.h">
+      <Filter>Source Files\Chapter04\Example_04_08</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -597,78 +621,6 @@
     <ClCompile Include="Chapter03\Example_03_11_Sketch.cpp">
       <Filter>Source Files\Chapter03</Filter>
     </ClCompile>
-    <ClCompile Include="Chapter04\Example_04_01_Particle.cpp">
-      <Filter>Source Files\Chapter04</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter04\Example_04_01_Sketch.cpp">
-      <Filter>Source Files\Chapter04</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter04\Example_04_02_Particle.cpp">
-      <Filter>Source Files\Chapter04</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter04\Example_04_02_Sketch.cpp">
-      <Filter>Source Files\Chapter04</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter04\Example_04_03_Emitter.cpp">
-      <Filter>Source Files\Chapter04</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter04\Example_04_03_Particle.cpp">
-      <Filter>Source Files\Chapter04</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter04\Example_04_03_Sketch.cpp">
-      <Filter>Source Files\Chapter04</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter04\Example_04_04_Emitter.cpp">
-      <Filter>Source Files\Chapter04</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter04\Example_04_04_Particle.cpp">
-      <Filter>Source Files\Chapter04</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter04\Example_04_04_Sketch.cpp">
-      <Filter>Source Files\Chapter04</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter04\Example_04_05_Confetti.cpp">
-      <Filter>Source Files\Chapter04</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter04\Example_04_05_Emitter.cpp">
-      <Filter>Source Files\Chapter04</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter04\Example_04_05_Particle.cpp">
-      <Filter>Source Files\Chapter04</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter04\Example_04_05_Sketch.cpp">
-      <Filter>Source Files\Chapter04</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter04\Example_04_06_Emitter.cpp">
-      <Filter>Source Files\Chapter04</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter04\Example_04_06_Particle.cpp">
-      <Filter>Source Files\Chapter04</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter04\Example_04_06_Sketch.cpp">
-      <Filter>Source Files\Chapter04</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter04\Example_04_07_Emitter.cpp">
-      <Filter>Source Files\Chapter04</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter04\Example_04_07_Particle.cpp">
-      <Filter>Source Files\Chapter04</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter04\Example_04_07_Sketch.cpp">
-      <Filter>Source Files\Chapter04</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter04\Example_04_07_Repeller.cpp">
-      <Filter>Source Files\Chapter04</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter04\Example_04_08_Emitter.cpp">
-      <Filter>Source Files\Chapter04</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter04\Example_04_08_Particle.cpp">
-      <Filter>Source Files\Chapter04</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter04\Example_04_08_Sketch.cpp">
-      <Filter>Source Files\Chapter04</Filter>
-    </ClCompile>
     <ClCompile Include="Common\PerlinNoise2D.cpp">
       <Filter>Source Files\Common</Filter>
     </ClCompile>
@@ -789,13 +741,85 @@
     <ClCompile Include="Chapter07\Example_07_02_Sketch.cpp">
       <Filter>Source Files\Chapter07\Example_07_02</Filter>
     </ClCompile>
+    <ClCompile Include="Chapter04\Example_04_01_Particle.cpp">
+      <Filter>Source Files\Chapter04\Example_04_01</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter04\Example_04_01_Sketch.cpp">
+      <Filter>Source Files\Chapter04\Example_04_01</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter04\Example_04_02_Particle.cpp">
+      <Filter>Source Files\Chapter04\Example_04_02</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter04\Example_04_02_Sketch.cpp">
+      <Filter>Source Files\Chapter04\Example_04_02</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter04\Example_04_03_Emitter.cpp">
+      <Filter>Source Files\Chapter04\Example_04_03</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter04\Example_04_03_Particle.cpp">
+      <Filter>Source Files\Chapter04\Example_04_03</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter04\Example_04_03_Sketch.cpp">
+      <Filter>Source Files\Chapter04\Example_04_03</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter04\Example_04_04_Emitter.cpp">
+      <Filter>Source Files\Chapter04\Example_04_04</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter04\Example_04_04_Particle.cpp">
+      <Filter>Source Files\Chapter04\Example_04_04</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter04\Example_04_04_Sketch.cpp">
+      <Filter>Source Files\Chapter04\Example_04_04</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter04\Example_04_05_Confetti.cpp">
+      <Filter>Source Files\Chapter04\Example_04_05</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter04\Example_04_05_Emitter.cpp">
+      <Filter>Source Files\Chapter04\Example_04_05</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter04\Example_04_05_Particle.cpp">
+      <Filter>Source Files\Chapter04\Example_04_05</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter04\Example_04_05_Sketch.cpp">
+      <Filter>Source Files\Chapter04\Example_04_05</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter04\Example_04_06_Emitter.cpp">
+      <Filter>Source Files\Chapter04\Example_04_06</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter04\Example_04_06_Particle.cpp">
+      <Filter>Source Files\Chapter04\Example_04_06</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter04\Example_04_06_Sketch.cpp">
+      <Filter>Source Files\Chapter04\Example_04_06</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter04\Example_04_07_Emitter.cpp">
+      <Filter>Source Files\Chapter04\Example_04_07</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter04\Example_04_07_Particle.cpp">
+      <Filter>Source Files\Chapter04\Example_04_07</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter04\Example_04_07_Repeller.cpp">
+      <Filter>Source Files\Chapter04\Example_04_07</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter04\Example_04_07_Sketch.cpp">
+      <Filter>Source Files\Chapter04\Example_04_07</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter04\Example_04_08_Emitter.cpp">
+      <Filter>Source Files\Chapter04\Example_04_08</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter04\Example_04_08_Particle.cpp">
+      <Filter>Source Files\Chapter04\Example_04_08</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter04\Example_04_08_Sketch.cpp">
+      <Filter>Source Files\Chapter04\Example_04_08</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="Readme.md" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="Chapter04\Example_04_08_Texture.png">
-      <Filter>Source Files\Chapter04</Filter>
+      <Filter>Source Files\Chapter04\Example_04_08</Filter>
     </Image>
   </ItemGroup>
 </Project>

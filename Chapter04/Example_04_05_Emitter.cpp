@@ -15,8 +15,10 @@ namespace nature_of_code_chapter_04_example_05
         for (int i = (int)_particles.size() - 1; i >= 0; i--) {
             auto particle = _particles[i];
             particle->Run(p5sdl);
-            if (particle->IsDead())
+            if (particle->IsDead()) {
                 _particles.erase(_particles.begin() + i);
+                delete particle;
+            }
         }
     }
 }

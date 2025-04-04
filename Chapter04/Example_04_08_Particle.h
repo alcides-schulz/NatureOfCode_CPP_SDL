@@ -23,7 +23,7 @@ namespace nature_of_code_chapter_04_example_08
         void Update(void);
         virtual void Show(P5SDL *p5sdl);
         void ApplyForce(Vector force);
-        bool IsDead(void) { return _life_span < 0; };
+        bool IsDead(void) { return _life_span <= 0; };
         void Run(P5SDL *p5sdl);
     protected:
         Vector      _position;

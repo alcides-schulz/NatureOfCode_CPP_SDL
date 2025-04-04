@@ -5,7 +5,6 @@ namespace nature_of_code_chapter_04_example_01
     bool Sketch::Setup(void)
     {
         _particle = new Particle(Width() / 2, 10);
-        SDL_SetRenderDrawBlendMode(Renderer(), SDL_BLENDMODE_BLEND);
         return true;
     }
     
@@ -16,7 +15,7 @@ namespace nature_of_code_chapter_04_example_01
         _particle->Update();
         _particle->Show(this);
     
-        auto gravity = Vector(0.0f, 0.1f);
+        auto gravity = Vector(0.0f, 0.05f);
         _particle->ApplyForce(gravity);
     
         if (_particle->IsDead()) {

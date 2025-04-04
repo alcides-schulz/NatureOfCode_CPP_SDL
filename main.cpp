@@ -3,8 +3,7 @@
 //-------------------------------------------------------------------------------------------------
 
 //TODO: review perlin noise to make it close to p5
-//TODO: implement fill rectangle (5.12, 5.13)
-//TODO: implement beginShape/endShape and Fill
+//TODO: implement beginShape/endShape and Fill ??
 //TODO: implement noStroke() (5.12)
 //TODO: create p5.Point: 5.13, quadtree.cpp, 5.14
 
