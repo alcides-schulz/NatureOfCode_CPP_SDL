@@ -4,8 +4,8 @@
 #include "../Common/P5SDL.h"
 
 #define GEN_CHAPTER "08"
-#define GEN_EXAMPLE "06"
-#define GEN_DESC "A Recursive Tree"
+#define GEN_EXAMPLE "08"
+#define GEN_DESC "Simple L-system Sentence Generation"
 
 #define GEN_TITLE "Gen Initial Code: " GEN_CHAPTER "." GEN_EXAMPLE ": '" GEN_DESC "'"
 

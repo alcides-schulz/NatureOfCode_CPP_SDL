@@ -6,9 +6,21 @@ bool P5SDL::Init()
 {
     int result = SDL_Init(SDL_INIT_EVERYTHING);
     if (result != 0) {
-        std::cout << "SDL_Init failed, result: " << result << ".\n";
+        std::cerr << "SDL_Init failed, result: " << result << ".\n";
         std::getchar();
         return false;
+    }
+    if (TTF_Init() < 0) {
+        std::cerr << "SDL_ttf could not initialize! TTF_Error: " << TTF_GetError() << std::endl;
+        SDL_Quit();
+        return false;
+    }
+    _text_font = TTF_OpenFont("./Common/cour.ttf", 16);
+    if (_text_font == nullptr) {
+        std::cerr << "Failed to load font! TTF_Error: " << TTF_GetError() << std::endl;
+        TTF_Quit();
+        SDL_Quit();
+        return 1;
     }
     if (_window_x == -1 || _window_y == -1) {
         SDL_DisplayMode display_mode;
@@ -40,6 +52,8 @@ bool P5SDL::Init()
     if (!_is_running) {
         SDL_DestroyWindow(_window);
         SDL_DestroyRenderer(_renderer);
+        TTF_CloseFont(_text_font);
+        TTF_Quit();
         SDL_Quit();
     }
     return _is_running;
@@ -88,6 +102,8 @@ void P5SDL::Run()
 
     SDL_DestroyWindow(_window);
     SDL_DestroyRenderer(_renderer);
+    TTF_CloseFont(_text_font);
+    TTF_Quit();
     SDL_Quit();
 }
 
@@ -323,6 +339,30 @@ void P5SDL::Pop(void)
         _origin_x = restore.origin_x;
         _origin_y = restore.origin_y;
     }
+}
+
+void P5SDL::Text(string text, int x, int y)
+{
+    SDL_Surface* text_surface = TTF_RenderText_Solid(_text_font, text.c_str(), _stroke_color);
+    if (text_surface == nullptr) {
+        std::cerr << "Failed to create text surface! TTF_Error: " << TTF_GetError() << std::endl;
+        return;
+    }
+    SDL_Texture* text_texture = SDL_CreateTextureFromSurface(_renderer, text_surface);
+    SDL_FreeSurface(text_surface);
+    if (text_texture == nullptr) {
+        std::cerr << "Failed to create text texture! SDL_Error: " << SDL_GetError() << std::endl;
+        return;
+    }
+    SDL_Rect text_rectangle;
+    SDL_QueryTexture(text_texture, nullptr, nullptr, &text_rectangle.w, &text_rectangle.h);
+    text_rectangle.x = x;
+    text_rectangle.y = y;
+
+    SDL_SetRenderDrawColor(_renderer, _background_color.r, _background_color.g, _background_color.b, _background_color.a);
+    SDL_RenderCopy(_renderer, text_texture, nullptr, &text_rectangle);
+    
+    SDL_DestroyTexture(text_texture);
 }
 
 //END

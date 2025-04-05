@@ -140,6 +140,7 @@
     <ClCompile Include="Chapter08\Example_08_05_KochLine.cpp" />
     <ClCompile Include="Chapter08\Example_08_06_Sketch.cpp" />
     <ClCompile Include="Chapter08\Example_08_07_Sketch.cpp" />
+    <ClCompile Include="Chapter08\Example_08_08_Sketch.cpp" />
     <ClCompile Include="Common\PerlinNoise2D.cpp" />
     <ClCompile Include="Common\Utils.h" />
     <ClCompile Include="Common\Vector.cpp" />
@@ -271,6 +272,7 @@
     <ClInclude Include="Chapter08\Example_08_05_Sketch.h" />
     <ClInclude Include="Chapter08\Example_08_06_Sketch.h" />
     <ClInclude Include="Chapter08\Example_08_07_Sketch.h" />
+    <ClInclude Include="Chapter08\Example_08_08_Sketch.h" />
     <ClInclude Include="Common\PerlinNoise2D.h" />
     <ClInclude Include="Common\Vector.h" />
     <ClInclude Include="Common\P5SDL.h" />
@@ -340,13 +342,13 @@
     <LibraryPath>d:\Projetos\sdl2\lib\x86;d:\Projetos\SDL2\image\lib\x86;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <IncludePath>D:\Program\SDL2\include;D:\Program\SDL2\image\include;$(IncludePath)</IncludePath>
+    <IncludePath>D:\Program\SDL2\include;D:\Program\SDL2\image\include;D:\Projetos\SDL2\SDL2_ttf-2.0.15\include;$(IncludePath)</IncludePath>
     <LibraryPath>D:\Program\SDL2\image\lib\x64;$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64);$(NETFXKitsDir)Lib\um\x64</LibraryPath>
     <OutDir>$(SolutionDir)\binaries\</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <IncludePath>D:\Program\SDL2\include;D:\Program\SDL2\image\include;$(IncludePath)</IncludePath>
-    <LibraryPath>D:\Program\SDL2\image\lib\x64;$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64);$(NETFXKitsDir)Lib\um\x64</LibraryPath>
+    <IncludePath>D:\Program\SDL2\include;D:\Program\SDL2\image\include;$(IncludePath);D:\Projetos\SDL2\SDL2_ttf-2.0.15\include</IncludePath>
+    <LibraryPath>D:\Program\SDL2\image\lib\x64;D:\Projetos\SDL2\SDL2_ttf-2.0.15\lib\x64;$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64);$(NETFXKitsDir)Lib\um\x64</LibraryPath>
     <OutDir>$(SolutionDir)Binaries\</OutDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -373,7 +375,7 @@
       <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies);D:\Program\SDL2\lib\x64\SDL2.lib;D:\Program\SDL2\image\lib\x64\SDL2_image.lib;</AdditionalDependencies>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies);D:\Program\SDL2\lib\x64\SDL2.lib;D:\Program\SDL2\image\lib\x64\SDL2_image.lib;D:\Projetos\SDL2\SDL2_ttf-2.0.15\lib\x64\SDL2_ttf.lib;</AdditionalDependencies>
       <SubSystem>Console</SubSystem>
     </Link>
   </ItemDefinitionGroup>
@@ -403,7 +405,7 @@
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalDependencies>D:\Program\SDL2\lib\x64\SDL2main.lib;D:\Program\SDL2\lib\x64\SDL2.lib;D:\Program\SDL2\image\lib\x64\SDL2_image.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>D:\Program\SDL2\lib\x64\SDL2main.lib;D:\Program\SDL2\lib\x64\SDL2.lib;D:\Program\SDL2\image\lib\x64\SDL2_image.lib;D:\Projetos\SDL2\SDL2_ttf-2.0.15\lib\x64\SDL2_ttf.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <EntryPointSymbol>
       </EntryPointSymbol>
       <SubSystem>Console</SubSystem>

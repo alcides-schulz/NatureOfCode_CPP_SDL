@@ -78,6 +78,7 @@
 #include "Chapter08/Example_08_05_Sketch.h"
 #include "Chapter08/Example_08_06_Sketch.h"
 #include "Chapter08/Example_08_07_Sketch.h"
+#include "Chapter08/Example_08_08_Sketch.h"
 
 #include "Miscellaneous/CircleTest.h"
 #include "Miscellaneous/GenerateExampleInitialCode.h"
@@ -160,6 +161,7 @@ vector<P5SDL *> chapter08_menu = {
     new nature_of_code_chapter_08_example_05::Sketch(),
     new nature_of_code_chapter_08_example_06::Sketch(),
     new nature_of_code_chapter_08_example_07::Sketch(),
+    new nature_of_code_chapter_08_example_08::Sketch(),
 };
 
 vector<P5SDL *> miscellaneous = {
@@ -193,13 +195,32 @@ void ShowMenu(vector<P5SDL *> chapter_menu)
     }
 }
 
+void ShowSDLVersion(void)
+{
+    int result = SDL_Init(SDL_INIT_EVERYTHING);
+    if (result != 0) {
+        std::cout << "SDL_Init failed, result: " << result << ".\n";
+        std::getchar();
+        return;
+    }
+    SDL_version compiled;
+    SDL_version linked;
+    SDL_VERSION(&compiled);
+    SDL_GetVersion(&linked);
+    cout << "Compiled SDL version " << (int)compiled.major << "." << (int)compiled.minor << "." << (int)compiled.patch << std::endl;
+    cout << "Linked SDL version " << (int)linked.major << "." << (int)linked.minor << "." << (int)linked.patch << std::endl;
+    SDL_Quit();
+}
+
 int main(int argc, char* argv[])
 {
+    ShowSDLVersion();
+
     std::srand(static_cast<unsigned int>(std::time(nullptr)));
 
     string response;
     while (true) {
-        cout << "Nature of Code Menu" << endl;
+        cout << endl << "Nature of Code Menu" << endl;
         cout << endl << "\t a. Chapter 1 - Vectors";
         cout << endl << "\t b. Chapter 2 - Forces";
         cout << endl << "\t c. Chapter 3 - Oscillation";
