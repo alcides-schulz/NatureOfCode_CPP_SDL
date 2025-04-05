@@ -66,6 +66,16 @@ float Vector::Dot(Vector other)
     return x * other.x + y * other.y;
 }
 
+void Vector::Rotate(double angle) 
+{
+    double cos_theta = cos(angle);
+    double sin_theta = sin(angle);
+    double new_x = x * cos_theta - y * sin_theta;
+    double new_y = x * sin_theta + y * cos_theta;
+    x = (float)new_x;
+    y = (float)new_y;
+}
+
 Vector Vector::Random2D()
 {
     float angle = (static_cast<float>(rand()) / RAND_MAX) * 2.0f * static_cast<float>(M_PI);

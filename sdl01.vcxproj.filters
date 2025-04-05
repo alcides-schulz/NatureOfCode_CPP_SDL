@@ -101,6 +101,27 @@
     <Filter Include="Source Files\Chapter04\Example_04_08">
       <UniqueIdentifier>{247251be-fa59-49a4-b1fb-bf899617b036}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Chapter07\Example_07_03">
+      <UniqueIdentifier>{61f0cf61-008b-4906-a948-d76af5307356}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Chapter08">
+      <UniqueIdentifier>{6d572286-e066-4064-992d-ebc17d93907f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Chapter08\Example_08_01">
+      <UniqueIdentifier>{25382b51-ebb0-4837-b3d0-ff68be07c6f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Chapter08\Example_08_02">
+      <UniqueIdentifier>{c40f7c2a-f2cd-43e7-8743-25c56d469347}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Chapter08\Example_08_03">
+      <UniqueIdentifier>{55e99119-e889-4d8f-898f-87f3a243d7a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Chapter08\Example_08_04">
+      <UniqueIdentifier>{e27c2cce-ff0f-4c5f-be82-e261123f057b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Chapter08\Example_08_05">
+      <UniqueIdentifier>{b9270c75-8800-4843-8006-716f204bafba}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Chapter01\Example_01_01_Sketch.h">
@@ -453,6 +474,30 @@
     </ClInclude>
     <ClInclude Include="Chapter04\Example_04_08_Sketch.h">
       <Filter>Source Files\Chapter04\Example_04_08</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter07\Example_07_03_Sketch.h">
+      <Filter>Source Files\Chapter07\Example_07_03</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter07\Example_07_03_Cell.h">
+      <Filter>Source Files\Chapter07\Example_07_03</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter08\Example_08_01_Sketch.h">
+      <Filter>Source Files\Chapter08\Example_08_01</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter08\Example_08_02_Sketch.h">
+      <Filter>Source Files\Chapter08\Example_08_02</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter08\Example_08_03_Sketch.h">
+      <Filter>Source Files\Chapter08\Example_08_03</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter08\Example_08_04_Sketch.h">
+      <Filter>Source Files\Chapter08\Example_08_04</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter08\Example_08_05_Sketch.h">
+      <Filter>Source Files\Chapter08\Example_08_05</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter08\Example_08_05_KochLine.h">
+      <Filter>Source Files\Chapter08\Example_08_05</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -812,6 +857,30 @@
     </ClCompile>
     <ClCompile Include="Chapter04\Example_04_08_Sketch.cpp">
       <Filter>Source Files\Chapter04\Example_04_08</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter07\Example_07_03_Sketch.cpp">
+      <Filter>Source Files\Chapter07\Example_07_03</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter07\Example_07_03_Cell.cpp">
+      <Filter>Source Files\Chapter07\Example_07_03</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter08\Example_08_01_Sketch.cpp">
+      <Filter>Source Files\Chapter08\Example_08_01</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter08\Example_08_02_Sketch.cpp">
+      <Filter>Source Files\Chapter08\Example_08_02</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter08\Example_08_03_Sketch.cpp">
+      <Filter>Source Files\Chapter08\Example_08_03</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter08\Example_08_04_Sketch.cpp">
+      <Filter>Source Files\Chapter08\Example_08_04</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter08\Example_08_05_Sketch.cpp">
+      <Filter>Source Files\Chapter08\Example_08_05</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter08\Example_08_05_KochLine.cpp">
+      <Filter>Source Files\Chapter08\Example_08_05</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

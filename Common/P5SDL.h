@@ -74,6 +74,7 @@ public:
     void Lines(SDL_Point points[], int count);
     void Rect(int x, int y, int width, int heigth);
     void RectMode(int mode) { _rect_mode = mode; };
+    void Square(int x, int y, int width);
     void NoLoop(void) { _loop = false; };
     void Loop(void) { _loop = true; };
 private:
@@ -88,7 +89,7 @@ private:
     int             _origin_x = 0;
     int             _origin_y = 0;
     double          _rotation_radians = 0;
-    int             _stroke_weight = 2;
+    int             _stroke_weight = 1;
     SDL_Color       _stroke_color = kColorBlack;
     SDL_Color       _fill_color = kColorWhite;
     SDL_Color       _background_color = kColorWhite;

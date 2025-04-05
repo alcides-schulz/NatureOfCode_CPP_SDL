@@ -11,14 +11,14 @@ bool CopyExample::Setup()
 {
     Background(255);
 
-    auto from_number = string(FROM_NUMBER);
-    auto to_number = string(TO_NUMBER);
-    auto from_namespace = "nature_of_code_chapter_" + string(CHAPTER) + "_example_" + string(FROM_EXAMPLE);
-    auto to_namespace = "nature_of_code_chapter_" + string(CHAPTER) + "_example_" + string(TO_EXAMPLE);
+    auto from_number = string(COPY_FROM_NUMBER);
+    auto to_number = string(COPY_TO_NUMBER);
+    auto from_namespace = "nature_of_code_chapter_" + string(COPY_CHAPTER) + "_example_" + string(COPY_FROM_EXAMPLE);
+    auto to_namespace = "nature_of_code_chapter_" + string(COPY_CHAPTER) + "_example_" + string(COPY_TO_EXAMPLE);
 
     for (const auto& entry : fs::directory_iterator(string(COPY_FOLDER))) {
         auto from_filename = entry.path().string();
-        if (from_filename.find(FROM_NUMBER, 0) == string::npos)
+        if (from_filename.find(COPY_FROM_NUMBER, 0) == string::npos)
             continue;
         cout << "Copying from: " << from_filename << endl;
         auto to_filename = string(from_filename);

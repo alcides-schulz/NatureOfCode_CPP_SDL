@@ -23,6 +23,7 @@ public:
     double Heading(void);
     Vector Clone(void);
     float Dot(Vector other);
+    void Rotate(double angle);
     static Vector Random2D();
     static float Distance(Vector vector1, Vector vector2);
     static Vector Add(Vector vector1, Vector vector2);

@@ -33,8 +33,8 @@ bool P5SDL::Init()
     }
     SDL_SetRenderDrawBlendMode(_renderer, SDL_BLENDMODE_BLEND);
     for (int degree = 0; degree < 360; degree++) {
-        _circle_cos_cache[degree] = (double)cos(degree * M_PI / 180);
-        _circle_sin_cache[degree] = (double)sin(degree * M_PI / 180);
+        _circle_cos_cache[degree] = cos(degree * M_PI / 180.0);
+        _circle_sin_cache[degree] = sin(degree * M_PI / 180.0);
     }
     _is_running = Setup();
     if (!_is_running) {
@@ -50,6 +50,7 @@ void P5SDL::Run()
     Uint32 start_time = SDL_GetTicks();
     Uint32 timer = start_time;
     int local_frame_count = 0;
+    _loop = true;
 
     while (_is_running) {
         Uint32 frame_start = SDL_GetTicks();
@@ -124,6 +125,11 @@ void P5SDL::Circle(int center_x, int center_y, int diameter)
             SDL_RenderDrawPoint(_renderer, (int)x, (int)y);
         }
     }
+}
+
+void P5SDL::Square(int x, int y, int width)
+{
+    Rect(x, y, width, width);
 }
 
 void P5SDL::Rect(int x, int y, int width, int height)

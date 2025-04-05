@@ -3,15 +3,15 @@
 
 #include "../Common/P5SDL.h"
 
-#define CHAPTER "05"
-#define FROM_EXAMPLE "11"
-#define TO_EXAMPLE "12"
+#define COPY_CHAPTER "08"
+#define COPY_FROM_EXAMPLE "01"
+#define COPY_TO_EXAMPLE "04"
 
-#define COPY_FOLDER ".\\Chapter" CHAPTER
-#define FROM_NUMBER CHAPTER "_" FROM_EXAMPLE
-#define TO_NUMBER CHAPTER "_" TO_EXAMPLE
+#define COPY_FOLDER ".\\Chapter" COPY_CHAPTER
+#define COPY_FROM_NUMBER COPY_CHAPTER "_" COPY_FROM_EXAMPLE
+#define COPY_TO_NUMBER COPY_CHAPTER "_" COPY_TO_EXAMPLE
 
-#define COPY_TITLE "Copy Example Folder: " COPY_FOLDER " From: '" FROM_NUMBER "' To: '" TO_NUMBER "'"
+#define COPY_TITLE "Copy Example Folder: " COPY_FOLDER " From: '" COPY_FROM_NUMBER "' To: '" COPY_TO_NUMBER "'"
 
 class CopyExample : public P5SDL
 {

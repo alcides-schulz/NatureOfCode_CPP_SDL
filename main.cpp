@@ -68,6 +68,13 @@
 
 #include "Chapter07/Example_07_01_Sketch.h"
 #include "Chapter07/Example_07_02_Sketch.h"
+#include "Chapter07/Example_07_03_Sketch.h"
+
+#include "Chapter08/Example_08_01_Sketch.h"
+#include "Chapter08/Example_08_02_Sketch.h"
+#include "Chapter08/Example_08_03_Sketch.h"
+#include "Chapter08/Example_08_04_Sketch.h"
+#include "Chapter08/Example_08_05_Sketch.h"
 
 #include "Miscellaneous/CircleTest.h"
 #include "Miscellaneous/GenerateExampleInitialCode.h"
@@ -140,6 +147,14 @@ vector<P5SDL *> chapter05_menu = {
 vector<P5SDL *> chapter07_menu = {
     new nature_of_code_chapter_07_example_01::Sketch(),
     new nature_of_code_chapter_07_example_02::Sketch(),
+    new nature_of_code_chapter_07_example_03::Sketch(),
+};
+vector<P5SDL *> chapter08_menu = {
+    new nature_of_code_chapter_08_example_01::Sketch(),
+    new nature_of_code_chapter_08_example_02::Sketch(),
+    new nature_of_code_chapter_08_example_03::Sketch(),
+    new nature_of_code_chapter_08_example_04::Sketch(),
+    new nature_of_code_chapter_08_example_05::Sketch(),
 };
 
 vector<P5SDL *> miscellaneous = {
@@ -186,6 +201,7 @@ int main(int argc, char* argv[])
         cout << endl << "\t d. Chapter 4 - Particle System";
         cout << endl << "\t e. Chapter 5 - Autonomous Agents";
         cout << endl << "\t f. Chapter 7 - Cellular Automata";
+        cout << endl << "\t g. Chapter 8 - Fractals";
         cout << endl;
         cout << endl << "\t z. Miscellaneous";
         cout << endl << "\t x. Exit" << endl << endl << "--> ";
@@ -215,6 +231,10 @@ int main(int argc, char* argv[])
         }
         if (response.compare("f") == 0) {
             ShowMenu(chapter07_menu);
+            continue;
+        }
+        if (response.compare("g") == 0) {
+            ShowMenu(chapter08_menu);
             continue;
         }
         if (response.compare("z") == 0) {
