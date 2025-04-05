@@ -134,167 +134,98 @@
     <Filter Include="Source Files\Chapter08\Example_08_09">
       <UniqueIdentifier>{51d99721-8c77-45ea-b9dc-e721d864167d}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Chapter01\Example_01_01">
+      <UniqueIdentifier>{83f8f57f-ebfe-4d7c-8b37-4fb76e688c07}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Chapter01\Example_01_02">
+      <UniqueIdentifier>{5b354666-d2a5-4b97-848d-2d28317c24ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Chapter01\Example_01_03">
+      <UniqueIdentifier>{bdb34285-08de-4aef-ace2-bfef23936e5a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Chapter01\Example_01_04">
+      <UniqueIdentifier>{c8b0f9fa-d7c5-4baa-a2b5-321af5a425f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Chapter01\Example_01_05">
+      <UniqueIdentifier>{9b2ebeae-776b-4105-a341-8a9ace048abf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Chapter01\Example_01_06">
+      <UniqueIdentifier>{4b3b163a-8259-47fa-b476-66faa9b0f78a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Chapter01\Example_01_07">
+      <UniqueIdentifier>{3545ee17-ac61-430d-8df0-c2c4d4656e48}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Chapter01\Example_01_08">
+      <UniqueIdentifier>{b07c8de6-45f6-498d-b14b-bee084c59cb0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Chapter01\Example_01_09">
+      <UniqueIdentifier>{d1cb8ada-bf20-4d54-a6c9-91e30393962b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Chapter01\Example_01_10">
+      <UniqueIdentifier>{bf62f44a-6e22-41cf-a094-6e08454cd402}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Chapter02\Example_02_01">
+      <UniqueIdentifier>{1b9a8cfd-3312-4cec-90a7-2449e77ef149}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Chapter02\Example_02_02">
+      <UniqueIdentifier>{5ad0cef1-9740-40af-bf54-b24e0ad741bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Chapter02\Example_02_03">
+      <UniqueIdentifier>{86eca9ca-103c-4fe0-b911-e04731647b7f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Chapter02\Example_02_04">
+      <UniqueIdentifier>{f69ec9ec-cf34-4bef-b6dd-1ec80b43145f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Chapter02\Example_02_05">
+      <UniqueIdentifier>{cb150a5d-48ad-4f06-9119-e85290aaf6b7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Chapter02\Example_02_06">
+      <UniqueIdentifier>{4d422547-f5e7-4e9a-beba-321b3b514631}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Chapter02\Example_02_07">
+      <UniqueIdentifier>{6a7fdcd7-6434-43ae-91df-15b49d7fea3a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Chapter02\Example_02_08">
+      <UniqueIdentifier>{3a3078a6-833e-43ae-98cd-be43e2fd240a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Chapter02\Example_02_09">
+      <UniqueIdentifier>{8871dcfe-4bc2-4849-ae66-f9afb6032a61}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Chapter03\Example_03_01">
+      <UniqueIdentifier>{5a92cb1e-7b8a-4e9a-8fbe-74285170231d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Chapter03\Example_03_02">
+      <UniqueIdentifier>{a8c1233c-047c-4979-b3e8-759d3e1045fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Chapter03\Example_03_03">
+      <UniqueIdentifier>{44e1825e-bbaf-4a0a-94ad-24055f78d330}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Chapter03\Example_03_04">
+      <UniqueIdentifier>{ab206dde-9d24-4d04-907a-6860f52ed999}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Chapter03\Example_03_05">
+      <UniqueIdentifier>{a1088a94-fe21-4483-b6b2-28ee7c923137}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Chapter03\Example_03_06">
+      <UniqueIdentifier>{61aca18e-7e97-4bb5-b7e3-019f6b5bf0c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Chapter03\Example_03_07">
+      <UniqueIdentifier>{5ba8c04d-0457-493f-a7ee-60de9848979e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Chapter03\Example_03_08">
+      <UniqueIdentifier>{c558ca32-961b-47d1-bd04-9c1ac164cf82}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Chapter03\Example_03_09">
+      <UniqueIdentifier>{8dbc98c0-7b11-419b-ae6a-b159bccc625b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Chapter03\Example_03_10">
+      <UniqueIdentifier>{726988f3-0084-4f0f-95ed-e67f4ec92742}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Chapter03\Example_03_11">
+      <UniqueIdentifier>{baf74941-fbe0-4685-9191-1a0ffc49bef0}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Chapter01\Example_01_01_Sketch.h">
-      <Filter>Source Files\Chapter01</Filter>
-    </ClInclude>
-    <ClInclude Include="Chapter01\Example_01_02_Sketch.h">
-      <Filter>Source Files\Chapter01</Filter>
-    </ClInclude>
-    <ClInclude Include="Chapter01\Example_01_03_Sketch.h">
-      <Filter>Source Files\Chapter01</Filter>
-    </ClInclude>
-    <ClInclude Include="Chapter01\Example_01_04_Sketch.h">
-      <Filter>Source Files\Chapter01</Filter>
-    </ClInclude>
-    <ClInclude Include="Chapter01\Example_01_05_Sketch.h">
-      <Filter>Source Files\Chapter01</Filter>
-    </ClInclude>
-    <ClInclude Include="Chapter01\Example_01_06_Sketch.h">
-      <Filter>Source Files\Chapter01</Filter>
-    </ClInclude>
-    <ClInclude Include="Chapter01\Example_01_07_Mover.h">
-      <Filter>Source Files\Chapter01</Filter>
-    </ClInclude>
-    <ClInclude Include="Chapter01\Example_01_07_Sketch.h">
-      <Filter>Source Files\Chapter01</Filter>
-    </ClInclude>
-    <ClInclude Include="Chapter01\Example_01_08_Mover.h">
-      <Filter>Source Files\Chapter01</Filter>
-    </ClInclude>
-    <ClInclude Include="Chapter01\Example_01_08_Sketch.h">
-      <Filter>Source Files\Chapter01</Filter>
-    </ClInclude>
-    <ClInclude Include="Chapter01\Example_01_09_Mover.h">
-      <Filter>Source Files\Chapter01</Filter>
-    </ClInclude>
-    <ClInclude Include="Chapter01\Example_01_09_Sketch.h">
-      <Filter>Source Files\Chapter01</Filter>
-    </ClInclude>
-    <ClInclude Include="Chapter01\Example_01_10_Mover.h">
-      <Filter>Source Files\Chapter01</Filter>
-    </ClInclude>
-    <ClInclude Include="Chapter01\Example_01_10_Sketch.h">
-      <Filter>Source Files\Chapter01</Filter>
-    </ClInclude>
-    <ClInclude Include="Chapter02\Example_02_01_Mover.h">
-      <Filter>Source Files\Chapter02</Filter>
-    </ClInclude>
-    <ClInclude Include="Chapter02\Example_02_01_Sketch.h">
-      <Filter>Source Files\Chapter02</Filter>
-    </ClInclude>
-    <ClInclude Include="Chapter02\Example_02_02_Mover.h">
-      <Filter>Source Files\Chapter02</Filter>
-    </ClInclude>
-    <ClInclude Include="Chapter02\Example_02_02_Sketch.h">
-      <Filter>Source Files\Chapter02</Filter>
-    </ClInclude>
-    <ClInclude Include="Chapter02\Example_02_03_Mover.h">
-      <Filter>Source Files\Chapter02</Filter>
-    </ClInclude>
-    <ClInclude Include="Chapter02\Example_02_03_Sketch.h">
-      <Filter>Source Files\Chapter02</Filter>
-    </ClInclude>
-    <ClInclude Include="Chapter02\Example_02_04_Mover.h">
-      <Filter>Source Files\Chapter02</Filter>
-    </ClInclude>
-    <ClInclude Include="Chapter02\Example_02_04_Sketch.h">
-      <Filter>Source Files\Chapter02</Filter>
-    </ClInclude>
-    <ClInclude Include="Chapter02\Example_02_05_Liquid.h">
-      <Filter>Source Files\Chapter02</Filter>
-    </ClInclude>
-    <ClInclude Include="Chapter02\Example_02_05_Mover.h">
-      <Filter>Source Files\Chapter02</Filter>
-    </ClInclude>
-    <ClInclude Include="Chapter02\Example_02_05_Sketch.h">
-      <Filter>Source Files\Chapter02</Filter>
-    </ClInclude>
-    <ClInclude Include="Chapter02\Example_02_06_Attractor.h">
-      <Filter>Source Files\Chapter02</Filter>
-    </ClInclude>
-    <ClInclude Include="Chapter02\Example_02_06_Mover.h">
-      <Filter>Source Files\Chapter02</Filter>
-    </ClInclude>
-    <ClInclude Include="Chapter02\Example_02_06_Sketch.h">
-      <Filter>Source Files\Chapter02</Filter>
-    </ClInclude>
-    <ClInclude Include="Chapter02\Example_02_07_Attractor.h">
-      <Filter>Source Files\Chapter02</Filter>
-    </ClInclude>
-    <ClInclude Include="Chapter02\Example_02_07_Mover.h">
-      <Filter>Source Files\Chapter02</Filter>
-    </ClInclude>
-    <ClInclude Include="Chapter02\Example_02_07_Sketch.h">
-      <Filter>Source Files\Chapter02</Filter>
-    </ClInclude>
-    <ClInclude Include="Chapter02\Example_02_08_Body.h">
-      <Filter>Source Files\Chapter02</Filter>
-    </ClInclude>
-    <ClInclude Include="Chapter02\Example_02_08_Sketch.h">
-      <Filter>Source Files\Chapter02</Filter>
-    </ClInclude>
-    <ClInclude Include="Chapter02\Example_02_09_Body.h">
-      <Filter>Source Files\Chapter02</Filter>
-    </ClInclude>
-    <ClInclude Include="Chapter02\Example_02_09_Sketch.h">
-      <Filter>Source Files\Chapter02</Filter>
-    </ClInclude>
-    <ClInclude Include="Chapter03\Example_03_01_Sketch.h">
-      <Filter>Source Files\Chapter03</Filter>
-    </ClInclude>
-    <ClInclude Include="Chapter03\Example_03_02_Attractor.h">
-      <Filter>Source Files\Chapter03</Filter>
-    </ClInclude>
-    <ClInclude Include="Chapter03\Example_03_02_Mover.h">
-      <Filter>Source Files\Chapter03</Filter>
-    </ClInclude>
-    <ClInclude Include="Chapter03\Example_03_02_Sketch.h">
-      <Filter>Source Files\Chapter03</Filter>
-    </ClInclude>
-    <ClInclude Include="Chapter03\Example_03_03_Mover.h">
-      <Filter>Source Files\Chapter03</Filter>
-    </ClInclude>
-    <ClInclude Include="Chapter03\Example_03_03_Sketch.h">
-      <Filter>Source Files\Chapter03</Filter>
-    </ClInclude>
-    <ClInclude Include="Chapter03\Example_03_04_Sketch.h">
-      <Filter>Source Files\Chapter03</Filter>
-    </ClInclude>
-    <ClInclude Include="Chapter03\Example_03_05_Sketch.h">
-      <Filter>Source Files\Chapter03</Filter>
-    </ClInclude>
-    <ClInclude Include="Chapter03\Example_03_06_Sketch.h">
-      <Filter>Source Files\Chapter03</Filter>
-    </ClInclude>
-    <ClInclude Include="Chapter03\Example_03_07_Oscillator.h">
-      <Filter>Source Files\Chapter03</Filter>
-    </ClInclude>
-    <ClInclude Include="Chapter03\Example_03_07_Sketch.h">
-      <Filter>Source Files\Chapter03</Filter>
-    </ClInclude>
-    <ClInclude Include="Chapter03\Example_03_08_Sketch.h">
-      <Filter>Source Files\Chapter03</Filter>
-    </ClInclude>
-    <ClInclude Include="Chapter03\Example_03_09_Sketch.h">
-      <Filter>Source Files\Chapter03</Filter>
-    </ClInclude>
-    <ClInclude Include="Chapter03\Example_03_10_Bob.h">
-      <Filter>Source Files\Chapter03</Filter>
-    </ClInclude>
-    <ClInclude Include="Chapter03\Example_03_10_Sketch.h">
-      <Filter>Source Files\Chapter03</Filter>
-    </ClInclude>
-    <ClInclude Include="Chapter03\Example_03_10_Spring.h">
-      <Filter>Source Files\Chapter03</Filter>
-    </ClInclude>
-    <ClInclude Include="Chapter03\Example_03_11_Pendulum.h">
-      <Filter>Source Files\Chapter03</Filter>
-    </ClInclude>
-    <ClInclude Include="Chapter03\Example_03_11_Sketch.h">
-      <Filter>Source Files\Chapter03</Filter>
-    </ClInclude>
     <ClInclude Include="Common\PerlinNoise2D.h">
       <Filter>Source Files\Common</Filter>
     </ClInclude>
@@ -529,6 +460,165 @@
     <ClInclude Include="Chapter08\Example_08_09_Turtle.h">
       <Filter>Source Files\Chapter08\Example_08_09</Filter>
     </ClInclude>
+    <ClInclude Include="Chapter01\Example_01_01_Sketch.h">
+      <Filter>Source Files\Chapter01\Example_01_01</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter01\Example_01_02_Sketch.h">
+      <Filter>Source Files\Chapter01\Example_01_02</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter01\Example_01_03_Sketch.h">
+      <Filter>Source Files\Chapter01\Example_01_03</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter01\Example_01_04_Sketch.h">
+      <Filter>Source Files\Chapter01\Example_01_04</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter01\Example_01_05_Sketch.h">
+      <Filter>Source Files\Chapter01\Example_01_05</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter01\Example_01_06_Sketch.h">
+      <Filter>Source Files\Chapter01\Example_01_06</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter01\Example_01_07_Mover.h">
+      <Filter>Source Files\Chapter01\Example_01_07</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter01\Example_01_07_Sketch.h">
+      <Filter>Source Files\Chapter01\Example_01_07</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter01\Example_01_08_Mover.h">
+      <Filter>Source Files\Chapter01\Example_01_08</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter01\Example_01_08_Sketch.h">
+      <Filter>Source Files\Chapter01\Example_01_08</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter01\Example_01_09_Mover.h">
+      <Filter>Source Files\Chapter01\Example_01_09</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter01\Example_01_09_Sketch.h">
+      <Filter>Source Files\Chapter01\Example_01_09</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter01\Example_01_10_Mover.h">
+      <Filter>Source Files\Chapter01\Example_01_10</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter01\Example_01_10_Sketch.h">
+      <Filter>Source Files\Chapter01\Example_01_10</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter02\Example_02_01_Mover.h">
+      <Filter>Source Files\Chapter02\Example_02_01</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter02\Example_02_01_Sketch.h">
+      <Filter>Source Files\Chapter02\Example_02_01</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter02\Example_02_02_Mover.h">
+      <Filter>Source Files\Chapter02\Example_02_02</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter02\Example_02_02_Sketch.h">
+      <Filter>Source Files\Chapter02\Example_02_02</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter02\Example_02_03_Mover.h">
+      <Filter>Source Files\Chapter02\Example_02_03</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter02\Example_02_03_Sketch.h">
+      <Filter>Source Files\Chapter02\Example_02_03</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter02\Example_02_04_Mover.h">
+      <Filter>Source Files\Chapter02\Example_02_04</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter02\Example_02_04_Sketch.h">
+      <Filter>Source Files\Chapter02\Example_02_04</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter02\Example_02_05_Liquid.h">
+      <Filter>Source Files\Chapter02\Example_02_05</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter02\Example_02_05_Mover.h">
+      <Filter>Source Files\Chapter02\Example_02_05</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter02\Example_02_05_Sketch.h">
+      <Filter>Source Files\Chapter02\Example_02_05</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter02\Example_02_06_Attractor.h">
+      <Filter>Source Files\Chapter02\Example_02_06</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter02\Example_02_06_Mover.h">
+      <Filter>Source Files\Chapter02\Example_02_06</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter02\Example_02_06_Sketch.h">
+      <Filter>Source Files\Chapter02\Example_02_06</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter02\Example_02_07_Attractor.h">
+      <Filter>Source Files\Chapter02\Example_02_07</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter02\Example_02_07_Mover.h">
+      <Filter>Source Files\Chapter02\Example_02_07</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter02\Example_02_07_Sketch.h">
+      <Filter>Source Files\Chapter02\Example_02_07</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter02\Example_02_08_Body.h">
+      <Filter>Source Files\Chapter02\Example_02_08</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter02\Example_02_08_Sketch.h">
+      <Filter>Source Files\Chapter02\Example_02_08</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter02\Example_02_09_Body.h">
+      <Filter>Source Files\Chapter02\Example_02_09</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter02\Example_02_09_Sketch.h">
+      <Filter>Source Files\Chapter02\Example_02_09</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter03\Example_03_01_Sketch.h">
+      <Filter>Source Files\Chapter03\Example_03_01</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter03\Example_03_02_Attractor.h">
+      <Filter>Source Files\Chapter03\Example_03_02</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter03\Example_03_02_Mover.h">
+      <Filter>Source Files\Chapter03\Example_03_02</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter03\Example_03_02_Sketch.h">
+      <Filter>Source Files\Chapter03\Example_03_02</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter03\Example_03_03_Mover.h">
+      <Filter>Source Files\Chapter03\Example_03_03</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter03\Example_03_03_Sketch.h">
+      <Filter>Source Files\Chapter03\Example_03_03</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter03\Example_03_04_Sketch.h">
+      <Filter>Source Files\Chapter03\Example_03_04</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter03\Example_03_05_Sketch.h">
+      <Filter>Source Files\Chapter03\Example_03_05</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter03\Example_03_06_Sketch.h">
+      <Filter>Source Files\Chapter03\Example_03_06</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter03\Example_03_07_Oscillator.h">
+      <Filter>Source Files\Chapter03\Example_03_07</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter03\Example_03_07_Sketch.h">
+      <Filter>Source Files\Chapter03\Example_03_07</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter03\Example_03_08_Sketch.h">
+      <Filter>Source Files\Chapter03\Example_03_08</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter03\Example_03_09_Sketch.h">
+      <Filter>Source Files\Chapter03\Example_03_09</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter03\Example_03_10_Bob.h">
+      <Filter>Source Files\Chapter03\Example_03_10</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter03\Example_03_10_Sketch.h">
+      <Filter>Source Files\Chapter03\Example_03_10</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter03\Example_03_10_Spring.h">
+      <Filter>Source Files\Chapter03\Example_03_10</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter03\Example_03_11_Pendulum.h">
+      <Filter>Source Files\Chapter03\Example_03_11</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter03\Example_03_11_Sketch.h">
+      <Filter>Source Files\Chapter03\Example_03_11</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -536,165 +626,6 @@
     </ClCompile>
     <ClCompile Include="Common\Utils.h">
       <Filter>Source Files\Common</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter01\Example_01_01_Sketch.cpp">
-      <Filter>Source Files\Chapter01</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter01\Example_01_02_Sketch.cpp">
-      <Filter>Source Files\Chapter01</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter01\Example_01_03_Sketch.cpp">
-      <Filter>Source Files\Chapter01</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter01\Example_01_04_Sketch.cpp">
-      <Filter>Source Files\Chapter01</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter01\Example_01_05_Sketch.cpp">
-      <Filter>Source Files\Chapter01</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter01\Example_01_06_Sketch.cpp">
-      <Filter>Source Files\Chapter01</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter01\Example_01_07_Mover.cpp">
-      <Filter>Source Files\Chapter01</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter01\Example_01_07_Sketch.cpp">
-      <Filter>Source Files\Chapter01</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter01\Example_01_08_Mover.cpp">
-      <Filter>Source Files\Chapter01</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter01\Example_01_08_Sketch.cpp">
-      <Filter>Source Files\Chapter01</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter01\Example_01_09_Mover.cpp">
-      <Filter>Source Files\Chapter01</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter01\Example_01_09_Sketch.cpp">
-      <Filter>Source Files\Chapter01</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter01\Example_01_10_Mover.cpp">
-      <Filter>Source Files\Chapter01</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter01\Example_01_10_Sketch.cpp">
-      <Filter>Source Files\Chapter01</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter02\Example_02_01_Mover.cpp">
-      <Filter>Source Files\Chapter02</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter02\Example_02_01_Sketch.cpp">
-      <Filter>Source Files\Chapter02</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter02\Example_02_02_Mover.cpp">
-      <Filter>Source Files\Chapter02</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter02\Example_02_02_Sketch.cpp">
-      <Filter>Source Files\Chapter02</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter02\Example_02_03_Mover.cpp">
-      <Filter>Source Files\Chapter02</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter02\Example_02_03_Sketch.cpp">
-      <Filter>Source Files\Chapter02</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter02\Example_02_04_Mover.cpp">
-      <Filter>Source Files\Chapter02</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter02\Example_02_04_Sketch.cpp">
-      <Filter>Source Files\Chapter02</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter02\Example_02_05_Liquid.cpp">
-      <Filter>Source Files\Chapter02</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter02\Example_02_05_Mover.cpp">
-      <Filter>Source Files\Chapter02</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter02\Example_02_05_Sketch.cpp">
-      <Filter>Source Files\Chapter02</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter02\Example_02_06_Attractor.cpp">
-      <Filter>Source Files\Chapter02</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter02\Example_02_06_Mover.cpp">
-      <Filter>Source Files\Chapter02</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter02\Example_02_06_Sketch.cpp">
-      <Filter>Source Files\Chapter02</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter02\Example_02_07_Attractor.cpp">
-      <Filter>Source Files\Chapter02</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter02\Example_02_07_Mover.cpp">
-      <Filter>Source Files\Chapter02</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter02\Example_02_07_Sketch.cpp">
-      <Filter>Source Files\Chapter02</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter02\Example_02_08_Body.cpp">
-      <Filter>Source Files\Chapter02</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter02\Example_02_08_Sketch.cpp">
-      <Filter>Source Files\Chapter02</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter02\Example_02_09_Body.cpp">
-      <Filter>Source Files\Chapter02</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter02\Example_02_09_Sketch.cpp">
-      <Filter>Source Files\Chapter02</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter03\Example_03_01_Sketch.cpp">
-      <Filter>Source Files\Chapter03</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter03\Example_03_02_Attractor.cpp">
-      <Filter>Source Files\Chapter03</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter03\Example_03_02_Mover.cpp">
-      <Filter>Source Files\Chapter03</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter03\Example_03_02_Sketch.cpp">
-      <Filter>Source Files\Chapter03</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter03\Example_03_03_Mover.cpp">
-      <Filter>Source Files\Chapter03</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter03\Example_03_03_Sketch.cpp">
-      <Filter>Source Files\Chapter03</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter03\Example_03_04_Sketch.cpp">
-      <Filter>Source Files\Chapter03</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter03\Example_03_05_Sketch.cpp">
-      <Filter>Source Files\Chapter03</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter03\Example_03_06_Sketch.cpp">
-      <Filter>Source Files\Chapter03</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter03\Example_03_07_Oscillator.cpp">
-      <Filter>Source Files\Chapter03</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter03\Example_03_07_Sketch.cpp">
-      <Filter>Source Files\Chapter03</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter03\Example_03_08_Sketch.cpp">
-      <Filter>Source Files\Chapter03</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter03\Example_03_09_Sketch.cpp">
-      <Filter>Source Files\Chapter03</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter03\Example_03_10_Bob.cpp">
-      <Filter>Source Files\Chapter03</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter03\Example_03_10_Sketch.cpp">
-      <Filter>Source Files\Chapter03</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter03\Example_03_10_Spring.cpp">
-      <Filter>Source Files\Chapter03</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter03\Example_03_11_Pendulum.cpp">
-      <Filter>Source Files\Chapter03</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter03\Example_03_11_Sketch.cpp">
-      <Filter>Source Files\Chapter03</Filter>
     </ClCompile>
     <ClCompile Include="Common\PerlinNoise2D.cpp">
       <Filter>Source Files\Common</Filter>
@@ -929,6 +860,165 @@
     </ClCompile>
     <ClCompile Include="Chapter08\Example_08_09_Tutle.cpp">
       <Filter>Source Files\Chapter08\Example_08_09</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter01\Example_01_01_Sketch.cpp">
+      <Filter>Source Files\Chapter01\Example_01_01</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter01\Example_01_02_Sketch.cpp">
+      <Filter>Source Files\Chapter01\Example_01_02</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter01\Example_01_03_Sketch.cpp">
+      <Filter>Source Files\Chapter01\Example_01_03</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter01\Example_01_04_Sketch.cpp">
+      <Filter>Source Files\Chapter01\Example_01_04</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter01\Example_01_05_Sketch.cpp">
+      <Filter>Source Files\Chapter01\Example_01_05</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter01\Example_01_06_Sketch.cpp">
+      <Filter>Source Files\Chapter01\Example_01_06</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter01\Example_01_07_Mover.cpp">
+      <Filter>Source Files\Chapter01\Example_01_07</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter01\Example_01_07_Sketch.cpp">
+      <Filter>Source Files\Chapter01\Example_01_07</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter01\Example_01_08_Mover.cpp">
+      <Filter>Source Files\Chapter01\Example_01_08</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter01\Example_01_08_Sketch.cpp">
+      <Filter>Source Files\Chapter01\Example_01_08</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter01\Example_01_09_Mover.cpp">
+      <Filter>Source Files\Chapter01\Example_01_09</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter01\Example_01_09_Sketch.cpp">
+      <Filter>Source Files\Chapter01\Example_01_09</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter01\Example_01_10_Mover.cpp">
+      <Filter>Source Files\Chapter01\Example_01_10</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter01\Example_01_10_Sketch.cpp">
+      <Filter>Source Files\Chapter01\Example_01_10</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter02\Example_02_01_Mover.cpp">
+      <Filter>Source Files\Chapter02\Example_02_01</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter02\Example_02_01_Sketch.cpp">
+      <Filter>Source Files\Chapter02\Example_02_01</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter02\Example_02_02_Mover.cpp">
+      <Filter>Source Files\Chapter02\Example_02_02</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter02\Example_02_02_Sketch.cpp">
+      <Filter>Source Files\Chapter02\Example_02_02</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter02\Example_02_03_Mover.cpp">
+      <Filter>Source Files\Chapter02\Example_02_03</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter02\Example_02_03_Sketch.cpp">
+      <Filter>Source Files\Chapter02\Example_02_03</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter02\Example_02_04_Mover.cpp">
+      <Filter>Source Files\Chapter02\Example_02_04</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter02\Example_02_04_Sketch.cpp">
+      <Filter>Source Files\Chapter02\Example_02_04</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter02\Example_02_05_Liquid.cpp">
+      <Filter>Source Files\Chapter02\Example_02_05</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter02\Example_02_05_Mover.cpp">
+      <Filter>Source Files\Chapter02\Example_02_05</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter02\Example_02_05_Sketch.cpp">
+      <Filter>Source Files\Chapter02\Example_02_05</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter02\Example_02_06_Attractor.cpp">
+      <Filter>Source Files\Chapter02\Example_02_06</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter02\Example_02_06_Mover.cpp">
+      <Filter>Source Files\Chapter02\Example_02_06</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter02\Example_02_06_Sketch.cpp">
+      <Filter>Source Files\Chapter02\Example_02_06</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter02\Example_02_07_Attractor.cpp">
+      <Filter>Source Files\Chapter02\Example_02_07</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter02\Example_02_07_Mover.cpp">
+      <Filter>Source Files\Chapter02\Example_02_07</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter02\Example_02_07_Sketch.cpp">
+      <Filter>Source Files\Chapter02\Example_02_07</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter02\Example_02_08_Body.cpp">
+      <Filter>Source Files\Chapter02\Example_02_08</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter02\Example_02_08_Sketch.cpp">
+      <Filter>Source Files\Chapter02\Example_02_08</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter02\Example_02_09_Body.cpp">
+      <Filter>Source Files\Chapter02\Example_02_09</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter02\Example_02_09_Sketch.cpp">
+      <Filter>Source Files\Chapter02\Example_02_09</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter03\Example_03_01_Sketch.cpp">
+      <Filter>Source Files\Chapter03\Example_03_01</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter03\Example_03_02_Attractor.cpp">
+      <Filter>Source Files\Chapter03\Example_03_02</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter03\Example_03_02_Mover.cpp">
+      <Filter>Source Files\Chapter03\Example_03_02</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter03\Example_03_02_Sketch.cpp">
+      <Filter>Source Files\Chapter03\Example_03_02</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter03\Example_03_03_Mover.cpp">
+      <Filter>Source Files\Chapter03\Example_03_03</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter03\Example_03_03_Sketch.cpp">
+      <Filter>Source Files\Chapter03\Example_03_03</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter03\Example_03_04_Sketch.cpp">
+      <Filter>Source Files\Chapter03\Example_03_04</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter03\Example_03_05_Sketch.cpp">
+      <Filter>Source Files\Chapter03\Example_03_05</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter03\Example_03_06_Sketch.cpp">
+      <Filter>Source Files\Chapter03\Example_03_06</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter03\Example_03_07_Oscillator.cpp">
+      <Filter>Source Files\Chapter03\Example_03_07</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter03\Example_03_07_Sketch.cpp">
+      <Filter>Source Files\Chapter03\Example_03_07</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter03\Example_03_08_Sketch.cpp">
+      <Filter>Source Files\Chapter03\Example_03_08</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter03\Example_03_09_Sketch.cpp">
+      <Filter>Source Files\Chapter03\Example_03_09</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter03\Example_03_10_Bob.cpp">
+      <Filter>Source Files\Chapter03\Example_03_10</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter03\Example_03_10_Sketch.cpp">
+      <Filter>Source Files\Chapter03\Example_03_10</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter03\Example_03_10_Spring.cpp">
+      <Filter>Source Files\Chapter03\Example_03_10</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter03\Example_03_11_Pendulum.cpp">
+      <Filter>Source Files\Chapter03\Example_03_11</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter03\Example_03_11_Sketch.cpp">
+      <Filter>Source Files\Chapter03\Example_03_11</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
