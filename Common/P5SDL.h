@@ -9,6 +9,7 @@
 #include <vector>
 #include <array>
 #include <stack>
+#include <map>
 #include <string>
 #include <cmath>
 #include <random>
