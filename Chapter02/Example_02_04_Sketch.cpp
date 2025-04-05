@@ -22,7 +22,7 @@ namespace nature_of_code_chapter_02_example_04
     
         if (_mover->ContactEdge(this)) {
             float c = 0.1f;
-            auto friction = _mover->GetVelocity().Clone();
+            auto friction = _mover->GetVelocity().Copy();
             friction.Mult(-1);
             friction.SetMag(c);
             _mover->ApplyForce(friction);

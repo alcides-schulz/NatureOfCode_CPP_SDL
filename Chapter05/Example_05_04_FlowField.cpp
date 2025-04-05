@@ -26,7 +26,7 @@ namespace nature_of_code_chapter_05_example_04
             for (int j = 0; j < _rows; j++) {
                 auto w = p5sdl->Width() / _cols;
                 auto h = p5sdl->Height() / _rows;
-                auto v = _field[i][j].Clone();
+                auto v = _field[i][j].Copy();
                 v.SetMag(w * 0.5f);
                 auto x = i * w + w / 2;
                 auto y = j * h + h / 2;
@@ -39,7 +39,7 @@ namespace nature_of_code_chapter_05_example_04
     {
         auto column = Utils::Constrain((int)floor(position.x / _resolution), 0, _cols - 1);
         auto row = Utils::Constrain((int)floor(position.y / _resolution), 0, _rows - 1);
-        return _field[column][row].Clone();
+        return _field[column][row].Copy();
     }
 }
  

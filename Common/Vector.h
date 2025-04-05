@@ -21,7 +21,7 @@ public:
     void SetMag(float max);
     void Limit(float max);
     double Heading(void);
-    Vector Clone(void);
+    Vector Copy(void);
     float Dot(Vector other);
     void Rotate(double angle);
     static Vector Random2D();

@@ -4,7 +4,7 @@ namespace nature_of_code_chapter_02_example_09
 {
     void Body::ApplyForce(Vector force)
     {
-        Vector temp = force.Clone();
+        Vector temp = force.Copy();
         temp.Div((float)_mass);
         _acceleration.Add(temp);
     }

@@ -22,7 +22,7 @@ namespace nature_of_code_chapter_05_example_06
 
     void Vehicle::Follow(Path *path, P5SDL *p5sdl, bool debug)
     {
-        auto future = _velocity.Clone();
+        auto future = _velocity.Copy();
         future.SetMag(25);
         future.Add(_position);
 

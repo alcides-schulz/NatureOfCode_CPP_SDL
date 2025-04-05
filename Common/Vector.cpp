@@ -56,7 +56,7 @@ double Vector::Heading(void)
     return atan2((double)y, (double)x);
 }
 
-Vector Vector::Clone(void)
+Vector Vector::Copy(void)
 {
     return Vector(x, y);
 }

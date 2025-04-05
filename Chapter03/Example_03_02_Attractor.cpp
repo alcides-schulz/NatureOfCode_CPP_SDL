@@ -4,7 +4,7 @@ namespace nature_of_code_chapter_03_example_02
 {
     Vector Attractor::Attract(Mover *mover)
     {
-        auto force = _position.Clone();
+        auto force = _position.Copy();
         force.Sub(mover->GetPosition());
         auto distance = force.Mag();
         distance = (float)std::fmax(5, std::fmin(25, distance));

@@ -22,7 +22,7 @@ namespace nature_of_code_chapter_05_example_08
 
     void Vehicle::Follow(Path *path, P5SDL *p5sdl, bool debug)
     {
-        auto future = _velocity.Clone();
+        auto future = _velocity.Copy();
         future.SetMag(50);
         future.Add(_position);
 
@@ -36,13 +36,13 @@ namespace nature_of_code_chapter_05_example_08
             auto b = path->GetPoints()[i + 1];
             auto normal_point = GetNormalPoint(future, a, b);
             if (normal_point.x < a.x || normal_point.x > b.x) {
-                normal_point = b.Clone();
+                normal_point = b.Copy();
             }
             auto distance = Vector::Distance(future, normal_point);
             if (distance < world_record) {
                 world_record = distance;
                 normal = normal_point;
-                target = normal_point.Clone();
+                target = normal_point.Copy();
                 auto direction = Vector::Sub(b, a);
                 direction.SetMag(10);
                 target.Add(direction);

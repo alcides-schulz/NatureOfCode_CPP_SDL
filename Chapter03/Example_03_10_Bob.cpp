@@ -4,7 +4,7 @@ namespace nature_of_code_chapter_03_example_10
 {
     void Bob::ApplyForce(Vector force)
     {
-        auto temp = force.Clone();
+        auto temp = force.Copy();
         temp.Div(_mass);
         _acceleration.Add(temp);
     }

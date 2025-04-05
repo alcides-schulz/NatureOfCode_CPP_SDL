@@ -4,7 +4,7 @@ namespace nature_of_code_chapter_02_example_06
 {
     void Mover::ApplyForce(Vector force)
     {
-        auto temp = force.Clone();
+        auto temp = force.Copy();
         temp.Div((float)_mass);
         _acceleration.Add(temp);
     }
