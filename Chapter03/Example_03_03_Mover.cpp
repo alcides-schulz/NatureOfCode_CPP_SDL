@@ -4,8 +4,8 @@ namespace nature_of_code_chapter_03_example_03
 {
     void Mover::Update(P5SDL *p5sdl)
     {
-        auto direction = Vector(p5sdl->MousePosition().x, p5sdl->MousePosition().y);
-        direction.Sub(_position);
+        auto mouse = Vector(p5sdl->MousePosition().x, p5sdl->MousePosition().y);
+        auto direction = Vector::Sub(mouse, _position);
         direction.Normalize();
         direction.Mult(0.5f);
 
@@ -19,10 +19,16 @@ namespace nature_of_code_chapter_03_example_03
     void Mover::Show(P5SDL *p5sdl)
     {
         auto angle = _velocity.Heading();
-        p5sdl->Rotate(angle);
-        p5sdl->Translate(_position.x, _position.y);
+        p5sdl->Stroke(0);
+        p5sdl->StrokeWeight(2);
+        p5sdl->Fill(127);
+        
+        p5sdl->Push();
         p5sdl->RectMode(kRectCenter);
+        p5sdl->Translate(_position.x, _position.y);
+        p5sdl->Rotate(angle);
         p5sdl->Rect(0, 0, 40, 20);
+        p5sdl->Pop();
     }
 
     void Mover::CheckEdges(P5SDL *p5sdl)

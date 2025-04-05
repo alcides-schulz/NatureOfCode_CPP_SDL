@@ -9,10 +9,11 @@ namespace nature_of_code_chapter_04_example_05
         p5sdl->RectMode(kRectCenter);
         p5sdl->StrokeWeight(0);
         p5sdl->Fill(127, _life_span);
-        p5sdl->Rotate(angle);
+        p5sdl->Push();
         p5sdl->Translate(_position.x, _position.y);
-        p5sdl->Rect(0, 0, 8, 8);
-        p5sdl->ResetMatrix();
+        p5sdl->Rotate(angle);
+        p5sdl->Square(0, 0, 8);
+        p5sdl->Pop();
     }
 }
 

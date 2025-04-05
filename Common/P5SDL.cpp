@@ -91,6 +91,21 @@ void P5SDL::Run()
     SDL_Quit();
 }
 
+void P5SDL::Translate(int x, int y) 
+{ 
+    double sin_value = sin(_rotation_radians);
+    double cos_value = cos(_rotation_radians);
+    double rotated_x = x * cos_value - y * sin_value;
+    double rotated_y = x * sin_value + y * cos_value;
+    _origin_x += (int)rotated_x;
+    _origin_y += (int)rotated_y;
+}
+
+void P5SDL::Translate(float x, float y)
+{ 
+    Translate((int)x, (int)y);
+}
+
 void P5SDL::Circle(float center_x, float center_y, int diameter)
 {
     Circle((int)center_x, (int)center_y, diameter);
@@ -288,6 +303,26 @@ void P5SDL::Background(SDL_Color background_color)
     _background_color = background_color;
     SDL_SetRenderDrawColor(Renderer(), _background_color.r, _background_color.g, _background_color.b, _background_color.a);
     SDL_RenderClear(Renderer());
+}
+
+void P5SDL::Push(void)
+{
+    MATRIX current;
+    current.rotation_radians = _rotation_radians;
+    current.origin_x = _origin_x;
+    current.origin_y = _origin_y;
+    _matrix_stack.push(current);
+}
+
+void P5SDL::Pop(void)
+{
+    if (!_matrix_stack.empty()) {
+        auto restore = _matrix_stack.top();
+        _matrix_stack.pop();
+        _rotation_radians = restore.rotation_radians;
+        _origin_x = restore.origin_x;
+        _origin_y = restore.origin_y;
+    }
 }
 
 //END

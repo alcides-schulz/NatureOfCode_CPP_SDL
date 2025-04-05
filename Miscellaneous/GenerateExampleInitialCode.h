@@ -4,8 +4,8 @@
 #include "../Common/P5SDL.h"
 
 #define GEN_CHAPTER "08"
-#define GEN_EXAMPLE "05"
-#define GEN_DESC "The Koch Curve"
+#define GEN_EXAMPLE "06"
+#define GEN_DESC "A Recursive Tree"
 
 #define GEN_TITLE "Gen Initial Code: " GEN_CHAPTER "." GEN_EXAMPLE ": '" GEN_DESC "'"
 

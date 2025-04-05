@@ -33,6 +33,12 @@ constexpr SDL_Color kColorLightGray = { 211, 211, 211, 255 };
 constexpr int kRectCorner = 0;
 constexpr int kRectCenter = 1;
 
+typedef struct s_matrix {
+    double  rotation_radians;
+    int     origin_x;
+    int     origin_y;
+}   MATRIX;
+
 class P5SDL
 {
 public:
@@ -57,8 +63,8 @@ public:
 
     void Background(Uint8 gray_scale);
     void Background(SDL_Color background_color);
-    void Translate(int x, int y) { _origin_x += x, _origin_y += y; }
-    void Translate(float x, float y) { _origin_x += (int)x, _origin_y += (int)y; }
+    void Translate(int x, int y);
+    void Translate(float x, float y);
     void Rotate(double radians) { _rotation_radians += radians; }
     void ResetMatrix(void) { _origin_x = _origin_y = 0, _rotation_radians = 0; }
     void StrokeWeight(int stroke_weight) { _stroke_weight = stroke_weight; }
@@ -78,6 +84,8 @@ public:
     void Square(int x, int y, int width);
     void NoLoop(void) { _loop = false; };
     void Loop(void) { _loop = true; };
+    void Push(void);
+    void Pop(void);
 private:
     SDL_Window      *_window;
     const char      *_window_title;
@@ -108,6 +116,7 @@ private:
     Uint32          _mouse_debounce_milliseconds = 200;
     double          _circle_cos_cache[360];
     double          _circle_sin_cache[360];
+    stack<MATRIX>   _matrix_stack;
 
     void            HandleEvents();
 };
