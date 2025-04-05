@@ -27,7 +27,7 @@ namespace nature_of_code_chapter_08_example_05
     {
         vector<KochLine *> next;
         for (auto segment : _segments) {
-            vector<Vector> vectors = segment->KochPoints();
+            array<Vector, 5> vectors = segment->KochPoints();
             next.push_back(new KochLine(this, vectors[0], vectors[1]));
             next.push_back(new KochLine(this, vectors[1], vectors[2]));
             next.push_back(new KochLine(this, vectors[2], vectors[3]));

@@ -16,7 +16,7 @@ namespace nature_of_code_chapter_08_example_05
         _p5sdl->Line(_start.x, _start.y, _end.x, _end.y);
     }
 
-    vector<Vector> KochLine::KochPoints(void)
+    array<Vector, 5> KochLine::KochPoints(void)
     {
         auto a = _start.Copy();
         auto e = _end.Copy();
