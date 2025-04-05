@@ -79,8 +79,8 @@ void P5SDL::Run()
         }
 
         Uint32 frame_time = SDL_GetTicks() - frame_start;
-        if (frame_time < kMaxFrameTime) {
-            SDL_Delay((int)(kMaxFrameTime - frame_time));
+        if (frame_time < _MaxFrameTime) {
+            SDL_Delay((int)(_MaxFrameTime - frame_time));
         }
     }
 

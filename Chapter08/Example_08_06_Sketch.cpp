@@ -25,7 +25,7 @@ namespace nature_of_code_chapter_08_example_06
         Line(0, 0, 0, -length);
         Translate(0, -length);
 
-        length = (int)(length * 0.7);
+        length = (int)(length * 0.67);
 
         if (length > 2) {
             Push();

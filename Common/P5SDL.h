@@ -86,6 +86,7 @@ public:
     void Loop(void) { _loop = true; };
     void Push(void);
     void Pop(void);
+    void FrameRate(int fps) { _FPS = fps, _MaxFrameTime = (Uint32)(1000.0f / _FPS); };
 private:
     SDL_Window      *_window;
     const char      *_window_title;
@@ -108,8 +109,8 @@ private:
     bool            _mouse_button_clicked[3] = { false, false, false };
     SDL_Point       _mouse_position = { 0, 0 };
     bool            _is_running = false;
-    const int       kFPS = 60;
-    const Uint32    kMaxFrameTime = (Uint32)(1000.0f / kFPS);
+    int             _FPS = 60;
+    Uint32          _MaxFrameTime = (Uint32)(1000.0f / _FPS);
     Uint32          _global_frame_count;
     bool            _loop = true;
     Uint32          _last_mouse_click_time = SDL_GetTicks();
