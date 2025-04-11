@@ -3,9 +3,10 @@
 
 #include "../Common/P5SDL.h"
 
-#define GEN_CHAPTER "08"
-#define GEN_EXAMPLE "09"
-#define GEN_DESC "An L-system"
+#define GEN_CHAPTER "09"
+#define GEN_EXAMPLE "02"
+#define GEN_DESC "Smart Rockets"
+#define GEN_LIST {"DNA", "Rocket", "Population"}
 
 #define GEN_TITLE "Gen Initial Code: " GEN_CHAPTER "." GEN_EXAMPLE ": '" GEN_DESC "'"
 
@@ -15,6 +16,9 @@ public:
     GenerateExampleInitialCode() : P5SDL(GEN_TITLE, -1, -1, 640, 240, 0) {}
     bool Setup(void) override;
     bool Draw() override { return false; };
+private:
+    void GenerateSketchClass();
+    void GenerateClass(string class_name);
 };
 
 #endif

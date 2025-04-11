@@ -224,6 +224,15 @@
     <Filter Include="Source Files\Chapter03\Example_03_11">
       <UniqueIdentifier>{baf74941-fbe0-4685-9191-1a0ffc49bef0}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Chapter09">
+      <UniqueIdentifier>{eb92baee-f481-4529-8e4c-f02f9bdff73d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Chapter09\Example_09_01">
+      <UniqueIdentifier>{45ee200b-c950-4c55-9f71-7694ba34169a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Chapter09\Example_09_02">
+      <UniqueIdentifier>{08ea9665-b779-4d61-b639-faa1e2f8e5f1}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Common\PerlinNoise2D.h">
@@ -618,6 +627,24 @@
     </ClInclude>
     <ClInclude Include="Chapter03\Example_03_11_Sketch.h">
       <Filter>Source Files\Chapter03\Example_03_11</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter09\Example_09_01_Sketch.h">
+      <Filter>Source Files\Chapter09\Example_09_01</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter09\Example_09_01_DNA.h">
+      <Filter>Source Files\Chapter09\Example_09_01</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter09\Example_09_02_DNA.h">
+      <Filter>Source Files\Chapter09\Example_09_02</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter09\Example_09_02_Population.h">
+      <Filter>Source Files\Chapter09\Example_09_02</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter09\Example_09_02_Rocket.h">
+      <Filter>Source Files\Chapter09\Example_09_02</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter09\Example_09_02_Sketch.h">
+      <Filter>Source Files\Chapter09\Example_09_02</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -1019,6 +1046,24 @@
     </ClCompile>
     <ClCompile Include="Chapter03\Example_03_11_Sketch.cpp">
       <Filter>Source Files\Chapter03\Example_03_11</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter09\Example_09_01_Sketch.cpp">
+      <Filter>Source Files\Chapter09\Example_09_01</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter09\Example_09_01_DNA.cpp">
+      <Filter>Source Files\Chapter09\Example_09_01</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter09\Example_09_02_DNA.cpp">
+      <Filter>Source Files\Chapter09\Example_09_02</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter09\Example_09_02_Population.cpp">
+      <Filter>Source Files\Chapter09\Example_09_02</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter09\Example_09_02_Rocket.cpp">
+      <Filter>Source Files\Chapter09\Example_09_02</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter09\Example_09_02_Sketch.cpp">
+      <Filter>Source Files\Chapter09\Example_09_02</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

@@ -341,6 +341,16 @@ void P5SDL::Pop(void)
     }
 }
 
+void P5SDL::TextSize(int size)
+{
+    if (_text_font != nullptr)
+        TTF_CloseFont(_text_font);
+    _text_font = TTF_OpenFont("./Common/cour.ttf", size);
+    if (_text_font == nullptr) {
+        std::cerr << "Failed to load font size: " << size << " TTF_Error: " << TTF_GetError() << std::endl;
+    }
+}
+
 void P5SDL::Text(string text, int x, int y)
 {
     SDL_Surface* text_surface = TTF_RenderText_Solid(_text_font, text.c_str(), _stroke_color);

@@ -90,6 +90,7 @@ public:
     void Pop(void);
     void FrameRate(int fps) { _FPS = fps, _MaxFrameTime = (Uint32)(1000.0f / _FPS); };
     void Text(string text, int x, int y);
+    void TextSize(int size);
 private:
     SDL_Window      *_window;
     const char      *_window_title;
@@ -121,7 +122,7 @@ private:
     double          _circle_cos_cache[360];
     double          _circle_sin_cache[360];
     stack<MATRIX>   _matrix_stack;
-    TTF_Font        *_text_font;
+    TTF_Font        *_text_font = nullptr;
     void            HandleEvents();
 };
 

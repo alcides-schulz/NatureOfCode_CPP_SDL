@@ -144,6 +144,12 @@
     <ClCompile Include="Chapter08\Example_08_09_LSystem.cpp" />
     <ClCompile Include="Chapter08\Example_08_09_Sketch.cpp" />
     <ClCompile Include="Chapter08\Example_08_09_Tutle.cpp" />
+    <ClCompile Include="Chapter09\Example_09_01_DNA.cpp" />
+    <ClCompile Include="Chapter09\Example_09_01_Sketch.cpp" />
+    <ClCompile Include="Chapter09\Example_09_02_DNA.cpp" />
+    <ClCompile Include="Chapter09\Example_09_02_Population.cpp" />
+    <ClCompile Include="Chapter09\Example_09_02_Rocket.cpp" />
+    <ClCompile Include="Chapter09\Example_09_02_Sketch.cpp" />
     <ClCompile Include="Common\PerlinNoise2D.cpp" />
     <ClCompile Include="Common\Utils.h" />
     <ClCompile Include="Common\Vector.cpp" />
@@ -279,6 +285,12 @@
     <ClInclude Include="Chapter08\Example_08_09_LSystem.h" />
     <ClInclude Include="Chapter08\Example_08_09_Sketch.h" />
     <ClInclude Include="Chapter08\Example_08_09_Turtle.h" />
+    <ClInclude Include="Chapter09\Example_09_01_DNA.h" />
+    <ClInclude Include="Chapter09\Example_09_01_Sketch.h" />
+    <ClInclude Include="Chapter09\Example_09_02_DNA.h" />
+    <ClInclude Include="Chapter09\Example_09_02_Population.h" />
+    <ClInclude Include="Chapter09\Example_09_02_Rocket.h" />
+    <ClInclude Include="Chapter09\Example_09_02_Sketch.h" />
     <ClInclude Include="Common\PerlinNoise2D.h" />
     <ClInclude Include="Common\Vector.h" />
     <ClInclude Include="Common\P5SDL.h" />

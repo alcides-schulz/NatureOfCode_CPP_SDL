@@ -81,6 +81,8 @@
 #include "Chapter08/Example_08_08_Sketch.h"
 #include "Chapter08/Example_08_09_Sketch.h"
 
+#include "Chapter09/Example_09_01_Sketch.h"
+
 #include "Miscellaneous/CircleTest.h"
 #include "Miscellaneous/GenerateExampleInitialCode.h"
 #include "Miscellaneous/CopyExample.h"
@@ -165,6 +167,9 @@ vector<P5SDL *> chapter08_menu = {
     new nature_of_code_chapter_08_example_08::Sketch(),
     new nature_of_code_chapter_08_example_09::Sketch(),
 };
+vector<P5SDL *> chapter09_menu = {
+    new nature_of_code_chapter_09_example_01::Sketch(),
+};
 
 vector<P5SDL *> miscellaneous = {
     new CircleTest(),
@@ -230,6 +235,7 @@ int main(int argc, char* argv[])
         cout << endl << "\t e. Chapter 5 - Autonomous Agents";
         cout << endl << "\t f. Chapter 7 - Cellular Automata";
         cout << endl << "\t g. Chapter 8 - Fractals";
+        cout << endl << "\t h. Chapter 9 - Evolutionary Computing";
         cout << endl;
         cout << endl << "\t z. Miscellaneous";
         cout << endl << "\t x. Exit" << endl << endl << "--> ";
@@ -263,6 +269,10 @@ int main(int argc, char* argv[])
         }
         if (response.compare("g") == 0) {
             ShowMenu(chapter08_menu);
+            continue;
+        }
+        if (response.compare("h") == 0) {
+            ShowMenu(chapter09_menu);
             continue;
         }
         if (response.compare("z") == 0) {
