@@ -168,12 +168,15 @@ void P5SDL::Rect(int x, int y, int width, int height)
     if (_rect_mode == kRectCorner) {
         // Fill in
         if (_fill_color.r != _background_color.r || _fill_color.g != _background_color.g || _fill_color.b != _background_color.b || _fill_color.a != _background_color.a) {
-            auto saved_stroke = _stroke_color;
+            auto saved_stroke_color = _stroke_color;
+            auto saved_stroke_weight = _stroke_weight;
             Stroke(_fill_color);
+            StrokeWeight(2);
             for (int i = y + 1; i < y + height - 1; i++) {
                 Line(x, i, x + width - 1, i);
             }
-            Stroke(saved_stroke);
+            Stroke(saved_stroke_color);
+            StrokeWeight(saved_stroke_weight);
         }
         Line(x, y, x + width, y);
         Line(x + width, y, x + width, y + height);
@@ -186,12 +189,15 @@ void P5SDL::Rect(int x, int y, int width, int height)
         auto middle_y = height / 2;
         // Fill in
         if (_fill_color.r != _background_color.r || _fill_color.g != _background_color.g || _fill_color.b != _background_color.b || _fill_color.a != _background_color.a) {
-            auto saved_stroke = _stroke_color;
+            auto saved_stroke_color = _stroke_color;
+            auto saved_stroke_weight = _stroke_weight;
             Stroke(_fill_color);
-            for (int i = y - middle_y + 1; i < y + middle_y - 1; i++) {
+            StrokeWeight(2);
+            for (int i = y - middle_y; i < y + middle_y; i++) {
                 Line(x - middle_x, i, x + middle_x, i);
             }
-            Stroke(saved_stroke);
+            Stroke(saved_stroke_color);
+            StrokeWeight(saved_stroke_weight);
         }
         // Rectangle Lines
         Line(x - middle_x, y - middle_y, x + middle_x, y - middle_y);

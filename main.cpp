@@ -6,7 +6,6 @@
 //TODO: implement beginShape/endShape and Fill ??
 //TODO: implement noStroke() (5.12)
 //TODO: create p5.Point: 5.13, quadtree.cpp, 5.14
-//TODO: debug rectangle fill function, not filling properly
 
 #include "Common/P5SDL.h"
 
@@ -86,6 +85,7 @@
 #include "Miscellaneous/CircleTest.h"
 #include "Miscellaneous/GenerateExampleInitialCode.h"
 #include "Miscellaneous/CopyExample.h"
+#include "Miscellaneous/RectTest.h"
 
 using namespace std;
 
@@ -173,6 +173,7 @@ vector<P5SDL *> chapter09_menu = {
 
 vector<P5SDL *> miscellaneous = {
     new CircleTest(),
+    new RectTest(),
     new GenerateExampleInitialCode(),
     new CopyExample(),
 };

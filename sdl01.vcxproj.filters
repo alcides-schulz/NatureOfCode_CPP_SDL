@@ -646,6 +646,9 @@
     <ClInclude Include="Chapter09\Example_09_02_Sketch.h">
       <Filter>Source Files\Chapter09\Example_09_02</Filter>
     </ClInclude>
+    <ClInclude Include="Miscellaneous\RectTest.h">
+      <Filter>Source Files\Miscellaneous</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -1064,6 +1067,9 @@
     </ClCompile>
     <ClCompile Include="Chapter09\Example_09_02_Sketch.cpp">
       <Filter>Source Files\Chapter09\Example_09_02</Filter>
+    </ClCompile>
+    <ClCompile Include="Miscellaneous\RectTest.cpp">
+      <Filter>Source Files\Miscellaneous</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

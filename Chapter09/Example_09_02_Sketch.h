@@ -2,9 +2,12 @@
 #define EXAMPLE_09_02_SKETCH_H
 
 #include "../Common/P5SDL.h"
+#include "../Common/Vector.h"
 
 namespace nature_of_code_chapter_09_example_02
 {
+    Vector gTarget;
+
     class Sketch : public P5SDL
     {
     public:

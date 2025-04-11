@@ -158,6 +158,7 @@
     <ClCompile Include="Miscellaneous\CircleTest.cpp" />
     <ClCompile Include="Miscellaneous\CopyExample.cpp" />
     <ClCompile Include="Miscellaneous\GenerateExampleInitialCode.cpp" />
+    <ClCompile Include="Miscellaneous\RectTest.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Chapter01\Example_01_01_Sketch.h" />
@@ -297,6 +298,7 @@
     <ClInclude Include="Miscellaneous\CircleTest.h" />
     <ClInclude Include="Miscellaneous\CopyExample.h" />
     <ClInclude Include="Miscellaneous\GenerateExampleInitialCode.h" />
+    <ClInclude Include="Miscellaneous\RectTest.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Readme.md" />
