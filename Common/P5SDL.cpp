@@ -361,6 +361,7 @@ void P5SDL::Text(string text, int x, int y)
 {
     SDL_Surface* text_surface = TTF_RenderText_Solid(_text_font, text.c_str(), _stroke_color);
     if (text_surface == nullptr) {
+        std::cerr << "Text function error for text '" << text << "'" << std::endl;
         std::cerr << "Failed to create text surface! TTF_Error: " << TTF_GetError() << std::endl;
         return;
     }

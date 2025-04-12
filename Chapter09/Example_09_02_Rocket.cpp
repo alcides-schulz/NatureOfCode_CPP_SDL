@@ -14,6 +14,11 @@ namespace nature_of_code_chapter_09_example_02
         _gene_counter = 0;
     }
 
+    Rocket::~Rocket(void)
+    {
+        delete _dna;
+    }
+
     void Rocket::CalculateFitness(void)
     {
         auto distance = Vector::Distance(_position, gTarget);
@@ -53,8 +58,8 @@ namespace nature_of_code_chapter_09_example_02
 
         _p5sdl->RectMode(kRectCenter);
         _p5sdl->Fill(0);
-        _p5sdl->Rect(-r / 2, r * 2, r / 2, r);
-        _p5sdl->Rect(r / 2, r * 2, r / 2, r);
+        _p5sdl->Rect(-r / 2, r * 2, 2, 2);
+        _p5sdl->Rect(r / 2, r * 2, 2, 2);
 
         _p5sdl->Fill(200);
         SDL_Point rocket[] = {

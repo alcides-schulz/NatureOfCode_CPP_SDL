@@ -22,6 +22,7 @@ namespace nature_of_code_chapter_09_example_02
             else
                 child->_genes[i] = partner->_genes[i];
         }
+        return child;
     }
 
     void DNA::Mutate(float m)
