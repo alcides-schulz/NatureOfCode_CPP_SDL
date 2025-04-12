@@ -233,6 +233,9 @@
     <Filter Include="Source Files\Chapter09\Example_09_02">
       <UniqueIdentifier>{08ea9665-b779-4d61-b639-faa1e2f8e5f1}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Chapter09\Example_09_03">
+      <UniqueIdentifier>{04624672-13ac-4e67-ba4b-61f40bce8622}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Common\PerlinNoise2D.h">
@@ -648,6 +651,21 @@
     </ClInclude>
     <ClInclude Include="Miscellaneous\RectTest.h">
       <Filter>Source Files\Miscellaneous</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter09\Example_09_03_DNA.h">
+      <Filter>Source Files\Chapter09\Example_09_03</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter09\Example_09_03_Population.h">
+      <Filter>Source Files\Chapter09\Example_09_03</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter09\Example_09_03_Rocket.h">
+      <Filter>Source Files\Chapter09\Example_09_03</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter09\Example_09_03_Sketch.h">
+      <Filter>Source Files\Chapter09\Example_09_03</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter09\Example_09_03_Obstacle.h">
+      <Filter>Source Files\Chapter09\Example_09_03</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -1070,6 +1088,21 @@
     </ClCompile>
     <ClCompile Include="Miscellaneous\RectTest.cpp">
       <Filter>Source Files\Miscellaneous</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter09\Example_09_03_DNA.cpp">
+      <Filter>Source Files\Chapter09\Example_09_03</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter09\Example_09_03_Population.cpp">
+      <Filter>Source Files\Chapter09\Example_09_03</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter09\Example_09_03_Rocket.cpp">
+      <Filter>Source Files\Chapter09\Example_09_03</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter09\Example_09_03_Sketch.cpp">
+      <Filter>Source Files\Chapter09\Example_09_03</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter09\Example_09_03_Obstacle.cpp">
+      <Filter>Source Files\Chapter09\Example_09_03</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
