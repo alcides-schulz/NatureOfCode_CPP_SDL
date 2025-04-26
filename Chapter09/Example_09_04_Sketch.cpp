@@ -33,6 +33,7 @@ namespace nature_of_code_chapter_09_example_04
     void Sketch::Cleanup(void)
     {
         delete _evolve_button;
+        delete _population;
     }
 }
 

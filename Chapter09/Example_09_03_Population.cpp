@@ -16,6 +16,7 @@ namespace nature_of_code_chapter_09_example_03
     {
         for (auto rocket : _population)
             delete rocket;
+        _population.clear();
     }
 
     void Population::Live(vector<Obstacle *> obstacles)

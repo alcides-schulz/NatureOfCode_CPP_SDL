@@ -11,6 +11,13 @@ namespace nature_of_code_chapter_09_example_04
             _flowers.push_back(new Flower(p5sdl, new DNA(), 40 + i * 80, 120));
     }
 
+    Population::~Population(void)
+    {
+        for (auto flower : _flowers)
+            delete flower;
+        _flowers.clear();
+    }
+
     void Population::Show(void)
     {
         for (auto flower : _flowers)
@@ -59,6 +66,7 @@ namespace nature_of_code_chapter_09_example_04
         _flowers.assign(next_flowers.begin(), next_flowers.end());
         _generations++;
     }
+
 }
 
 // END

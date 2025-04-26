@@ -10,6 +10,7 @@ namespace nature_of_code_chapter_09_example_04
     {
     public:
         Population(P5SDL *p5sdl, float mutation_rate, int size);
+        ~Population(void);
         void Show(void);
         void Rollover(int mouse_x, int mouse_y);
         Flower *WeightedSelection(void);

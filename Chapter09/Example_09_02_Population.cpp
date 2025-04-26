@@ -18,6 +18,7 @@ namespace nature_of_code_chapter_09_example_02
     {
         for (auto rocket : _population)
             delete rocket;
+        _population.clear();
     }
 
     void Population::Live(void)
