@@ -155,6 +155,12 @@
     <ClCompile Include="Chapter09\Example_09_03_Population.cpp" />
     <ClCompile Include="Chapter09\Example_09_03_Rocket.cpp" />
     <ClCompile Include="Chapter09\Example_09_03_Sketch.cpp" />
+    <ClCompile Include="Chapter09\Example_09_04_DNA.cpp" />
+    <ClCompile Include="Chapter09\Example_09_04_Flower.cpp" />
+    <ClCompile Include="Chapter09\Example_09_04_Population.cpp" />
+    <ClCompile Include="Chapter09\Example_09_04_Rectangle.cpp" />
+    <ClCompile Include="Chapter09\Example_09_04_Sketch.cpp" />
+    <ClCompile Include="Common\Button.cpp" />
     <ClCompile Include="Common\PerlinNoise2D.cpp" />
     <ClCompile Include="Common\Utils.h" />
     <ClCompile Include="Common\Vector.cpp" />
@@ -162,6 +168,7 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Miscellaneous\CircleTest.cpp" />
     <ClCompile Include="Miscellaneous\CopyExample.cpp" />
+    <ClCompile Include="Miscellaneous\EllipseTest.cpp" />
     <ClCompile Include="Miscellaneous\GenerateExampleInitialCode.cpp" />
     <ClCompile Include="Miscellaneous\RectTest.cpp" />
   </ItemGroup>
@@ -302,11 +309,18 @@
     <ClInclude Include="Chapter09\Example_09_03_Population.h" />
     <ClInclude Include="Chapter09\Example_09_03_Rocket.h" />
     <ClInclude Include="Chapter09\Example_09_03_Sketch.h" />
+    <ClInclude Include="Chapter09\Example_09_04_DNA.h" />
+    <ClInclude Include="Chapter09\Example_09_04_Flower.h" />
+    <ClInclude Include="Chapter09\Example_09_04_Population.h" />
+    <ClInclude Include="Chapter09\Example_09_04_Rectangle.h" />
+    <ClInclude Include="Chapter09\Example_09_04_Sketch.h" />
+    <ClInclude Include="Common\Button.h" />
     <ClInclude Include="Common\PerlinNoise2D.h" />
     <ClInclude Include="Common\Vector.h" />
     <ClInclude Include="Common\P5SDL.h" />
     <ClInclude Include="Miscellaneous\CircleTest.h" />
     <ClInclude Include="Miscellaneous\CopyExample.h" />
+    <ClInclude Include="Miscellaneous\EllipseTest.h" />
     <ClInclude Include="Miscellaneous\GenerateExampleInitialCode.h" />
     <ClInclude Include="Miscellaneous\RectTest.h" />
   </ItemGroup>
@@ -321,6 +335,7 @@
     <ProjectGuid>{B692E7B2-D4DC-47F9-8301-19BE70AA3D43}</ProjectGuid>
     <RootNamespace>sdl01</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <ProjectName>NatureOfCode</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

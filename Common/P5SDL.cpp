@@ -15,7 +15,7 @@ bool P5SDL::Init()
         SDL_Quit();
         return false;
     }
-    _text_font = TTF_OpenFont("./Common/cour.ttf", 16);
+    _text_font = TTF_OpenFont("./Common/cour.ttf", _font_size);
     if (_text_font == nullptr) {
         std::cerr << "Failed to load font! TTF_Error: " << TTF_GetError() << std::endl;
         TTF_Quit();
@@ -249,6 +249,34 @@ void P5SDL::Lines(SDL_Point points[], int count)
     }
 }
 
+void P5SDL::Ellipse(int center_x, int center_y, int width, int height)
+{
+    center_x += _origin_x;
+    center_y += _origin_y;
+    int radius_x = width / 2;
+    int radius_y = height / 2;
+    if (_fill_color.r != _background_color.r || _fill_color.g != _background_color.g || _fill_color.b != _background_color.b || _fill_color.a != _background_color.a) {
+        SDL_SetRenderDrawColor(_renderer, _fill_color.r, _fill_color.g, _fill_color.b, _fill_color.a);
+        for (int y = -radius_y; y <= radius_y; y++) {
+            float dy = (float)y / (float)radius_y;
+            float dx = sqrtf(1.0f - dy * dy);
+            int span = (int)(radius_x * dx);
+            int start_x = center_x - span;
+            int end_x = center_x + span;
+            SDL_RenderDrawLine(_renderer, start_x, center_y + y, end_x, center_y + y);
+        }
+    }
+    SDL_SetRenderDrawColor(_renderer, _stroke_color.r, _stroke_color.g, _stroke_color.b, _stroke_color.a);
+    for (int i = 0; i < 360; i++) {
+        float theta = i * 2.0f * static_cast<float>(M_PI) / 360;
+        for (int j = 0; j < _stroke_weight; j++) {
+            int x = (int)(center_x + (radius_x - j) * cosf(theta));
+            int y = (int)(center_y + (radius_y - j) * sinf(theta));
+            SDL_RenderDrawPoint(_renderer, x, y);
+        }
+    }
+}
+
 void P5SDL::HandleEvents()
 {
     _mouse_button_clicked[kMouseLeftButton] = false;
@@ -352,14 +380,37 @@ void P5SDL::TextSize(int size)
     if (_text_font != nullptr)
         TTF_CloseFont(_text_font);
     _text_font = TTF_OpenFont("./Common/cour.ttf", size);
-    if (_text_font == nullptr) {
+    if (_text_font == nullptr)
         std::cerr << "Failed to load font size: " << size << " TTF_Error: " << TTF_GetError() << std::endl;
+    else
+        _font_size = size;
+}
+
+int P5SDL::TextWidth(string text)
+{
+    int text_width = 0;
+    int text_height = 0;
+    if (TTF_SizeUTF8(_text_font, text.c_str(), &text_width, &text_height) == -1) {
+        std::cerr << "TTF_SizeUTF8 failed! SDL_ttf Error: " << TTF_GetError() << std::endl;
+        return 0;
     }
+    return text_width;
+}
+
+int P5SDL::TextHeight(string text)
+{
+    int text_width = 0;
+    int text_height = 0;
+    if (TTF_SizeUTF8(_text_font, text.c_str(), &text_width, &text_height) == -1) {
+        std::cerr << "TTF_SizeUTF8 failed! SDL_ttf Error: " << TTF_GetError() << std::endl;
+        return 0;
+    }
+    return text_height;
 }
 
 void P5SDL::Text(string text, int x, int y)
 {
-    SDL_Surface* text_surface = TTF_RenderText_Solid(_text_font, text.c_str(), _stroke_color);
+    SDL_Surface* text_surface = TTF_RenderText_Solid(_text_font, text.c_str(), _fill_color);
     if (text_surface == nullptr) {
         std::cerr << "Text function error for text '" << text << "'" << std::endl;
         std::cerr << "Failed to create text surface! TTF_Error: " << TTF_GetError() << std::endl;
@@ -375,10 +426,7 @@ void P5SDL::Text(string text, int x, int y)
     SDL_QueryTexture(text_texture, nullptr, nullptr, &text_rectangle.w, &text_rectangle.h);
     text_rectangle.x = x;
     text_rectangle.y = y;
-
-    SDL_SetRenderDrawColor(_renderer, _background_color.r, _background_color.g, _background_color.b, _background_color.a);
     SDL_RenderCopy(_renderer, text_texture, nullptr, &text_rectangle);
-    
     SDL_DestroyTexture(text_texture);
 }
 

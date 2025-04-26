@@ -83,11 +83,13 @@
 #include "Chapter09/Example_09_01_Sketch.h"
 #include "Chapter09/Example_09_02_Sketch.h"
 #include "Chapter09/Example_09_03_Sketch.h"
+#include "Chapter09/Example_09_04_Sketch.h"
 
 #include "Miscellaneous/CircleTest.h"
 #include "Miscellaneous/GenerateExampleInitialCode.h"
 #include "Miscellaneous/CopyExample.h"
 #include "Miscellaneous/RectTest.h"
+#include "Miscellaneous/EllipseTest.h"
 
 using namespace std;
 
@@ -173,11 +175,13 @@ vector<P5SDL *> chapter09_menu = {
     new nature_of_code_chapter_09_example_01::Sketch(),
     new nature_of_code_chapter_09_example_02::Sketch(),
     new nature_of_code_chapter_09_example_03::Sketch(),
+    new nature_of_code_chapter_09_example_04::Sketch(),
 };
 
 vector<P5SDL *> miscellaneous = {
     new CircleTest(),
     new RectTest(),
+    new EllipseTest(),
     new GenerateExampleInitialCode(),
     new CopyExample(),
 };

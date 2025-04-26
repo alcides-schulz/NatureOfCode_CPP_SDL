@@ -17,6 +17,8 @@
 #include <list>
 #include <ctime>
 #include <chrono>
+#include <sstream>
+#include <iomanip>
 
 using namespace std;
 
@@ -84,6 +86,7 @@ public:
     void Rect(int x, int y, int width, int heigth);
     void RectMode(int mode) { _rect_mode = mode; };
     void Square(int x, int y, int width);
+    void Ellipse(int center_x, int center_y, int width, int height);
     void NoLoop(void) { _loop = false; };
     void Loop(void) { _loop = true; };
     void Push(void);
@@ -91,6 +94,9 @@ public:
     void FrameRate(int fps) { _FPS = fps, _MaxFrameTime = (Uint32)(1000.0f / _FPS); };
     void Text(string text, int x, int y);
     void TextSize(int size);
+    int FontSize(void) { return _font_size; };
+    int TextWidth(string text);
+    int TextHeight(string text);
 private:
     SDL_Window      *_window;
     const char      *_window_title;
@@ -123,6 +129,7 @@ private:
     double          _circle_sin_cache[360];
     stack<MATRIX>   _matrix_stack;
     TTF_Font        *_text_font = nullptr;
+    int             _font_size = 16;
     void            HandleEvents();
 };
 

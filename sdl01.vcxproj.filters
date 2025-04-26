@@ -236,6 +236,9 @@
     <Filter Include="Source Files\Chapter09\Example_09_03">
       <UniqueIdentifier>{04624672-13ac-4e67-ba4b-61f40bce8622}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Chapter09\Example_09_04">
+      <UniqueIdentifier>{4ccc3d67-2bb8-49f4-a126-c963640a99c0}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Common\PerlinNoise2D.h">
@@ -666,6 +669,27 @@
     </ClInclude>
     <ClInclude Include="Chapter09\Example_09_03_Obstacle.h">
       <Filter>Source Files\Chapter09\Example_09_03</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter09\Example_09_04_DNA.h">
+      <Filter>Source Files\Chapter09\Example_09_04</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter09\Example_09_04_Flower.h">
+      <Filter>Source Files\Chapter09\Example_09_04</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter09\Example_09_04_Population.h">
+      <Filter>Source Files\Chapter09\Example_09_04</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter09\Example_09_04_Rectangle.h">
+      <Filter>Source Files\Chapter09\Example_09_04</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter09\Example_09_04_Sketch.h">
+      <Filter>Source Files\Chapter09\Example_09_04</Filter>
+    </ClInclude>
+    <ClInclude Include="Miscellaneous\EllipseTest.h">
+      <Filter>Source Files\Miscellaneous</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\Button.h">
+      <Filter>Source Files\Common</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -1103,6 +1127,27 @@
     </ClCompile>
     <ClCompile Include="Chapter09\Example_09_03_Obstacle.cpp">
       <Filter>Source Files\Chapter09\Example_09_03</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter09\Example_09_04_DNA.cpp">
+      <Filter>Source Files\Chapter09\Example_09_04</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter09\Example_09_04_Flower.cpp">
+      <Filter>Source Files\Chapter09\Example_09_04</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter09\Example_09_04_Population.cpp">
+      <Filter>Source Files\Chapter09\Example_09_04</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter09\Example_09_04_Rectangle.cpp">
+      <Filter>Source Files\Chapter09\Example_09_04</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter09\Example_09_04_Sketch.cpp">
+      <Filter>Source Files\Chapter09\Example_09_04</Filter>
+    </ClCompile>
+    <ClCompile Include="Miscellaneous\EllipseTest.cpp">
+      <Filter>Source Files\Miscellaneous</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\Button.cpp">
+      <Filter>Source Files\Common</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

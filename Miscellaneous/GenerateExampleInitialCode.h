@@ -4,9 +4,9 @@
 #include "../Common/P5SDL.h"
 
 #define GEN_CHAPTER "09"
-#define GEN_EXAMPLE "02"
-#define GEN_DESC "Smart Rockets"
-#define GEN_LIST {"DNA", "Rocket", "Population"}
+#define GEN_EXAMPLE "04"
+#define GEN_DESC "Interactive Selection"
+#define GEN_LIST {"DNA", "Flower", "Population", "Rectangle"}
 
 #define GEN_TITLE "Gen Initial Code: " GEN_CHAPTER "." GEN_EXAMPLE ": '" GEN_DESC "'"
 
