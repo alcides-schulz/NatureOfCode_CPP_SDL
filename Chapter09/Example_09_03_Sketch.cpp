@@ -40,6 +40,7 @@ namespace nature_of_code_chapter_09_example_03
         for (auto obstacle : _obstacles)
             obstacle->Show();
 
+        Fill(0);
         Text(" Generation #: " + to_string(_population->GetGenerations()), 10, 20);
         Text("  Cycles Left: " + to_string(_life_span - _life_counter), 10, 40);
         Text("Record cycles: " + to_string(_record_time), 10, 60);

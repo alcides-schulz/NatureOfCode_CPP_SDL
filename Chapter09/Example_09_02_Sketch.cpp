@@ -36,6 +36,7 @@ namespace nature_of_code_chapter_09_example_02
             _population->Reproduction();
         }
 
+        Fill(0);
         Text("Generation #: " + to_string(_population->GetGenerations()), 10, 20);
         Text(" Cycles Left: " + to_string(_life_span - _life_counter), 10, 40);
 

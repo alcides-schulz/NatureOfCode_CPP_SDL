@@ -49,6 +49,7 @@ namespace nature_of_code_chapter_09_example_01
         int row = 0;
         int count = 0;
         int max_display = Height() / 20 * 4;
+        Fill(0);
         for (auto& pair : sorted_dna)
         {
             line += pair.second->GetPhase() + "    ";

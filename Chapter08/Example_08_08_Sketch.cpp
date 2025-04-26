@@ -7,6 +7,7 @@ namespace nature_of_code_chapter_08_example_08
         Background(255);
 
         _current = "A";
+        Fill(0);
         for (int i = 0; i < 9; i++) {
             Generate();
             Text(to_string(i) + ": " + _current, 4, i * 16);
