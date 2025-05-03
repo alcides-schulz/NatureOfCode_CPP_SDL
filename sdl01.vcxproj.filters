@@ -239,6 +239,9 @@
     <Filter Include="Source Files\Chapter09\Example_09_04">
       <UniqueIdentifier>{4ccc3d67-2bb8-49f4-a126-c963640a99c0}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Chapter09\Example_09_05">
+      <UniqueIdentifier>{ed3641b4-3d51-44d6-94bf-db2b16384f21}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Common\PerlinNoise2D.h">
@@ -690,6 +693,21 @@
     </ClInclude>
     <ClInclude Include="Common\Button.h">
       <Filter>Source Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter09\Example_09_05_Bloop.h">
+      <Filter>Source Files\Chapter09\Example_09_05</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter09\Example_09_05_DNA.h">
+      <Filter>Source Files\Chapter09\Example_09_05</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter09\Example_09_05_Food.h">
+      <Filter>Source Files\Chapter09\Example_09_05</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter09\Example_09_05_Sketch.h">
+      <Filter>Source Files\Chapter09\Example_09_05</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter09\Example_09_05_World.h">
+      <Filter>Source Files\Chapter09\Example_09_05</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -1148,6 +1166,21 @@
     </ClCompile>
     <ClCompile Include="Common\Button.cpp">
       <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter09\Example_09_05_Bloop.cpp">
+      <Filter>Source Files\Chapter09\Example_09_05</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter09\Example_09_05_DNA.cpp">
+      <Filter>Source Files\Chapter09\Example_09_05</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter09\Example_09_05_Food.cpp">
+      <Filter>Source Files\Chapter09\Example_09_05</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter09\Example_09_05_Sketch.cpp">
+      <Filter>Source Files\Chapter09\Example_09_05</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter09\Example_09_05_World.cpp">
+      <Filter>Source Files\Chapter09\Example_09_05</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

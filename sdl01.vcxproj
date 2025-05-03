@@ -160,6 +160,11 @@
     <ClCompile Include="Chapter09\Example_09_04_Population.cpp" />
     <ClCompile Include="Chapter09\Example_09_04_Rectangle.cpp" />
     <ClCompile Include="Chapter09\Example_09_04_Sketch.cpp" />
+    <ClCompile Include="Chapter09\Example_09_05_Bloop.cpp" />
+    <ClCompile Include="Chapter09\Example_09_05_DNA.cpp" />
+    <ClCompile Include="Chapter09\Example_09_05_Food.cpp" />
+    <ClCompile Include="Chapter09\Example_09_05_Sketch.cpp" />
+    <ClCompile Include="Chapter09\Example_09_05_World.cpp" />
     <ClCompile Include="Common\Button.cpp" />
     <ClCompile Include="Common\PerlinNoise2D.cpp" />
     <ClCompile Include="Common\Utils.h" />
@@ -314,6 +319,11 @@
     <ClInclude Include="Chapter09\Example_09_04_Population.h" />
     <ClInclude Include="Chapter09\Example_09_04_Rectangle.h" />
     <ClInclude Include="Chapter09\Example_09_04_Sketch.h" />
+    <ClInclude Include="Chapter09\Example_09_05_Bloop.h" />
+    <ClInclude Include="Chapter09\Example_09_05_DNA.h" />
+    <ClInclude Include="Chapter09\Example_09_05_Food.h" />
+    <ClInclude Include="Chapter09\Example_09_05_Sketch.h" />
+    <ClInclude Include="Chapter09\Example_09_05_World.h" />
     <ClInclude Include="Common\Button.h" />
     <ClInclude Include="Common\PerlinNoise2D.h" />
     <ClInclude Include="Common\Vector.h" />
