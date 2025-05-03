@@ -8,6 +8,33 @@ To facilitate this process, I have developed a lightweight wrapper for Processin
 
 Through this project, I have gained valuable insights into the intricacies of C++ programming, the SDL library's capabilities, and the fascinating concepts presented in 'The Nature of Code.' The process has been both challenging and rewarding, fostering a deeper appreciation for the principles of creative coding and the power of low-level programming.
 
+# Running the Code
+
+This project was developed using Visual Studio C++ in Windows.
+In order to run, download and install SDL.
+Compile the app and run the application, it is going to show a menu with all available chapters and examples.
+
+'''
+Compiled SDL version 2.28.0
+Linked SDL version 2.28.0
+
+Nature of Code Menu
+
+         a. Chapter 1 - Vectors
+         b. Chapter 2 - Forces
+         c. Chapter 3 - Oscillation
+         d. Chapter 4 - Particle System
+         e. Chapter 5 - Autonomous Agents
+         f. Chapter 7 - Cellular Automata
+         g. Chapter 8 - Fractals
+         h. Chapter 9 - Evolutionary Computing
+
+         z. Miscellaneous (development and test code)
+         x. Exit
+
+-->
+'''
+
 ## License
 
 This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0) license. To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/ or send a letter to Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.

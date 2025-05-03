@@ -248,7 +248,7 @@ int main(int argc, char* argv[])
         cout << endl << "\t g. Chapter 8 - Fractals";
         cout << endl << "\t h. Chapter 9 - Evolutionary Computing";
         cout << endl;
-        cout << endl << "\t z. Miscellaneous";
+        cout << endl << "\t z. Miscellaneous (development and test code)";
         cout << endl << "\t x. Exit" << endl << endl << "--> ";
         getline(cin, response);
         if (response.compare("x") == 0) {
