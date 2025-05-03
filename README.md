@@ -14,7 +14,7 @@ This project was developed using Visual Studio C++ in Windows.
 In order to run, download and install SDL.
 Compile the app and run the application, it is going to show a menu with all available chapters and examples.
 
-'''
+```
 Compiled SDL version 2.28.0
 Linked SDL version 2.28.0
 
@@ -33,7 +33,7 @@ Nature of Code Menu
          x. Exit
 
 -->
-'''
+```
 
 ## License
 
